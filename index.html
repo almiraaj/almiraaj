@@ -71,7 +71,15 @@
           }
           const serviceID = "service_shuc00t"
       const templateID = "template_78lxgjz"
-      emailjs.send(serviceID,templateID,params).then(res=>console.log(res))
+      emailjs.send(serviceID,templateID,params).thenthen(
+            (res)=>
+            {
+                console.log(res)
+                alert("Sent Mail successfully")
+            }).catch(
+                
+                alert("Error occured please check your internet connection")
+            )
       }
          </script>
   <script type="text/javascript"
