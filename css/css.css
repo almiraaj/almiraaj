@@ -15,6 +15,10 @@ max-height: 70vh;
     max-width: 20vw;
 }
 
+li a {
+   text-decoration: none;
+  }
+
 .Apostilleimg{
     width: 80%;
     border-radius: 16px;
