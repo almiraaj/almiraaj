@@ -6,6 +6,11 @@
     height: 30vh;
     width: 100%;
 }
+.carousel-item{
+    overflow: hidden;
+    border-radius: 50px;
+}
+
 .dropdown-menu {
 max-height: 70vh;
     overflow-y: auto;
