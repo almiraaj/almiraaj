@@ -774,7 +774,7 @@ input[type='checkbox'] {
 .header {
 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../images/header-background.jpg') center center no-repeat;
 	background-size: cover;
-	
+	height: 100vh;
 }
 
 .header .header-content {
@@ -2080,7 +2080,7 @@ a:hover.back-to-top {
 	}
 
 	.header .text-container {
-		margin-top: 6.5rem;
+		margin-top: 0.5rem;
 	}
 	/* end of header */
 
