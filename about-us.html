@@ -1,81 +1,11 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <style>
-    .slideshow-container {
-      max-width: 800px;
-      position: relative;
-      margin: auto;
-    }
-   
-    .slideshow-container img {
-      width: 100%;
-      height: auto;
-    }
-   
-    .slideshow-container .slide {
-      display: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  </style>
-</head>
-<body>
-  <div class="slideshow-container">
-    <div class="slide">
-      <img src="Images2023/ctc1.png" alt="Slide 1">
-    </div>
-    <div class="slide">
-      <img src="Images2023/sbmt1.png" alt="Slide 2">
-    </div>
-    <div class="slide">
-      <img src="Images2023/dlvr.png" alt="Slide 3">
-    </div>
-  </div>
-
-  <script>
-    // JavaScript code to control the slideshow
-    var slides = document.getElementsByClassName("slide");
-    var currentSlideIndex = 0;
-
-    function showSlide(index) {
-      if (index < 0 || index >= slides.length) {
-        return;
-      }
-
-      for (var i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-
-      slides[index].style.display = "block";
-      currentSlideIndex = index;
-    }
-
-    function nextSlide() {
-      currentSlideIndex++;
-      if (currentSlideIndex >= slides.length) {
-        currentSlideIndex = 0;
-      }
-      showSlide(currentSlideIndex);
-    }
-
-    function previousSlide() {
-      currentSlideIndex--;
-      if (currentSlideIndex < 0) {
-        currentSlideIndex = slides.length - 1;
-      }
-      showSlide(currentSlideIndex);
-    }
-
-    // Show the first slide initially
-    showSlide(0);
-
-    // Automatic slideshow with a 3-second interval
-    setInterval(nextSlide, 3000);
-  </script>
-</body>
-</html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- SEO Meta Tags -->
 <meta name="keywords"content="Apostille in Chennai,Attestation in Chennai,Embassy Attestation Chennai,Certificate Attestation Chennai,Tamilnadu Attestation Chennai,International Apostille Chennai,International Attestation Chennai,Degree Certificate Attestation,Marriage Certificate Attestation,Birth Certificate Attestation ,Single Status Apostille Chennai,Gulf Attestation Chennai,A1 Attestation,Arab Countries Attestation,Expert Attestation,Best Attestation,Excellent Attestation,Popular Attestation,Famous Attestation,uro attestation,ak attestation,miraaj attestation,superb attestation,sepl attestation."/>
