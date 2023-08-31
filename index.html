@@ -57,37 +57,7 @@
 
   gtag('config', 'G-ND0JG06C3X');
 </script>
-<!-- TrustBox script -->
-<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
-<!-- End TrustBox script -->
-</head>
-  <script>
-    function send() {
-      var params = {
-        phone: document.getElementById("phone").value,
-        to_name: document.getElementById("name").value,
-        from_name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value
-      }
-      const serviceID = "service_shuc00t"
-      const templateID = "template_78lxgjz"
-      emailjs.send(serviceID, templateID, params).then(
-        (res) => {
-          console.log(res)
-          alert("Sent Mail successfully")
-        }).catch(
-          alert("Error occured please check your internet connection")
-        )
-    }
-  </script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-  </script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("wia_5ImbCRIohtOe0");
-    })();
-  </script>
+
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
