@@ -47,7 +47,35 @@
 
 	<!-- Favicon  -->
   <link rel="icon" href="images/ALMINT.png" />
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "wia_5ImbCRIohtOe0",
+      });
+   })();
 
+   function send() {
+    var templateParams = {
+      from_name: document.getElementById('name').value,
+      message: document.getElementById('message').value,
+      phone: document.getElementById('phone').value,
+      email: document.getElementById('email').value,
+};
+
+emailjs.send('service_shuc00t', 'template_78lxgjz', templateParams).then(
+  (response) => {
+    console.log('SUCCESS!', response.status, response.text);
+    location.reload();
+  },
+  (error) => {
+    console.log('FAILED...', error);
+  },
+);
+   }
+</script>
 
 </head>
 
