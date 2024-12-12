@@ -62,14 +62,14 @@
   <!-- Header  -->
   <nav class="bg-gray-800 bg-opacity-50 absolute top-0 w-full z-50">
     <!-- Logo -->
-    <div class="container mx-auto flex items-center justify-between py-3 px-24">
+    <div class="container mx-auto flex items-center justify-between py-3 lg:px-24">
       <a href="index.html" class="text-white text-xl font-semibold">
         AL-MIRAAJ International
       </a>
 
       <!-- Mobile Menu Toggle Button -->
       <button id="menu-toggle" class="lg:hidden text-white focus:outline-none focus:ring-2 focus:ring-white"
-        type="button" aria-controls="mobile-menu" aria-expanded="false">
+        type="button"  aria-expanded="false">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
         </svg>
@@ -341,6 +341,12 @@
           <div class="pl-4 space-y-2" id="embassy-mobile-dropdown-items"></div>
           <div class="relative">
             <button class="block w-full text-left px-4 py-2 hover:bg-gray-600 focus:outline-none">
+             Visa Services 
+            </button>
+            <div class="pl-4 space-y-2" id="visa-mobile-dropdown-items"></div>
+          </div>
+          <div class="relative">
+            <button class="block w-full text-left px-4 py-2 hover:bg-gray-600 focus:outline-none">
               Apostille MEA
             </button>
             <div class="pl-4 space-y-2" id="apostille-mobile-dropdown-items"></div>
@@ -349,44 +355,7 @@
       </div>
   </nav>
 
-  <script>
-    const toggleButton = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const dropdownItemsTemplate = document.getElementById('dropdown-items').content;
-    const embassyDropdownItemsTemplate = document.getElementById('embassy-dropdown-items').content;
-    const apostilleDropdownItemsTemplate = document.getElementById('apostille-dropdown-items').content;
-    const visaDropdownItemsTemplate = document.getElementById('visa-dropdown-items').content;
-
-    // Populate dropdown items for both desktop and mobile menus
-    const desktopDropdownItems = document.getElementById('desktop-dropdown-items');
-    const mobileDropdownItems = document.getElementById('mobile-dropdown-items');
-
-    const embassyDesktopDropdownItems = document.getElementById('embassy-desktop-dropdown-items');
-    const embassyMobileDropdownItems = document.getElementById('embassy-mobile-dropdown-items');
-
-    const apostilleDesktopDropdownItems = document.getElementById('apostille-desktop-dropdown-items');
-    const apostilleMobileDropdownItems = document.getElementById('apostille-mobile-dropdown-items');
-
-    const visaDesktopDropdownItems = document.getElementById('visa-desktop-dropdown-items');
-    const visaMobileDropdownItems = document.getElementById('visa-mobile-dropdown-items');
-
-    desktopDropdownItems.appendChild(dropdownItemsTemplate.cloneNode(true));
-    mobileDropdownItems.appendChild(dropdownItemsTemplate.cloneNode(true));
-
-    embassyDesktopDropdownItems.appendChild(embassyDropdownItemsTemplate.cloneNode(true));
-    embassyMobileDropdownItems.appendChild(embassyDropdownItemsTemplate.cloneNode(true));
-
-    apostilleDesktopDropdownItems.appendChild(apostilleDropdownItemsTemplate.cloneNode(true));
-    apostilleMobileDropdownItems.appendChild(apostilleDropdownItemsTemplate.cloneNode(true));
-
-    visaDesktopDropdownItems.appendChild(visaDropdownItemsTemplate.cloneNode(true));
-    visaMobileDropdownItems.appendChild(visaDropdownItemsTemplate.cloneNode(true));
-
-    // Toggle mobile menu visibility
-    toggleButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
+  
 
   <!-- Header end  -->
 
@@ -873,5 +842,50 @@
 
   <!-- end footer  -->
 </body>
+
+<script>
+  const toggleButton = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+// Toggle mobile menu visibility
+toggleButton.addEventListener('click', () => {
+  console.log('navclick');
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  const dropdownItemsTemplate = document.getElementById('dropdown-items').content;
+  const embassyDropdownItemsTemplate = document.getElementById('embassy-dropdown-items').content;
+  const apostilleDropdownItemsTemplate = document.getElementById('apostille-dropdown-items').content;
+  const visaDropdownItemsTemplate = document.getElementById('visa-dropdown-items').content;
+
+  // Populate dropdown items for both desktop and mobile menus
+  const desktopDropdownItems = document.getElementById('desktop-dropdown-items');
+  const mobileDropdownItems = document.getElementById('mobile-dropdown-items');
+
+  const embassyDesktopDropdownItems = document.getElementById('embassy-desktop-dropdown-items');
+  const embassyMobileDropdownItems = document.getElementById('embassy-mobile-dropdown-items');
+
+  const apostilleDesktopDropdownItems = document.getElementById('apostille-desktop-dropdown-items');
+  const apostilleMobileDropdownItems = document.getElementById('apostille-mobile-dropdown-items');
+
+  const visaDesktopDropdownItems = document.getElementById('visa-desktop-dropdown-items');
+  const visaMobileDropdownItems = document.getElementById('visa-mobile-dropdown-items');
+
+  desktopDropdownItems.appendChild(dropdownItemsTemplate.cloneNode(true));
+  mobileDropdownItems.appendChild(dropdownItemsTemplate.cloneNode(true));
+
+  embassyDesktopDropdownItems.appendChild(embassyDropdownItemsTemplate.cloneNode(true));
+  embassyMobileDropdownItems.appendChild(embassyDropdownItemsTemplate.cloneNode(true));
+
+  apostilleDesktopDropdownItems.appendChild(apostilleDropdownItemsTemplate.cloneNode(true));
+  apostilleMobileDropdownItems.appendChild(apostilleDropdownItemsTemplate.cloneNode(true));
+
+  visaDesktopDropdownItems.appendChild(visaDropdownItemsTemplate.cloneNode(true));
+  visaMobileDropdownItems.appendChild(visaDropdownItemsTemplate.cloneNode(true));
+
+  console.log(toggleButton);
+
+  
+</script>
 
 </html>
