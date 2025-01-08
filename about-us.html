@@ -56,25 +56,104 @@
             border-radius: 5px;
             padding: 10px 0;
         }
-        .marquee span {
-            display: inline-block;
-            padding-left: 100%;
-            animation: marquee 15s linear infinite;
+        .navbar {
+            background: #333;
+            padding: 10px;
         }
-        @keyframes marquee {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(-100%, 0); }
+        .nav-item {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            transition: background 0.3s;
+        }
+        .nav-link:hover {
+            background: #1abc9c;
+        }
+        .social-icons {
+            float: right;
+        }
+        .fa-stack {
+            margin: 0 10px;
+        }
+        .whatsapp-widget a {
+            color: #25D366;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 24px;
+        }
+        .header-content {
+            text-align: center;
+            padding: 100px 0;
+            background: url('https://almiraaj.com/images/excellent_apostille_embassy_attestation1.png') no-repeat center center/cover;
+        }
+        .text-container h1 {
+            color: #fff;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .text-container p {
+            color: #fff;
+            font-size: 18px;
         }
     </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <h1>About Almiraaj</h1>
-    </header>
+    <nav class="navbar">
+        <ul>
+            <li class="nav-item"><a class="nav-link page-scroll" href="#about">ABOUT US</a></li>
+            <li class="nav-item"><a class="nav-link page-scroll" href="#services">SERVICES</a></li>
+            <li class="nav-item"><a class="nav-link page-scroll" href="#reviews">REVIEWS</a></li>
+            <li class="nav-item"><a class="nav-link page-scroll" href="#contact">CONTACT</a></li>
+        </ul>
+        <span class="nav-item social-icons">
+            <span class="fa-stack">
+                <a href="https://wa.me/+919176160055">
+                    <span class="hexagon"></span>
+                    <i class="fab fa-whatsapp fa-stack-1x"></i>
+                </a>
+            </span>
+        </span>
+    </nav>
+    <div class="whatsapp-widget">
+        <a href="https://wa.me/+919176160055" target="_blank">
+            <i class="fab fa-whatsapp fa-2x"></i>
+        </a>
+    </div>
 
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1>
+                                <span id="js-rotating">
+                                    Marriage Certificate Apostille / Attestation, Educational - Degree - Diploma Certificates Apostille,
+                                    International - Apostille-Attestation-Translation, Birth Certificates Apostille / Attestation, Commercial documents Apostille/Attestation.
+                                </span>
+                            </h1>
+                            <p class="p-heading p-large">
+                                Call: +91-44-4203 7273 - Email: info.almiraaj@gmail.com
+                            </p>
+                            <a class="btn-solid-lg page-scroll" href="#intro">DISCOVER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
     <div class="container">
-        <section>
+        <section id="about">
             <h2>Our Vision</h2>
             <p>To provide exceptional travel-related services that exceed client expectations and create memorable experiences.</p>
         </section>
@@ -82,7 +161,7 @@
             <h2>Our Mission</h2>
             <p>To be a trusted partner in the travel industry, offering comprehensive and reliable services for over 25 years with millions of satisfied clients around the world.</p>
         </section>
-        <section>
+        <section id="services">
             <h2>Our Services</h2>
             <div class="services">
                 <div class="service-item">
@@ -134,18 +213,8 @@
         <section>
             <img src="https://almiraaj.com/images/excellent_apostille_embassy_attestation1.png" alt="Embassy Attestation Services">
         </section>
-        <section>
+        <section id="reviews">
             <h2>Client Reviews</h2>
-            <div class="reviews marquee">
-                <span>
-                    <div class="review-item"> : Aasima N<br>"I needed an apostille for a document from my home state and they got it done incredibly fast. I was worried about meeting a date in a month and they got it done in a few days, which was a big relief. The process was simple and straightforward. Baabu was remarkably fast in responding to my initial request and in follow-ups. I was extremely pleased with the experience and to me it was well worth the cost."</div>
-                    <div class="review-item"> : Kavin M<br>"Very good customer service."</div>
-                    <div class="review-item"> : SENGUPTA SNEHA<br>"Excellent Attestation in Chennai, Very fast and genuine service."</div>
-                    <div class="review-item"> : Kesavan Radhakrishnan<br>"Fast good services."</div>
-                </span>
-            </div>
-        </section>
-    </div>
-
-</body>
-</html>
+            <div class="reviews">
+                <div class="review-item">Client :5* : Aasima N<br>"I needed an apostille for a document from my home state and they got it done incredibly fast. I was worried about meeting a date in a month and they got it done in a few days, which was a big relief. The process was simple and straightforward. Baabu was remarkably fast in responding to my initial request and in follow-ups. I was extremely pleased with the experience and to me it was well worth the cost."</div>
+                <div class="review-item">Client :5* : Kavin M<br>"Very good customer service.
