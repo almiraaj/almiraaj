@@ -49,12 +49,20 @@
             margin: 0;
             font-size: 24px;
         }
+        .navbar-brand {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        @media (max-width: 768px) {
+            .navbar-brand h3 {
+                font-size: 18px;
+            }
+            .nav-item a {
+                font-size: 14px;
+            }
+        }
     </style>
-</head>
-<body>
-    <!-- Your content goes here -->
-</body>
-</html>
 <!-- Navbar -->
 
         <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
