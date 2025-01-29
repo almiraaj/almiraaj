@@ -24,62 +24,117 @@
     No.1 Certified | Apostille MEA | Embassy Attestation | Visa | Tour | Holidays
   </title>
   
-  <!-- Styles -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet" />
-  <link href="css/bootstrap.css" rel="stylesheet" />
-  <link href="css/fontawesome-all.css" rel="stylesheet" />
-  <link href="css/swiper.css" rel="stylesheet" />
-  <link href="css/magnific-popup.css" rel="stylesheet" />
-  <link href="css/styles.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/css.css" />
-
-  <!-- Favicon  -->
-  <link rel="icon" href="images/ALMINT.png" />
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "wia_5ImbCRIohtOe0",
-      });
-   })();
-
-   function send() {
-    var templateParams = {
-      from_name: document.getElementById('name').value,
-      message: document.getElementById('message').value,
-      phone: document.getElementById('phone').value,
-      email: document.getElementById('email').value,
-    };
-
-    emailjs.send('service_shuc00t', 'template_78lxgjz', templateParams).then(
-      (response) => {
-        console.log('SUCCESS!', response.status, response.text);
-        location.reload();
-      },
-      (error) => {
-        console.log('FAILED...', error);
+  <head>
+    <!-- Existing Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/fontawesome-all.css" rel="stylesheet" />
+    <link href="css/swiper.css" rel="stylesheet" />
+    <link href="css/magnific-popup.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/css.css" />
+  
+    <!-- Favicon  -->
+    <link rel="icon" href="images/ALMINT.png" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+     (function(){
+        emailjs.init({
+          publicKey: "wia_5ImbCRIohtOe0",
+        });
+     })();
+  
+     function send() {
+      var templateParams = {
+        from_name: document.getElementById('name').value,
+        message: document.getElementById('message').value,
+        phone: document.getElementById('phone').value,
+        email: document.getElementById('email').value,
+      };
+  
+      emailjs.send('service_shuc00t', 'template_78lxgjz', templateParams).then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          location.reload();
+        },
+        (error) => {
+          console.log('FAILED...', error);
+        }
+      );
+     }
+    </script>
+  
+    <!-- Merged CSS Styles -->
+    <style>
+      /* Existing CSS */
+      body {
+          font-family: Arial, Helvetica, sans-serif;
+          color: #000000;
       }
-    );
-   }
-  </script>
-</head>
-
-<body data-spy="scroll" data-target=".fixed-top">
-  <!-- Preloader -->
-  <!-- <div class="spinner-wrapper">
-      <div class="spinner">
-        <div class="bounce1"></div>
-        <div class="bounce2"></div>
-        <div class="bounce3"></div>
-      </div> 
-  </div>
-  <!-- end of preloader -->
-
-  <!-- Your content goes here -->
-</body>
-</html>
-
+      h3 {
+          color: #1e90ff;
+      }
+      .testimonial-text {
+          background-color: #f9f9f9;
+          padding: 20px;
+          border-radius: 5px;
+      }
+      .highlight {
+          font-weight: bold;
+          color: #ff4500;
+      }
+      .service-link {
+          text-decoration: none;
+          color: #1e90ff;
+      }
+  
+      /* New CSS */
+      h1, h2, h4, h5, h6 {
+          color: #1e90ff;
+      }
+      p {
+          font-size: 16px;
+          line-height: 1.5;
+          margin-bottom: 20px;
+      }
+      .text-container {
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      .section-title {
+          font-size: 24px;
+          font-weight: bold;
+          color: #007bff;
+          margin-bottom: 20px;
+      }
+      ul {
+          list-style-type: none;
+          padding: 0;
+      }
+      ul li {
+          margin-bottom: 10px;
+      }
+      ul li strong {
+          color: #007bff;
+      }
+    </style>
+  </head>
+  
+  <body data-spy="scroll" data-target=".fixed-top">
+    <!-- Preloader -->
+    <!-- <div class="spinner-wrapper">
+        <div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div> 
+    </div>
+    <!-- end of preloader -->
+  
+    <!-- Your content goes here -->
+  </body>
+  </html>
+  
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
