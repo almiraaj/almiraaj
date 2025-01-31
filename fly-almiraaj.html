@@ -1,29 +1,3 @@
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $phone = htmlspecialchars($_POST['phone']);
-    $email = htmlspecialchars($_POST['email']);
-    $from = htmlspecialchars($_POST['from']);
-    $to = htmlspecialchars($_POST['to']);
-    $onward = htmlspecialchars($_POST['onward']);
-    $return = htmlspecialchars($_POST['return']);
-    $special instructions = htmlspecialchars($_POST['instructions']);
-
-    $to_email = "almiraaj.in@gmail.com.com";
-    $subject = "Travel Inquiry from " . $name;
-    $body = "Name: $name\nPhone Number: $phone\nEmail: $email\nFrom: $from\nTo: $to\nOnward Date: $onward\nReturn Date: $return\nSpecial Instructions: $instructions";
-    $headers = "From: $email";
-
-    if (mail($to_email, $subject, $body, $headers)) {
-        echo "<div style='text-align: center; font-family: Arial, sans-serif; margin-top: 20px;'>
-                <h2>Thank you for contacting us!</h2>
-                <p>We will get back to you as soon as possible. You can reach us at +91 9176159922.</p>
-              </div>";
-    } else {
-        echo "Email sending failed...";
-    }
-}
-?>
 <!DOCTYPE html>
 <html>
 <head>
