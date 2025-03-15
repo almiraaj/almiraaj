@@ -1,6 +1,3 @@
-# Enable the Rewrite Engine
-RewriteEngine On
-
-# Rewrite URLs without .html to serve the corresponding .html files
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*)$ $1.html [L]
+git add .htaccess
+git commit -m "Configure .htaccess for URL rewriting"
+git push
