@@ -4,7 +4,11 @@
       "source": "/visa.html",
       "destination": "/visa_services_10.html",
       "permanent": true
+    },
+    {
+      "source": "/visa",
+      "destination": "/visa_services_10.html",
+      "permanent": true
     }
   ]
 }
-
