@@ -1,4 +1,4 @@
-{{
+{
   "redirects": [
     {
       "source": "/visa.html",
@@ -7,6 +7,3 @@
     }
   ]
 }
-
-    "cleanUrls": true
-  }
