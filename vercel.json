@@ -1,3 +1,12 @@
-{
+{{
+  "redirects": [
+    {
+      "source": "/visa.html",
+      "destination": "/visa_services_10.html",
+      "permanent": true
+    }
+  ]
+}
+
     "cleanUrls": true
   }
