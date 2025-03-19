@@ -1,189 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover international travel with our extensive group tours. Book your journey to Europe, Asia, USA, and beyond!">
-    <meta name="keywords" content="International tours, group tours, Europe travel, USA tours, Asia packages, world travel">
-    <meta name="author" content="Group Tours Inc.">
-    <meta name="robots" content="index, follow">
-    <title>International Group Tours - Explore the World</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
-            overflow: hidden;
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        main {
-            padding: 2rem;
-        }
-        section {
-            margin-bottom: 2rem;
-        }
-        .itinerary {
-            border-left: 4px solid #4CAF50;
-            padding-left: 1rem;
-            margin-bottom: 1rem;
-        }
-        .pricing-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
-        }
-        .pricing-table th, .pricing-table td {
-            border: 1px solid #ddd;
-            text-align: left;
-            padding: 8px;
-        }
-        .pricing-table th {
-            background-color: #4CAF50;
-            color: white;
-        }
-        footer {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-        .testimonials {
-            background-color: #eee;
-            padding: 1rem;
-            border-radius: 8px;
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .contact-form button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-        .contact-form button:hover {
-            background-color: #45a049;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <style>
+    .imagecard {
+      transition: transform .3s; /* Animation */
+    }
+
+    .imagecard:hover {
+      transform: scale(1.2); /* Zoom effect on hover */
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <h1>International Group Tours</h1>
-        <p>Embark on a journey across the world with our exclusive travel packages!</p>
-    </header>
-    <nav>
-        <a href="#overview">Overview</a>
-        <a href="#destinations">Destinations</a>
-        <a href="#itinerary">Itinerary</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <main>
-        <section id="overview">
-            <h2>Overview</h2>
-            <p>Our international group tours are designed to give you the best experiences across the globe. From iconic landmarks to breathtaking landscapes, we ensure you travel in comfort and style.</p>
-        </section>
-        <section id="destinations">
-            <h2>Destinations</h2>
-            <ul>
-                <li><strong>Europe:</strong> Eiffel Tower, Colosseum, and Swiss Alps.</li>
-                <li><strong>USA:</strong> Times Square, Grand Canyon, and Hollywood.</li>
-                <li><strong>Asia:</strong> Great Wall of China, Tokyo, and Bali.</li>
-                <li><strong>Australia:</strong> Sydney Opera House, Great Barrier Reef.</li>
-            </ul>
-        </section>
-        <section id="itinerary">
-            <h2>Sample Itinerary</h2>
-            <div class="itinerary">
-                <h3>Day 1: Arrival</h3>
-                <p>Welcome to Paris! Enjoy a guided tour of the Eiffel Tower and a Seine River cruise.</p>
-            </div>
-            <div class="itinerary">
-                <h3>Day 2: Adventure</h3>
-                <p>Explore the Colosseum in Rome and indulge in authentic Italian cuisine.</p>
-            </div>
-            <div class="itinerary">
-                <h3>Day 3: Departure</h3>
-                <p>Say goodbye with memories to cherish forever!</p>
-            </div>
-        </section>
-        <section id="pricing">
-            <h2>Pricing</h2>
-            <table class="pricing-table">
-                <thead>
-                    <tr>
-                        <th>Package</th>
-                        <th>Duration</th>
-                        <th>Price (per person)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Europe Tour</td>
-                        <td>7 Days</td>
-                        <td>₹1,50,000</td>
-                    </tr>
-                    <tr>
-                        <td>USA Tour</td>
-                        <td>10 Days</td>
-                        <td>₹2,00,000</td>
-                    </tr>
-                    <tr>
-                        <td>Asia Tour</td>
-                        <td>5 Days</td>
-                        <td>₹1,00,000</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <section id="testimonials">
-            <h2>What Our Clients Say</h2>
-            <div class="testimonials">
-                <p>"The best travel experience of my life! Everything was so well organized. I can't wait to book my next tour." - <strong>Priya M.</strong></p>
-                <p>"Amazing service and great destinations. Highly recommend for group travel!" - <strong>Ravi K.</strong></p>
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="4" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 AL-MIRAAJ. | All Rights Reserved</p>
-    </footer>
+
+<body class="bg-white">
+
+  <!-- HERO SECTION START -->
+  <div class="hero min-h-screen"
+    style="background-image: url(https://images.unsplash.com/photo-1542650742-d3150fb66298?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+    <div class="hero-overlay bg-opacity-50"></div>
+    <div class="hero-content text-neutral-content text-center">
+      <div class="max-w-l">
+        <h1 class="mb-5 text-5xl font-bold">International Group Tours</h1>
+        <h1 class="mb-5 text-2xl font-bold">Call: +91 44 4203 7273, Email: tours@almiraaj.com</h1>
+        <p class="mb-3">Explore destinations across the globe with our exclusive travel packages!</p>
+      </div>
+    </div>
+  </div>
+  <!-- HERO SECTION END -->
+
+  <!-- Card Section Start -->
+  <main style="background-image: url(https://images.unsplash.com/photo-1510663228452-83fb830ec1d6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+    <div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-4 py-7 px-4">
+      <!-- Destination 1: Dubai -->
+      <div class="card w-96 shadow-xl bg-white">
+        <figure>
+          <img class="imagecard" src="https://almiraaj.com/images/dubai%20visa.gif" alt="Dubai Tour">
+        </figure>
+        <div class="card-body text-black">
+          <h2 class="card-title">Dubai Group Tour</h2>
+          <p>Discover the futuristic city of Dubai! From the iconic Burj Khalifa to the bustling souks, enjoy desert safaris, luxury shopping, and world-class cuisine.</p>
+          <div class="card-actions justify-end">
+            <a href="https://almiraaj.com/"><button class="btn btn-primary">Learn More</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Destination 2: Saudi Arabia -->
+      <div class="card w-96 shadow-xl bg-white">
+        <figure>
+          <img class="imagecard" src="https://almiraaj.com/images/welcome%20saudi%20arabia!.gif" alt="Saudi Arabia Tour">
+        </figure>
+        <div class="card-body text-black">
+          <h2 class="card-title">Saudi Arabia Cultural Tour</h2>
+          <p>Experience the rich heritage of Saudi Arabia. Visit Mecca and Medina, explore desert landscapes, and immerse yourself in local traditions.</p>
+          <div class="card-actions justify-end">
+            <a href="https://almiraaj.com/"><button class="btn btn-primary">Learn More</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Destination 3: Bahrain -->
+      <div class="card w-96 shadow-xl bg-white">
+        <figure>
+          <img class="imagecard" src="https://almiraaj.com/images/BAHRAIN.gif" alt="Bahrain Tour">
+        </figure>
+        <div class="card-body text-black">
+          <h2 class="card-title">Bahrain Tour</h2>
+          <p>Explore the charming kingdom of Bahrain. Known for its history, modern architecture, and tranquil island vibes, this destination is a must-visit!</p>
+          <div class="card-actions justify-end">
+            <a href="https://almiraaj.com/"><button class="btn btn-primary">Learn More</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Destination 4: Singapore -->
+      <div class="card w-96 shadow-xl bg-white">
+        <figure>
+          <img class="imagecard" src="https://almiraaj.com/images/SINGAPORE%20TOUR.gif" alt="Singapore Tour">
+        </figure>
+        <div class="card-body text-black">
+          <h2 class="card-title">Singapore Getaway</h2>
+          <p>Visit Singapore, a blend of modern skyscrapers and lush greenery. Highlights include Gardens by the Bay, Sentosa Island, and Marina Bay Sands.</p>
+          <div class="card-actions justify-end">
+            <a href="https://almiraaj.com/"><button class="btn btn-primary">Learn More</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Destination 5: Kuwait -->
+      <div class="card w-96 shadow-xl bg-white">
+        <figure>
+          <img class="imagecard" src="https://almiraaj.com/images/KUWAIT.gif" alt="Kuwait Tour">
+        </figure>
+        <div class="card-body text-black">
+          <h2 class="card-title">Kuwait Experience</h2>
+          <p>Explore Kuwait, a land of heritage and modernity. From towering skyscrapers to cultural landmarks, Kuwait offers an unforgettable experience.</p>
+          <div class="card-actions justify-end">
+            <a href="https://almiraaj.com/"><button class="btn btn-primary">Learn More</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Destination 6: Malaysia -->
+      <div class="card w-96 shadow-xl bg-white">
+        <figure>
+          <img class="imagecard" src="https://almiraaj.com/images/MALAYSIA%20TOUR.gif" alt="Malaysia Tour">
+        </figure>
+        <div class="card-body text-black">
+          <h2 class="card-title">Malaysia Adventure</h2>
+          <p>Discover Malaysia, known for its vibrant cities, pristine beaches, and lush rainforests. Don't miss the iconic Petronas Towers in Kuala Lumpur!</p>
+          <div class="card-actions justify-end">
+            <a href="https://almiraaj.com/"><button class="btn btn-primary">Learn More</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Card Section End -->
+
 </body>
 </html>
