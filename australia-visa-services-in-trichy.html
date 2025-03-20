@@ -86,3 +86,91 @@
     </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown</title>
+    <style>
+        /* Basic styling for navbar */
+        nav {
+            background-color: #0078D7; /* Blue background */
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Align items horizontally */
+            position: relative;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            position: relative; /* To position dropdown */
+        }
+
+        nav ul li a {
+            color: white; /* White text */
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline; /* Highlight links on hover */
+        }
+
+        /* Dropdown menu styling */
+        nav ul li .dropdown {
+            display: none; /* Hidden by default */
+            position: absolute; /* Positioned below parent */
+            background-color: #f9f9f9; /* Light background for dropdown */
+            padding: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1; /* Ensures dropdown appears above other elements */
+        }
+
+        nav ul li .dropdown a {
+            color: black; /* Black text for dropdown links */
+            text-decoration: none;
+            display: block; /* Each link on a new line */
+            padding: 5px 10px;
+        }
+
+        nav ul li .dropdown a:hover {
+            background-color: #ddd; /* Highlight dropdown links on hover */
+        }
+
+        /* Show dropdown on hover */
+        nav ul li:hover .dropdown {
+            display: block; /* Show dropdown when hovering over parent */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="https://www.almiraaj.com">Home</a></li>
+            <li><a href="https://www.almiraaj.com/embassy-attestation-in-chennai">Embassy Attestation</a></li>
+            <li><a href="https://www.almiraaj.com/apostille-mea-attestation-in-chennai">Certificate Apostille</a></li>
+            <li>
+                <a href="https://www.almiraaj.com/visa_services_10">Visa Services</a>
+                <!-- Dropdown for Visa Services -->
+                <div class="dropdown">
+                    <a href="https://www.almiraaj.com/australia-visa-services-in-trichy">Australia Visa Services</a>
+                </div>
+            </li>
+            <li><a href="https://www.almiraaj.com/#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <div>
+        <h1>Welcome to Almiraaj International</h1>
+        <p>Navigate through the menu above to explore our services.</p>
+    </div>
+</body>
+</html>
