@@ -3,66 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar with Dropdown</title>
+    <title>Australia Visa Services</title>
     <style>
-        /* Basic styling for navbar */
+        /* Navbar Styles */
         nav {
-            background-color: #0078D7; /* Blue background */
+            background-color: #0078D7;
             padding: 10px;
         }
-
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
-            display: flex; /* Align items horizontally */
-            position: relative;
+            display: flex;
+            flex-wrap: wrap; /* Wrap items on smaller screens */
+            justify-content: space-around;
         }
-
         nav ul li {
-            margin: 0 15px;
-            position: relative; /* To position dropdown */
+            margin: 5px 10px;
         }
-
         nav ul li a {
-            color: white; /* White text */
+            color: white;
             text-decoration: none;
             font-size: 16px;
             font-weight: bold;
         }
-
         nav ul li a:hover {
-            text-decoration: underline; /* Highlight links on hover */
+            text-decoration: underline;
         }
-
-        /* Dropdown menu styling */
         nav ul li .dropdown {
-            display: none; /* Hidden by default */
-            position: absolute; /* Positioned below parent */
-            background-color: #f9f9f9; /* Light background for dropdown */
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
             padding: 10px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1; /* Ensures dropdown appears above other elements */
+            z-index: 1;
         }
-
+        nav ul li:hover .dropdown {
+            display: block;
+        }
         nav ul li .dropdown a {
-            color: black; /* Black text for dropdown links */
+            color: black;
             text-decoration: none;
-            display: block; /* Each link on a new line */
+            display: block;
             padding: 5px 10px;
         }
-
         nav ul li .dropdown a:hover {
-            background-color: #ddd; /* Highlight dropdown links on hover */
+            background-color: #ddd;
         }
 
-        /* Show dropdown on hover */
-        nav ul li:hover .dropdown {
-            display: block; /* Show dropdown when hovering over parent */
+        /* Content Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-body {
+            padding: 15px;
+        }
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .col-lg-4 {
+            flex: 1 1 calc(33.333% - 20px);
+            margin: 10px;
+        }
+        @media (max-width: 768px) {
+            .col-lg-4 {
+                flex: 1 1 100%; /* Full width on smaller screens */
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Navbar -->
     <nav>
         <ul>
             <li><a href="https://www.almiraaj.com">Home</a></li>
@@ -70,183 +121,67 @@
             <li><a href="https://www.almiraaj.com/apostille-mea-attestation-in-chennai">Certificate Apostille</a></li>
             <li>
                 <a href="https://www.almiraaj.com/visa_services_10">Visa Services</a>
-                <!-- Dropdown for Visa Services -->
                 <div class="dropdown">
                     <a href="https://www.almiraaj.com/australia-visa-services-in-trichy">Australia Visa Services</a>
                 </div>
             </li>
-            <li> <a href="https://wa.me/919176159922" target="_blank">  Contact</a></li>
+            <li><a href="https://wa.me/919176159922" target="_blank">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Content -->
-    <div>
-        <h1>Welcome to Almiraaj International</h1>
-        <p>Navigate through the menu above to explore our services.</p>
-    </div>
-</body>
-</html>
- <!-- end of navbar -->
-
-
     <!-- Header -->
-    <header id="header" class="ex-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Australia Visa</h1>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </header> <!-- end of ex-header -->
-    <!-- end of header -->
+    <header class="text-center">
+        <h1>Australia Visa Services</h1>
+    </header>
 
+    <!-- Privacy Content -->
+    <div class="container text-center">
+        <h2>Australia Visa Services</h2>
+        <a href="https://almiraaj.com/australia-visa-services-in-trichy.html">
+            <img src="/images/visit%20australia.gif" alt="Visit Australia">
+        </a>
+        <p>Call: +91 44 4203 7273</p>
+        <p>Email: <a href="mailto:almiraaj.in@gmail.com">almiraaj.in@gmail.com</a></p>
+        <hr>
+        <h3>About the Australia Tourist Visa</h3>
+        <p>An Australia Tourist Visa allows Indian citizens to visit for tourism or business purposes...</p>
+    </div>
 
-    <!-- Breadcrumbs -->
-    <div class="ex-basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumbs">
-                        <a href="../index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Australia Visa</span>
-                    </div> <!-- end of breadcrumbs -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of breadcrumbs -->
-
-
-   <!-- Privacy Content -->
-<div class="container">
-    <div class="ex-basic-2">
-        <div class="container">
-            <h2 class="text-center">Australia Visa Services</h2>
-            <a href="https://almiraaj.com/australia-visa-services-in-trichy.html">
-                <img src="/images/visit%20australia.gif" alt="Centered image showing Visit Australia" class="Apostilleimg" height="450" width="900">
-            </a>
-
-            <!-- Contact Information -->
-            <div class="row text-center mt-4">
-                <div class="col-lg-12">
-                    <h5>Call: +91 44 4203 7273</h5>
-                    <h5>Email: <a href="mailto:almiraaj.in@gmail.com">almiraaj.in@gmail.com</a></h5>
+    <!-- Cards Section -->
+    <div class="container">
+        <div class="row">
+            <!-- Step 1 -->
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="/Images2023/ctc1.png" alt="Step 1: Contact Us">
+                    <div class="card-body text-center">
+                        <h4>Step 1: Contact Us</h4>
+                        <p><b>AL-MIRAAJ International</b></p>
+                        <p>28-Pattabiraman Salai, 1st Floor, Trichy-620017</p>
+                        <a href="https://www.almiraaj.com/australia-visa-services-in-trichy" class="btn">Check More Info</a>
+                    </div>
                 </div>
             </div>
-            <hr>
 
-            <!-- About the Visa -->
-            <div class="text-center">
-                <h1>About the Australia Tourist Visa</h1>
-            </div>
-            <div class="text-left mt-4">
-                <h5>Introduction:</h5>
-                <p>An Australia Tourist Visa is a type of non-immigrant visa that allows foreign nationals to visit Australia for a short time period. Indian citizens applying for a visitor visa (Subclass 600) can go to Australia for business or tourism-related activities. When applying for a tourist visa, you cannot work for any business or sell services/goods in Australia, as per embassy regulations.</p>
-
-                <!-- Key Details -->
-                <h3>Australia Visa</h3>
-                <p>
-                    <i>
-                        Australia is one of the most remote and fascinating countries in the world, offering unique natural wonders, cosmopolitan cities, wildlife, and much more. It’s a destination that suits every taste, budget, and interest. Visitors can explore amazing sightseeing, adventure tours, and cultural experiences.
-                        The visa process is straightforward, requiring basic documents, and offers multiple subclasses based on visit purposes (e.g., Subclass 600/601/651). However, visa tenure ranges from 3 months to 1 year, with specific guidelines.
-                    </i>
-                </p>
+            <!-- Step 2 -->
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="/Images2023/sbmt1.png" alt="Step 2: Submitting Documents">
+                    <div class="card-body text-center">
+                        <h4>Step 2: Submitting Documents</h4>
+                        <p>Submit the required documents to start the process...</p>
+                        <a href="https://www.almiraaj.com/australia-visa-services-in-trichy" class="btn">Check More Info</a>
+                    </div>
+                </div>
             </div>
 
-            <!-- Visa Requirements -->
-            <h4 class="mt-4">Australia Tourist Visa - Requirements:</h4>
-            <ul>
-                <li>Original Passport</li>
-                <li>4 Photos with white background</li>
-                <li><a href="../doc/Australia-1419 - Application for a Visitor visa.pdf">1419 Visa Application Form (filled & signed)</a></li>
-                <li><a href="../doc/cover_ltr-sam-almiraaj.pdf">Covering Letter</a></li>
-                <li>Employment or Business Proof</li>
-                <li>Hotel Confirmation with Itinerary</li>
-                <li>Personal Bank Statement (last 6 months)</li>
-                <li>Income Tax Papers (last 3 years)</li>
-                <li>Pay Slips (last 3 months)</li>
-                <li>Employer's Leave Certificate</li>
-                <li>Children: Leave Certificate from School</li>
-                <li>Relatives: Sponsorship Letter with Passport & Visa Copy</li>
-            </ul>
+            <!-- Step 3 -->
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="/Images2023/dlvr.png" alt="Step 3: Delivery of Documents">
+                    <div class="card-body text-center">
+                        <h4>Step 3: Delivery of Documents</h4>
 
-            <h4>Australia Business Visa Requirements:</h4>
-            <ul>
-                <li>2 Coloured Photos with white background</li>
-                <li><a href="../doc/cover_ltr-sam-almiraaj.pdf">Covering Letter</a> on Company Letterhead</li>
-                <li>Invitation Letter from Australia</li>
-                <li>Evidence of Business</li>
-                <li>Personal Bank Statement (last 6 months)</li>
-                <li>Personal and Company Income Tax Papers (last 3 years)</li>
-                <li>Company Bank Statements (last 3 months)</li>
-                <li>Company Registration Copy</li>
-                <li>Pay Slips (last 3 months)</li>
-                <li>Health Insurance (mandatory if above 70 years)</li>
-            </ul>
-
-            <!-- Disclaimer -->
-            <p><strong>*Note:</strong> Visa fees/charges are subject to change. Embassy/Consulate may request additional documents or personal appearance for interviews. Submission of documents does not guarantee visa approval.</p>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="ex-basic-2">
-      <div class="container">
-        <h1 class="text-center">Contact Us to Know About Visa and Tour for Australia</h1>
-      </div>
-      <br>
-      <div class="tables row">
-        <!-- Step 1 Card -->
-        <div class="col-lg-4 my-5">
-          <div class="card">
-            <a href="australia-visa-services-in-trichy">
-              <img src="/Images2023/ctc1.png" class="card-img-top img-fluid" alt="Step 1: Contact Us">
-            </a>
-            <div class="card-body">
-              <h6 class="card-title">
-                <a style="text-decoration: none;" href="../australia-visa-services-in-trichy">Step 1: Contact Us</a>
-              </h6>
-              <p class="card-text">
-                <b>AL-MIRAAJ International.</b><br>
-                28-Pattabiraman Salai, 1st Floor,<br>
-                Trichy-620017, Tamil Nadu, India.<br>
-                Phone: +91 44 4203 7273.<br>
-                Email: <a href="mailto:almiraaj.in@gmail.com">almiraaj.in@gmail.com</a><br>
-                <a href="/" class="btn btn-sm btn-success mt-2">Check More Info</a>
-              </p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Step 2 Card -->
-        <div class="col-lg-4 my-5">
-          <div class="card">
-            <a href="australia-visa-services-in-trichy">
-              <img src="/Images2023/sbmt1.png" class="card-img-top img-fluid" alt="Step 2: Submitting Documents">
-            </a>
-            <div class="card-body">
-              <h6 class="card-title">
-                <a style="text-decoration: none;" href="../australia-visa-services-in-trichy">Step 2: Submitting Documents</a>
-              </h6>
-              <p class="card-text">
-                Submit the required documents to start the process:<br>
-                - Supporting documents as per Embassy requirements<br>
-                - Pay the fee/charges<br>
-                - Get the reference number and acknowledgment<br>
-                <a href="/" class="btn btn-sm btn-success mt-2">Check More Info</a>
-              </p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Step 3 Card -->
-        <div class="col-lg-4 my-5">
-          <div class="card">
-            <a href="australia-visa-services-in-trichy">
-              <img src="/Images2023/dlvr.png" class="card-img-top img-fluid" alt="Step 3: Delivery of Documents">
-            </a>
-            <div class="card-body">
-              <h6 class="card-title">Step 3: Delivery of Documents</h6>
               <p class="card-text">
                 The requested process is now completed:<br>
                 - We'll inform you upon completion<br>
