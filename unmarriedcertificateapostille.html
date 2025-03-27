@@ -707,14 +707,41 @@
                               <!-- end of text-container -->
                           </div>
                           <!-- end of col -->
-                          <br>
-                          <div class="col-lg-5">
-                              <div class="image-container">
-                                  <img class="img-fluid mt-3" src="/images/single-status-certificate-for-indians-chennai-tn.png" alt="alternative">
+                          <style>
+                            .row {
+                              display: flex; /* Ensures elements align horizontally */
+                              align-items: center; /* Vertically aligns the content */
+                            }
+                            .col-lg-5 {
+                              flex: 0 0 50%; /* Adjusts the width of each column */
+                            }
+                            .image-container img {
+                              transition: transform 0.3s ease; /* Smooth zoom */
+                              max-width: 100%; /* Ensures the image doesn’t overflow */
+                              height: auto; /* Maintains aspect ratio */
+                            }
+                            .image-container img:hover {
+                              transform: scale(1.2); /* Zoom effect */
+                            }
+                          </style>
+                          
+                          <div class="row">
+                              <div class="col-lg-5">
+                                  <p>Your text goes here. Add as much content as you need, and it will stay on the left side of the layout.</p>
                               </div>
-                              <!-- end of image-container -->
+                              <!-- end of col -->
+                              <div class="col-lg-5">
+                                  <div class="image-container">
+                                      <a href="https://www.almiraaj.com/unmarriedcertificateapostille">
+                                          <img class="img-fluid mt-3" src="/images/single-status-certificate-for-indians-chennai-tn.png" alt="alternative">
+                                      </a>
+                                  </div>
+                                  <!-- end of image-container -->
+                              </div>
+                              <!-- end of col -->
                           </div>
-                          <!-- end of col -->
+                          <!-- end of row -->
+                          
                       </div>
                       <!-- end of row -->
                   </div>
