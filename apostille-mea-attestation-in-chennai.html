@@ -28,8 +28,7 @@
 <link rel="stylesheet" href="../css/css.css" />
 <!-- Favicon  -->
 <link rel="icon" href="images/ALMINT.png" />
-
-<!-- Custom Navbar Color Styles -->
+<!-- Navbar Styles -->
 <style>
   .navbar {
     background-color: #00264d !important;
@@ -63,31 +62,41 @@
 
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
-  <a class="navbar-brand logo-image" href="index.html">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <a class="navbar-brand" href="/index.html">
     <h3 class="text-white mb-0">AL-MIRAAJ International</h3>
   </a>
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-awesome fas fa-bars"></span>
-    <span class="navbar-toggler-awesome fas fa-times"></span>
+    <span class="fas fa-bars"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="mainNavbar">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item"><a class="nav-link page-scroll" href="index.html#header">Home</a></li>
+      <li class="nav-item">
+        <a class="nav-link" href="/index.html">Home</a>
+      </li>
+
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="attestationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Attestation Services</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="../certificate-attestation-in-tamilnadu.html">Certificate Attestation</a>
-          <a class="dropdown-item" href="../embassy-attestation-in-chennai.html">Embassy Attestation</a>
-          <a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html">Apostille MEA</a>
+        <div class="dropdown-menu" aria-labelledby="attestationDropdown">
+          <a class="dropdown-item" href="/certificate-attestation-in-tamilnadu.html">Certificate Attestation</a>
+          <a class="dropdown-item" href="/embassy-attestation-in-chennai.html">Embassy Attestation</a>
+          <a class="dropdown-item" href="/apostille-mea-attestation-in-chennai.html">MEA Apostille</a>
         </div>
       </li>
-      <li class="nav-item"><a class="nav-link" href="../visa_services_10.html">Visa Services</a></li>
-      <li class="nav-item"><a class="nav-link page-scroll" href="index.html#contact">Contact</a></li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/visa-services.html">Visa Services</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/index.html#contact">Contact</a>
+      </li>
     </ul>
   </div>
 </nav>
+
 
 <!-- WhatsApp Widget -->
 <div class="whatsapp-widget">
