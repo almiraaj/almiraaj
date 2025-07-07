@@ -34,88 +34,94 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="/css/bootstrap.css" />
-  <link rel="stylesheet" href="/css/fontawesome-all.css" />
-  <link rel="stylesheet" href="/css/swiper.css" />
-  <link rel="stylesheet" href="/css/magnific-popup.css" />
-  <link rel="stylesheet" href="/css/styles.css" />
-</head>
+ <!-- Styles -->
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" style="padding-top: 80px;">
-  <!-- Navbar -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/fontawesome-all.css" rel="stylesheet">
+    <link href="../css/swiper.css" rel="stylesheet">
+    <link href="../css/magnific-popup.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/css.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/ALMINT.png" />
+
+    <!-- Google Tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQKD7X05QQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-YQKD7X05QQ');
+    </script>
+
+    <!-- Image Zoom Effect -->
+    <style>
+        img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Navbar -->
+    <!-- Add Navbar content here -->
+
+  
+
+</body>
+</html>
+
+    <!-- Navbar -->
+
+
 
     <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-      <!-- Text Logo - Use this if you don't have a graphic logo -->
-      <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
-  
-      <!-- Image Logo -->
-      <a class="navbar-brand logo-image" href="index.html">
-        <h3 class="logo-image">AL-MIRAAJ International</h3>
-      </a>
-  
-      <!-- Mobile Menu Toggle Button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-awesome fas fa-bars"></span>
-        <span class="navbar-toggler-awesome fas fa-times"></span>
-      </button>
-      <!-- end of mobile menu toggle button -->
-  
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="./index.html#header">HOME <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle page-scroll " href="../certificate-attestation-services-in-chennai.html" aria-haspopup="true"
-            aria-expanded="false">Certificate Attestation</a>
-            <ul id="myMenun2" class="dropdown-menu"  aria-labelledby="navbarDropdown" >
-                <div> <a class="dropdown-item"href="../birth-certificate-attestation.html"
-                    title="Birth Certificate Attestation"><span>Birth Certificate Attestation</span></a></div>
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html">
+          <h3 class="logo-image">AL-MIRAAJ INTERNATIONAL</h3>
+        </a>
+      
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-awesome fas fa-bars"></span>
+          <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+      
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="./index.html#header">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle page-scroll" href="../certificate-attestation-services-in-chennai.html" aria-haspopup="true" aria-expanded="false">Certificate Attestation</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../birth-certificate-attestation.html" title="Birth Certificate Attestation"><span>Birth Certificate Attestation</span></a></li>
                 <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"
-                    href="../marriage-certificate-attestation.html"
-                    title="Marriage Certificate Attestation" ><span>Marriage Certificate Attestation</span></a></div>
+                <li><a class="dropdown-item" href="../marriage-certificate-attestation.html" title="Marriage Certificate Attestation"><span>Marriage Certificate Attestation</span></a></li>
                 <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"
-                  href="../degree-certificate-attestation-in-chennai.html"
-                      title="Educational Certificate Attestation"><span>Educational Certificate Attestation</span></a></div>
-                  <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"href="../unmarriedcertificateapostille.html"
-                    title="Single Status Certificate Apostille / Attestation"><span>Single Status Certificate Apostille / Attestation</span></a></div>
+                <li><a class="dropdown-item" href="../degree-certificate-attestation-in-chennai.html" title="Educational Certificate Attestation"><span>Educational Certificate Attestation</span></a></li>
                 <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"
-                    href="../how-to-get-single-status-certificate-in-chennai.html"
-                    title="how to get single status certificate in Chennai"><span>how to get single status certificate in Chennai</span></a></div>
+                <li><a class="dropdown-item" href="../unmarriedcertificateapostille.html" title="Single Status Certificate Apostille / Attestation"><span>Single Status Certificate Apostille / Attestation</span></a></li>
                 <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"href="../commercial-documents-attestation.html"
-                    title="Commercial Documents Attestation"><span>Commercial Documents Attestation</span></a></div>
+                <li><a class="dropdown-item" href="../how-to-get-single-status-certificate-in-chennai.html" title="how to get single status certificate in chennai"><span>how to get single status certificate in chennai</span></a></li>
                 <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"
-                    href="../power-of-attorney-apostilleattestation-in-chennai.html"
-                    title="Power of Attorney Apostille/Attestation in Chennai"><span>Power of Attorney Apostille/Attestation in Chennai</span></a></div>
-                    <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"
-                    href="../hrd-attestation-process.html"
-                    title="HRD Attestation Process"
-                    ><span>HRD Attestation Process</span></a></div>
+                <li><a class="dropdown-item" href="../commercial-documents-attestation.html" title="Commercial Documents Attestation"><span>Commercial Documents Attestation</span></a></li>
                 <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"
-                    href="../home-mantralaya-attestation.html"
-                    title="Home-Mantralaya Attestation"><span>Home-Mantralaya Attestation</span></a></div>
+                <li><a class="dropdown-item" href="../power-of-attorney-apostilleattestation-in-chennai.html" title="Power of Attorney Apostille/Attestation in chennai"><span>Power of Attorney Apostille/Attestation in chennai</span></a></li>
                 <div class="dropdown-items-divide-hr"></div>
+                <li><a class="dropdown-item" href="../hrd-attestation-process.html" title="HRD Attestation Process"><span>HRD Attestation Process</span></a></li>
+                <div class="dropdown-items-divide-hr"></div>
+                <li><a class="dropdown-item" href="../home-mantralaya-attestation.html" title="Home-Mantralaya Attestation"><span>Home-Mantralaya Attestation</span></a></li>
               </ul>
-          </li>
-  
+            </li>
   
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle page-scroll " href="../embassy-attestation-in-chennai.html" aria-haspopup="true"
