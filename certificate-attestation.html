@@ -657,22 +657,31 @@
         </div>
     </div>
 
-    <!-- Contact Form Section -->
-    <div class="section-box" style="background-color:#fff3e0;">
-        <h2>📬 Get in Touch</h2>
-        <form>
-            <label for="name">Your Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+    <!-- WhatsApp Contact Section -->
+<div class="section-box" style="background-color:#fff3e0;">
+    <h2>📲 Connect with Us on WhatsApp</h2>
+    <form onsubmit="return redirectToWhatsApp();">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" placeholder="Enter your name" required><br><br>
 
-            <label for="email">Email Address:</label><br>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" rows="5" placeholder="Ask us anything!" required></textarea><br><br>
 
-            <label for="message">Your Message:</label><br>
-            <textarea id="message" name="message" rows="5" placeholder="Ask us anything!" required></textarea><br><br>
+        <button type="submit">Chat via WhatsApp</button>
+    </form>
+</div>
 
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
+<script>
+    function redirectToWhatsApp() {
+        const name = document.getElementById("name").value.trim();
+        const message = document.getElementById("message").value.trim();
+        const fullMessage = `Hello, my name is ${name}. ${message}`;
+        const encoded = encodeURIComponent(fullMessage);
+        const phone = "919176159922"; // Your WhatsApp number
+        window.open(`https://wa.me/${phone}?text=${encoded}`, "_blank");
+        return false; // Prevent actual form submission
+    }
+</script>
 
     <!-- Location Maps Section -->
     <div class="section-box" style="background-color:#f0f8ff;">
