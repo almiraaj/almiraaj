@@ -641,133 +641,129 @@
         line-height: 1.6em;
     }
 </style>
-<div class="container">
-    <!-- FAQ Section -->
-    <div class="section-box" style="background-color:#e6ffe6;">
-        <h2>Frequently Asked Questions (FAQs)</h2>
+<div class="container my-5">
+  <div class="p-4 bg-light border rounded">
+    <h2 class="text-success text-center mb-4">📘 Frequently Asked Questions (FAQs)</h2>
+    <div class="faq">
+      <h5 class="mb-2">❓ What types of documents need attestation?</h5>
+      <p>Personal (birth, marriage), educational (degrees, diplomas), and commercial documents (contracts, licenses).</p>
 
-        <div class="faq">
-            <h4>❓ What types of documents need attestation?</h4>
-            <p>Personal documents (birth, marriage), educational certificates (degrees, diplomas), and commercial papers (contracts, licenses) often require attestation.</p>
+      <h5 class="mb-2">❓ How long does the attestation process take?</h5>
+      <p>Depending on the country and type of document, it typically takes 7–21 working days.</p>
 
-            <h4>❓ How long does the attestation process take?</h4>
-            <p>It depends on the destination country and document type. Typically, it can take 7–21 working days.</p>
+      <h5 class="mb-2">❓ Is embassy attestation mandatory for all countries?</h5>
+      <p>No. Hague Convention countries require only an Apostille from the Ministry of External Affairs (MEA).</p>
 
-            <h4>❓ Is embassy attestation mandatory for all countries?</h4>
-            <p>No. Countries part of the Hague Convention only require Apostille from the Ministry of External Affairs (MEA).</p>
-
-            <h4>❓ Can Almiraaj International assist in urgent cases?</h4>
-            <p>Yes, we offer express services for time-sensitive documentation—subject to government approvals.</p>
-        </div>
+      <h5 class="mb-2">❓ Can Almiraaj International assist in urgent cases?</h5>
+      <p>Yes! We offer express services for time-sensitive documents, subject to government approvals.</p>
     </div>
-
-    <!-- WhatsApp Contact Section -->
-<div class="section-box" style="background-color:#fff3e0;">
-    <h2>📲 Get in Touch</h2>
+  </div>
+</div>
+<div class="container my-5">
+  <div class="p-4 bg-warning bg-opacity-25 border rounded">
+    <h2 class="text-center text-primary mb-4">📲 Get in Touch Instantly</h2>
     <form onsubmit="return redirectToWhatsApp();">
-        <label for="name">Your Name:</label><br>
-        <input type="text" id="name" placeholder="Enter your name" required><br><br>
-
-        <label for="message">Your Message:</label><br>
-        <textarea id="message" rows="5" placeholder="Ask us anything!" required></textarea><br><br>
-
-        <button type="submit">Chat </button>
+      <div class="form-group mb-3">
+        <label for="name"><strong>Your Name:</strong></label>
+        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group mb-3">
+        <label for="message"><strong>Your Message:</strong></label>
+        <textarea id="message" class="form-control" rows="4" placeholder="Ask us anything!" required></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-success btn-lg">💬 Chat via WhatsApp</button>
+      </div>
     </form>
+  </div>
 </div>
 
 <script>
-    function redirectToWhatsApp() {
-        const name = document.getElementById("name").value.trim();
-        const message = document.getElementById("message").value.trim();
-        const fullMessage = `Hello, my name is ${name}. ${message}`;
-        const encoded = encodeURIComponent(fullMessage);
-        const phone = "919176159922"; // Your WhatsApp number
-        window.open(`https://wa.me/${phone}?text=${encoded}`, "_blank");
-        return false; // Prevent actual form submission
-    }
+  function redirectToWhatsApp() {
+    const name = document.getElementById("name").value.trim();
+    const message = document.getElementById("message").value.trim();
+    const fullMessage = `Hello, my name is ${name}. ${message}`;
+    const encoded = encodeURIComponent(fullMessage);
+    const phone = "919176159922";
+    window.open(`https://wa.me/${phone}?text=${encoded}`, "_blank");
+    return false;
+  }
 </script>
-
-     <!-- 3 Easy Steps Section -->
 <div class="container my-5">
   <div class="text-center mb-4">
-    <h2 style="color:#004080;">✅ 3 Easy Steps to Get Saudi Embassy Attestation</h2>
-    <p style="color:#555;">Follow these simple steps to get your documents attested quickly and professionally.</p>
+    <h2 class="text-primary">✅ 3 Easy Steps to Get Saudi Embassy Attestation</h2>
+    <p class="text-muted">Follow these simple steps to get your documents attested quickly and professionally.</p>
   </div>
 
   <div class="row">
     <!-- Step 1 -->
     <div class="col-lg-4 mb-4">
-      <div class="p-4 border rounded shadow-sm h-100" style="background-color:#f9fdf9;">
-        <h5 class="text-center" style="color:#006600;">Step 1: Contact </h5>
-        <p style="color:#333;">
+      <div class="p-4 border rounded shadow-sm h-100 bg-light">
+        <h5 class="text-success text-center">🟢 Step 1: Contact</h5>
+        <p>
           <strong>ALMIRAAJ International</strong><br>
           No.10 CASA Major Road, B3-Elcanso Plaza,<br>
           Egmore, Chennai-600008, TN, India<br>
-          📞 +91 44 4203 7273<br>
-          📧 <a href="mailto:attestation@almiraaj.com" style="color:#cc0000;">attestation@almiraaj.com</a>
+          📞 <a href="tel:+914442037273" class="text-dark">+91 44 4203 7273</a><br>
+          📧 <a href="mailto:attestation@almiraaj.com" class="text-danger">attestation@almiraaj.com</a>
         </p>
         <div class="text-center">
-          <a href="/" class="btn btn-sm btn-success">Check more info</a>
+          <a href="/" class="btn btn-outline-success btn-sm">Check more info</a>
         </div>
       </div>
     </div>
 
     <!-- Step 2 -->
     <div class="col-lg-4 mb-4">
-      <div class="p-4 border rounded shadow-sm h-100" style="background-color:#f9fdf9;">
-        <h5 class="text-center" style="color:#006600;">Step 2: Submit </h5>
-        <ul style="color:#333; padding-left: 1.2rem;">
+      <div class="p-4 border rounded shadow-sm h-100 bg-light">
+        <h5 class="text-success text-center">🟢 Step 2: Submit</h5>
+        <ul class="text-dark ps-3">
           <li>Original Certificates</li>
-          <li>Supporting Documents as per ministry requirements</li>
-          <li>Passport Copy of the certificate holder</li>
-         
+          <li>Supporting documents per ministry requirements</li>
+          <li>Passport copy of certificate holder</li>
         </ul>
         <div class="text-center">
-          <a href="/" class="btn btn-sm btn-success">Check more info</a>
+          <a href="/" class="btn btn-outline-success btn-sm">Check more info</a>
         </div>
       </div>
     </div>
 
     <!-- Step 3 -->
     <div class="col-lg-4 mb-4">
-      <div class="p-4 border rounded shadow-sm h-100" style="background-color:#f9fdf9;">
-        <h5 class="text-center" style="color:#006600;">Step 3: Completed</h5>
-        <ul style="color:#333; padding-left: 1.2rem;">
+      <div class="p-4 border rounded shadow-sm h-100 bg-light">
+        <h5 class="text-success text-center">🟢 Step 3: Completed</h5>
+        <ul class="text-dark ps-3">
           <li>Attestation completed by Saudi Embassy</li>
           <li>Notification upon completion</li>
           <li>Collect from office or opt for doorstep delivery</li>
         </ul>
         <div class="text-center">
-          <a href="/" class="btn btn-sm btn-success">Check more info</a>
+          <a href="/" class="btn btn-outline-success btn-sm">Check more info</a>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<div class="text-center">
-
-<div class="alert alert-info text-center" role="alert">
-  <strong>Helpline Numbers For Call / WhatsApp:</strong><br>
-  <a href="https://wa.me/919176159922?text=Hi%20Almiraaj%20!!!" target="_blank">+91 9176159922</a> |
-  <a href="https://wa.me/919176160055?text=Hi%20Almiraaj%20!!!" target="_blank">+91 9176160055</a> |
-  <a href="https://wa.me/919159589163?text=Hi%20Almiraaj%20!!!" target="_blank">+91 9159589163</a> |
-  <a href="https://wa.me/917010855811?text=Hi%20Almiraaj%20!!!" target="_blank">+91 7010855811</a> |
-  <a href="https://wa.me/919087559669?text=Hi%20Almiraaj%20!!!" target="_blank">+91 9087559669</a>
+<div class="container my-5">
+  <div class="alert alert-info text-center border border-primary">
+    <h5><strong>📞 Helpline Numbers for Call / WhatsApp:</strong></h5>
+    <p class="mb-0">
+      <a href="https://wa.me/919176159922?text=Hi%20Almiraaj%20!!!" class="me-2" target="_blank">+91 9176159922</a> |
+      <a href="https://wa.me/919176160055?text=Hi%20Almiraaj%20!!!" class="me-2" target="_blank">+91 9176160055</a> |
+      <a href="https://wa.me/919159589163?text=Hi%20Almiraaj%20!!!" class="me-2" target="_blank">+91 9159589163</a> |
+      <a href="https://wa.me/917010855811?text=Hi%20Almiraaj%20!!!" class="me-2" target="_blank">+91 7010855811</a> |
+      <a href="https://wa.me/919087559669?text=Hi%20Almiraaj%20!!!" target="_blank">+91 9087559669</a>
+    </p>
+  </div>
 </div>
-
-<div class="container">
+<div class="container my-5">
   <div class="row">
     <!-- Chennai -->
     <div class="col-md-4 mb-4">
       <div class="card h-100 border shadow-sm">
-        <div class="card-body text-dark">
+        <div class="card-body">
           <h5 class="card-title">📍 Chennai</h5>
-          <p class="card-text" style="font-size: 1.05rem;">
-            180-Prakasam Rd., Broadway,<br>
-            Opp: Mannadi Metro,<br>
-            Chennai – 600108
-          </p>
+          <p class="card-text">180 Prakasam Rd., Broadway<br>Opp. Mannadi Metro Station<br>Chennai – 600108</p>
         </div>
       </div>
     </div>
@@ -775,13 +771,9 @@
     <!-- Trichy -->
     <div class="col-md-4 mb-4">
       <div class="card h-100 border shadow-sm">
-        <div class="card-body text-dark">
+        <div class="card-body">
           <h5 class="card-title">📍 Trichy</h5>
-          <p class="card-text" style="font-size: 1.05rem;">
-            No. 28, Nirmal Ravi Complex,<br>
-            Pattabiraman Salai, Tennur,<br>
-            Tiruchirappalli – 620017
-          </p>
+          <p class="card-text">No. 28, Nirmal Ravi Complex<br>Pattabiraman Salai, Tennur<br>Tiruchirappalli – 620017</p>
         </div>
       </div>
     </div>
@@ -789,28 +781,14 @@
     <!-- Madurai -->
     <div class="col-md-4 mb-4">
       <div class="card h-100 border shadow-sm">
-        <div class="card-body text-dark">
+        <div class="card-body">
           <h5 class="card-title">📍 Madurai</h5>
-          <p class="card-text" style="font-size: 1.05rem;">
-            No. 7, E2, PT Rajan Rd,<br>
-            Zumbropuram, Narimedu,<br>
-            Madurai – 625002
-          </p>
+          <p class="card-text">No. 7, E2, PT Rajan Road<br>Zumbropuram, Narimedu<br>Madurai – 625002</p>
         </div>
       </div>
     </div>
-  </div> <!-- end of row -->
-</div> <!-- end of container -->
-
-<!-- Bootstrap JS (include at end of body) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
-    </div>
-  </div>                
-</div><br>
+  </div>
+</div>
 
 <div><marquee behavior="scroll" direction="left"><span style="font-size:18px;"><span style="font-family:Comic Sans MS,cursive;"><span style="color:#ffffff;"><em><strong><span style="background-color:#FFFFFF;">
                   
