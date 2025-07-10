@@ -1087,113 +1087,133 @@
       </tbody>
     </table>
   </div>
-</div>
+</div><!-- FAQ Section with Interactive Toggle -->
 <style>
 .faq-container {
-  margin: 30px 0;
+  max-width: 900px;
+  margin: 40px auto;
 }
 .faq-question {
-  font-weight: bold;
+  background-color: #f8f9fa;
+  font-weight: 600;
+  padding: 12px 16px;
   cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 5px;
   margin-bottom: 10px;
-  position: relative;
+  transition: background-color 0.3s ease;
+}
+.faq-question:hover {
+  background-color: #e2f7ea;
 }
 .faq-answer {
   display: none;
+  padding: 16px;
+  margin-top: -10px;
+  margin-bottom: 20px;
   background-color: #f1f1f1;
-  padding: 10px;
   border-left: 3px solid #28a745;
-  margin-bottom: 15px;
+  border-radius: 0 0 5px 5px;
 }
-.faq-question:hover + .faq-answer {
+.faq-active .faq-answer {
   display: block;
 }
 </style>
 
 <div class="faq-container">
-  <h2 class="text-center">Frequently Asked Questions – Certificate Apostille</h2>
+  <h2 class="text-center text-success fw-bold mb-4">📘 Frequently Asked Questions – Certificate Apostille</h2>
 
+  <!-- FAQ Item Template -->
   <div class="faq-item">
     <div class="faq-question">1. What is certificate apostille?</div>
-    <div class="faq-answer">It’s the process of legalizing documents for international use under The Hague Convention. ALMIRAAJ International is a trusted agency with years of experience in handling apostille for personal, educational, and commercial certificates.</div>
+    <div class="faq-answer">Certificate apostille is the official legalization of documents for use in foreign countries under the Hague Convention. ALMIRAAJ International specializes in apostille for personal, educational, and commercial certificates.</div>
   </div>
 
   <div class="faq-item">
     <div class="faq-question">2. Why choose ALMIRAAJ International for apostille services?</div>
-    <div class="faq-answer">ALMIRAAJ has offices across India and a dedicated team with 10+ years in document attestation, making it a reliable choice for hassle-free service.</div>
+    <div class="faq-answer">With 10+ years of experience and a strong nationwide network, ALMIRAAJ offers reliable, fast, and transparent attestation services across India.</div>
   </div>
 
   <div class="faq-item">
     <div class="faq-question">3. What types of documents can be apostilled?</div>
-    <div class="faq-answer">Birth, marriage, degree, diploma, PCC, affidavits, power of attorney, commercial invoices, and more. ALMIRAAJ handles all categories with care.</div>
+    <div class="faq-answer">Documents include birth, marriage, degree, diploma, PCC, affidavits, power of attorney, and commercial papers like invoices and agreements.</div>
   </div>
 
   <div class="faq-item">
     <div class="faq-question">4. Which countries require apostille?</div>
-    <div class="faq-answer">Some include the USA, UK, Australia, Italy, Germany, Netherlands, France, Portugal, Japan, South Korea, South Africa, UAE, and over 100 more Hague member nations.</div>
+    <div class="faq-answer">Over 100 countries including the USA, UK, Australia, France, Italy, Japan, Germany, Netherlands, and South Korea accept apostille documents.</div>
   </div>
 
   <div class="faq-item">
     <div class="faq-question">5. Is apostille the same as attestation?</div>
-    <div class="faq-answer">No. Apostille is accepted in Hague countries, while attestation is used in non-Hague countries like the UAE, Qatar, Kuwait. ALMIRAAJ handles both expertly.</div>
+    <div class="faq-answer">No. Apostille is for Hague member countries. Non-member countries like UAE, Qatar, and Kuwait require embassy attestation. ALMIRAAJ handles both expertly.</div>
   </div>
 
   <div class="faq-item">
     <div class="faq-question">6. How long does apostille take?</div>
-    <div class="faq-answer">With ALMIRAAJ’s express service, most documents are completed within 3-7 working days depending on the type and issuing location.</div>
+    <div class="faq-answer">With ALMIRAAJ’s express service, most documents are processed in 3–7 working days depending on the certificate type and state of issuance.</div>
   </div>
 
   <div class="faq-item">
     <div class="faq-question">7. Do I need to visit the office?</div>
-    <div class="faq-answer">No! ALMIRAAJ offers secure document pickup and courier services across India for your convenience.</div>
+    <div class="faq-answer">No. ALMIRAAJ offers document pickup and courier services across India for added convenience.</div>
   </div>
 
   <div class="faq-item">
     <div class="faq-question">8. Can I apostille documents issued from other states?</div>
-    <div class="faq-answer">Yes, ALMIRAAJ processes certificates from any Indian state—quickly and reliably.</div>
+    <div class="faq-answer">Yes. We process documents from all Indian states, regardless of the issuing authority.</div>
   </div>
 
   <div class="faq-item">
-    <div class="faq-question">9. What makes ALMIRAAJ different from others?</div>
-    <div class="faq-answer">Our client support, transparency, office network, and experienced staff make us one of India’s most trusted attestation providers.</div>
+    <div class="faq-question">9. What makes ALMIRAAJ different?</div>
+    <div class="faq-answer">Our friendly support team, document security, transparent pricing, and pan-India reach set us apart as a trusted agency.</div>
   </div>
 
   <div class="faq-item">
     <div class="faq-question">10. Are apostille stamps accepted worldwide?</div>
-    <div class="faq-answer">They are valid in all 100+ Hague Convention countries. ALMIRAAJ ensures the stamp is from the Ministry of External Affairs (MEA), Government of India.</div>
+    <div class="faq-answer">Yes. Apostille issued by MEA is valid in all Hague Convention member nations. No further embassy attestation is needed for those countries.</div>
   </div>
 
   <div class="faq-item">
     <div class="faq-question">11. Do you offer translation services?</div>
-    <div class="faq-answer">Yes, we offer certified translations for countries like Italy, Spain, Germany, and France. All through ALMIRAAJ International’s trusted translators.</div>
+    <div class="faq-answer">Yes, certified translations are available for countries like France, Italy, Spain, and Germany—handled by ALMIRAAJ’s trusted linguistic experts.</div>
   </div>
 
   <div class="faq-item">
-    <div class="faq-question">12. What if the destination country is not in the Hague list?</div>
-    <div class="faq-answer">Then your documents must be attested via Embassy/Consulate. ALMIRAAJ offers attestation for UAE, Qatar, Saudi Arabia, Oman, Kuwait, and more.</div>
+    <div class="faq-question">12. What if the country is not in the Hague list?</div>
+    <div class="faq-answer">Embassy/consulate attestation is required. ALMIRAAJ offers full support for UAE, Saudi Arabia, Oman, Kuwait, Qatar and more.</div>
   </div>
 
   <div class="faq-item">
-    <div class="faq-question">13. Will ALMIRAAJ inform me of progress?</div>
-    <div class="faq-answer">Absolutely! You’ll receive real-time tracking and updates via email and WhatsApp.</div>
+    <div class="faq-question">13. Will ALMIRAAJ update me on progress?</div>
+    <div class="faq-answer">Yes! We provide real-time updates via WhatsApp and email throughout the process.</div>
   </div>
 
   <div class="faq-item">
     <div class="faq-question">14. How do I get started?</div>
-    <div class="faq-answer">Just call or WhatsApp +91 44 4203 7273 or email attestation@almiraaj.com. We’ll guide you every step of the way.</div>
+    <div class="faq-answer">Just call +91 44 4203 7273 or email <a href="mailto:attestation@almiraaj.com">attestation@almiraaj.com</a>. Our experts will assist you step by step.</div>
   </div>
 
   <div class="faq-item">
     <div class="faq-question">15. Is apostille mandatory for all countries?</div>
-    <div class="faq-answer">Only for countries that signed the Hague Convention. For others, attestation is used. ALMIRAAJ handles both seamlessly.</div>
+    <div class="faq-answer">Only for countries in the Hague Convention. Others require embassy attestation—which ALMIRAAJ also provides.</div>
   </div>
-<div class="faq-item">
-  <div class="faq-question">16. Is ALMIRAAJ available on weekends?</div>
-  <div class="faq-answer">Yes! ALMIRAAJ International operates on Sundays with prior appointment—ideal for busy clients needing flexibility. Just call +91 44 4203 7273 or email attestation@almiraaj.com to book a Sunday slot.</div>
+
+  <div class="faq-item">
+    <div class="faq-question">16. Is ALMIRAAJ available on weekends?</div>
+    <div class="faq-answer">Yes, with prior appointment. We operate Sundays for clients needing urgent or flexible service slots.</div>
+  </div>
 </div>
-  <!-- You can add up to 20 or more in same format -->
-</div>
-<br>
+
+<!-- Toggle Script -->
+<script>
+  document.querySelectorAll(".faq-question").forEach(function (question) {
+    question.addEventListener("click", function () {
+      this.parentElement.classList.toggle("faq-active");
+    });
+  });
+</script>
+
 <div class="container">
 <div class="ex-basic-2">
 <div class="container">
