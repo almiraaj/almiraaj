@@ -32,7 +32,59 @@
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
   
- <!-- Navbar -->
+  <!-- Custom Navbar Styles -->
+  <style>
+    .navbar {
+      background-color: #00264d !important;
+    }
+    .navbar .navbar-brand h3 {
+      color: white !important;
+      font-weight: 700;
+      font-size: 1.3rem;
+      margin: 0;
+    }
+    .navbar .nav-link {
+      color: white !important;
+      transition: 0.3s ease-in-out;
+    }
+    .navbar .nav-link:hover {
+      color: #c99b33 !important;
+    }
+    .dropdown-menu {
+      background-color: #00264d;
+    }
+    .dropdown-item {
+      color: white !important;
+    }
+    .dropdown-item:hover {
+      background-color: #c99b33;
+      color: #00264d !important;
+    }
+    header,
+.navbar,
+.navbar-wrapper,
+.top-bar {
+  background-color: #00264d !important;
+}
+.footer {
+  background-color: #00264d !important;  /* Dark navy blue */
+  color: white;  /* Optional: ensures text is visible */
+}
+footer,
+.footer,
+#footer {
+  background-color: #00264d !important;
+  overflow: auto;
+  min-height: 100px; /* Ensures visibility */
+  color: white; /* Optional: makes text readable */
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
     <!-- Brand Logo -->
     <a class="navbar-brand logo-image" href="index.html">
