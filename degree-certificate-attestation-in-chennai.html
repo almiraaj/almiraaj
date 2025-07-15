@@ -937,62 +937,72 @@
 
       <!-- FAQ Item -->
       <div class="col-md-6 mb-4">
-        <div class="faq-item" title="It’s the process of verifying your degree certificate through government and embassy authorities to make it legally valid abroad. Almiraaj simplifies this in Chennai and other cities.">
-          <h5><strong>❓ What is degree certificate attestation?</strong></h5>
+        <div class="faq-box">
+          ❓ What is degree certificate attestation?
+          <span class="faq-tooltip">It verifies your degree through government and embassy channels for international use. Almiraaj handles the process across Tamil Nadu.</span>
         </div>
       </div>
 
       <div class="col-md-6 mb-4">
-        <div class="faq-item" title="It’s mandatory for overseas education, employment, migration, and visa applications. Almiraaj ensures your documents meet all legal requirements.">
-          <h5><strong>🌍 Why is attestation required?</strong></h5>
+        <div class="faq-box">
+          🌍 Why is attestation required?
+          <span class="faq-tooltip">It's mandatory for studying, working, or migrating abroad. Almiraaj ensures compliance and speedy approvals.</span>
         </div>
       </div>
 
       <div class="col-md-6 mb-4">
-        <div class="faq-item" title="Typically 7–10 working days depending on the country and document type. Almiraaj offers fast-track options in Chennai, Trichy, Madurai, and Tuticorin.">
-          <h5><strong>⏱️ How long does the process take?</strong></h5>
+        <div class="faq-box">
+          ⏱️ How long does attestation take?
+          <span class="faq-tooltip">Typically 7–10 working days. Almiraaj also offers express services in Chennai, Trichy, Madurai & Tuticorin.</span>
         </div>
       </div>
 
       <div class="col-md-6 mb-4">
-        <div class="faq-item" title="You’ll need your original degree certificate, passport copy, mark sheets, and embassy-specific forms. Almiraaj helps you prepare everything.">
-          <h5><strong>📦 What documents are required?</strong></h5>
+        <div class="faq-box">
+          📦 What documents are needed?
+          <span class="faq-tooltip">Degree certificate, passport copy, ID proof, and embassy forms. Almiraaj helps prepare every document correctly.</span>
         </div>
       </div>
 
       <div class="col-md-6 mb-4">
-        <div class="faq-item" title="Yes! Almiraaj provides secure doorstep pickup and delivery across Tamil Nadu, including Chennai, Trichy, Madurai, and Tuticorin.">
-          <h5><strong>🚚 Is doorstep service available?</strong></h5>
+        <div class="faq-box">
+          🚚 Is doorstep service available?
+          <span class="faq-tooltip">Yes! Almiraaj offers secure pickup and delivery in all major TN cities.</span>
         </div>
       </div>
 
       <div class="col-md-6 mb-4">
-        <div class="faq-item" title="Yes. Almiraaj offers attestation for UAE, Qatar, Saudi Arabia, Oman, and Kuwait—right from Chennai and regional branches.">
-          <h5><strong>🌐 Can Almiraaj help with Gulf country attestation?</strong></h5>
+        <div class="faq-box">
+          🏆 Why choose Almiraaj?
+          <span class="faq-tooltip">With 25+ years experience, Almiraaj is trusted for smooth, secure attestation and personal support.</span>
         </div>
       </div>
 
       <div class="col-md-6 mb-4">
-        <div class="faq-item" title="Yes. Apostille is accepted for many countries. Almiraaj guides you whether you need Apostille or Embassy Attestation based on your destination.">
-          <h5><strong>📜 Is Apostille enough for degree certificate attestation?</strong></h5>
+        <div class="faq-box">
+          📜 Is Apostille enough?
+          <span class="faq-tooltip">For many countries, yes. Almiraaj advises whether Apostille or Embassy Attestation is needed for your destination.</span>
         </div>
       </div>
 
       <div class="col-md-6 mb-4">
-        <div class="faq-item" title="Yes. Almiraaj assists students with attestation for university admissions abroad, including Cultural Attaché requirements for Saudi Arabia.">
-          <h5><strong>🎓 Do students need attestation for studying abroad?</strong></h5>
+        <div class="faq-box">
+          🎓 Do students need attestation?
+          <span class="faq-tooltip">Absolutely—Almiraaj helps students meet academic and visa document requirements abroad.</span>
         </div>
       </div>
 
       <div class="col-md-6 mb-4">
-        <div class="faq-item" title="Yes. Almiraaj helps you reissue or verify laminated or damaged certificates to ensure they’re accepted by embassies.">
-          <h5><strong>📄 Can laminated certificates be attested?</strong></h5>
+        <div class="faq-box">
+          📄 Can laminated certificates be attested?
+          <span class="faq-tooltip">Yes, but they may need re-verification. Almiraaj can assist with reissue or alternatives.</span>
         </div>
       </div>
 
       <div class="col-md-6 mb-4">
-        <div class="faq-item" title="Almiraaj has over 25 years of experience, trusted by thousands for fast, reliable attestation services across Tamil Nadu.">
-          <h5><strong>🏆 Why choose Almiraaj for attestation?</strong></h5>
+        <div class="faq-box">
+          🌐 Can Almiraaj help with other countries?
+          <span class="faq-tooltip">Yes—services include UAE, Saudi Arabia, Qatar, Kuwait, and Oman attestation.</span>
         </div>
       </div>
 
@@ -1000,15 +1010,40 @@
   </div>
 </section>
 
-<!-- Tooltip Styling -->
+<!-- FAQ Tooltip Styles -->
 <style>
-  .faq-item h5 {
-    cursor: help;
+  .faq-box {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
     color: #333;
-    transition: color 0.3s ease;
+    cursor: help;
+    padding: 10px;
   }
-  .faq-item h5:hover {
-    color: #c99b33;
+
+  .faq-tooltip {
+    visibility: hidden;
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    width: 250px;
+    transition: opacity 0.3s;
+    font-weight: normal;
+    font-size: 0.9em;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  .faq-box:hover .faq-tooltip {
+    visibility: visible;
+    opacity: 1;
   }
 </style>
 
