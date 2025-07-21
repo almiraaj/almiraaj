@@ -51,6 +51,29 @@
   </script>
 
   <!-- Custom Inline Styles -->
+<head>
+  ...
+  <style>
+    /* Unify the header background color */
+    header,
+    .top-bar,
+    .navbar,
+    .navbar-wrapper,
+    .navbar-custom {
+      background-color: #00264d !important;
+    }
+
+    /* Prevent overlapping transparency or gradient issues */
+    .navbar,
+    .navbar-custom {
+      background-image: none !important;
+      box-shadow: none;
+    }
+  </style>
+  ...
+</head>
+
+
   <style>
     /* Navbar Styles */
     .navbar {
