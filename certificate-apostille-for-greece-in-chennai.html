@@ -17,146 +17,145 @@
   <link href="/css/styles.css" rel="stylesheet" />
   <link href="/css/css.css" rel="stylesheet" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="/images/ALMINT.png" type="image/x-icon" />
+<!-- Favicon -->
+<link rel="icon" href="/images/ALMINT.png" type="image/x-icon" />
 
-  <!-- Custom Styles -->
-  <style>
-    /* Unify the header background color */
-    header,
-    .top-bar,
-    .navbar,
-    .navbar-wrapper,
-    .navbar-custom {
-      background-color: #00264d !important;
-    }
+<!-- Custom Styles -->
+<style>
+  /* Unify the header background color */
+  header,
+  .top-bar,
+  .navbar,
+  .navbar-wrapper,
+  .navbar-custom {
+    background-color: #00264d !important;
+  }
 
-    .navbar,
-    .navbar-custom {
-      background-image: none !important;
-      box-shadow: none;
-    }
+  .navbar,
+  .navbar-custom {
+    background-image: none !important;
+    box-shadow: none;
+  }
 
-    /* Navbar Styling */
-    .navbar .navbar-brand {
-      color: white !important;
-      font-weight: 700;
-      font-size: 1.3rem;
-    }
-    .navbar .nav-link {
-      color: white !important;
-      transition: 0.3s ease-in-out;
-    }
-    .navbar .nav-link:hover {
-      color: #c99b33 !important;
-    }
-    .dropdown-menu {
-      background-color: #00264d;
-    }
-    .dropdown-item {
-      color: white !important;
-    }
-    .dropdown-item:hover {
-      background-color: #c99b33;
-      color: #00264d !important;
-    }
+  /* Navbar Styling */
+  .navbar .navbar-brand {
+    color: white !important;
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
 
-    /* FAQ Styling */
-    .faq-section {
-      background: #f6faff;
-      padding: 40px 15px;
-      border-top: 1px solid #dee2e6;
-    }
+  .navbar .nav-link {
+    color: white !important;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .navbar .nav-link:hover {
+    color: #c99b33 !important;
+  }
+
+  .dropdown-menu {
+    background-color: #00264d;
+  }
+
+  .dropdown-item {
+    color: white !important;
+  }
+
+  .dropdown-item:hover {
+    background-color: #c99b33;
+    color: #00264d !important;
+  }
+
+  /* FAQ Styling */
+  .faq-section {
+    background: #f6faff;
+    padding: 40px 15px;
+    border-top: 1px solid #dee2e6;
+  }
+
+  .accordion-button {
+    background-color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #0074cc;
+    padding: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .accordion-button:hover,
+  .accordion-button:focus {
+    background-color: #eaf6ff;
+    color: #0056b3;
+  }
+
+  .accordion-body {
+    background-color: #ffffff;
+    font-size: 0.95rem;
+    padding: 20px;
+    color: #444;
+  }
+
+  @media (max-width: 768px) {
     .accordion-button {
-      background-color: #ffffff;
-      font-weight: 600;
-      font-size: 1rem;
-      color: #0074cc;
-      padding: 15px;
-      transition: 0.3s ease;
-    }
-    .accordion-button:hover,
-    .accordion-button:focus {
-      background-color: #eaf6ff;
-      color: #0056b3;
-    }
-    .accordion-body {
-      background-color: #ffffff;
       font-size: 0.95rem;
-      padding: 20px;
-      color: #444;
     }
-    @media (max-width: 768px) {
-      .accordion-button {
-        font-size: 0.95rem;
-      }
-    }
-    .faq-container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 30px;
-      background-color: #f9f9f9;
-      border-radius: 8px;
-      font-family: 'Segoe UI', sans-serif;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    .faq-question {
-      cursor: pointer;
-      background-color: #e2e8f0;
-      padding: 15px 20px;
-      margin-bottom: 5px;
-      font-size: 1.1rem;
-      font-weight: 600;
-      border-radius: 5px;
-      transition: background 0.3s ease;
-    }
-    .faq-question:hover {
-      background-color: #cbd5e0;
-    }
-    .faq-answer {
-      display: none;
-      padding: 15px 20px;
-      background-color: #ffffff;
-      border: 1px solid #e2e8f0;
-      margin-bottom: 10px;
-      border-radius: 5px;
-      color: #333;
-    }
-    .faq-active .faq-answer {
-      display: block;
-    }
-  </style>
-  <style>
+  }
+
+  .faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .faq-question {
+    cursor: pointer;
+    background-color: #e2e8f0;
+    padding: 15px 20px;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .faq-question:hover {
+    background-color: #cbd5e0;
+  }
+
+  .faq-answer {
+    display: none;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #333;
+  }
+
+  .faq-active .faq-answer {
+    display: block;
+  }
+
+  /* Gradient Text */
   .text-gradient {
     background: linear-gradient(to right, #007bff, #17a2b8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 </style>
-.text-gradient {
-  background: linear-gradient(to right, #0d6efd, #20c997);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-
 </head>
 
 <body>
-  <!-- Your content starts here -->
-
-  <!-- JavaScript Dependencies -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-
-<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #00264d;">
-  <div class="container">
-    <!-- Logo (Text or Image) -->
-    <a class="navbar-brand" href="index.html">
-      <h3 style="margin: 0; color: #fff;">AL-MIRAAJ International</h3>
-    </a>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <h3 style="margin: 0; color: #fff;">AL-MIRAAJ International</h3>
+      </a>
 
     <!-- Mobile Toggle Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar"
