@@ -893,11 +893,14 @@
   .copyright,
   .footer-copy {
     background-color: #00264d !important;
-    color: white;
+    color: #ffffff;
     padding: 50px 0;
     min-height: 100px;
     display: block;
     overflow: auto;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
   }
 
   footer::after {
@@ -912,11 +915,13 @@
     text-transform: uppercase;
     color: #c99b33;
     white-space: nowrap;
+    font-weight: bold;
   }
 
   footer ul {
     list-style: none;
     padding-left: 0;
+    margin-bottom: 0;
   }
 
   footer ul li {
@@ -925,18 +930,43 @@
   }
 
   footer a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
-    transition: 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
   }
 
   footer a:hover {
     text-decoration: underline;
     color: #f7c04a;
   }
+
+  /* Social Icons Section */
+  footer .bg-secondary a {
+    font-size: 18px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+
+  footer .bg-secondary a:hover {
+    transform: scale(1.15);
+    color: #f7c04a;
+  }
+
+  /* Mobile Optimization */
+  @media (max-width: 768px) {
+    footer {
+      padding: 30px 15px;
+    }
+
+    footer h5 {
+      font-size: 18px;
+    }
+
+    footer ul li {
+      font-size: 14px;
+    }
+  }
 </style>
-
-
 
 
 <!-- 🔻 Footer Section Start -->
