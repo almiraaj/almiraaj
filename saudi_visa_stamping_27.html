@@ -486,62 +486,88 @@ saudi Visa Stamping/saudi Embassy Attestation in Velachery,saudi Visa Stamping/s
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saudi Visa Info</title>
+  <title>Special Saudi Tourist Visa</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #eef6ff;
+      background: #f0f8ff;
       margin: 0;
       padding: 0;
       color: #333;
     }
-    .section {
+    .visa-box {
       max-width: 1000px;
       margin: 40px auto;
       background: #ffffff;
       border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.05);
-      padding: 30px 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      overflow: hidden;
     }
-    .section img {
+    .visa-top {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .visa-image, .visa-details {
+      flex: 1;
+      padding: 30px 20px;
+      box-sizing: border-box;
+    }
+    .visa-image img {
       width: 100%;
       height: auto;
       border-radius: 8px;
-    }
-    .section h2 {
-      color: #0072ff;
       margin-bottom: 20px;
-      font-size: 1.8em;
-      text-align: center;
     }
-    .section table {
-      width: 100%;
-      border-collapse: collapse;
+    .visa-details h2 {
+      color: #0072ff;
+      margin-bottom: 10px;
+    }
+    .visa-details p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+    .visa-details h3 {
+      color: #0072ff;
       margin-top: 20px;
+      margin-bottom: 10px;
     }
-    table th, table td {
-      border: 1px solid #ddd;
-      padding: 12px;
-      text-align: left;
-    }
-    table th {
-      background-color: #0072ff;
-      color: white;
-    }
-    ul {
+    .visa-details ul {
       list-style: none;
       padding-left: 0;
     }
-    ul li {
+    .visa-details ul li {
       margin-bottom: 10px;
       padding-left: 24px;
       position: relative;
     }
-    ul li::before {
+    .visa-details ul li::before {
       content: "✅";
       position: absolute;
       left: 0;
       color: #28a745;
+    }
+    .visa-bottom {
+      padding: 30px 20px;
+      border-top: 1px solid #eee;
+    }
+    .visa-bottom h3 {
+      color: #0072ff;
+      margin-bottom: 15px;
+    }
+    .visa-bottom ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .visa-bottom ul li {
+      margin-bottom: 10px;
+      padding-left: 24px;
+      position: relative;
+    }
+    .visa-bottom ul li::before {
+      content: "📄";
+      position: absolute;
+      left: 0;
+      color: #0072ff;
     }
     .contact-info {
       background: #fff3cd;
@@ -559,67 +585,57 @@ saudi Visa Stamping/saudi Embassy Attestation in Velachery,saudi Visa Stamping/s
     .contact-info a:hover {
       text-decoration: underline;
     }
+    @media (max-width: 768px) {
+      .visa-top {
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 <body>
 
-<!-- Part 1: Image -->
-<div class="section">
-  <h2>Welcome to Almiraaj Visa Services</h2>
-  <img src="https://www.almiraaj.com/images/saudi-visa-almiraaj.png" alt="Saudi Visa Almiraaj" />
-</div>
+<div class="visa-box">
+  <div class="visa-top">
+    <div class="visa-image">
+      <img src="https://www.almiraaj.com/images/saudi-visa-almiraaj.png" alt="Saudi Visa Almiraaj" />
+    </div>
+    <div class="visa-details">
+      <h2>Special Saudi Tourist Visa</h2>
+      <p>Single Entry Only – Explore Saudi Arabia With Ease!</p>
 
-<!-- Part 2: Visa Processing Time -->
-<div class="section">
-  <h2>Visa Processing Time</h2>
-  <table>
-    <tr>
-      <th>Visa Type</th>
-      <th>Processing Time</th>
-    </tr>
-    <tr><td>Employment-Wakala</td><td>6–8 Days</td></tr>
-    <tr><td>Resident/Dependant Visa</td><td>6–8 Days</td></tr>
-    <tr><td>Family Visit</td><td>6–8 Days</td></tr>
-    <tr><td>Tourist Visit</td><td>6–8 Days</td></tr>
-    <tr><td>Commercial Visit</td><td>6–8 Days</td></tr>
-    <tr><td>Business Visit</td><td>6–8 Days</td></tr>
-    <tr><td>Re-Entry Extension</td><td>6–8 Days</td></tr>
-    <tr><td>Child Visa - Dependant</td><td>6–8 Days</td></tr>
-  </table>
-</div>
+      <h3>Visa Details</h3>
+      <ul>
+        <li>Visa Validity: <strong>90 Days</strong></li>
+        <li>Entry Type: <strong>Single Entry Only</strong></li>
+        <li>Processing Time: <strong>78 Hours</strong></li>
+        <li>No Biometric Required</li>
+        <li>No Passport Submission Required</li>
+        <li>Eligible for travelers entering Saudi Arabia before <strong>22nd August 2025</strong></li>
+      </ul>
+    </div>
+  </div>
 
-<!-- Part 3: Special Saudi Tourist Visa -->
-<div class="section">
-  <h2>Special Saudi Tourist Visa</h2>
-  <ul>
-    <li>Visa Validity: <strong>90 Days</strong></li>
-    <li>Entry Type: <strong>Single Entry Only</strong></li>
-    <li>Processing Time: <strong>78 Hours</strong></li>
-    <li>No Biometric Required</li>
-    <li>No Passport Submission Required</li>
-    <li>Eligible for travelers entering Saudi Arabia before <strong>22nd August 2025</strong></li>
-  </ul>
+  <div class="visa-bottom">
+    <h3>Documents Required</h3>
+    <ul>
+      <li>Passport Copy (ECNR only)</li>
+      <li>Passport Size Photograph (White Background)</li>
+      <li>Current Employment Letter (mentioning designation and salary)</li>
+      <li>Bank Statement – 3 months, sealed and signed by bank</li>
+      <li>Ticket Reservation Copy</li>
+      <li>Hotel Reservation Copy</li>
+    </ul>
 
-  <h3>Documents Required</h3>
-  <ul>
-    <li>Passport Copy (ECNR only)</li>
-    <li>Passport Size Photograph (White Background)</li>
-    <li>Current Employment Letter (mentioning designation and salary)</li>
-    <li>Bank Statement – 3 months, sealed and signed by bank</li>
-    <li>Ticket Reservation Copy</li>
-    <li>Hotel Reservation Copy</li>
-  </ul>
-
-  <div class="contact-info">
-    📞 For more details, contact us:<br>
-    <a href="https://wa.me/919940589665" target="_blank">9940589665 (WhatsApp)</a> / 
-    <a href="https://wa.me/919159589163" target="_blank">9159589163 (WhatsApp)</a>
+    <div class="contact-info">
+      📞 For more details, contact us:<br>
+      <a href="https://wa.me/919940589665" target="_blank">9940589665 (WhatsApp)</a> / 
+      <a href="https://wa.me/919159589163" target="_blank">9159589163 (WhatsApp)</a>
+    </div>
   </div>
 </div>
 
 </body>
 </html>
-
 
    
      <div style="background: #f9fbff; padding: 40px 20px;">
