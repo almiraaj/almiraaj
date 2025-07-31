@@ -499,8 +499,10 @@ saudi Visa Stamping/saudi Embassy Attestation in Velachery,saudi Visa Stamping/s
       background: #ffffff;
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      display: flex;
       overflow: hidden;
+    }
+    .visa-top {
+      display: flex;
       flex-wrap: wrap;
     }
     .visa-image, .visa-details {
@@ -513,41 +515,6 @@ saudi Visa Stamping/saudi Embassy Attestation in Velachery,saudi Visa Stamping/s
       height: auto;
       border-radius: 8px;
       margin-bottom: 20px;
-    }
-    .visa-image h3 {
-      color: #0072ff;
-      margin-bottom: 10px;
-    }
-    .visa-image ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    .visa-image ul li {
-      margin-bottom: 10px;
-      padding-left: 24px;
-      position: relative;
-    }
-    .visa-image ul li::before {
-      content: "📄";
-      position: absolute;
-      left: 0;
-      color: #0072ff;
-    }
-    .contact-info {
-      background: #fff3cd;
-      padding: 15px;
-      margin-top: 20px;
-      border-left: 5px solid #ffc107;
-      border-radius: 5px;
-      font-size: 1em;
-    }
-    .contact-info a {
-      color: #0072ff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .contact-info a:hover {
-      text-decoration: underline;
     }
     .visa-details h2 {
       color: #0072ff;
@@ -577,8 +544,47 @@ saudi Visa Stamping/saudi Embassy Attestation in Velachery,saudi Visa Stamping/s
       left: 0;
       color: #28a745;
     }
+    .visa-bottom {
+      padding: 30px 20px;
+      border-top: 1px solid #eee;
+    }
+    .visa-bottom h3 {
+      color: #0072ff;
+      margin-bottom: 15px;
+    }
+    .visa-bottom ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .visa-bottom ul li {
+      margin-bottom: 10px;
+      padding-left: 24px;
+      position: relative;
+    }
+    .visa-bottom ul li::before {
+      content: "📄";
+      position: absolute;
+      left: 0;
+      color: #0072ff;
+    }
+    .contact-info {
+      background: #fff3cd;
+      padding: 15px;
+      margin-top: 20px;
+      border-left: 5px solid #ffc107;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    .contact-info a {
+      color: #0072ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
     @media (max-width: 768px) {
-      .visa-box {
+      .visa-top {
         flex-direction: column;
       }
     }
@@ -587,8 +593,27 @@ saudi Visa Stamping/saudi Embassy Attestation in Velachery,saudi Visa Stamping/s
 <body>
 
 <div class="visa-box">
-  <div class="visa-image">
-    <img src="https://www.almiraaj.com/images/saudi-visa-almiraaj.png" alt="Saudi Visa Almiraaj" />
+  <div class="visa-top">
+    <div class="visa-image">
+      <img src="https://www.almiraaj.com/images/saudi-visa-almiraaj.png" alt="Saudi Visa Almiraaj" />
+    </div>
+    <div class="visa-details">
+      <h2>Special Saudi Tourist Visa</h2>
+      <p>Single Entry Only – Explore Saudi Arabia With Ease!</p>
+
+      <h3>Visa Details</h3>
+      <ul>
+        <li>Visa Validity: <strong>90 Days</strong></li>
+        <li>Entry Type: <strong>Single Entry Only</strong></li>
+        <li>Processing Time: <strong>78 Hours</strong></li>
+        <li>No Biometric Required</li>
+        <li>No Passport Submission Required</li>
+        <li>Eligible for travelers entering Saudi Arabia before <strong>22nd August 2025</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="visa-bottom">
     <h3>Documents Required</h3>
     <ul>
       <li>Passport Copy (ECNR only)</li>
@@ -598,25 +623,12 @@ saudi Visa Stamping/saudi Embassy Attestation in Velachery,saudi Visa Stamping/s
       <li>Ticket Reservation Copy</li>
       <li>Hotel Reservation Copy</li>
     </ul>
+
     <div class="contact-info">
       📞 For more details, contact us:<br>
       <a href="https://wa.me/919940589665" target="_blank">9940589665 (WhatsApp)</a> / 
       <a href="https://wa.me/919159589163" target="_blank">9159589163 (WhatsApp)</a>
     </div>
-  </div>
-  <div class="visa-details">
-    <h2>Special Saudi Tourist Visa</h2>
-    <p>Single Entry Only – Explore Saudi Arabia With Ease!</p>
-
-    <h3>Visa Details</h3>
-    <ul>
-      <li>Visa Validity: <strong>90 Days</strong></li>
-      <li>Entry Type: <strong>Single Entry Only</strong></li>
-      <li>Processing Time: <strong>78 Hours</strong></li>
-      <li>No Biometric Required</li>
-      <li>No Passport Submission Required</li>
-      <li>Eligible for travelers entering Saudi Arabia before <strong>22nd August 2025</strong></li>
-    </ul>
   </div>
 </div>
 
