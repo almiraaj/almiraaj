@@ -501,24 +501,53 @@ saudi Visa Stamping/saudi Embassy Attestation in Velachery,saudi Visa Stamping/s
       box-shadow: 0 0 15px rgba(0,0,0,0.1);
       display: flex;
       overflow: hidden;
+      flex-wrap: wrap;
     }
     .visa-image, .visa-details {
       flex: 1;
       padding: 30px 20px;
+      box-sizing: border-box;
     }
     .visa-image img {
       width: 100%;
       height: auto;
       border-radius: 8px;
+      margin-bottom: 20px;
     }
-    .image-caption {
-      margin-top: 15px;
-      font-size: 1em;
-      color: #555;
-      text-align: center;
-      background: #e6f7ff;
-      padding: 10px;
+    .visa-image h3 {
+      color: #0072ff;
+      margin-bottom: 10px;
+    }
+    .visa-image ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .visa-image ul li {
+      margin-bottom: 10px;
+      padding-left: 24px;
+      position: relative;
+    }
+    .visa-image ul li::before {
+      content: "📄";
+      position: absolute;
+      left: 0;
+      color: #0072ff;
+    }
+    .contact-info {
+      background: #fff3cd;
+      padding: 15px;
+      margin-top: 20px;
+      border-left: 5px solid #ffc107;
       border-radius: 5px;
+      font-size: 1em;
+    }
+    .contact-info a {
+      color: #0072ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
     }
     .visa-details h2 {
       color: #0072ff;
@@ -548,22 +577,6 @@ saudi Visa Stamping/saudi Embassy Attestation in Velachery,saudi Visa Stamping/s
       left: 0;
       color: #28a745;
     }
-    .contact-info {
-      background: #fff3cd;
-      padding: 15px;
-      margin-top: 30px;
-      border-left: 5px solid #ffc107;
-      border-radius: 5px;
-      font-size: 1.1em;
-    }
-    .contact-info a {
-      color: #0072ff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .contact-info a:hover {
-      text-decoration: underline;
-    }
     @media (max-width: 768px) {
       .visa-box {
         flex-direction: column;
@@ -576,8 +589,19 @@ saudi Visa Stamping/saudi Embassy Attestation in Velachery,saudi Visa Stamping/s
 <div class="visa-box">
   <div class="visa-image">
     <img src="https://www.almiraaj.com/images/saudi-visa-almiraaj.png" alt="Saudi Visa Almiraaj" />
-    <div class="image-caption">
-      Your gateway to Saudi Arabia – hassle-free visa processing with Almiraaj International.
+    <h3>Documents Required</h3>
+    <ul>
+      <li>Passport Copy (ECNR only)</li>
+      <li>Passport Size Photograph (White Background)</li>
+      <li>Current Employment Letter (mentioning designation and salary)</li>
+      <li>Bank Statement – 3 months, sealed and signed by bank</li>
+      <li>Ticket Reservation Copy</li>
+      <li>Hotel Reservation Copy</li>
+    </ul>
+    <div class="contact-info">
+      📞 For more details, contact us:<br>
+      <a href="https://wa.me/919940589665" target="_blank">9940589665 (WhatsApp)</a> / 
+      <a href="https://wa.me/919159589163" target="_blank">9159589163 (WhatsApp)</a>
     </div>
   </div>
   <div class="visa-details">
@@ -593,22 +617,6 @@ saudi Visa Stamping/saudi Embassy Attestation in Velachery,saudi Visa Stamping/s
       <li>No Passport Submission Required</li>
       <li>Eligible for travelers entering Saudi Arabia before <strong>22nd August 2025</strong></li>
     </ul>
-
-    <h3>Documents Required</h3>
-    <ul>
-      <li>Passport Copy (ECNR only)</li>
-      <li>Passport Size Photograph (White Background)</li>
-      <li>Current Employment Letter (mentioning designation and salary)</li>
-      <li>Bank Statement – 3 months, sealed and signed by bank</li>
-      <li>Ticket Reservation Copy</li>
-      <li>Hotel Reservation Copy</li>
-    </ul>
-
-    <div class="contact-info">
-      📞 For more details, contact us:<br>
-      <a href="https://wa.me/919940589665" target="_blank">9940589665 (WhatsApp)</a> / 
-      <a href="https://wa.me/919159589163" target="_blank">9159589163 (WhatsApp)</a>
-    </div>
   </div>
 </div>
 
