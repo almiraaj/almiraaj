@@ -398,6 +398,37 @@
   </div>
 </section>
 
+<div class="container my-5">
+  <div class="p-4 bg-warning bg-opacity-25 border rounded">
+    <h2 class="text-center text-primary mb-4">📲 Get Apostille Now</h2>
+    <form onsubmit="return redirectToWhatsApp();">
+      <div class="form-group mb-3">
+        <label for="name"><strong>Your Name:</strong></label>
+        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group mb-3">
+        <label for="message"><strong>Your Message:</strong></label>
+        <textarea id="message" class="form-control" rows="4" placeholder="Ask us anything!" required></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-success btn-lg">💬 Chat via WhatsApp</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  function redirectToWhatsApp() {
+    const name = document.getElementById("name").value.trim();
+    const message = document.getElementById("message").value.trim();
+    const fullMessage = `Hello, my name is ${name}. ${message}`;
+    const encoded = encodeURIComponent(fullMessage);
+    const phone = "919176159922";
+    window.open(`https://wa.me/${phone}?text=${encoded}`, "_blank");
+    return false;
+  }
+</script>
+
 <!-- ===== Why Choose Almiraaj Section ===== -->
 <section class="py-5 bg-light">
   <div class="container">
