@@ -324,6 +324,47 @@
 </div>
 <!-- ✅ Custom Styles (Place inside <head> or your CSS file) -->
 <style>
+  <style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+  }
+
+  .ex-header {
+    padding: 140px 15px 40px;
+    background-color: #00264d; /* Dark blue background */
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .ex-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff; /* White text */
+    margin: 0;
+    word-wrap: break-word;
+  }
+
+  @media (max-width: 768px) {
+    .ex-header {
+      padding-top: 160px;
+    }
+
+    .ex-header h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  main {
+    padding: 40px 15px;
+    background-color: #f6faff;
+    min-height: 100vh;
+  }
+</style>
+
   .ex-header {
     padding: 140px 15px 40px;
     background-color: #f6faff;
