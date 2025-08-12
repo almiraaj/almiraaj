@@ -20,15 +20,18 @@
 
   <!-- Favicon -->
 <link rel="icon" href="/images/ALMINT.png" type="image/x-icon" />
-
 <!-- Custom Styles -->
 <style>
   /* Header Styling Fix */
   .ex-header {
-    padding: 100px 15px 40px;
-    text-align: center;
+    padding: 120px 15px 40px;
     background-color: #f6faff;
     box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
   }
 
   .ex-header h1 {
@@ -36,11 +39,14 @@
     font-weight: 700;
     color: #00264d;
     margin: 0;
+    max-width: 90%;
+    word-wrap: break-word;
   }
 
   @media (max-width: 768px) {
     .ex-header {
-      padding-top: 120px; /* extra space for fixed navbar */
+      padding-top: 140px;
+      min-height: 180px;
     }
 
     .ex-header h1 {
@@ -196,6 +202,7 @@
     -webkit-text-fill-color: transparent;
   }
 </style>
+
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
