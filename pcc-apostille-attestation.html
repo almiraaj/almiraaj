@@ -8,421 +8,82 @@
   <meta name="keywords" content="PCC Apostille, Police Clearance Certificate, Apostille India, Almiraaj International, Apostille for NRI, Apostille Services Tamil Nadu" />
   <link rel="icon" href="https://www.almiraaj.com/images/ALMINT.png" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-    <style>
+  <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #e8f0ff);
       color: #333;
     }
-    .hero {
-      background-color: #003366;
+    header {
+      background: linear-gradient(to right, #005073, #0077b6);
       color: white;
-      padding: 60px 15px 30px;
+      padding: 60px 20px;
       text-align: center;
+      position: relative;
     }
-    .hero img {
-      max-width: 100%;
-      height: auto;
-      margin-top: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    header h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
     }
-    .section-title {
-      color: #003366;
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
     }
-    .content-section {
-      padding: 40px 0;
+    .hero-img {
+      width: 220px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      margin-top: 30px;
     }
-    .faq-item {
-      margin-bottom: 20px;
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
     }
-    a {
-      color: #003366;
-      text-decoration: underline;
+    .card {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(8px);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    h2 {
+      color: #005073;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    a.button-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 18px;
+      background-color: #0077b6;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+    a.button-link:hover {
+      background-color: #023e8a;
     }
     footer {
-      background-color: #003366;
+      background-color: #005073;
       color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
     }
   </style>
-  
-<!-- Custom Styles -->
-<style>
-  /* Header Styling Fix */
-  .ex-header {
-    padding: 120px 15px 40px;
-    background-color: #f6faff;
-    box-sizing: border-box;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 200px;
-  }
-
-  .ex-header h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #00264d;
-    margin: 0;
-    max-width: 90%;
-    word-wrap: break-word;
-  }
-
-  @media (max-width: 768px) {
-    .ex-header {
-      padding-top: 140px;
-      min-height: 180px;
-    }
-
-    .ex-header h1 {
-      font-size: 1.5rem;
-    }
-  }
-
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-
-  .apostille-section a {
-    transition: color 0.3s ease;
-  }
-
-  .apostille-section a:hover {
-    color: #c99b33;
-    text-decoration: underline;
-  }
-
-  .content-box {
-    font-size: 1rem;
-  }
-
-  @media (max-width: 768px) {
-    .content-box {
-      font-size: 0.95rem;
-    }
-  }
-
-  header,
-  .top-bar,
-  .navbar,
-  .navbar-wrapper,
-  .navbar-custom {
-    background-color: #00264d !important;
-  }
-
-  .navbar,
-  .navbar-custom {
-    background-image: none !important;
-    box-shadow: none;
-  }
-
-  .navbar .navbar-brand {
-    color: white !important;
-    font-weight: 700;
-    font-size: 1.3rem;
-  }
-
-  .navbar .nav-link {
-    color: white !important;
-    transition: 0.3s ease-in-out;
-  }
-
-  .navbar .nav-link:hover {
-    color: #c99b33 !important;
-  }
-
-  .dropdown-menu {
-    background-color: #00264d;
-  }
-
-  .dropdown-item {
-    color: white !important;
-  }
-
-  .dropdown-item:hover {
-    background-color: #c99b33;
-    color: #00264d !important;
-  }
-
-  .faq-section {
-    background: #f6faff;
-    padding: 40px 15px;
-    border-top: 1px solid #dee2e6;
-  }
-
-  .accordion-button {
-    background-color: #ffffff;
-    font-weight: 600;
-    font-size: 1rem;
-    color: #0074cc;
-    padding: 15px;
-    transition: 0.3s ease;
-  }
-
-  .accordion-button:hover,
-  .accordion-button:focus {
-    background-color: #eaf6ff;
-    color: #0056b3;
-  }
-
-  .accordion-body {
-    background-color: #ffffff;
-    font-size: 0.95rem;
-    padding: 20px;
-    color: #444;
-  }
-
-  @media (max-width: 768px) {
-    .accordion-button {
-      font-size: 0.95rem;
-    }
-  }
-
-  .faq-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 30px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-
-  .faq-question {
-    cursor: pointer;
-    background-color: #e2e8f0;
-    padding: 15px 20px;
-    margin-bottom: 5px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-  }
-
-  .faq-question:hover {
-    background-color: #cbd5e0;
-  }
-
-  .faq-answer {
-    display: none;
-    padding: 15px 20px;
-    background-color: #ffffff;
-    border: 1px solid #e2e8f0;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    color: #333;
-  }
-
-  .faq-active .faq-answer {
-    display: block;
-  }
-
-  .text-gradient {
-    background: linear-gradient(to right, #007bff, #17a2b8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-</style>
-
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-  <a class="navbar-brand logo-image" href="index.html">AL-MIRAAJ International</a>
-
-  <!-- Mobile Toggle -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsMain"
-    aria-controls="navbarsMain" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <!-- Navbar Links -->
-  <div class="collapse navbar-collapse" id="navbarsMain">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link page-scroll" href="./index.html#header">HOME</a>
-      </li>
-
-      <!-- Certificate Attestation -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle page-scroll" href="certificate-attestation-services-in-chennai.html"
-          id="certDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Certificate Attestation
-        </a>
-        <div class="dropdown-menu" aria-labelledby="certDropdown">
-          <a class="dropdown-item" href="birth-certificate-attestation.html">Birth Certificate</a>
-          <a class="dropdown-item" href="marriage-certificate-attestation.html">Marriage Certificate</a>
-          <a class="dropdown-item" href="degree-certificate-attestation-in-chennai.html">Educational Certificate</a>
-          <a class="dropdown-item" href="unmarriedcertificateapostille.html">Single Status Certificate</a>
-          <a class="dropdown-item" href="how-to-get-single-status-certificate-in-chennai.html">How to Get Single Status</a>
-          <a class="dropdown-item" href="commercial-documents-attestation.html">Commercial Documents</a>
-          <a class="dropdown-item" href="power-of-attorney-apostilleattestation-in-chennai.html">Power of Attorney</a>
-          <a class="dropdown-item" href="pcc-apostille-attestation.html">PCC Apostille</a>
-        </div>
-      </li>
-
-      <!-- Embassy Attestation -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle page-scroll" href="embassy-attestation-in-chennai.html"
-          id="embassyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Embassy Attestation
-        </a>
-        <div class="dropdown-menu" aria-labelledby="embassyDropdown">
-          <a class="dropdown-item" href="afghanistan-embassy-attestation.html">Afghanistan</a>
-          <a class="dropdown-item" href="bahrain-embassy-attestation.html">Bahrain</a>
-          <a class="dropdown-item" href="china-embassy-attestation.html">China</a>
-          <a class="dropdown-item" href="egypt-embassy-attestation.html">Egypt</a>
-          <a class="dropdown-item" href="kuwait-embassy-attestation.html">Kuwait</a>
-          <a class="dropdown-item" href="malaysia-embassy-attestation.html">Malaysia</a>
-          <a class="dropdown-item" href="oman-embassy-attestation.html">Oman</a>
-          <a class="dropdown-item" href="philippines-embassy-attestation-in-chennai.html">Philippines</a>
-          <a class="dropdown-item" href="qatar-embassy-attestation.html">Qatar</a>
-          <a class="dropdown-item" href="saudi-embassy-attestation-in-chennai.html">Saudi Arabia</a>
-          <a class="dropdown-item" href="taiwan-embassy-attestation.html">Taiwan</a>
-          <a class="dropdown-item" href="uae-embassy-attestation.html">UAE</a>
-        </div>
-      </li>
-
-      <!-- Apostille MEA -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle page-scroll" href="certificate-apostille-mea-in-chennai.html"
-          id="apostilleDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Apostille MEA
-        </a>
-        <div class="dropdown-menu" aria-labelledby="apostilleDropdown">
-          <a class="dropdown-item" href="https://www.almiraaj.com/personal-certificate-apostille">Personal Certificates</a>
-          <a class="dropdown-item" href="https://www.almiraaj.com/degree-certificate-apostille">Educational Certificates</a>
-          <a class="dropdown-item" href="https://www.almiraaj.com/commercial-certificate-apostille">Commercial Certificates</a>
-        </div>
-      </li>
-
-      <!-- Visa Services -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle page-scroll" href="visa_services_10.html" id="visaDropdown"
-          role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Visa Services
-        </a>
-        <div class="dropdown-menu" aria-labelledby="visaDropdown">
-          <a class="dropdown-item" href="australia_visa_32.html">Australia</a>
-          <a class="dropdown-item" href="brunei_visa_stamping_33.html">Brunei</a>
-          <a class="dropdown-item" href="china-visa-services.html">China</a>
-          <a class="dropdown-item" href="dubai_tourist_visa_47.html">Dubai</a>
-          <a class="dropdown-item" href="egypt-visa-services.html">Egypt</a>
-          <a class="dropdown-item" href="japan-visa-services.html">Japan</a>
-          <a class="dropdown-item" href="kuwait_visa_stamping_28.html">Kuwait</a>
-          <a class="dropdown-item" href="malaysia_tourist_visa_30.html">Malaysia</a>
-          <a class="dropdown-item" href="saudi_visa_stamping_27.html">Saudi Arabia</a>
-          <a class="dropdown-item" href="singapore_tourist_visa_29.html">Singapore</a>
-          <a class="dropdown-item" href="sri-lanka-visa-services.html">Sri Lanka</a>
-          <a class="dropdown-item" href="thailand-visa-services-in-chennai.html">Thailand</a>
-          <a class="dropdown-item" href="taiwan-visa-services.html">Taiwan</a>
-          <a class="dropdown-item" href="visa_services_10.html">Other Countries</a>
-        </div>
-      </li>
-
-      <!-- Contact -->
-      <li class="nav-item">
-        <a class="nav-link page-scroll" href="https://wa.me/919087559669?text=Hi Almiraaj!!!">CONTACT</a>
-      </li>
-    </ul>
-
-    <!-- WhatsApp Icon in Navbar -->
-    <span class="nav-item social-icons">
-      <span class="fa-stack">
-        <a href="https://wa.me/+919176160055" aria-label="Chat with Al Miraaj on WhatsApp">
-          <span class="hexagon"></span>
-          <i class="fab fa-whatsapp fa-stack-1x"></i>
-        </a>
-      </span>
-    </span>
-  </div>
-</nav>
-
-<!-- Floating WhatsApp Widget -->
-<div class="whatsapp-widget">
-  <a href="https://wa.me/+919176160055" target="_blank" aria-label="Chat with Al Miraaj on WhatsApp">
-    <i class="fab fa-whatsapp fa-2x"></i>
-  </a>
-</div>
-<!-- ✅ Custom Styles (Place inside <head> or your CSS file) -->
-<style>
-  
-  .ex-header {
-    padding: 140px 15px 40px;
-    background-color: #f6faff;
-    box-sizing: border-box;
-    text-align: center;
-  }
-
-  .ex-header h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #00264d;
-    margin: 0;
-    word-wrap: break-word;
-  }
-
-  @media (max-width: 768px) {
-    .ex-header {
-      padding-top: 160px;
-    }
-
-    .ex-header h1 {
-      font-size: 1.5rem;
-    }
-  }
-</style>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #ffffff;
-    color: #333;
-  }
-
-  .ex-header {
-    padding: 140px 15px 40px;
-    background-color: #00264d; /* Dark blue background */
-    box-sizing: border-box;
-    text-align: center;
-  }
-
-  .ex-header h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #ffffff; /* White text */
-    margin: 0;
-    word-wrap: break-word;
-  }
-
-  @media (max-width: 768px) {
-    .ex-header {
-      padding-top: 160px;
-    }
-
-    .ex-header h1 {
-      font-size: 1.5rem;
-    }
-  }
-
-  main {
-    padding: 40px 15px;
-    background-color: #f6faff;
-    min-height: 100vh;
-  }
-</style>
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
 </head>
 <body>
 
