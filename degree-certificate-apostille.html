@@ -59,7 +59,6 @@
   }
   </script>
 </head>
-
 <style>
   /* Navbar Styling */
   .navbar {
@@ -97,10 +96,17 @@
 
   /* Hero Section Fix */
   .hero-section {
-    padding-top: calc(80px + 2rem); /* Adjust 80px to match your navbar height */
+    padding-top: 130px; /* Ensures content clears fixed navbar */
     background-color: #f8f9fa;
   }
+
+  @media (max-width: 768px) {
+    .hero-section {
+      padding-top: 150px; /* Extra space for mobile nav height */
+    }
+  }
 </style>
+
 
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
