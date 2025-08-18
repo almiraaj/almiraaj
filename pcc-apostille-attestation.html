@@ -12,84 +12,82 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #f0f4f8, #e8f0ff);
+      background-color: #f8fbff;
       color: #333;
     }
 
-    /* ✅ Dark Blue Header */
     header {
       background-color: #023e8a;
       color: white;
       padding: 60px 20px;
       text-align: center;
-      position: relative;
     }
+
     header h1 {
       font-family: 'Merriweather', serif;
       font-size: 2.8rem;
       margin-bottom: 10px;
     }
+
     header p {
       font-size: 1.2rem;
       opacity: 0.9;
     }
-    .hero-img {
-      width: 220px;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-      margin-top: 30px;
-    }
 
-    /* 🌐 Navbar Styles */
     nav {
-      background-color: #023e8a;
+      background-color: #0056b3;
       padding: 12px 0;
     }
+
     nav .container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
     }
+
     nav a {
       color: #ffffff;
       font-weight: 500;
       text-decoration: none;
       transition: color 0.3s ease;
     }
+
     nav a:hover {
       color: #90e0ef;
     }
 
     .container {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: auto;
       padding: 40px 20px;
     }
-    .card {
-      background: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(8px);
-      border-radius: 12px;
-      padding: 30px;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+
+    .section {
+      margin-bottom: 50px;
     }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    h2 {
+
+    .section h2 {
+      font-size: 2rem;
       color: #005073;
-      font-size: 1.8rem;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 10px;
     }
-    ul {
+
+    .section p, .section ul {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .section ul {
       padding-left: 20px;
     }
-    a.button-link {
+
+    .button-link {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 18px;
+      margin-top: 15px;
+      padding: 10px 20px;
       background-color: #0077b6;
       color: white;
       border-radius: 6px;
@@ -97,9 +95,37 @@
       font-weight: 500;
       transition: background 0.3s ease;
     }
-    a.button-link:hover {
+
+    .button-link:hover {
       background-color: #023e8a;
     }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card-box {
+      background-color: #ffffff;
+      border: 1px solid #dbe2ef;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .card-box:hover {
+      transform: translateY(-3px);
+    }
+
+    .card-box h3 {
+      margin-top: 0;
+      color: #005073;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
     footer {
       background-color: #005073;
       color: white;
@@ -111,14 +137,10 @@
 </head>
 <body>
 
-  <!-- Header -->
- 
-
   <!-- ✅ Header -->
   <header>
     <h1>PCC Apostille Attestation</h1>
     <p>Secure your Police Clearance Certificate for international use with Almiraaj International</p>
-
   </header>
 
   <!-- ✅ Navigation Bar -->
@@ -132,15 +154,17 @@
       <a href="https://api.whatsapp.com/send?phone=919087559669">📞 CONTACT</a>
     </div>
   </nav>
-  <!-- Main Content -->
+
+  <!-- ✅ Main Content -->
   <div class="container">
-    <div class="card">
+
+    <div class="section">
       <h2>What is PCC Apostille?</h2>
       <p>A <strong>Police Clearance Certificate (PCC) apostille</strong> is an official authentication issued by the Ministry of External Affairs (MEA) in India. It validates your PCC for use in countries that are part of the Hague Convention.</p>
       <a href="https://www.almiraaj.com/pcc-apostille-attestation" class="button-link">Learn More</a>
     </div>
 
-    <div class="card">
+    <div class="section">
       <h2>Accepted Countries</h2>
       <ul>
         <li>USA, UK, Canada, Australia</li>
@@ -150,7 +174,7 @@
       </ul>
     </div>
 
-    <div class="card">
+    <div class="section">
       <h2>Why Apostille is Needed</h2>
       <ul>
         <li>Employment abroad</li>
@@ -160,7 +184,7 @@
       </ul>
     </div>
 
-    <div class="card">
+    <div class="section">
       <h2>Requirements</h2>
       <ul>
         <li>Original Police Clearance Certificate</li>
@@ -169,31 +193,44 @@
       </ul>
     </div>
 
-    <div class="card">
+    <div class="section">
       <h2>Processing Time</h2>
       <p>Typically, the apostille process takes <strong>5 to 7 working days</strong>. Almiraaj International ensures timely updates and secure handling throughout.</p>
     </div>
 
-    <div class="card">
+    <div class="section">
       <h2>Office Locations</h2>
-      <ul>
-        <li>📍 Chennai</li>
-        <li>📍 Trichy</li>
-        <li>📍 Madurai</li>
-        <li>📍 Coimbatore</li>
-        <li>📍 Tuticorin</li>
-      </ul>
+      <div class="grid-2">
+        <div class="card-box">
+          <h3>📍 Chennai – Egmore</h3>
+          10 Casa Major Rd, Egmore, Chennai – 600008
+        </div>
+        <div class="card-box">
+          <h3>📍 Chennai – Mannadi</h3>
+          180 Prakasam Salai, Opp-Mannadi Metro, Chennai – 600108
+        </div>
+        <div class="card-box">
+          <h3>📍 Trichy</h3>
+          28 Pattabi Raman Salai, 2nd Floor, Trichy – 620017
+        </div>
+        <div class="card-box">
+          <h3>📍 Madurai</h3>
+          No 7, E2, PT Rajan Rd, Zumbropuram, Narimedu, Madurai – 625002
+        </div>
+        <div class="card-box">
+          <h3>📍 Coimbatore</h3>
+          Plot No. 12, 4th South Cross St, Nehru Nagar West, Coimbatore – 641014
+        </div>
+        <div class="card-box">
+          <h3>📍 Tuticorin</h3>
+          Hong Kong Complex, 18A/57A Palai Road, Tuticorin – 628008
+        </div>
+      </div>
     </div>
 
-    <div class="card">
+    <div class="section">
       <h2>FAQs</h2>
       <ul>
         <li><strong>What is PCC apostille?</strong> It’s the legalization of your Police Clearance Certificate for use in Hague Convention countries.</li>
         <li><strong>Is PCC apostille mandatory for working abroad?</strong> Yes, most employers and immigration authorities require it.</li>
-        <li><strong>Can Almiraaj help with urgent apostille?</strong> Yes, we offer expedited services based on document type and location.</li>
-        <li><strong>Is notarization required before apostille?</strong> Not usually for PCC, but we’ll guide you based on your issuing authority.</li>
-        <li><strong>How do I start the process?</strong> Visit <a href="https://www.almiraaj.com/pcc-apostille-attestation">our apostille page</a> and contact us.</li>
-      </ul>
-    </div>
-  </div>
-
+        <li><strong>Can Almiraaj help with urgent apostille
