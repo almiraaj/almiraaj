@@ -90,28 +90,38 @@
       opacity: 0.9;
     }
 
-    nav {
-      background-color: #0056b3;
-      padding: 12px 0;
-    }
+nav {
+  background-color: #0056b3;
+  padding: 12px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-    nav .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
+nav .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
 
-    nav a {
-      color: #ffffff;
-      font-weight: 500;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
+nav a {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-    nav a:hover {
-      color: #90e0ef;
-    }
+nav a:hover {
+  background-color: #023e8a;
+  color: #90e0ef;
+}
+
 
     .container {
       max-width: 1200px;
