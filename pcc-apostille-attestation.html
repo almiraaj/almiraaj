@@ -326,54 +326,92 @@
 </div>
 
 <style>
-  footer,
-  .footer,
-  #footer,
-  .footer-bottom,
-  .copyright,
-  .footer-copy {
-    background-color: #00264d !important;
-    color: white;
-    padding: 50px 0;
-    min-height: 100px;
-    display: block;
-    overflow: auto;
+/* 🦶 Footer Styling */
+.footer {
+  background-color: #023e8a;
+  color: white;
+  font-size: 0.95rem;
+}
+
+.footer a {
+  color: #90e0ef;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffffff;
+}
+
+.footer-top {
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1 1 300px;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  background-color: #012a5c;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.footer-bottom a {
+  font-weight: bold;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 8px;
+  font-size: 1.2rem;
+}
+
+/* 📱 Responsive Footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
   }
 
-  footer::after {
-    content: "";
-    display: table;
-    clear: both;
+  .footer-column {
+    margin-bottom: 20px;
   }
 
-  footer h5 {
-    font-size: 22px;
-    margin-bottom: 18px;
-    text-transform: uppercase;
-    color: #c99b33;
-    white-space: nowrap;
+  .social-icons {
+    margin-top: 10px;
   }
+}
 
-  footer ul {
-    list-style: none;
-    padding-left: 0;
-  }
-
-  footer ul li {
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-
-  footer a {
-    color: white;
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
-  }
-
-  footer a:hover {
-    text-decoration: underline;
-    color: #f7c04a;
-  }
 </style>
 
 <footer class="footer">
