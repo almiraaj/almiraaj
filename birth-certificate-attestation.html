@@ -24,586 +24,248 @@
     <link href="../css/magnific-popup.css" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/css.css" />
-    
-    <!-- Favicon -->
-    <link rel="icon" href="images/ALMINT.png" />
+     <!-- Favicon -->
+  <link rel="icon" href="/images/ALMINT.png" type="image/x-icon" />
+
+  <!-- Custom Styles -->
+  <style>
+    /* Unify the header background color */
+    header,
+    .top-bar,
+    .navbar,
+    .navbar-wrapper,
+    .navbar-custom {
+      background-color: #00264d !important;
+    }
+
+    .navbar,
+    .navbar-custom {
+      background-image: none !important;
+      box-shadow: none;
+    }
+
+    /* Navbar Styling */
+    .navbar .navbar-brand {
+      color: white !important;
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+    .navbar .nav-link {
+      color: white !important;
+      transition: 0.3s ease-in-out;
+    }
+    .navbar .nav-link:hover {
+      color: #c99b33 !important;
+    }
+    .dropdown-menu {
+      background-color: #00264d;
+    }
+    .dropdown-item {
+      color: white !important;
+    }
+    .dropdown-item:hover {
+      background-color: #c99b33;
+      color: #00264d !important;
+    }
+
+    /* FAQ Styling */
+    .faq-section {
+      background: #f6faff;
+      padding: 40px 15px;
+      border-top: 1px solid #dee2e6;
+    }
+    .accordion-button {
+      background-color: #ffffff;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #0074cc;
+      padding: 15px;
+      transition: 0.3s ease;
+    }
+    .accordion-button:hover,
+    .accordion-button:focus {
+      background-color: #eaf6ff;
+      color: #0056b3;
+    }
+    .accordion-body {
+      background-color: #ffffff;
+      font-size: 0.95rem;
+      padding: 20px;
+      color: #444;
+    }
+    @media (max-width: 768px) {
+      .accordion-button {
+        font-size: 0.95rem;
+      }
+    }
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      font-family: 'Segoe UI', sans-serif;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .faq-question {
+      cursor: pointer;
+      background-color: #e2e8f0;
+      padding: 15px 20px;
+      margin-bottom: 5px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    .faq-question:hover {
+      background-color: #cbd5e0;
+    }
+    .faq-answer {
+      display: none;
+      padding: 15px 20px;
+      background-color: #ffffff;
+      border: 1px solid #e2e8f0;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      color: #333;
+    }
+    .faq-active .faq-answer {
+      display: block;
+    }
+  </style>
+  <style>
+  .text-gradient {
+    background: linear-gradient(to right, #007bff, #17a2b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
+
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
 
-   
+<body>
+  <!-- Your content starts here -->
 
-  <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-    <!-- Text Logo - Use this if you don't have a graphic logo -->
-    <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+  <!-- JavaScript Dependencies -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
-    <!-- Image Logo -->
-    <a class="navbar-brand logo-image" href="index.html">
-      <h3 class="logo-image">AL-MIRAAJ INTERNATIONAL</h3>
+
+  
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #00264d;">
+  <div class="container">
+    <!-- Logo (Text or Image) -->
+    <a class="navbar-brand" href="index.html">
+      <h3 style="margin: 0; color: #fff;">AL-MIRAAJ International</h3>
     </a>
 
-    <!-- Mobile Menu Toggle Button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-awesome fas fa-bars"></span>
-      <span class="navbar-toggler-awesome fas fa-times"></span>
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar"
+      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- end of mobile menu toggle button -->
 
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <!-- Navbar Content -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
       <ul class="navbar-nav ml-auto">
+
+        <!-- HOME -->
         <li class="nav-item">
-          <a class="nav-link page-scroll" href="./index.html#header">HOME <span class="sr-only">(current)</span></a>
+          <a class="nav-link page-scroll" href="./index.html#header">Home</a>
         </li>
+
+         <!-- Certificate Attestation Dropdown -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle page-scroll " href="../certificate-attestation-services-in-chennai.html" aria-haspopup="true"
-          aria-expanded="false">Certificate Attestation</a>
-          <ul id="myMenun2" class="dropdown-menu"  aria-labelledby="navbarDropdown" >
-              <div> <a class="dropdown-item"href="../birth-certificate-attestation.html"
-                  title="Birth Certificate Attestation"><span>Birth Certificate Attestation</span></a></div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item"
-                  href="../marriage-certificate-attestation.html"
-                  title="Marriage Certificate Attestation" ><span>Marriage Certificate Attestation</span></a></div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item"
-              href="../degree-certificate-attestation-in-chennai.html"
-                  title="Educational Certificate Attestation"><span>Educational Certificate Attestation</span></a></div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item"href="../unmarriedcertificateapostille.html"
-                  title="Single Status Certificate Apostille / Attestation"><span>Single Status Certificate Apostille / Attestation</span></a></div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item"
-                  href="../how-to-get-single-status-certificate-in-chennai.html"
-                  title="how to get single status certificate in Chennai"><span>how to get single status certificate in Chennai</span></a></div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item"href="../commercial-documents-attestation.html"
-                  title="Commercial Documents Attestation"><span>Commercial Documents Attestation</span></a></div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item"
-                  href="../power-of-attorney-apostilleattestation-in-chennai.html"
-                  title="Power of Attorney Apostille/Attestation in Chennai"><span>Power of Attorney Apostille/Attestation in Chennai</span></a></div>
-                  <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item"
-                  href="../hrd-attestation-process.html"
-                  title="HRD Attestation Process"
-                  ><span>HRD Attestation Process</span></a></div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item"
-                  href="../home-mantralaya-attestation.html"
-                  title="Home-Mantralaya Attestation"><span>Home-Mantralaya Attestation</span></a></div>
-              <div class="dropdown-items-divide-hr"></div>
-            </ul>
+          <a class="nav-link dropdown-toggle page-scroll" href="../certificate-attestation.html" id="certificateDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Certificate Attestation</a>
+          <div class="dropdown-menu" aria-labelledby="certificateDropdown">
+            <a class="dropdown-item" href="../birth-certificate-attestation.html">Birth Certificate</a>
+            <a class="dropdown-item" href="../marriage-certificate-attestation.html">Marriage Certificate</a>
+            <a class="dropdown-item" href="../degree-certificate-attestation-in-chennai.html">Educational Certificate </a>
+            <a class="dropdown-item" href="../unmarriedcertificateapostille.html">Single Status - Unmarried Certificate</a>
+            <a class="dropdown-item" href="../commercial-documents-attestation.html">Commercial Documents Attestation</a>
+            <a class="dropdown-item" href="../power-of-attorney-apostilleattestation-in-chennai.html">Power of Attorney </a>
+            <a class="dropdown-item" href="../certificate-attestation.html">Other Certificates Attestation</a>
+            <a class="dropdown-item" href="../hrd-attestation-process.html">HRD Attestation</a>
+            <a class="dropdown-item" href="../home-mantralaya-attestation.html">Home-Mantralaya </a>
+            <a class="dropdown-item" href="../coc-chamberofcommerce-attestation.html">COC-Chamber of Commerce</a>
+            <a class="dropdown-item" href="mea-attestation-procedures.html">MEA Attestation</a>
+          </div>
         </li>
 
-
+        <!-- Embassy Attestation Dropdown -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle page-scroll " href="../embassy-attestation-in-chennai.html" aria-haspopup="true"
-          aria-expanded="false">Embassy Attestation</a>
-          <ul id="myMenun2" class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <div>
-              <a class="dropdown-item" href="../uae-embassy-attestation.html"
-                title="UAE Embassy Attestation"><span>UAE Embassy Attestation</span></a>
-            </div>
-            <div class="dropdown-items-divide-hr"></div>
-            <div>
-              <a class="dropdown-item" href="../kuwait-embassy-attestation.html"
-                title="Kuwait Embassy Attestation"><span>Kuwait Embassy Attestation</span></a>
-            </div>
-            <div class="dropdown-items-divide-hr"></div>
-            <div>
-              <a class="dropdown-item" href="../bahrain-embassy-attestation.html"
-                title="Bahrain Embassy Attestation"><span>Bahrain Embassy Attestation</span></a>
-            </div>
-            <div class="dropdown-items-divide-hr"></div>
-            <div>
-              <a class="dropdown-item" href="../qatar-embassy-attestation.html"
-                title="Qatar Embassy Attestation"><span>Qatar Embassy Attestation</span></a>
-            </div>
-            <div class="dropdown-items-divide-hr"></div>
-            <div>
-              <a class="dropdown-item" href="../oman-embassy-attestation.html"
-                title="Oman Embassy Attestation"><span>Oman Embassy Attestation</span></a>
-            </div>
-            <div class="dropdown-items-divide-hr"></div>
-            <div>
-              <a class="dropdown-item" href="../china-embassy-attestation.html"
-                title="China Embassy Attestation"><span>China Embassy Attestation</span></a>
-            </div>
-            <div class="dropdown-items-divide-hr"></div>
-            <div>
-              <a class="dropdown-item" href="../malaysia-embassy-attestation.html"
-                title="Malaysia Embassy Attestation"><span>Malaysia Embassy Attestation</span></a>
-            </div>
-            <div class="dropdown-items-divide-hr"></div>
-            <div>
-              <a class="dropdown-item" href="../saudi-embassy-attestation-in-chennai.html" title="Saudi Embassy Attestation"><span>Saudi Embassy Attestation</span></a>
-            </div>
-            <div class="dropdown-items-divide-hr"></div>
-            <div>
-              <a class="dropdown-item" href="../egypt-embassy-attestation.html"
-                title="Egypt Embassy Attestation"><span>Egypt Embassy Attestation</span></a>
-            </div>
-           
-         
-            <div class="dropdown-items-divide-hr"></div>
-          </ul>
+          <a class="nav-link dropdown-toggle page-scroll" href="../embassy-attestation-in-chennai.html" id="embassyDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Embassy Attestation</a>
+          <div class="dropdown-menu" aria-labelledby="embassyDropdown">
+            <a class="dropdown-item" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a>
+            <a class="dropdown-item" href="../kuwait-embassy-attestation.html">Kuwait Embassy Attestation</a>
+            <a class="dropdown-item" href="../bahrain-embassy-attestation.html">Bahrain Embassy Attestation</a>
+            <a class="dropdown-item" href="../qatar-embassy-attestation.html">Qatar Embassy Attestation</a>
+            <a class="dropdown-item" href="../oman-embassy-attestation.html">Oman Embassy Attestation</a>
+            <a class="dropdown-item" href="../china-embassy-attestation.html">China Embassy Attestation</a>
+            <a class="dropdown-item" href="../malaysia-embassy-attestation.html">Malaysia Embassy Attestation</a>
+            <a class="dropdown-item" href="../saudi-embassy-attestation-in-chennai.html">Saudi Embassy Attestation</a>
+            <a class="dropdown-item" href="../egypt-embassy-attestation.html">Egypt Embassy Attestation</a>
+            <a class="dropdown-item" href="../embassy-attestation-in-chennai.html">Other Embassy Attestation</a>
+          </div>
         </li>
 
-
-
-
-       <!-- Dropdown Menu -->
-<li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle page-scroll" href="../certificate-apostille-mea-in-chennai.html" id="navbarDropdown" role="button"
-  aria-haspopup="true" aria-expanded="false">Apostille MEA</a>
-<ul id="myMenu2" class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-  <li><a class="dropdown-item" href="../apostille-for-albania-in-chennai.html"
-      title="Apostille for Albania"><span>Apostille for Albania</span></a></li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../apostille-for-argentina-in-chennai"
-      title="Apostille for Argentina"><span>Apostille for Argentina</span></a></li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai"
-      title="Apostille for Armenia"><span>Apostille for Armenia</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Austria"><span>Apostille for Austria</span></a>
-  </li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Bahamas"><span>Apostille for Bahamas</span></a>
-  </li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Belarus"><span>Apostille for Belarus</span></a></li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Belgium"><span>Apostille for Belgium</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Belize"><span>Apostille for Belize</span></a>
-  </li>
-
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Bosnia and Herzegovina"><span>Apostille for Bosnia and Herzegovina</span></a>
-  </li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Brazil"><span>Apostille for Brazil</span></a>
-  </li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Bulgaria"><span>Apostille for Bulgaria</span></a>
-  </li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Burkina Faso"><span>Apostille for Burkina Faso</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Canada"><span>Apostille for Canada</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Chile"><span>Apostille for Chile</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Colombia"><span>Apostille for Colombia</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Costa Rica"><span>Apostille for Costa Rica</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Croatia"><span>Apostille for Croatia</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Cyprus"><span>Apostille for Cyprus</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Czech Republic"><span>Apostille for Czech Republic</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Denmark"><span>Apostille for Denmark</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Dominican Republic"><span>Apostille for Dominican Republic</span></a>
-  </li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Ecuador"><span>Apostille for Ecuador</span></a>
-  </li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for El Salvador"><span>Apostille for El Salvador</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Estonia"><span>Apostille for Estonia</span></a>
-  </li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Fiji"><span>Apostille for Fiji</span></a>
-  </li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Finland"><span>Apostille for Finland</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for France"><span>Apostille for France</span></a>
-  </li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Georgia"><span>Apostille for Georgia</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Germany"><span>Apostille for Germany</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Greece"><span>Apostille for Greece</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Guatemala"><span>Apostille for Guatemala</span></a>
-  </li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Honduras"><span>Apostille for Honduras</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Hong Kong, China"><span>Apostille for Hong Kong, China</span></a>
-  </li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Hungary"><span>Apostille for Hungary</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Iceland"><span>Apostille for Iceland</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Ireland"><span>Apostille for Ireland</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Israel"><span>Apostille for Israel</span></a>
-  </li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Italy"><span>Apostille for Italy</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Japan"><span>Apostille for Japan</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Latvia"><span>Apostille for Latvia</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Lithuania"><span>Apostille for Lithuania</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Luxembourg"><span>Apostille for Luxembourg</span></a>
-  </li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Macau China"><span>Apostille for Macau China</span></a>
-  </li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Malta"><span>Apostille for Malta</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Mauritius"><span>Apostille for Mauritius</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Mexico"><span>Apostille for Mexico</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Moldova"><span>Apostille for Moldova</span></a>
-  </li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Monaco"><span>Apostille for Monaco</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Montenegro"><span>Apostille for Montenegro</span></a>
-  </li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Netherlands"><span>Apostille for Netherlands</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for New Zealand"><span>Apostille for New Zealand</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Nicaragua"><span>Apostille for Nicaragua</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Norway"><span>Apostille for Norway</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Panama"><span>Apostille for Panama</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Paraguay"><span>Apostille for Paraguay</span></a>
-  </li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Peru"><span>Apostille for Peru</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Poland"><span>Apostille for Poland</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Portugal"><span>Apostille for Portugal</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Republic of Korea  "><span>Apostille for Republic of Korea  </span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Romania  "><span>Apostille for Romania</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Saint Kitts and Nevis"><span>Apostille for Saint Kitts and Nevis</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for San Marino"><span>Apostille for San Marino</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Serbia"><span>Apostille for Serbia</span></a>
-  </li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Singapore"><span>Apostille for Singapore</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Slovakia"><span>Apostille for Slovakia</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Slovenia"><span>Apostille for Slovenia</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for South Africa"><span>Apostille for South Africa</span></a>
-  </li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Spain"><span>Apostille for Spain</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Sri Lanka"><span>Apostille for Sri Lanka</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Sweden"><span>Apostille for Sweden</span></a>
-  </li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Thailand"><span>Apostille for Thailand</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Trinidad and Tobago"><span>Apostille for Trinidad and Tobago</span></a>
-    </li>
-
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-        title="Apostille for Turkey"><span>Apostille for Turkey</span></a>
-    </li>
-    
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Turkmenistan"><span>Apostille for Turkmenistan</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Ukraine"><span>Apostille for Ukraine</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for United Kingdom"><span>Apostille for United Kingdom</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../apostille-for-usa-in-chennai.html"
-      title="Apostille for United States of America"><span>Apostille for United States of America</span></a>
-  </li>
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Uruguay"><span>Apostille for Uruguay</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Uzbekistan"><span>Apostille for Uzbekistan</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Venezuela"><span>Apostille for Venezuela</span></a>
-  </li>
-  
-  <div class="dropdown-items-divide-hr"></div>
-  <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-      title="Apostille for Zimbabwe"><span>Apostille for Zimbabwe</span></a>
-  </li>
-</ul>
-</li>
-
-<!-- Dropdown Menu -->
+        <!-- Apostille MEA Dropdown -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle page-scroll" href="../visa_services_10.html"" id="navbarDropdown" role="button"
-            aria-haspopup="true" aria-expanded="false">Visa Services</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href=../australia_visa_32.html><span class="item-text">Australia Visa</span></a>
-             <div class="dropdown-items-divide-hr"></div>
-            <a class="dropdown-item" href=../brunei_visa_stamping_33.html><span class="item-text">Brunei Visa Stamping</span></a>
-             <div class="dropdown-items-divide-hr"></div>
-            <a class="dropdown-item" href=../china-visa-services.html><span class="item-text">China Visa Services</span></a>
-             <div class="dropdown-items-divide-hr"></div>
-            <a class="dropdown-item" href=../dubai_tourist_visa_47.html><span class="item-text">Dubai Tourist Visa Services</span></a>
-             <div class="dropdown-items-divide-hr"></div>
-            <a class="dropdown-item" href=../egypt-visa-services.html><span class="item-text">Egypt Visa Services</span></a>
-             <div class="dropdown-items-divide-hr"></div>
-            <a class="dropdown-item" href=../japan-visa-services.html><span class="item-text">Japan Visa Services</span></a>
-             <div class="dropdown-items-divide-hr"></div>
-            <a class="dropdown-item" href=../kuwait_visa_stamping_28.html><span class="item-text">Kuwait Visa Stamping</span></a>
-             <div class="dropdown-items-divide-hr"></div>
-            <a class="dropdown-item" href=../malaysia_tourist_visa_30.html><span class="item-text">Malaysia Visa Services</span></a>
-             <div class="dropdown-items-divide-hr"></div>
-            <a class="dropdown-item" href=../saudi_visa_stamping_27.html><span class="item-text">Saudi Visa Stamping</span></a>
-             <div class="dropdown-items-divide-hr"></div>
-            <a class="dropdown-item" href=../singapore_tourist_visa_29.html><span class="item-text">Singapore Tourist Visa</span></a>
-             <div class="dropdown-items-divide-hr"></div>
-            <a class="dropdown-item" href=../sri-lanka-visa-services.html><span class="item-text">Sri Lanka Visa Services</span></a>
-             <div class="dropdown-items-divide-hr"></div>
-            <a class="dropdown-item" href=../thailand-visa-services-in-chennai.html><span class="item-text">Thailand Visa Services in Chennai</span></a>
-             <div class="dropdown-items-divide-hr"></div>
-            <a class="dropdown-item" href=../taiwan-visa-services.html><span class="item-text">Taiwan Visa Services</span></a>
-             <div class="dropdown-items-divide-hr"></div>
-            <a class="dropdown-item" href=../thailand-visa-process-in-chennai.html><span class="item-text">Thailand Visa Process in Chennai</span></a>
-            
+          <a class="nav-link dropdown-toggle page-scroll" href="../certificate-apostille-mea-in-chennai.html" id="apostilleDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Apostille MEA</a>
+          <div class="dropdown-menu" aria-labelledby="apostilleDropdown">
+            <a class="dropdown-item" href="https://www.almiraaj.com/personal-certificate-apostille">Personal Certificates</a>
+            <a class="dropdown-item" href="https://www.almiraaj.com/degree-certificate-apostille">Educational Certificates</a>
+            <a class="dropdown-item" href="https://www.almiraaj.com/commercial-certificate-apostille">Commercial Certificates</a>
+            <a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html">Other Certificates Apostille</a>
+          </div>
         </li>
-        
-        
-        <!-- end of dropdown menu -->
 
+        <!-- Visa Services Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle page-scroll" href="../visa_services_10.html" id="visaDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Visa Services</a>
+          <div class="dropdown-menu" aria-labelledby="visaDropdown">
+            <a class="dropdown-item" href="../australia_visa_32.html">Australia</a>
+            <a class="dropdown-item" href="../brunei_visa_stamping_33.html">Brunei</a>
+            <a class="dropdown-item" href="../china-visa-services.html">China</a>
+            <a class="dropdown-item" href="../dubai_tourist_visa_47.html">Dubai</a>
+            <a class="dropdown-item" href="../egypt-visa-services.html">Egypt</a>
+            <a class="dropdown-item" href="../japan-visa-services.html">Japan</a>
+            <a class="dropdown-item" href="../kuwait_visa_stamping_28.html">Kuwait</a>
+            <a class="dropdown-item" href="../malaysia_tourist_visa_30.html">Malaysia</a>
+            <a class="dropdown-item" href="../saudi_visa_stamping_27.html">Saudi Arabia</a>
+            <a class="dropdown-item" href="../singapore_tourist_visa_29.html">Singapore</a>
+            <a class="dropdown-item" href="../sri-lanka-visa-services.html">Sri Lanka</a>
+            <a class="dropdown-item" href="../thailand-visa-services-in-chennai.html">Thailand</a>
+            <a class="dropdown-item" href="../taiwan-visa-services.html">Taiwan</a>
+             <a class="dropdown-item" href="../visa_services_10.html">Other Countries</a>
+          </div>
+        </li>
+
+        <!-- WhatsApp Contact -->
         <li class="nav-item">
-          <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+          <a class="nav-link page-scroll" href="https://wa.me/919087559669?text=Hi%20Almiraaj!!!" target="_blank">Contact</a>
         </li>
+
       </ul>
-      <span class="nav-item social-icons">
-        <span class="fa-stack">
-          <a href="https://wa.me/+919176160055">
-            <span class="hexagon"></span>
-            <i class="fab fa-whatsapp  fa-stack-1x"></i>
-          </a>
-        </span>
-             </span>
+
+      <!-- WhatsApp Icon -->
+      <span class="nav-item ml-3">
+        <a href="https://wa.me/+919176160055" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp fa-lg text-success"></i>
+        </a>
+      </span>
     </div>
-  </nav>
-  <div class="whatsapp-widget">
-    <!-- Use Font Awesome WhatsApp icon -->
-    <a href="https://wa.me/+919176160055" target="_blank">
-      <i class="fab fa-whatsapp fa-2x"></i>
-    </a>
   </div>
-  <!-- end of navbar -->
-  <!-- end of navbar -->
+</nav>
+
+<!-- Header -->
 
 
   <!-- Header -->
