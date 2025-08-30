@@ -339,11 +339,93 @@
       <p>+91 9176159922 | +91 9176160055 | +91 9159589163 | +91 9087559669</p>
     </section>
 
+
+<!-- 📲 Contact Form with WhatsApp Integration -->
+<section id="instant-contact" class="py-5" itemscope itemtype="https://schema.org/ContactPage">
+  <div class="container">
+    <div class="bg-warning bg-opacity-25 border rounded p-4 shadow-sm">
+      <h2 class="text-center text-primary fw-bold mb-4" itemprop="name">📲 Get in Touch Instantly</h2>
+      <form onsubmit="return redirectToWhatsApp();" role="form">
+        <div class="mb-3" itemprop="potentialAction" itemscope itemtype="https://schema.org/CommunicateAction">
+          <label for="name" class="form-label"><strong>Your Name:</strong></label>
+          <input type="text" id="name" class="form-control" placeholder="Enter your name" required itemprop="agent">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label"><strong>Your Message:</strong></label>
+          <textarea id="message" class="form-control" rows="4" placeholder="Ask us anything!" required itemprop="about"></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-success btn-lg">💬 Chat via WhatsApp</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+  function redirectToWhatsApp() {
+    const name = document.getElementById("name").value.trim();
+    const message = document.getElementById("message").value.trim();
+    if (!name || !message) return false;
+    const fullMessage = `Hello, my name is ${name}. ${message}`;
+    const encoded = encodeURIComponent(fullMessage);
+    const phone = "919176159922";
+    window.open(`https://wa.me/${phone}?text=${encoded}`, "_blank");
+    return false;
+  }
+</script>
+<div class="container my-5">
+  <div class="text-center mb-4">
+    <h2 class="text-primary">✅ 3 Easy Steps to Get Certificate Apostille</h2>
+    <p class="text-muted">Follow these simple steps to get your documents attested quickly and professionally.</p>
   </div>
 
-  <footer>
-    &copy; 2025 Almiraaj Apostille Services. All rights reserved.
-  </footer>
+  <div class="row">
+    <!-- Step 1 -->
+    <div class="col-lg-4 mb-4">
+      <div class="p-4 border rounded shadow-sm h-100 bg-light">
+        <h5 class="text-success text-center">🟢 Step 1: Contact</h5>
+        <p>
+          <strong>ALMIRAAJ International</strong><br>
+          No.10 CASA Major Road, B3-Elcanso Plaza,<br>
+          Egmore, Chennai-600008, TN, India<br>
+          📞 <a href="tel:+914442037273" class="text-dark">+91 44 4203 7273</a><br>
+          📧 <a href="mailto:apostille@almiraaj.com" class="text-danger">apostille@almiraaj.com</a>
+        </p>
+        <div class="text-center">
+          <a href="/" class="btn btn-outline-success btn-sm">Check more info</a>
+        </div>
+      </div>
+    </div>
 
-</body>
-</html>
+    <!-- Step 2 -->
+    <div class="col-lg-4 mb-4">
+      <div class="p-4 border rounded shadow-sm h-100 bg-light">
+        <h5 class="text-success text-center">🟢 Step 2: Submit</h5>
+        <ul class="text-dark ps-3">
+          <li>Original Certificates</li>
+          <li>Supporting documents per ministry requirements</li>
+          <li>Passport copy of certificate holder</li>
+        </ul>
+        <div class="text-center">
+          <a href="/" class="btn btn-outline-success btn-sm">Check more info</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="col-lg-4 mb-4">
+      <div class="p-4 border rounded shadow-sm h-100 bg-light">
+        <h5 class="text-success text-center">🟢 Step 3: Completed</h5>
+        <ul class="text-dark ps-3">
+          <li>Attestation completed by Saudi Embassy</li>
+          <li>Notification upon completion</li>
+          <li>Collect from office or opt for doorstep delivery</li>
+        </ul>
+        <div class="text-center">
+          <a href="/" class="btn btn-outline-success btn-sm">Check more info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
