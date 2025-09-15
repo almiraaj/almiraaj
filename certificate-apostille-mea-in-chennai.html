@@ -1012,6 +1012,41 @@
 </div>
 
 
+<!-- 📲 Contact Form with WhatsApp Integration -->
+<section id="instant-contact" class="py-5" itemscope itemtype="https://schema.org/ContactPage">
+  <div class="container">
+    <div class="bg-warning bg-opacity-25 border rounded p-4 shadow-sm">
+      <h2 class="text-center text-primary fw-bold mb-4" itemprop="name">📲 Get in Touch Instantly</h2>
+      <form onsubmit="return redirectToWhatsApp();" role="form">
+        <div class="mb-3" itemprop="potentialAction" itemscope itemtype="https://schema.org/CommunicateAction">
+          <label for="name" class="form-label"><strong>Your Name:</strong></label>
+          <input type="text" id="name" class="form-control" placeholder="Enter your name" required itemprop="agent">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label"><strong>Your Message:</strong></label>
+          <textarea id="message" class="form-control" rows="4" placeholder="Ask us anything!" required itemprop="about"></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-success btn-lg">💬 Chat via WhatsApp</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+  function redirectToWhatsApp() {
+    const name = document.getElementById("name").value.trim();
+    const message = document.getElementById("message").value.trim();
+    if (!name || !message) return false;
+    const fullMessage = `Hello, my name is ${name}. ${message}`;
+    const encoded = encodeURIComponent(fullMessage);
+    const phone = "919176159922";
+    window.open(`https://wa.me/${phone}?text=${encoded}`, "_blank");
+    return false;
+  }
+</script>
+
 
 
 <!-- Our Locations Section -->
