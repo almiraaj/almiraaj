@@ -23,53 +23,13 @@
   <!-- Fonts & Styles -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link href="/css/bootstrap.css" rel="stylesheet">
+  <link href="/css/fontawesome-all.css" rel="stylesheet">
+  <link href="/css/swiper.css" rel="stylesheet">
+  <link href="/css/magnific-popup.css" rel="stylesheet">
   <link href="/css/styles.css" rel="stylesheet">
+  <link href="/css/css.css" rel="stylesheet">
 
-  <!-- Custom Styles -->
-  <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
-    }
-    .section-title {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #007bff;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    .highlight {
-      background: linear-gradient(to right, #007bff, #17a2b8);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 600;
-    }
-    .info-box {
-      background-color: #ffffff;
-      border-radius: 12px;
-      padding: 30px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      margin-bottom: 40px;
-    }
-    .info-box h3 {
-      color: #343a40;
-      font-weight: 600;
-      margin-bottom: 15px;
-    }
-    .info-box p {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-  </style>
-</head>
-<body>
-    <!-- Favicon -->
-    <link rel="icon" href="images/ALMINT.png" />
-</head>
-<body data-spy="scroll" data-target=".fixed-top">
-<!-- Body content goes here -->
-<!-- Structured Data for Image Visibility -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -84,119 +44,141 @@
   }
   </script>
 
-  <!-- Fonts and Styles -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap" rel="stylesheet">
-  <link href="/css/bootstrap.css" rel="stylesheet">
-  <link href="/css/fontawesome-all.css" rel="stylesheet">
-  <link href="/css/swiper.css" rel="stylesheet">
-  <link href="/css/magnific-popup.css" rel="stylesheet">
-  <link href="/css/styles.css" rel="stylesheet">
-  <link href="/css/css.css" rel="stylesheet">
-  <link rel="icon" href="/images/ALMINT.png" />
-</head>
-
-  <!-- Custom Navbar Styles -->
-   
+  <!-- Custom Styles -->
   <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #007bff;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .highlight {
+      background: linear-gradient(to right, #007bff, #17a2b8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 600;
+    }
+
+    .info-box {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 40px;
+    }
+
+    .info-box h3 {
+      color: #343a40;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .info-box p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
     .certificate-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin: 40px 0;
-}
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin: 40px 0;
+    }
 
-.card {
-  flex: 1 1 300px;
-  max-width: 400px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
+    .card {
+      flex: 1 1 300px;
+      max-width: 400px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
 
-.card:hover {
-  transform: translateY(-5px);
-}
+    .card:hover {
+      transform: translateY(-5px);
+    }
 
-.card h3 {
-  font-size: 1.4em;
-  margin-bottom: 15px;
-  color: #333;
-}
+    .card h3 {
+      font-size: 1.4em;
+      margin-bottom: 15px;
+      color: #333;
+    }
 
-.card ul {
-  list-style: none;
-  padding-left: 0;
-}
+    .card ul {
+      list-style: none;
+      padding-left: 0;
+    }
 
-.card ul li {
-  padding: 6px 0;
-  border-bottom: 1px solid #eee;
-  font-size: 0.95em;
-  color: #555;
-}
+    .card ul li {
+      padding: 6px 0;
+      border-bottom: 1px solid #eee;
+      font-size: 0.95em;
+      color: #555;
+    }
 
-/* Unique background colors */
-.card.personal {
-  background-color: #f0f8ff;
-}
-.card.educational {
-  background-color: #fff0f5;
-}
-.card.commercial {
-  background-color: #f5fff0;
-}
+    .card.personal { background-color: #f0f8ff; }
+    .card.educational { background-color: #fff0f5; }
+    .card.commercial { background-color: #f5fff0; }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .certificate-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+    @media (max-width: 768px) {
+      .certificate-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
 
-    .navbar {
+    .navbar,
+    header,
+    .navbar-wrapper,
+    .top-bar {
       background-color: #00264d !important;
     }
+
     .navbar .navbar-brand h3 {
       color: white !important;
       font-weight: 700;
       font-size: 1.3rem;
       margin: 0;
     }
+
     .navbar .nav-link {
       color: white !important;
       transition: 0.3s ease-in-out;
     }
+
     .navbar .nav-link:hover {
       color: #c99b33 !important;
     }
+
     .dropdown-menu {
       background-color: #00264d;
     }
+
     .dropdown-item {
       color: white !important;
     }
+
     .dropdown-item:hover {
       background-color: #c99b33;
       color: #00264d !important;
     }
-    header,
-.navbar,
-.navbar-wrapper,
-.top-bar {
-  background-color: #00264d !important;
-}
-
-
   </style>
 </head>
 
-<body>
-
+<body data-spy="scroll" data-target=".fixed-top">
+  <!-- Body content goes here -->
+</body>
+</html>
 
 
    <!-- Navbar -->
