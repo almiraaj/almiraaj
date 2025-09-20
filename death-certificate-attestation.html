@@ -242,11 +242,10 @@
 </div>
 
 <!-- Footer -->
-<footer class="footer mt-5">
+<footer class="footer mt-5 text-white">
   <style>
     footer {
       background-color: #00264d;
-      color: #ffffff;
       padding: 60px 0 30px;
       font-family: 'Segoe UI', sans-serif;
       font-size: 15px;
@@ -270,13 +269,13 @@
       margin-bottom: 10px;
     }
 
-    footer a {
+    footer ul li a {
       color: #ffffff;
       text-decoration: none;
       transition: color 0.3s ease;
     }
 
-    footer a:hover {
+    footer ul li a:hover {
       color: #f7c04a;
       text-decoration: underline;
     }
@@ -284,18 +283,24 @@
     .footer-contact {
       font-size: 14px;
       margin-top: 30px;
+      color: #ffffff;
     }
 
     .footer-contact a {
       color: #f7c04a;
       font-weight: 600;
+      text-decoration: none;
+    }
+
+    .footer-contact a:hover {
+      text-decoration: underline;
     }
 
     .social-icons a {
       font-size: 18px;
       margin: 0 10px;
       color: #ffffff;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, color 0.3s ease;
     }
 
     .social-icons a:hover {
@@ -308,6 +313,16 @@
       padding: 20px 0;
       font-size: 13px;
       text-align: center;
+      color: #ffffff;
+    }
+
+    .footer-bottom a {
+      color: #f7c04a;
+      text-decoration: none;
+    }
+
+    .footer-bottom a:hover {
+      text-decoration: underline;
     }
 
     @media (max-width: 768px) {
@@ -397,7 +412,7 @@
   <!-- Copyright -->
   <div class="footer-bottom">
     <p class="mb-0">
-      &copy; 2025 <a href="https://www.almiraaj.com" class="text-light fw-semibold" target="_blank">AL-MIRAAJ International</a>. All rights reserved.
+      &copy; 2025 <a href="https://www.almiraaj.com">AL-MIRAAJ International</a>. All rights reserved.
     </p>
   </div>
 </footer>
