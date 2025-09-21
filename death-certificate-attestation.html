@@ -237,112 +237,88 @@
 
   <!-- Styles -->
   <style>
-    body {
-      font-family: 'Segoe UI', Roboto, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to right, #f0f4f8, #e6ecf3);
-      color: #2c3e50;
-    }
-    header {
-      background: linear-gradient(to right, #003366, #005599);
-      padding: 40px 20px;
-      color: #fff;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .container {
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .info-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 30px;
-    }
-    .info-box {
-      flex: 1 1 calc(50% - 40px);
-      background: linear-gradient(to right, #fefefe, #f0f8ff);
-      border-left: 6px solid #0077cc;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease;
-    }
-    .info-box:hover {
-      transform: translateY(-5px);
-    }
-    .info-box h3 {
-      color: #003366;
-      margin-bottom: 10px;
-    }
-    .info-box p, .info-box ul, .info-box ol {
-      margin: 0;
-      color: #333;
-    }
-    .info-box ul, .info-box ol {
-      padding-left: 20px;
-    }
-    .highlight {
-      background: linear-gradient(to right, #e0f7fa, #e3f2fd);
-      border-left-color: #00bcd4;
-    }
-    .benefits {
-      background: linear-gradient(to right, #f1f8e9, #e8f5e9);
-      border-left-color: #4caf50;
-    }
-    .guidance {
-      background: linear-gradient(to right, #fff3e0, #fff8e1);
-      border-left-color: #ff9800;
-    }
-    .btn {
-      text-decoration: none;
-      padding: 12px 24px;
-      border-radius: 30px;
-      font-weight: 600;
-      color: #fff;
-      background: linear-gradient(to right, #005599, #0077cc);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease, background 0.3s ease;
-      display: inline-block;
-    }
-    .btn:hover {
-      transform: scale(1.05);
-      background: linear-gradient(to right, #004080, #0066aa);
-    }
-    .text-center {
-      text-align: center;
-    }
-    footer {
-      background-color: #003366;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-<body>
+  .info-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+  }
 
+  .info-card {
+    flex: 1 1 calc(50% - 40px);
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    transition: transform 0.3s ease;
+  }
+
+  .info-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .info-card h3 {
+    color: #1976d2;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+  }
+
+  .info-card ul, .info-card ol {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+
+  .info-card.highlight {
+    background: linear-gradient(to right, #fff3e0, #ffffff);
+  }
+
+  .info-card.benefits {
+    background: linear-gradient(to right, #e8f5e9, #ffffff);
+  }
+
+  .info-card.guidance {
+    background: linear-gradient(to right, #fce4ec, #ffffff);
+  }
+
+  .text-center {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .btn {
+    background-color: #1976d2;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    .info-card {
+      flex: 1 1 100%;
+    }
+  }
+</style>
 
 <div class="container">
   <div class="info-grid">
-    <div class="info-box highlight">
+    <div class="info-card highlight">
       <h3>Introduction</h3>
       <p><strong>While death marks the end of a life, it often begins a journey of formalities for those left behind.</strong></p>
       <p>For families with international ties—especially NRIs—death certificate attestation ensures recognition abroad for claims, assets, and obligations.</p>
     </div>
 
-    <div class="info-box">
+    <div class="info-card">
       <h3>What Is Death Certificate Attestation?</h3>
       <p>It is the official validation of a government-issued death certificate by MEA and foreign embassies, confirming its authenticity for international use.</p>
     </div>
 
-    <div class="info-box">
+    <div class="info-card">
       <h3>Why Is It Required?</h3>
       <ul>
         <li>Claim insurance or pension abroad</li>
@@ -354,7 +330,7 @@
       </ul>
     </div>
 
-    <div class="info-box">
+    <div class="info-card">
       <h3>Step-by-Step Process</h3>
       <ol>
         <li>Notarization</li>
@@ -364,17 +340,17 @@
       </ol>
     </div>
 
-    <div class="info-box">
+    <div class="info-card">
       <h3>Embassy Attestation Countries</h3>
       <p>Includes UAE, Saudi Arabia, Qatar, Kuwait, Oman, Bahrain, Egypt, Nigeria, Vietnam, China, and more.</p>
     </div>
 
-    <div class="info-box">
+    <div class="info-card">
       <h3>Apostille Countries</h3>
       <p>Includes USA, Canada, Germany, France, Japan, South Korea, Australia, and other Hague Convention members.</p>
     </div>
 
-    <div class="info-box benefits">
+    <div class="info-card benefits">
       <h3>Key Benefits</h3>
       <ul>
         <li>Global Legal Validity</li>
@@ -386,21 +362,18 @@
       </ul>
     </div>
 
-    <div class="info-box guidance">
+    <div class="info-card guidance">
       <h3>Need Expert Guidance?</h3>
       <p>At <strong>Al Miraaj</strong>, we offer end-to-end support with empathy, precision, and confidentiality. Let us help you navigate this process with care and professionalism.</p>
     </div>
   </div>
 
-  <div class="text-center" style="margin-top: 40px;">
+  <div class="text-center">
     <a class="btn" href="https://www.almiraaj.com/index.html">Back</a>
     <a class="btn" href="https://www.almiraaj.com/index.html#contact">Contact</a>
   </div>
 </div>
 
-<footer>
+<footer style="text-align: center; margin-top: 40px; font-family: 'Segoe UI', sans-serif; color: #666;">
   &copy; 2025 Al Miraaj Attestation Services. All rights reserved.
 </footer>
-
-</body>
-</html>
