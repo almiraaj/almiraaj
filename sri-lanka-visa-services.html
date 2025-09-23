@@ -396,20 +396,19 @@
 
 </div>
 
-
 <!-- Footer -->
 <footer class="footer mt-5">
   <style>
-    footer {
-      background-color: #00264d !important;
+    .footer {
+      background-color: #00264d;
       color: #ffffff;
-      padding: 60px 0 30px;
+      padding: 60px 20px 30px;
       font-family: 'Segoe UI', sans-serif;
       font-size: 14px;
       line-height: 1.6;
     }
 
-    footer h5 {
+    .footer h5 {
       font-size: 16px;
       margin-bottom: 15px;
       text-transform: uppercase;
@@ -417,24 +416,24 @@
       font-weight: 600;
     }
 
-    footer ul {
+    .footer ul {
       list-style: none;
       padding-left: 0;
       margin-bottom: 0;
     }
 
-    footer ul li {
+    .footer ul li {
       margin-bottom: 8px;
       font-size: 13px;
     }
 
-    footer a {
+    .footer a {
       color: #ffffff;
       text-decoration: none;
       transition: color 0.3s ease-in-out;
     }
 
-    footer a:hover {
+    .footer a:hover {
       color: #f7c04a;
       text-decoration: underline;
     }
@@ -482,16 +481,28 @@
       font-size: 13px;
     }
 
+    .footer-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .footer-box {
+      flex: 1 1 18%;
+      min-width: 180px;
+    }
+
     @media (max-width: 768px) {
-      footer {
+      .footer {
         padding: 40px 20px;
       }
 
-      footer h5 {
+      .footer h5 {
         font-size: 15px;
       }
 
-      footer ul li {
+      .footer ul li {
         font-size: 13px;
       }
 
@@ -499,14 +510,19 @@
         display: block;
         margin: 8px auto;
       }
+
+      .footer-box {
+        flex: 1 1 100%;
+        text-align: center;
+      }
     }
   </style>
 
   <div class="container">
-    <div class="row">
+    <div class="footer-columns">
 
       <!-- Embassy -->
-      <div class="col-md-2 col-sm-6 mb-4">
+      <div class="footer-box">
         <h5>Embassy</h5>
         <ul>
           <li><a href="http://almiraaj.com/uae-embassy-attestation">UAE Attestation</a></li>
@@ -517,8 +533,8 @@
         </ul>
       </div>
 
-      <!-- Govt. Attestation -->
-      <div class="col-md-2 col-sm-6 mb-4">
+      <!-- Attestation -->
+      <div class="footer-box">
         <h5>Attestation</h5>
         <ul>
           <li><a href="https://www.almiraaj.com/home-mantralaya-attestation">Mantralaya</a></li>
@@ -529,8 +545,8 @@
         </ul>
       </div>
 
-      <!-- Docs -->
-      <div class="col-md-2 col-sm-6 mb-4">
+      <!-- Documents -->
+      <div class="footer-box">
         <h5>Documents</h5>
         <ul>
           <li><a href="https://www.almiraaj.com/birth-certificate-attestation">Birth Certificate</a></li>
@@ -542,7 +558,7 @@
       </div>
 
       <!-- Apostille -->
-      <div class="col-md-2 col-sm-6 mb-4">
+      <div class="footer-box">
         <h5>Apostille</h5>
         <ul>
           <li><a href="https://www.almiraaj.com/apostille-for-usa-in-chennai">USA</a></li>
@@ -554,7 +570,7 @@
       </div>
 
       <!-- Visas -->
-      <div class="col-md-2 col-sm-6 mb-4">
+      <div class="footer-box">
         <h5>Visas</h5>
         <ul>
           <li><a href="https://www.almiraaj.com/china-visa-services">China</a></li>
@@ -586,5 +602,3 @@
         <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
         <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
         <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://wa.me/919176159922" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
-      </div>
