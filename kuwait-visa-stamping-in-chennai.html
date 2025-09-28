@@ -36,16 +36,29 @@
 
 <!-- Custom Styles -->
 <style>
+  /* Layout and Overflow Fix */
   body, html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
   }
 
-  .navbar {
+  /* Consistent Dark Blue Background */
+  .navbar,
+  .navbar-custom,
+  .navbar-dark,
+  .navbar-wrapper,
+  .top-bar,
+  header,
+  .ex-header,
+  .dropdown-menu {
     background-color: #00264d !important;
+    border: none;
+    background-image: none !important;
+    box-shadow: none !important;
   }
 
+  /* Navbar Branding */
   .navbar .navbar-brand h3 {
     color: white !important;
     font-weight: 700;
@@ -53,6 +66,7 @@
     margin: 0;
   }
 
+  /* Navbar Links */
   .navbar .nav-link {
     color: white !important;
     transition: 0.3s ease-in-out;
@@ -62,10 +76,7 @@
     color: #c99b33 !important;
   }
 
-  .dropdown-menu {
-    background-color: #00264d;
-  }
-
+  /* Dropdown Styling */
   .dropdown-item {
     color: white !important;
   }
@@ -75,6 +86,7 @@
     color: #00264d !important;
   }
 
+  /* Card Hover Effect */
   .card:hover {
     transform: scale(1.02);
     transition: all 0.3s ease-in-out;
@@ -85,16 +97,29 @@
     text-decoration: underline;
   }
 
+  /* Embassy Image */
   .uae-embassy-img {
     max-width: 100%;
     height: 450px;
     object-fit: cover;
   }
 
+  /* WhatsApp Widget */
   .whatsapp-widget {
     z-index: 999;
   }
+
+  /* Mobile-Specific Reinforcement */
+  @media (max-width: 768px) {
+    .navbar,
+    .dropdown-menu,
+    header,
+    .ex-header {
+      background-color: #00264d !important;
+    }
+  }
 </style>
+
 
 <body data-spy="scroll" data-target=".fixed-top">
 
