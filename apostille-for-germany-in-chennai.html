@@ -24,6 +24,25 @@
 
   <!-- Custom Styles -->
   <style>
+    .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+ul.list-unstyled li {
+  margin-bottom: 8px;
+}
+
     body {
       font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
       font-size: 1rem;
