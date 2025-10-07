@@ -31,1075 +31,659 @@
 	<link href="../css/magnific-popup.css" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
 	<link rel="stylesheet" href="../css/css.css" />
-	<!-- Favicon  -->
-  <link rel="icon" href="images/ALMINT.png" />
+	<!-- Favicon -->
+  <link rel="icon" href="/images/ALMINT.png" type="image/x-icon" />
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      background-color: #f6faff;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: #00264d !important;
+    }
+
+    .navbar .navbar-brand {
+      color: white !important;
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+
+    .navbar .nav-link {
+      color: white !important;
+      transition: 0.3s ease-in-out;
+    }
+
+    .navbar .nav-link:hover {
+      color: #c99b33 !important;
+    }
+
+    .dropdown-menu {
+      background-color: #00264d;
+    }
+
+    .dropdown-item {
+      color: white !important;
+    }
+
+    .dropdown-item:hover {
+      background-color: #c99b33;
+      color: #00264d !important;
+    }
+
+    .ex-header {
+      padding: 140px 15px 40px;
+      background-color: #00264d;
+      text-align: center;
+    }
+
+    .ex-header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0;
+      word-wrap: break-word;
+    }
+
+    @media (max-width: 768px) {
+      .ex-header {
+        padding-top: 160px;
+      }
+
+      .ex-header h1 {
+        font-size: 1.5rem;
+      }
+    }
+
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 8px;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-title {
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    ul.list-unstyled li {
+      margin-bottom: 8px;
+    }
+
+    .breadcrumbs {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .breadcrumbs a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .breadcrumbs i {
+      margin: 0 5px;
+    }
+
+    .whatsapp-widget {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .whatsapp-widget i {
+      color: #25d366;
+    }
+
+    .cta a {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta a:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
-   
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+    <a class="navbar-brand" href="index.html">AL-MIRAAJ International</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsMain"
+      aria-controls="navbarsMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <!-- Navbar -->
+    <div class="collapse navbar-collapse" id="navbarsMain">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link page-scroll" href="./index.html#header">HOME</a></li>
 
-    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-      <!-- Text Logo - Use this if you don't have a graphic logo -->
-      <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
-  
-      <!-- Image Logo -->
-      <a class="navbar-brand logo-image" href="index.html">
-        <h3 class="logo-image">AL-MIRAAJ International</h3>
-      </a>
-  
-      <!-- Mobile Menu Toggle Button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-awesome fas fa-bars"></span>
-        <span class="navbar-toggler-awesome fas fa-times"></span>
-      </button>
-      <!-- end of mobile menu toggle button -->
-  
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="./index.html#header">HOME <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle page-scroll " href="../certificate-attestation-services-in-chennai.html" aria-haspopup="true"
-            aria-expanded="false">Certificate Attestation</a>
-            <ul id="myMenun2" class="dropdown-menu"  aria-labelledby="navbarDropdown" >
-                <div> <a class="dropdown-item"href="../birth-certificate-attestation.html"
-                    title="Birth Certificate Attestation"><span>Birth Certificate Attestation</span></a></div>
-                <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"
-                    href="../marriage-certificate-attestation.html"
-                    title="Marriage Certificate Attestation" ><span>Marriage Certificate Attestation</span></a></div>
-                <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"
-                href="../degree-certificate-attestation-in-chennai.html"
-                    title="Educational Certificate Attestation"><span>Educational Certificate Attestation</span></a></div>
-                <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"href="../unmarriedcertificateapostille.html"
-                    title="Single Status Certificate Apostille / Attestation"><span>Single Status Certificate Apostille / Attestation</span></a></div>
-                <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"
-                    href="../how-to-get-single-status-certificate-in-chennai.html"
-                    title="how to get single status certificate in Chennai"><span>how to get single status certificate in Chennai</span></a></div>
-                <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"href="../commercial-documents-attestation.html"
-                    title="Commercial Documents Attestation"><span>Commercial Documents Attestation</span></a></div>
-                <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"
-                    href="../power-of-attorney-apostilleattestation-in-chennai.html"
-                    title="Power of Attorney Apostille/Attestation in Chennai"><span>Power of Attorney Apostille/Attestation in Chennai</span></a></div>
-                    <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"
-                    href="../hrd-attestation-process.html"
-                    title="HRD Attestation Process"
-                    ><span>HRD Attestation Process</span></a></div>
-                <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"
-                    href="../home-mantralaya-attestation.html"
-                    title="Home-Mantralaya Attestation"><span>Home-Mantralaya Attestation</span></a></div>
-                <div class="dropdown-items-divide-hr"></div>
-              </ul>
-          </li>
-  
-  
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle page-scroll " href="../embassy-attestation-in-chennai.html" aria-haspopup="true"
-            aria-expanded="false">Embassy Attestation</a>
-            <ul id="myMenun2" class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <div>
-                <a class="dropdown-item" href="../uae-embassy-attestation.html"
-                  title="UAE Embassy Attestation"><span>UAE Embassy Attestation</span></a>
-              </div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item" href="../kuwait-embassy-attestation-in-chennai.html"
-                  title="Kuwait Embassy Attestation"><span>Kuwait Embassy Attestation</span></a>
-              </div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item" href="../bahrain-embassy-attestation.html"
-                  title="Bahrain Embassy Attestation"><span>Bahrain Embassy Attestation</span></a>
-              </div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item" href="../qatar-embassy-attestation.html"
-                  title="Qatar Embassy Attestation"><span>Qatar Embassy Attestation</span></a>
-              </div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item" href="../oman-embassy-attestation.html"
-                  title="Oman Embassy Attestation"><span>Oman Embassy Attestation</span></a>
-              </div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item" href="../china-embassy-attestation.html"
-                  title="China Embassy Attestation"><span>China Embassy Attestation</span></a>
-              </div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item" href="../malaysia-embassy-attestation.html"
-                  title="Malaysia Embassy Attestation"><span>Malaysia Embassy Attestation</span></a>
-              </div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item" href="../saudi-embassy-attestation-in-chennai.html" title="Saudi Embassy Attestation"><span>Saudi Embassy Attestation</span></a>
-              </div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item" href="../egypt-embassy-attestation.html"
-                  title="Egypt Embassy Attestation"><span>Egypt Embassy Attestation</span></a>
-              </div>
-             
-           
-              <div class="dropdown-items-divide-hr"></div>
-            </ul>
-          </li>
-  
-  
-  
-  
-       <!-- Dropdown Menu -->
- <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle page-scroll" href="../apostille-mea-attestation-in-chennai.html" id="navbarDropdown" role="button"
-    aria-haspopup="true" aria-expanded="false">Apostille MEA</a>
-  <ul id="myMenu2" class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-    <li><a class="dropdown-item" href="../apostille-for-albania-in-chennai.html"
-        title="Apostille for Albania"><span>Apostille for Albania</span></a></li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-for-argentina-in-chennai"
-        title="Apostille for Argentina"><span>Apostille for Argentina</span></a></li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-for-armenia-in-chennai"
-        title="Apostille for Armenia"><span>Apostille for Armenia</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-for-austria-in-chennai.html"
-        title="Apostille for Austria"><span>Apostille for Austria</span></a>
-    </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-for-australia-in-chennai.html"
-      title="Apostille for Australia"><span>Apostille for Australia</span></a>
-  </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-for-bahamas-in-chennai.html"
-        title="Apostille for Bahamas"><span>Apostille for Bahamas</span></a>
-    </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-for-belarus-in-chennai.html"
-        title="Apostille for Belarus"><span>Apostille for Belarus</span></a></li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-for-belgium-in-chennai.html"
-        title="Apostille for Belgium"><span>Apostille for Belgium</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-for-belize-in-chennai.html"
-        title="Apostille for Belize"><span>Apostille for Belize</span></a>
-    </li>
-
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-for-Bosnia-and-Herzegovina.html"
-        title="Apostille for Bosnia and Herzegovina"><span>Apostille for Bosnia and Herzegovina</span></a>
-    </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-for-brazil-in-chennai.html"
-        title="Apostille for Brazil"><span>Apostille for Brazil</span></a>
-    </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-for-bulgaria-in-chennai.html"
-        title="Apostille for Bulgaria"><span>Apostille for Bulgaria</span></a>
-    </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Burkina Faso"><span>Apostille for Burkina Faso</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-certificate-for-canada-in-tamilnadu.html"
-        title="Apostille for Canada"><span>Apostille for Canada</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Chile"><span>Apostille for Chile</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Colombia"><span>Apostille for Colombia</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Costa Rica"><span>Apostille for Costa Rica</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Croatia"><span>Apostille for Croatia</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Cyprus"><span>Apostille for Cyprus</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Czech Republic"><span>Apostille for Czech Republic</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-certificate-embassy-attestation-for-denmark.html"
-        title="Apostille for Denmark"><span>Apostille for Denmark</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Dominican Republic"><span>Apostille for Dominican Republic</span></a>
-    </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Ecuador"><span>Apostille for Ecuador</span></a>
-    </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for El Salvador"><span>Apostille for El Salvador</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Estonia"><span>Apostille for Estonia</span></a>
-    </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Fiji"><span>Apostille for Fiji</span></a>
-    </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Finland"><span>Apostille for Finland</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-certificate-embassy-attestation-for-france.html"
-        title="Apostille for France"><span>Apostille for France</span></a>
-    </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Georgia"><span>Apostille for Georgia</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Germany"><span>Apostille for Germany</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Greece"><span>Apostille for Greece</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Guatemala"><span>Apostille for Guatemala</span></a>
-    </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Honduras"><span>Apostille for Honduras</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Hong Kong, China"><span>Apostille for Hong Kong, China</span></a>
-    </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Hungary"><span>Apostille for Hungary</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Iceland"><span>Apostille for Iceland</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Ireland"><span>Apostille for Ireland</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Israel"><span>Apostille for Israel</span></a>
-    </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Italy"><span>Apostille for Italy</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Japan"><span>Apostille for Japan</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Latvia"><span>Apostille for Latvia</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Lithuania"><span>Apostille for Lithuania</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Luxembourg"><span>Apostille for Luxembourg</span></a>
-    </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Macau China"><span>Apostille for Macau China</span></a>
-    </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Malta"><span>Apostille for Malta</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Mauritius"><span>Apostille for Mauritius</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Mexico"><span>Apostille for Mexico</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Moldova"><span>Apostille for Moldova</span></a>
-    </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Monaco"><span>Apostille for Monaco</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Montenegro"><span>Apostille for Montenegro</span></a>
-    </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Netherlands"><span>Apostille for Netherlands</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for New Zealand"><span>Apostille for New Zealand</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Nicaragua"><span>Apostille for Nicaragua</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Norway"><span>Apostille for Norway</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Panama"><span>Apostille for Panama</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Paraguay"><span>Apostille for Paraguay</span></a>
-    </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Peru"><span>Apostille for Peru</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Poland"><span>Apostille for Poland</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Portugal"><span>Apostille for Portugal</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Republic of Korea  "><span>Apostille for Republic of Korea  </span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Romania  "><span>Apostille for Romania</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Saint Kitts and Nevis"><span>Apostille for Saint Kitts and Nevis</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for San Marino"><span>Apostille for San Marino</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Serbia"><span>Apostille for Serbia</span></a>
-    </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Singapore"><span>Apostille for Singapore</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Slovakia"><span>Apostille for Slovakia</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Slovenia"><span>Apostille for Slovenia</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for South Africa"><span>Apostille for South Africa</span></a>
-    </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Spain"><span>Apostille for Spain</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Sri Lanka"><span>Apostille for Sri Lanka</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Sweden"><span>Apostille for Sweden</span></a>
-    </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Thailand"><span>Apostille for Thailand</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Trinidad and Tobago"><span>Apostille for Trinidad and Tobago</span></a>
-      </li>
-
-      <div class="dropdown-items-divide-hr"></div>
-      <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-          title="Apostille for Turkey"><span>Apostille for Turkey</span></a>
-      </li>
-      
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Turkmenistan"><span>Apostille for Turkmenistan</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Ukraine"><span>Apostille for Ukraine</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for United Kingdom"><span>Apostille for United Kingdom</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-for-usa-in-chennai.html"
-        title="Apostille for United States of America"><span>Apostille for United States of America</span></a>
-    </li>
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Uruguay"><span>Apostille for Uruguay</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Uzbekistan"><span>Apostille for Uzbekistan</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Venezuela"><span>Apostille for Venezuela</span></a>
-    </li>
-    
-    <div class="dropdown-items-divide-hr"></div>
-    <li><a class="dropdown-item" href="../apostille-mea-attestation-in-chennai.html"
-        title="Apostille for Zimbabwe"><span>Apostille for Zimbabwe</span></a>
-    </li>
-  </ul>
-</li>
-
-<!-- Dropdown Menu -->
-          <!-- Dropdown Menu -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle page-scroll" href="../visa_services_10.html"" id="navbarDropdown" role="button"
-              aria-haspopup="true" aria-expanded="false">Visa Services</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href=../australia_visa_32.html><span class="item-text">Australia Visa</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../brunei_visa_stamping_33.html><span class="item-text">Brunei Visa Stamping</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../china-visa-services.html><span class="item-text">China Visa Services</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../dubai_tourist_visa_47.html><span class="item-text">Dubai Tourist Visa Services</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../egypt-visa-services.html><span class="item-text">Egypt Visa Services</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../japan-visa-services.html><span class="item-text">Japan Visa Services</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../kuwait_visa_stamping_28.html><span class="item-text">Kuwait Visa Stamping</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../malaysia_tourist_visa_30.html><span class="item-text">Malaysia Visa Services</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../saudi_visa_stamping_27.html><span class="item-text">Saudi Visa Stamping</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../singapore_tourist_visa_29.html><span class="item-text">Singapore Tourist Visa</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../sri-lanka-visa-services.html><span class="item-text">Sri Lanka Visa Services</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../thailand-visa-services-in-chennai.html><span class="item-text">Thailand Visa Services in Chennai</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../taiwan-visa-services.html><span class="item-text">Taiwan Visa Services</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../thailand-visa-process-in-chennai.html><span class="item-text">Thailand Visa Process in Chennai</span></a>
-              
-          </li>
-          
-          
-          <!-- end of dropdown menu -->
-  
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#contact">CONTACT</a>
-          </li>
-        </ul>
-        <span class="nav-item social-icons">
-          <span class="fa-stack">
-            <a href="https://wa.me/+919176160055">
-              <span class="hexagon"></span>
-              <i class="fab fa-whatsapp  fa-stack-1x"></i>
-            </a>
-          </span>
-               </span>
-      </div>
-    </nav>
-    <div class="whatsapp-widget">
-      <!-- Use Font Awesome WhatsApp icon -->
-      <a href="https://wa.me/+919176160055" target="_blank">
-        <i class="fab fa-whatsapp fa-2x"></i>
-      </a>
-    </div>
-    <!-- end of navbar -->
-    <!-- end of navbar -->
-
-
-    <!-- Header -->
-    <header id="header" class="ex-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Apostille MEA Attestation</h1>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </header> <!-- end of ex-header -->
-    <!-- end of header -->
-
-
-    <!-- Breadcrumbs -->
-    <div class="ex-basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumbs">
-                        <a href="../index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Apostille MEA Attestation</span>
-                    </div> <!-- end of breadcrumbs -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of breadcrumbs -->
-
-
-    <!-- Privacy Content -->
-    <div class="container">
-    <div class="ex-basic-2">
-        <div class="container">
-            <h2 class="text-center">Apostille MEA Embassy Attestation Services.</h2>
-
-            <a href="apostille-certificate-for-canada-in-tamilnadu.html"><img src="/images/apostille_canada8.png"alt="centered image" class="Apostilleimg" height="420" width="870"></a>\
-            <a href="embassy-attestation"><img src="/images/EMB-ATT.png"alt="centered image" class="Apostilleimg" height="65" width="870"></a>
-
-            <marquee behavior="alternate"><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;"></span><h3>Call +91 44 4203 7273 ,<a href="https://wa.me/+919940589665" target="_blank"> WhatsApp : +91 99405 89665</a> , Email:attestation@almiraaj.com.</h3>  </marquee>
-            <div class="text-center">
-              <i>
-                <h5><br> <a style="text-decoration: none;" href="../degree-certificate-attestation-in-chennai.html">Apostille MEA Embassy Attestation in Degree Certificates.</a> 
-                    <br> <a style="text-decoration: none;" href="../marriage-certificate-attestation.html">Apostille MEA Embassy Attestation in Marriage Certificates .</a> 
-                    <br> <a style="text-decoration: none;" href="../birth-certificate-attestation.html">Apostille MEA Embassy Attestation in Birth Certificates.</a> 
-                    <br> <a style="text-decoration: none;" href="../police-clearance-certificate-attestation.html">Apostille MEA Embassy Attestation in PCC - Police Clearance Certificates.</a> 
-                    <br> <a style="text-decoration: none;" href="../commercial-documents-attestation.html">Apostille MEA Embassy Attestation in Commercial documents.</a> </h5> 
-                 </i>
-             </div>
-             <br>
-             <div class="row">
-              <div class="col-lg-12">
-                  <div class="text-container">
-                    <div class="text-center">
-             <h1>About <a style="text-decoration: none;" href="../apostille-certificate-for-canada-in-tamilnadu.html">Certificate Apostille For Canada</a></h1></div>
-            
-             <p> Apostille of documents and certificates is admissible in countries which are a member of the Hague Convention.Canada is a member of the Hague Convention of October 5, 1961, abolishing the requirement of legalization of foreign public documents from MEA. Apostille is an elaborate process for all kinds of documents & certificates like Commercial / Personal / Education. All documents are subject to a series of protocols to be attested for official use.It is a method of attestation of documents and certificates making them authentic and legalized to be used when travelling to Canada which is a part of the Hague Convention.<br>
-            <b>Why do you require Apostille of certificates for Canada?</b>
-            Once a person travels to Canada, Apostilled certificates & documents may be required for :
-            Spouse Migration Visa,Marriage,Student Visa,Permanent Migration,Employment / Work visa,Dependent Visa,Changing in Sponsorship or Changing in Resident Visa,Changing the profession and transferring a Job,Changing the designation and applying family visa for parents,School admission in foreign countries,Changing the designation for family status and higher salary,Change of visa status in abroad,Attending an interview and writing exam and MOH Exams,This is the reason why AL-MIRAAJ  and its services are beneficial if you are looking for attestation/ Apostille services for your certificates & documents.<br>
-            AL-MIRAAJ  provides a hassle free Apostilled of certificates & documents to our clients. Our performance rate for this service is par excellence and the team is able to complete the process without any delay. Since the process of Apostille attestation does not require physical presence, documents can be submitted in original via courier / registered post. We also provide State Home Department Attestation, State HRD Attestation and MEA attestation for certificates & documents.AL-MIRAAJ  can provide Apostille attestation in India for all its states and union territories. Apostille attestation confirms that the department name, seal and signature on the certificate to be genuine, thus minimizing the chances of faking documents. Apostille attestation can be done by registered post or courier as well.<br>
-            Our experienced team of professionals will provide complete support, guidance and assistance in the attestation process. We update our services and parameters periodically with the Ministry and also share the same with our repeat clients and corporates, so that the process is streamlined at all times.As a team, we ensure our clients are fairly informed of the process, documents requirement, processing time, charges of a service and its complications with each project. Keeping the client informed is the key behind achieving his expectations to his satisfaction.
-            
-            <br>         
-                                     
-               
-                     
-                         <div class="text-center">
-    <h1>Process of Apostille /Embassy Attestation Services</h1></div>
-    
-                    
-                     <div class="tables row">
-                      <div class="col-lg-4 my-5">
-                        <div class="card">
-                  
-                  
-                        <a href="unmarriedcertificateapostille.html"><img src="/images/new-umcc.png" class="card-img-top img-fluid" alt="Image description"></a>
-                        <div class="card-body">
-                          <h5 class="card-title"> <a style="text-decoration: none;" href="../unmarriedcertificateapostille.html">Unmarried Certificate Apostille/Embassy Attestation</a></h5>
-                          <p class="card-text">
-                            
-                            Service:<a style="text-decoration: none;" href="../unmarriedcertificateapostille.html">Apostille / Embassy Attestation For Unmarried Certificate</a>
-                            <li>Required Documents :</li>
-                            <li>Original  Certificates</li>
-                            <li> Supportive Documents As Per The Embassy / Ministry Requirement.</li>
-                            <li>Passport Copy</p></li>
-                          <a href="/" class="btn btn-sm btn-success">Check more info</a>
-                        </div>
-                      </div>
-                      </div>
-                    
-                      <div class="col-lg-4 my-5">
-                        <div class="card">
-                        
-                        <a href="marriage-certificate-attestation.html"><img src="/images/new-mc.png" class="card-img-top img-fluid" alt="Image description"></a>
-                        <div class="card-body">
-                          <h5 class="card-title"><a style="text-decoration: none;" href="marriage-certificate-attestation.html">Marriage Certificate Apostille / Embassy Attestation</a></h5>
-                          <p class="card-text">
-                            Service : 
-                            <a style="text-decoration: none;" href="marriage-certificate-attestation.html">Apostille / Embassy Attestation For Marriage Certificate</a>
-                            <li>Required Documents :</li>
-                            <li>Original  Certificates</li>
-                            <li>Supportive Documents As Per The Embassy / Ministry Requirement.</li>
-                            <li>Passport Copy</p></li>
-                          <a href="/" class="btn btn-sm btn-success">Check more info</a>
-                        </div>
-                      </div>
-                      </div>
-                      <div class="col-lg-4 my-5">
-                        <div class="card">
-                        
-                        <a href="birth-certificate-attestation.html"><img src="/images/bc-att-2025.jpg" class="card-img-top img-fluid" alt="Image description"></a>
-                        <div class="card-body">
-                          <h5 class="card-title"><a style="text-decoration: none;" href="../birth-certificate-attestation.html">Birth Certificate Apostille / Embassy Attestation</a></h5>
-                          <p class="card-text">
-                            Service : 
-                            <a style="text-decoration: none;" href="../birth-certificate-attestation.html">Apostille / Embassy Attestation For Birth Certificate</a>
-                            <li>Required Documents :</li>
-                            <li>Original Certificates</li>
-                            <li>Supportive Documents As Per The Embassy / Ministry Requirement.</li>
-                            <li>Passport Copy</p></li>
-                          <a href="/" class="btn btn-sm btn-success">Check more info</a>
-                        </div>
-                      </div>
-                      </div>
-                      
-                        </p>
-                        <div>
-                          
-                        </div>
-              </div>
-              
-    <div>
-      <div class="tables row">
-        <div class="col-lg-4 my-5">
-          <div class="card">
-    
-    
-          <a href="degree-certificate-attestation-in-chennai.html"><img src="/images/deg1.png" class="card-img-top img-fluid" alt="Image description"></a>
-          <div class="card-body">
-            <h5 class="card-title"> <a style="text-decoration: none;" href="../degree-certificate-attestation-in-chennai.html">Degree Certificate Apostille / Embassy Attestation</a></a></h5>
-            <p class="card-text">
-              Service : 
-              <a style="text-decoration: none;" href="../degree-certificate-attestation-in-chennai.html">Apostille / Embassy Attestation For Degree Certificate</a>
-              <li>Required Documents :</li>
-              <li>Original  Certificates</li>
-              <li> Supportive Documents As Per The Embassy / Ministry Requirement.</li>
-              <li>Passport Copy</p></li>
-            <a href="/" class="btn btn-sm btn-success">Check more info</a>
-          </div>
-        </div>
-        </div>
-      
-        <div class="col-lg-4 my-5">
-          <div class="card">
-          
-          <a href="medical-certificate-attestation.html"><img src="/images/medical-certificate-attestation.png" class="card-img-top img-fluid" alt="Image description"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a style="text-decoration: none;" href="../medical-certificate-attestation.html">Medical Certificate Apostille / Embassy Attestation</a></h5>
-            <p class="card-text">
-              Service : 
-              <a style="text-decoration: none;" href="../medical-certificate-attestation.html">Apostille / Embassy Attestation For Medical Certificate</a>
-              <li>Required Documents :</li>
-              <li>Original  Certificates</li>
-              <li>Supportive Documents As Per The Embassy / Ministry Requirement.</li>
-              <li>Passport Copy</p></li>
-            <a href="/" class="btn btn-sm btn-success">Check more info</a>
-          </div>
-        </div>
-        </div>
-        <div class="col-lg-4 my-5">
-          <div class="card">
-          
-          <a href="commercial-documents-attestation.html"><img src="/images/commercial-all-2024.png" class="card-img-top img-fluid" alt="Image description"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a style="text-decoration: none;" href="../commercial-documents-attestation.html">Commercial Document Apostille / Embassy Attestation </a></h5>
-            <p class="card-text">Service :
-              
-              <a style="text-decoration: none;" href="../commercial-documents-attestation.html">Apostille / Embassy Attestation For Commercial Document </a>
-              <li>Required Documents :</li>
-              <li>Original Certificates</li>
-              <li>Supportive Documents As Per The Embassy / Ministry Requirement.</li>
-              <li>Passport Copy</p></li>
-            <a href="/" class="btn btn-sm btn-success">Check more info</a>
-          </div>
-        </div>
-        </div>
-                      
-                        </p>
-              </div>
-
-                    </div>
-                    <div class="col-lg-12">
-             
-              
-                      <div class="text-left"> 
-                        <h3>What is an <a style="text-decoration: none;" href="../apostille_40"> Apostille ?</a> How to Get <a style="text-decoration: none;" href="../apostille_40">Apostille</a> ?</h3></div>
-                        <p>An <a style="text-decoration: none;" href="../apostille_40">Apostille</a>  or an Authentication certifies the authenticity of the signature, seal and position of the official who has executed, issued or certified a copy of a public document.  An <a style="text-decoration: none;" href="../apostille_40">Apostille</a> or an Authentication enables a public document issued in one country to be recognized as valid in another country.  While they accomplish the same objective, there are differences between <a style="text-decoration: none;" href="../apostille_40">Apostilles</a> and Authentications.</p>
-        
-        </p>
-        
+        <!-- Certificate Attestation -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="certDropdown" role="button" data-toggle="dropdown">
+            Certificate Attestation
           </a>
-        
-                             
-                            <div class="text-left">
-                              <h3>What are the  documents can  get Apostille?</h3></div>
-                              <ul>
-                              <li>  <b>Educational Documents: </b>   Degrees, diplomas,other educational certificates issued by recognized institutions,etc.</li>
-                                
-                              <li><b>Non-Educational Certificates: </b>  Birth certificates, marriage certificates, death certificates, Single Status Certificate etc.</li>
-                                
-                                
-                              <li><b>Legal Documents: </b>   Affidavits, power of attorney documents, and notarized agreements or contracts,etc.</li>
-                                
-                                
-                              <li> <b>Official Extracts:</b>   Documents from public registers, such as commercial registers or land registers,etc.</li>
-                                
-                                
-                              <li> <b>Government Issued Identity Documents:</b>   Passports, driver's licenses, and national identity cards,pan card,etc.</li>
-                                
-                              <li> <b>Court Documents: </b>  Court judgments, court orders, and other legal documents issued by courts.</li>
-                               
-                              <li><b>Commercial Documents:</b>  
-                                Certificate of Origin,Certificate of incorporation,certificate of memorandum, Export Invoice,etc.</li>
-                                
-                                </p></ul>
-                                <br>
-                                
-                                
-                    <br>
-                    <div class="container">
-                      <div class="ex-basic-2">
-                          <div class="container">
-                    <h2 class="text-center">3 Easy Step to get  Certificate Apostille !!!</h2></div>
-                    <br>
-                    <div class="tables row">
-                      <div class="col-lg-4 my-5">
-                        <div class="card">
-                  
-                  
-                        <a href="apostille_40"><img src="/Images2023/ctc1.png" class="card-img-top img-fluid" alt="Image description"></a>
-                        <div class="card-body">
-                          <h5 class="card-title"> <a style="text-decoration: none;" href="../apostille_40">Step 1 Contact us</a></h5>
-                          <p class="card-text">
-                            
-                            <b>ALMIRAAJ International.</b><br>
-                            No.10 CASA Major Road.<br>
-                            B3-Elcanso Plaza.<br>
-                            Egmore,Chennai-600008,TN,India.<br>
-                            Phone:+91 44 4203 7273.<br>
-                            Email: almiraaj.in@gmail.com<br>
-                          <a href="/" class="btn btn-sm btn-success">Check more info</a>
-                        </div>    
-                      </div>
-                      </div>
-                    
-                      <div class="col-lg-4 my-5">
-                        <div class="card">
-                        
-                        <a href="apostille_40"><img src="/Images2023/sbmt1.png" class="card-img-top img-fluid" alt="Image description"></a>
-                        <div class="card-body">
-                          <h5 class="card-title"><a style="text-decoration: none;" href="../apostille_40">Step 2 Submit the Documents</a></h5>
-                          <p class="card-text">
-                            
-                            Original  Certificates<br>
-                             Supporting Documents as per the ministry requirements<br>
-                             Passport Copy<br>
-                             Get the Reference Number cum acknowledgement<br>
-                          <a href="/" class="btn btn-sm btn-success">Check more info</a>
-                        </div>
-                      </div>
-                      </div>
-                      <div class="col-lg-4 my-5">
-                        <div class="card">
-                        
-                        <a href="apostille_40"><img src="/Images2023/dlvr.png" class="card-img-top img-fluid" alt="Image description"></a>
-                        <div class="card-body">
-                      <h5 class="card-title"> Step 3 Delivery of Documents</h5>
-                          <p class="card-text">
-                            
-                            Now Apostille Process Completed:<br>
-                            We'll inform you after completion.<br>
-                            You can collect the documents from our office.<br>
-                            if you want,we will arrange delivery at your doorstep<br>
-                          <a href="/" class="btn btn-sm btn-success">Check more info</a>
-                        </div>
-                      </div>
-                      </div>
-                    </p>
-                    </div>
-                    <div><p><marquee behavior="scroll" direction="left"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="color:#000000;">
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for France,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Norway,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Oman,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Netherlands,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Europe,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Paraguay,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Portugal,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Poland,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Spain,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Finland,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Russia,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Romania,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for South Africa,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Peru,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Italy,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Georgia,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Germany,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Czech Republic,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Denmark,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Ethiopia,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Cyprus,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Greece,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Hungary,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Kazakhstan,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Austria,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Jamaica,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Japan,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Korea,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Jordan,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Belarus,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Belgium,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Algeria,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Angola,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Argentina,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Australia,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Sweden,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for New Zealand,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Panama,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Bahrain,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Bangladesh,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Malta,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Mauritius,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Mexico,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Brazil,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Bulgaria,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Canada,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Chile,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for China,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Venezuela,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Yemen,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Cuba,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Croatia,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Dominican,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Ecuador,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Egypt,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Indonesia,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Iran,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Iraq,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Kuwait,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Lebanon,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Libya,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Lithuania,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Malaysia,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Ukraine,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for USA,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Vietnam,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Monaco,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Sri Lanka,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Switzerland,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Taiwan,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Thailand,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Tunisia,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Morocco,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Nigeria,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Philippines,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Qatar,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Turkey,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for UAE,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Saudi,
-                      <a href="https://almiraaj.com/apostille_40.html"> Certificate Apostille MEA Services in India ,Tamilnadu,Chennai </a>for Sudan,
-                      
-                      </span></a></span></span></marquee></p></div>
-               
-                      
-                      
-    
-          
- 
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="birth-certificate-attestation.html">Birth Certificate</a>
+            <a class="dropdown-item" href="marriage-certificate-attestation.html">Marriage Certificate</a>
+            <a class="dropdown-item" href="degree-certificate-attestation-in-chennai.html">Educational Certificate</a>
+            <a class="dropdown-item" href="unmarriedcertificateapostille.html">Single Status Certificate</a>
+            <a class="dropdown-item" href="commercial-documents-attestation.html">Commercial Documents</a>
+            <a class="dropdown-item" href="power-of-attorney-apostilleattestation-in-chennai.html">Power of Attorney</a>
+            <a class="dropdown-item" href="pcc-apostille-attestation.html">PCC Apostille</a>
+          </div>
+        </li>
 
+        <!-- Embassy Attestation -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="embassyDropdown" role="button" data-toggle="dropdown">
+            Embassy Attestation
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="uae-embassy-attestation.html">UAE</a>
+            <a class="dropdown-item" href="saudi-embassy-attestation-in-chennai.html">Saudi Arabia</a>
+            <a class="dropdown-item" href="kuwait-embassy-attestation.html">Kuwait</a>
+            <a class="dropdown-item" href="qatar-embassy-attestation.html">Qatar</a>
+            <a class="dropdown-item" href="oman-embassy-attestation.html">Oman</a>
+          </div>
+        </li>
 
-</div> <!-- end of row -->
+        <!-- Apostille MEA -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="apostilleDropdown" role="button" data-toggle="dropdown">
+            Apostille MEA
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="https://www.almiraaj.com/personal-certificate-apostille">Personal Certificates</a>
+            <a class="dropdown-item" href="https://www.almiraaj.com/degree-certificate-apostille">Educational Certificates</a>
+            <a class="dropdown-item" href="https://www.almiraaj.com/commercial-certificate-apostille">Commercial Certificates</a>
+          </div>
+        </li>
 
-                    
-                    <a class="btn-outline-reg back m-1" href="../index.html">BACK</a>
-                    <a class="btn-outline-reg back m-1" href="../index.html#contact">CONTACT</a>
-                </div> <!-- end of col-->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-2 -->
-    <!-- end of privacy content -->
+        <!-- Visa Services -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="visaDropdown" role="button" data-toggle="dropdown">
+            Visa Services
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="china-visa-services.html">China</a>
+            <a class="dropdown-item" href="dubai_tourist_visa_47.html">Dubai</a>
+            <a class="dropdown-item" href="japan-visa-services.html">Japan</a>
+            <a class="dropdown-item" href="singapore_tourist_visa_29.html">Singapore</a>
+            <a class="dropdown-item" href="bahrain-visa-services.html">Bahrain</a>
+          </div>
+        </li>
 
+        <!-- Contact -->
+        <li class="nav-item">
+          <a class="nav-link" href="https://wa.me/919087559669?text=Hi Almiraaj!!!">CONTACT</a>
+        </li>
+      </ul>
+
+      <!-- WhatsApp Icon -->
+      <span class="nav-item social-icons">
+        <span class="fa-stack">
+          <a href="https://wa.me/+919176160055" aria-label="Chat with Al Miraaj on WhatsApp">
+            <span class="hexagon"></span>
+            <i class="fab fa-whatsapp fa-stack-1x"></i>
+          </a>
+        </span>
+      </span>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="ex-header">
+    <h1>Certificate Apostille for Canada – Process Explained</h1>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="ex-basic-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="breadcrumbs">
+            <a href="../index.html">Home</a>
+            <i class="fa fa-angle-double-right"></i>
+            <span>Certificate Apostille for Canada</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Certificate Apostille Services -->
+<section class="py-5 bg-white">
+  <div class="container text-center">
+    <h1 class="text-primary fw-bold mb-4">Certificate Apostille Services For Canada</h1>
+    <a href="https://www.almiraaj.com/apostille-certificate-for-canada-in-tamilnadu.html">
+      <img src="/images/attestation-2025%20(2).webp" alt="Apostille Services For Canada Flags" class="img-fluid rounded shadow-sm mb-4" style="max-width: 100%; height: auto;">
+    </a>
+  </div>
+</section>
+
+<!-- Country Selection -->
+<section class="py-5 bg-white">
+  <div class="container text-center">
+    <h5 class="mb-4 text-dark fw-semibold">🌍 Choose Your Certificate to Get Apostille For Canada</h5>
+    <div class="d-flex flex-wrap justify-content-center gap-2">
+      <a href="https://www.almiraaj.com/degree-certificate-apostille.html" class="btn btn-outline-primary">Degree Certificate</a>
+      <a href="https://www.almiraaj.com/birth-certificate-apostille.html" class="btn btn-outline-primary">Birth Certificate</a>
+      <a href="https://www.almiraaj.com/marriage-certificate-apostille.html" class="btn btn-outline-primary">Marriage Certificate</a>
+      <a href="https://www.almiraaj.com/commercial-documents-attestation.html" class="btn btn-outline-primary">Commercial Document</a>
+      <a href="https://www.almiraaj.com/powerofattorney-apostille.html" class="btn btn-outline-primary">POA - Power of Attorney</a>
+      <a href="https://www.almiraaj.com/pcc-apostille-attestation.html" class="btn btn-outline-primary">PCC - Police Clearance Certificate</a>
+      <a href="https://www.almiraaj.com/unmarriedcertificateapostille.html" class="btn btn-outline-primary">Unmarried Certificate</a>
+      <a href="https://www.almiraaj.com/legal-heir-certificate-attestation.html" class="btn btn-outline-primary">Legal Heir Certificate</a>
+      <a href="https://www.almiraaj.com/affidavit-apostille.html" class="btn btn-outline-primary">Affidavit Document</a>
+    </div>
+  </div>
+</section>
+
+<!-- Attestation Link & Helpline Section -->
+<section class="bg-light border-top py-4">
+  <div class="container text-center">
+    <p class="text-dark mb-3">
+      ✨ Looking for Embassy Attestation Services? Visit our 
+      <a href="https://www.almiraaj.com/embassy-attestation-in-chennai" class="text-primary fw-bold" target="_blank">
+        Embassy Attestation Service  </a> page for complete guidance.For Certificate Apostille Services , Pls visit <a href="https://www.almiraaj.com/certificate-apostille-mea-in-chennai" class="text-primary fw-bold" target="_blank">Apostille MEA Services.   </a> </p>
+
+    <h5 class="text-primary fw-bold mb-3">
+      📞 Helpline Numbers (Call / WhatsApp) for Apostille Certificate & Embassy Attestation Services
+    </h5>
+
+    <div class="d-flex flex-wrap justify-content-center gap-3">
+      <a href="https://wa.me/919176159922?text=I%20want%20marriage%20certificate%20attestation" class="btn btn-success rounded-pill px-4 py-2" target="_blank">+91 9176159922</a>
+      <a href="https://wa.me/919176160055?text=I%20want%20marriage%20certificate%20attestation" class="btn btn-info rounded-pill px-4 py-2" target="_blank">+91 9176160055</a>
+      <a href="https://wa.me/919159589163?text=I%20want%20marriage%20certificate%20attestation" class="btn btn-warning rounded-pill px-4 py-2" target="_blank">+91 9159589163</a>
+      <a href="https://wa.me/919940589665?text=I%20want%20marriage%20certificate%20attestation" class="btn btn-danger rounded-pill px-4 py-2" target="_blank">+91 9940589665</a>
+      <a href="https://wa.me/919087559669?text=I%20want%20marriage%20certificate%20attestation" class="btn btn-secondary rounded-pill px-4 py-2" target="_blank">+91 9087559669</a>
+    </div>
+  </div>
+</section>
+
+<!-- Apostille Process Content -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Text Content -->
+      <div class="col-lg-7">
+        <div class="bg-white p-4 rounded shadow-sm">
+          <h2 class="text-primary fw-bold mb-3">Apostille Process for Canada</h2>
+          <p class="text-start text-muted">
+            <a href="../apostille-certificate-for-canada-in-tamilnadu.html" class="text-decoration-none text-info fw-semibold">Apostille for Canada</a>, also known as Canada legalization, is the process of verifying Indian documents so they are accepted in Canada. This is essential for employment, education, business, or residency.
+          </p>
+          <ul class="list-unstyled text-start mt-4">
+            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Choose document type — educational, personal, or commercial.</li>
+            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Get initial verification (Notary, Home Dept, SDM, COC, HRD, etc.).</li>
+            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Submit to MEA for apostille sticker/stamp.</li>
+            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Attach supporting documents (passport copy, ID).</li>
+            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Process completes in a few working days.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="col-lg-5 mt-4 mt-lg-0">
+        <img src="/images/apostille-india-tamilnadu.webp" alt="Apostille Tamil Nadu" class="img-fluid rounded shadow-sm" />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Call to Action -->
+<div class="cta text-center my-5">
+  <a href="#contact" class="btn btn-primary btn-lg">Get Your Documents Apostilled</a>
 </div>
 
+<!-- Document Types with Purpose & Requirements -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center text-primary mb-4">📄 Certificate Apostille For Canada Document Guide</h2>
+    <div class="row">
+      <!-- Educational Certificates -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Educational Certificates</h5>
+            <ul class="list-unstyled">
+              <li><strong>Purpose:</strong> Higher studies, employment, migration</li>
+              <li><strong>Required:</strong> Original certificate, passport copy, university verification (if applicable)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
+      <!-- Birth Certificate -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Birth Certificate</h5>
+            <ul class="list-unstyled">
+              <li><strong>Purpose:</strong> Visa applications, family migration, legal identity</li>
+              <li><strong>Required:</strong> Original birth certificate, passport copy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marriage Certificate -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Marriage Certificate</h5>
+            <ul class="list-unstyled">
+              <li><strong>Purpose:</strong> Spouse visa, marital status verification</li>
+              <li><strong>Required:</strong> Original marriage certificate, passport copies of both spouses</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Power of Attorney -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Power of Attorney</h5>
+            <ul class="list-unstyled">
+              <li><strong>Purpose:</strong> Property transactions, legal representation abroad</li>
+              <li><strong>Required:</strong> Drafted POA, passport copy, notarization (if applicable)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Death Certificate -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Death Certificate</h5>
+            <ul class="list-unstyled">
+              <li><strong>Purpose:</strong> Overseas inheritance, insurance claims</li>
+              <li><strong>Required:</strong> Original death certificate, passport copy of deceased, legal heir documents</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Legal Heir Certificate -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Legal Heir Certificate</h5>
+            <ul class="list-unstyled">
+              <li><strong>Purpose:</strong> Inheritance claims, pension processing</li>
+              <li><strong>Required:</strong> Original certificate, ID proof, relationship documents</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divorce Certificate -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Divorce Certificate</h5>
+            <ul class="list-unstyled">
+              <li><strong>Purpose:</strong> Remarriage abroad, migration, legal status</li>
+              <li><strong>Required:</strong> Divorce decree, passport copy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single Status Certificate -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Single Status Certificate</h5>
+            <ul class="list-unstyled">
+              <li><strong>Purpose:</strong> Marriage abroad, immigration clearance</li>
+              <li><strong>Required:</strong> Affidavit, passport copy, local verification</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Commercial Documents -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Commercial Documents</h5>
+            <ul class="list-unstyled">
+              <li><strong>Purpose:</strong> International trade, customs clearance, business setup</li>
+              <li><strong>Required:</strong> Invoice, incorporation certificate, authorization letter</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 3-Step Apostille Guide -->
+<section class="bg-white py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="text-primary fw-bold">✅ 3 Easy Steps to Get Certificate Apostille For Canada</h2>
+      <p class="text-muted">Follow these simple steps to get your documents attested quickly and professionally.</p>
+    </div>
+
+    <div class="row">
+      <!-- Step 1 -->
+      <div class="col-lg-4 mb-4">
+        <div class="p-4 border rounded shadow-sm h-100 bg-light">
+          <h5 class="text-success text-center">🟢 Step 1: Contact</h5>
+          <p>
+            <strong>AL-MIRAAJ International</strong><br>
+            No.10 CASA Major Road, B3-Elcanso Plaza,<br>
+            Egmore, Chennai-600008, TN, India<br>
+            📞 <a href="tel:+914442037273" class="text-dark">+91 44 4203 7273</a><br>
+            📧 <a href="mailto:apostille@almiraaj.com" class="text-danger">apostille@almiraaj.com</a>
+          </p>
+          <div class="text-center">
+            <a href="/" class="btn btn-outline-success btn-sm">Check more info</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="col-lg-4 mb-4">
+        <div class="p-4 border rounded shadow-sm h-100 bg-light">
+          <h5 class="text-success text-center">🟢 Step 2: Submit</h5>
+          <ul class="text-dark ps-3">
+            <li>Original Certificates</li>
+            <li>Supporting documents per ministry requirements</li>
+            <li>Passport copy of certificate holder</li>
+          </ul>
+          <div class="text-center">
+            <a href="/" class="btn btn-outline-success btn-sm">Check more info</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="col-lg-4 mb-4">
+        <div class="p-4 border rounded shadow-sm h-100 bg-light">
+          <h5 class="text-success text-center">🟢 Step 3: Completed</h5>
+          <ul class="text-dark ps-3">
+            <li>Apostille Process Completed</li>
+            <li>Notification upon completion</li>
+            <li>Collect from office or opt for doorstep delivery</li>
+          </ul>
+          <div class="text-center">
+            <a href="/" class="btn btn-outline-success btn-sm">Check more info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Branch Locations -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center text-primary mb-4">📍 Our Locations</h2>
+    <div class="row justify-content-center">
+
+      <!-- Chennai -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="p-4 rounded shadow-sm" style="background-color: #e6f8ff; border-left: 5px solid #0059b3;">
+          <h4 class="text-primary">Certificate Apostille Services For Canada in Chennai</h4>
+          <p><strong>AL-MIRAAJ</strong><br>180/F3-Prakasam Salai, 2nd Flr, Broadway,<br>Chennai – 600108</p>
+        </div>
+      </div>
+
+      <!-- Trichy -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="p-4 rounded shadow-sm" style="background-color: #fff3e6; border-left: 5px solid #f39c12;">
+          <h4 style="color: #f39c12;">Certificate Apostille Services For Canada in Trichy</h4>
+          <p><strong>AL-MIRAAJ</strong><br>28, Nirmal Ravi Apt, Pattabiram Rd, Tennur<br>Tiruchirappalli – 620017</p>
+        </div>
+      </div>
+
+      <!-- Madurai -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="p-4 rounded shadow-sm" style="background-color: #f0f8e6; border-left: 5px solid #27ae60;">
+          <h4 style="color: #27ae60;">Certificate Apostille Services For Canada in Madurai</h4>
+          <p><strong>AL-MIRAAJ</strong><br>No 7, E2, PT Rajan Rd, Zumbropuram, Narimedu<br>Madurai – 625002</p>
+        </div>
+      </div>
+
+      <!-- Coimbatore -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="p-4 rounded shadow-sm" style="background-color: #f9e6ff; border-left: 5px solid #9b59b6;">
+          <h4 style="color: #9b59b6;">Certificate Apostille Services For Canada in Coimbatore</h4>
+          <p><strong>Green Tick</strong><br>12, 4th South Cross Street, Nehru Nagar (W)<br>Coimbatore – 641014</p>
+        </div>
+      </div>
+
+      <!-- Tuticorin -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="p-4 rounded shadow-sm" style="background-color: #ffe6e6; border-left: 5px solid #e74c3c;">
+          <h4 style="color: #e74c3c;">Certificate Apostille Services For Canada in Tuticorin</h4>
+          <p><strong>AL-MIRAAJ</strong><br>Hongkong Complex, 18A/57A Palai Road<br>Tuticorin – 628008</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Navigation Buttons -->
+<div class="text-center my-4">
+  <a class="btn btn-outline-primary mx-2" href="../visa.html">BACK</a>
+  <a class="btn btn-outline-success mx-2" href="../index.html#contact">CONTACT</a>
 </div>
-<style>
-  .footer {
-    background-color: #00264d; /* Dark Blue */
-    color: white;
-    padding: 50px 0;
-  }
-  .footer h5 {
-    font-size: 22px;
-    margin-bottom: 18px;
-    text-transform: uppercase;
-    color: #c99b33; /* Dark Gold */
-    white-space: nowrap; /* Keeps headings in a single line */
-  }
-  .footer ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  .footer ul li {
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-  .footer a {
-    color: white;
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
-  }
-  .footer a:hover {
-    text-decoration: underline;
-    color: #f7c04a; /* Lighter Gold on Hover */
-  }
-</style>
+
 
 <!-- Footer -->
-<div class="footer">
-    <div class="container">
-        <div class="row">
-            <!-- Visa Services -->
-            <div class="col-md-3">
-                <h5>Visa Services</h5>
-                <ul>
-                    <li><a href="https://www.almiraaj.com/australia_visa_32">Australia Visa Processing</a></li>
-                    <li><a href="https://www.almiraaj.com/dubai_tourist_visa_47">Dubai Visa Assistance</a></li>
-                    <li><a href="https://www.almiraaj.com/singapore_tourist_visa_29">Singapore Tourist Visa</a></li>
-                    <li><a href="https://www.almiraaj.com/thailand-visa-services-in-chennai">Thailand Travel Visa</a></li>
-                    <li><a href="https://www.almiraaj.com/philippines-visa-services-in-chennai">Philippines Visa Services</a></li>
-                </ul>
-            </div>
+<footer class="footer mt-5 text-white" style="background-color: #00264d;">
+  <div class="container py-5">
+    <div class="row text-center text-md-left">
 
-            <!-- Embassy Attestation -->
-            <div class="col-md-3">
-                <h5>Attestation</h5>
-                <ul>
-                    <li><a href="http://almiraaj.com/uae-embassy-attestation">UAE Embassy Attestation</a></li>
-                    <li><a href="https://www.almiraaj.com/qatar-embassy-attestation">Qatar Embassy Verification</a></li>
-                    <li><a href="https://www.almiraaj.com/Bahrain-embassy-attestation">Bahrain Document Attestation</a></li>
-                    <li><a href="https://www.almiraaj.com/saudi-embassy-attestation">Saudi Legalization Services</a></li>
-                    <li><a href="https://www.almiraaj.com/apostille-certificate-for-russia-in-chennai">Russia Embassy Apostille</a></li>
-                </ul>
-            </div>
+      <!-- Embassy -->
+      <div class="col-md-2 mb-4">
+        <h5 class="text-uppercase text-warning">Embassy</h5>
+        <ul class="list-unstyled">
+          <li><a href="http://almiraaj.com/uae-embassy-attestation">UAE Attestation</a></li>
+          <li><a href="https://www.almiraaj.com/saudi-embassy-attestation">Saudi Legalization</a></li>
+          <li><a href="https://www.almiraaj.com/kuwait-embassy-attestation-in-chennai">Kuwait Attestation</a></li>
+          <li><a href="https://www.almiraaj.com/qatar-embassy-attestation">Qatar Verification</a></li>
+          <li><a href="https://www.almiraaj.com/oman-embassy-attestation">Oman Attestation</a></li>
+        </ul>
+      </div>
 
-            <!-- Certificate Attestation -->
-            <div class="col-md-3">
-                <h5>Certificates </h5>
-                <ul>
-                    <li><a href="https://www.almiraaj.com/birth-certificate-attestation">Birth Certificate Authentication</a></li>
-                    <li><a href="https://www.almiraaj.com/degree-certificate-attestation-in-chennai">Degree Certificate Verification</a></li>
-                    <li><a href="https://www.almiraaj.com/marriage-certificate-attestation">Marriage Certificate Attestation</a></li>
-                    <li><a href="https://www.almiraaj.com/pcc-apostille-attestation">Police Clearance Approval</a></li>
-                    <li><a href="https://www.almiraaj.com/legal-heir-certificate-attestation">Legal Heir Certificate Validation</a></li>
-                </ul>
-            </div>
+      <!-- Attestation -->
+      <div class="col-md-2 mb-4">
+        <h5 class="text-uppercase text-warning">Attestation</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://www.almiraaj.com/home-mantralaya-attestation">Mantralaya</a></li>
+          <li><a href="https://www.almiraaj.com/sdm-attestation">SDM</a></li>
+          <li><a href="https://www.almiraaj.com/mea-attestation-procedures">MEA</a></li>
+          <li><a href="https://www.almiraaj.com/coc-chamberofcommerce-attestation">COC</a></li>
+          <li><a href="https://www.almiraaj.com/embassy-attestation-in-chennai">Embassy Process</a></li>
+        </ul>
+      </div>
 
-            <!-- Apostille Countries -->
-            <div class="col-md-3">
-                <h5>Apostille </h5>
-                <ul>
-                    <li><a href="https://www.almiraaj.com/apostille-for-usa-in-chennai">Apostille for USA</a></li>
-                    <li><a href="https://www.almiraaj.com/apostille-for-uk">Apostille for UK</a></li>
-                    <li><a href="https://www.almiraaj.com/apostille-for-australia-in-chennai">Apostille for Australia</a></li>
-                    <li><a href="https://www.almiraaj.com/apostille-certificate-embassy-attestation-for-france">Apostille for France</a></li>
-                    <li><a href="https://www.almiraaj.com/apostille-for-germany-in-chennai">Apostille for Germany</a></li>
-                </ul>
-            </div>
-        </div>
+      <!-- Documents -->
+      <div class="col-md-2 mb-4">
+        <h5 class="text-uppercase text-warning">Documents</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://www.almiraaj.com/birth-certificate-attestation">Birth Certificate</a></li>
+          <li><a href="https://www.almiraaj.com/degree-certificate-attestation-in-chennai">Degree Certificate</a></li>
+          <li><a href="https://www.almiraaj.com/marriage-certificate-attestation">Marriage Certificate</a></li>
+          <li><a href="https://www.almiraaj.com/pcc-apostille-attestation">PCC</a></li>
+          <li><a href="https://www.almiraaj.com/legal-heir-certificate-attestation">Legal Heir</a></li>
+        </ul>
+      </div>
+
+      <!-- Apostille -->
+      <div class="col-md-2 mb-4">
+        <h5 class="text-uppercase text-warning">Apostille</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://www.almiraaj.com/apostille-for-usa-in-chennai">USA</a></li>
+          <li><a href="https://www.almiraaj.com/apostille-for-uk">UK</a></li>
+          <li><a href="https://www.almiraaj.com/apostille-for-australia-in-chennai">Australia</a></li>
+          <li><a href="https://www.almiraaj.com/apostille-certificate-embassy-attestation-for-france">France</a></li>
+          <li><a href="https://www.almiraaj.com/hague-convention-apostille-countries">HCCH Countries</a></li>
+        </ul>
+      </div>
+
+      <!-- Visas -->
+      <div class="col-md-2 mb-4">
+        <h5 class="text-uppercase text-warning">Visas</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://www.almiraaj.com/china-visa-services">China</a></li>
+          <li><a href="https://www.almiraaj.com/dubai_tourist_visa_47">UAE</a></li>
+          <li><a href="https://www.almiraaj.com/singapore_tourist_visa_29">Singapore</a></li>
+          <li><a href="https://www.almiraaj.com/japan-visa-services">Japan</a></li>
+          <li><a href="https://www.almiraaj.com/bahrain-visa-services">Bahrain</a></li>
+        </ul>
+      </div>
     </div>
-</div>
 
-<!-- Copyright -->
-<div class="copyright text-center">
-    <p>Copyright © 2025 <a href="#">AL-MIRAAJ</a> - Document Authentication Experts</p>
-</div>
+    <!-- Contact Info -->
+    <div class="text-center mt-4 footer-contact">
+      <hr class="border-light w-100" />
+      <p>📍 <strong>Address:</strong> 10, CASA Major Rd, Elcanso Plaza, Near Don Bosco School, Egmore, Chennai – 600008, TN, India</p>
+      <p>
+        ☎️ <strong>Call:</strong> <a href="tel:+914442037273" class="text-warning">+91 44 4203 7273</a> |
+        💬 <strong>WhatsApp:</strong> <a href="https://wa.me/919176159922" target="_blank" rel="noopener" class="text-warning">+91 9176159922</a> |
+        ✉️ <strong>Email:</strong> <a href="mailto:apostille@almiraaj.com" class="text-warning">apostille@almiraaj.com</a>
+      </p>
+    </div>
+
+    <!-- Social Media -->
+    <div class="text-center mt-3">
+      <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener" class="mx-2 text-white"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener" class="mx-2 text-white"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener" class="mx-2 text-white"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="text-center mt-4 pt-3 border-top" style="font-size: 0.9rem;">
+      © 2025 AL-MIRAAJ International. All rights reserved.
+    </div>
+  </div>
+</footer>
