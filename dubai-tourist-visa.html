@@ -266,44 +266,77 @@
 </div>
 
 
-  <style>
-    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f4f4f4; color: #333; }
-    header { position: relative; text-align: center; color: white; }
-    header img { width: 100%; height: auto; max-height: 500px; object-fit: cover; }
-    header .overlay {
-      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-      background: rgba(0, 64, 128, 0.6); padding: 20px 40px; border-radius: 10px;
-    }
-    header h1 { font-size: 36px; margin: 0; }
-    header p { font-size: 18px; margin: 10px 0 0; }
+<!-- Corporate-Style Header with Enhanced Readability -->
+<header id="header" class="ex-header text-center py-5" style="position: relative; overflow: hidden;">
+  <div style="position: relative;">
+    <img 
+      src="https://www.almiraaj.com/images/uae-embassy-india.webp" 
+      alt="Tourist Visa Services - Almiraaj International" 
+      class="img-fluid w-100" 
+      style="filter: brightness(50%);" />
 
-    section { padding: 40px 20px; max-width: 1200px; margin: auto; background: white; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
-    h2 { color: #004080; font-size: 28px; margin-bottom: 20px; }
-    ul { padding-left: 20px; }
+    <!-- Overlay for better text contrast -->
+    <div style="
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    "></div>
 
-    .card-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-    .card {
-      flex: 0 0 45%; background: #e6f2ff; border-radius: 10px;
-      padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .card h3 { color: #006699; margin-top: 0; }
-
-    .contact { background: #fff8e1; border-left: 5px solid #ffc107; padding: 20px; margin-top: 20px; }
-
-    footer { background: #004080; color: white; text-align: center; padding: 20px; }
-    img.full { max-width: 100%; border-radius: 10px; margin-top: 20px; }
-  </style>
-</head>
-<body>
-
-<header style="position: relative; text-align: center;">
-  <img src="https://www.almiraaj.com/images/dubai-tourist-visa.webp" alt="Dubai Tourist Visa" style="width: 100%; height: auto; max-height: 500px; object-fit: cover;" />
-  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-              background: rgba(0, 64, 128, 0.6); padding: 20px 40px; border-radius: 10px; color: #fff;">
-    <h1 style="font-size: 36px; margin: 0; color: #fff;">Dubai Tourist Visa Services</h1>
-    <p style="font-size: 18px; margin-top: 10px; color: #fff;">Almiraaj International – Your Trusted Visa Partner for Over 25 Years</p>
+      <!-- Centered Text Block -->
+    <div style="
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      color: #fff;
+      padding: 1rem 2rem;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      backdrop-filter: blur(4px);
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+      animation: fadeInUp 1.2s ease-out;
+    ">
+      <h1 class="display-5 fw-bold mb-2">Dubai Visa Services</h1>
+      <p class="lead mb-0"> by <strong>Almiraaj International</strong></p>
+    </div>
   </div>
 </header>
+
+
+<style>
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+</style>
+
+
+
+<!-- Breadcrumbs -->
+<div class="ex-basic-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumbs">
+                    <a href="../index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Dubai Visa Services in Chennai</span>
+                </div> <!-- end of breadcrumbs -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of ex-basic-1 -->
+<!-- end of breadcrumbs -->
+
 <div style="margin-top:10px; text-align:center; font-size:18px; color:#004080;">
   📞 <strong>Helpline Numbers:</strong>
   <a href="tel:+919176159922" style="margin:0 10px; text-decoration:none; color:#004080;">+91 9176159922</a>
