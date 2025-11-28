@@ -63,55 +63,39 @@
   </nav>
 
   <!-- Custom Styles -->
-  <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #f8f9fa;
-    }
-    .hero-section {
-      background: linear-gradient(135deg, #e6f2ff, #ffffff);
-      padding: 60px 0;
-      text-align: center;
-    }
-    .hero-section h1 {
-      font-weight: 700;
-      color: #00264d;
-    }
-    .hero-section p {
-      color: #333;
-      font-size: 1.1rem;
-    }
-    .faq-section {
-      background: linear-gradient(135deg, #e6f2ff, #f8f9fa);
-      border-radius: 8px;
-      padding: 40px;
-      margin-top: 40px;
-    }
-    .faq-section h2 {
-      color: #00264d;
-      font-weight: 700;
-    }
-    .accordion-button {
-      background-color: #005580;
-      color: #fff;
-      font-weight: 600;
-    }
-    .accordion-button:hover {
-      background-color: #0073aa;
-      color: #fff;
-    }
-    .accordion-body {
-      background-color: #ffffff;
-      border-left: 4px solid #005580;
-      padding: 20px;
-      transition: background-color 0.3s ease;
-    }
-    .accordion-body:hover {
-      background-color: #e6f2ff;
-      cursor: pointer;
-    }
-  </style>
-</head>
+ <style>
+  .breadcrumb-wrapper {
+    background-color: #f1f7ff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+  .breadcrumb a {
+    color: #005580;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .breadcrumb a:hover {
+    text-decoration: underline;
+    color: #0073aa;
+  }
+  .breadcrumb-item.active {
+    color: #333;
+    font-weight: 700;
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.almiraaj.com" },
+    { "@type": "ListItem", "position": 2, "name": "Apostille Services", "item": "https://www.almiraaj.com/apostille-services" },
+    { "@type": "ListItem", "position": 3, "name": "Hague Convention Apostille Countries", "item": "https://www.almiraaj.com/hague-convention-apostille-countries" }
+  ]
+}
+</script>
+
 <body>
 
 
