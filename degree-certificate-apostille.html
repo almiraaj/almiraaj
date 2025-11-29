@@ -231,108 +231,113 @@
       </ul>
 
 
-    <!-- WhatsApp Icon in Navbar -->
-    <span class="nav-item social-icons">
-      <span class="fa-stack">
-        <a href="https://wa.me/+919176160055" aria-label="Chat with Al Miraaj on WhatsApp">
-          <span class="hexagon"></span>
-          <i class="fab fa-whatsapp fa-stack-1x"></i>
-        </a>
+
+
+ <!-- WhatsApp Icon -->
+      <span class="nav-item social-icons ml-3">
+        <span class="fa-stack">
+          <a href="https://wa.me/+919176160055" target="_blank" rel="noopener">
+            <span class="hexagon"></span>
+            <i class="fab fa-whatsapp fa-stack-1x text-success"></i>
+          </a>
+        </span>
       </span>
-    </span>
+    </div>
   </div>
 </nav>
 
-<!-- Floating WhatsApp Widget -->
-<div class="whatsapp-widget">
-  <a href="https://wa.me/+919176160055" target="_blank" aria-label="Chat with Al Miraaj on WhatsApp">
-    <i class="fab fa-whatsapp fa-2x"></i>
+<!-- WhatsApp Floating Widget -->
+<div class="whatsapp-widget position-fixed" style="bottom: 20px; right: 20px;">
+  <a href="https://wa.me/+919176160055" target="_blank" rel="noopener">
+    <i class="fab fa-whatsapp fa-2x text-success"></i>
   </a>
 </div>
-<!-- ✅ Custom Styles (Place inside <head> or your CSS file) -->
+<br>
+<br>
+<br>
+
+
+<!-- Corporate-Style Header with Enhanced Readability -->
+<header id="header" class="ex-header text-center py-5" style="position: relative; overflow: hidden;">
+  <div style="position: relative;">
+    <img 
+      src="https://www.almiraaj.com/images/trichy-apostille.webp" 
+      alt="Apostille MEA in Chennai-Certificate Apostille Agency-Tamilnadu" 
+      class="img-fluid w-100" 
+      style="filter: brightness(50%);" />
+
+    <!-- Overlay for better text contrast -->
+    <div style="
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    "></div>
+
+    <!-- Centered Text Block -->
+    <div style="
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      color: #fff;
+      padding: 1rem 2rem;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      backdrop-filter: blur(4px);
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+      animation: fadeInUp 1.2s ease-out;
+    ">
+      <h1 class="display-5 fw-bold mb-2">Certificate Apostille Services</h1>
+      <p class="lead mb-0">Trichy <strong>Almiraaj International</strong></p>
+    </div>
+  </div>
+</header>
+
+
 <style>
-  
-  .ex-header {
-    padding: 140px 15px 40px;
-    background-color: #f6faff;
-    box-sizing: border-box;
-    text-align: center;
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
   }
-
-  .ex-header h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #00264d;
-    margin: 0;
-    word-wrap: break-word;
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
   }
-
-  @media (max-width: 768px) {
-    .ex-header {
-      padding-top: 160px;
-    }
-
-    .ex-header h1 {
-      font-size: 1.5rem;
-    }
-  }
-</style>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #ffffff;
-    color: #333;
-  }
-
-  .ex-header {
-    padding: 140px 15px 40px;
-    background-color: #00264d; /* Dark blue background */
-    box-sizing: border-box;
-    text-align: center;
-  }
-
-  .ex-header h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #ffffff; /* White text */
-    margin: 0;
-    word-wrap: break-word;
-  }
-
-  @media (max-width: 768px) {
-    .ex-header {
-      padding-top: 160px;
-    }
-
-    .ex-header h1 {
-      font-size: 1.5rem;
-    }
-  }
-
-  main {
-    padding: 40px 15px;
-    background-color: #f6faff;
-    min-height: 100vh;
-  }
-</style>
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
 }
+</style>
 
-</head>
-<body>
 
-<!-- Hero Section -->
-<section class="hero" style="background: linear-gradient(to right, #001f3f, #003366); color: white; padding: 80px 0; text-align: center;">
+
+<!-- Breadcrumbs -->
+<div class="ex-basic-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumbs">
+                    <a href="../index.html">Home</a><i class="fa fa-angle-double-right"></i><span>MEA Apostille in Trichy</span>
+                </div> <!-- end of breadcrumbs -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of ex-basic-1 -->
+<!-- end of breadcrumbs -->
+
+
+  <!-- Contact & Service Info -->
+<section class="py-4 text-center bg-white">
   <div class="container">
-    <img src="https://www.almiraaj.com/images/deg4.png" alt="Degree Certificate Apostille" style="width: 100%; height: auto;">
-    <h1 class="mt-4" style="color: white;">Degree Certificate Apostille Services </h1>
-    <p class="lead" style="color: white;">Fast, secure, and MEA-authorized services for global education, employment, and migration.</p>
+    <address class="mb-3 text-dark fw-semibold" style="font-size: 1rem; line-height: 1.5;">
+      📍 <strong>MEA Certificate Apostille Services in Chennai</strong><br>
+      Al-Miraaj, 10/B3, CASA Major Rd, Elcanso,<br>
+      Egmore,Chennai, Tamil Nadu 600008,<br>
+Helpline : +91 91761 59922 , Email : apostille@almiraaj.com
+    </address>
   </div>
 </section>
 
