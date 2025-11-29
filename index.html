@@ -377,41 +377,34 @@
       </div>
     </div>
   </div>
-</div>
-<!-- Styles -->
- .service-links a {
-  position: relative;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.service-links a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 100%;
-  height: 2px;
-  background: currentColor;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-.service-links a:hover {
-  color: #004466; /* optional brand hover color */
-}
-
-.service-links a:hover::after {
-  transform: scaleX(1);
-}
-
+</div><!-- Styles -->
 <style>
-  .blink {
-    animation: blinker 1.5s linear infinite;
+  /* Service links hover underline animation */
+  .service-links a {
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
   }
-  @keyframes blinker {
-    50% { opacity: 0; }
+
+  .service-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .service-links a:hover {
+    color: #004466; /* optional brand hover color */
+  }
+
+  .service-links a:hover::after {
+    transform: scaleX(1);
   }
 
   :root {
@@ -454,7 +447,7 @@
     font-size: 17px;
   }
 
-  /* ✅ Embassy flag images fix */
+  /* Embassy flag images fix */
   .service-card img {
     width: 60px;       /* same width for all flags */
     height: 40px;      /* same height for all flags */
@@ -471,7 +464,6 @@
   }
 </style>
 
-<body>
 
   <!-- Intro / Attestation content -->
   <div class="container my-5">
