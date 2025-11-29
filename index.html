@@ -432,248 +432,342 @@
 </div>
 </div>
 <body>
+  <!-- Global Styles -->
+  <style>
+    :root {
+      --brand-primary: #006699;
+      --brand-secondary: #004466;
+      --text-color: #333;
+      --bg-soft: #f5f7fa;
+      --card-bg: #fff;
+    }
 
-  <div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="content-block" style="padding: 20px; background-color: #f9f9f9; border-radius: 8px; line-height: 1.7; font-size: 16px; color: #333;">
-        
-        <p class="testimonial-text">
-          <span class="highlight" style="font-size: 20px; font-weight: bold; color: #006699;">Welcome to AL-MIRAAJ INTERNATIONAL !</span><br>
-          Your trusted partner for <strong>certificate attestation, apostille, and visa services in Chennai</strong>. With over 25 years of government-approved expertise and an IATA license, we deliver fast, reliable, and professional solutions for individuals and businesses worldwide.
-        </p>
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg-soft);
+      color: var(--text-color);
+      line-height: 1.7;
+    }
 
-        <h2 style="margin-top: 25px; color: #004466;">🌍 Certificate Attestation & Apostille Services</h2>
-        <p>
-          Looking for dependable <a class="service-link" href="https://www.almiraaj.com/certificate-attestation-services-in-chennai" target="_blank" rel="noopener noreferrer">certificate attestation services in Chennai</a>? We handle 
-          <a class="service-link" href="https://www.almiraaj.com/degree-certificate-attestation-in-chennai" target="_blank" rel="noopener noreferrer">degree certificate attestation</a>, 
-          <a class="service-link" href="https://www.almiraaj.com/marriage-certificate-attestation" target="_blank" rel="noopener noreferrer">marriage certificate attestation</a>, and 
-          <a class="service-link" href="https://www.almiraaj.com/certificate-apostille-mea-in-chennai" target="_blank" rel="noopener noreferrer">apostille services</a> approved by the Ministry of External Affairs (MEA).
-        </p>
+    /* Content block */
+    .content-block {
+      padding: 30px;
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      font-size: 16px;
+    }
 
-        <h2 style="margin-top: 25px; color: #004466;">🏛 Embassy Attestation Services</h2>
-<p>
-  AL-MIRAAJ INTERNATIONAL offers trusted 
-  <a class="service-link" href="https://www.almiraaj.com/embassy-attestation-in-chennai" target="_blank" rel="noopener noreferrer">
-    embassy attestation services in Chennai
-  </a> for multiple countries. Our team ensures fast, reliable legalization of documents for education, employment, migration, and business purposes.
-</p>
+    .highlight {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--brand-primary);
+    }
 
-<div class="row" style="margin-top: 20px;">
-  
-  <!-- Qatar -->
-  <div class="col-md-4 service-card" style="margin-bottom: 25px; text-align:center;">
-    <img src="https://flagcdn.com/w320/qa.png" alt="Qatar Flag" style="width:50px; margin-bottom:10px;">
-    <h3 style="color:#006699; font-size:18px;">Qatar</h3>
-    <p><a class="service-link" href="https://www.almiraaj.com/qatar-embassy-attestation" target="_blank" rel="noopener noreferrer">Qatar Embassy Attestation</a> for educational, personal, and commercial certificates.</p>
-  </div>
+    .section-title {
+      margin-top: 40px;
+      margin-bottom: 18px;
+      color: var(--brand-secondary);
+      font-weight: 700;
+    }
 
-  <!-- UAE -->
-  <div class="col-md-4 service-card" style="margin-bottom: 25px; text-align:center;">
-    <img src="https://flagcdn.com/w320/ae.png" alt="UAE Flag" style="width:50px; margin-bottom:10px;">
-    <h3 style="color:#006699; font-size:18px;">UAE</h3>
-    <p><a class="service-link" href="https://www.almiraaj.com/uae-embassy-attestation-in-chennai" target="_blank" rel="noopener noreferrer">UAE Embassy Attestation</a> for employment, residency, and family visas.</p>
-  </div>
+    /* Embassy grid */
+    .service-card {
+      text-align: center;
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      height: 100%;
+    }
 
-  <!-- Saudi Arabia -->
-  <div class="col-md-4 service-card" style="margin-bottom: 25px; text-align:center;">
-    <img src="https://flagcdn.com/w320/sa.png" alt="Saudi Flag" style="width:50px; margin-bottom:10px;">
-    <h3 style="color:#006699; font-size:18px;">Saudi Arabia</h3>
-    <p><a class="service-link" href="https://www.almiraaj.com/saudi-embassy-attestation-in-chennai" target="_blank" rel="noopener noreferrer">Saudi Embassy Attestation</a> for work permits, higher studies, and family visas.</p>
-  </div>
+    .service-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
 
-  <!-- Oman -->
-  <div class="col-md-4 service-card" style="margin-bottom: 25px; text-align:center;">
-    <img src="https://flagcdn.com/w320/om.png" alt="Oman Flag" style="width:50px; margin-bottom:10px;">
-    <h3 style="color:#006699; font-size:18px;">Oman</h3>
-    <p><a class="service-link" href="https://www.almiraaj.com/oman-embassy-attestation" target="_blank" rel="noopener noreferrer">Oman Embassy Attestation</a> for migration and business expansion.</p>
-  </div>
+    .service-card img {
+      width: 56px;
+      height: auto;
+      margin-bottom: 10px;
+    }
 
-  <!-- Malaysia -->
-  <div class="col-md-4 service-card" style="margin-bottom: 25px; text-align:center;">
-    <img src="https://flagcdn.com/w320/my.png" alt="Malaysia Flag" style="width:50px; margin-bottom:10px;">
-    <h3 style="color:#006699; font-size:18px;">Malaysia</h3>
-    <p><a class="service-link" href="https://www.almiraaj.com/malaysia-embassy-attestation" target="_blank" rel="noopener noreferrer">Malaysia Embassy Attestation</a> for academic admissions and corporate ventures.</p>
-  </div>
+    .service-card h3 {
+      color: var(--brand-primary);
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
 
-  <!-- Kuwait -->
-  <div class="col-md-4 service-card" style="margin-bottom: 25px; text-align:center;">
-    <img src="https://flagcdn.com/w320/kw.png" alt="Kuwait Flag" style="width:50px; margin-bottom:10px;">
-    <h3 style="color:#006699; font-size:18px;">Kuwait</h3>
-    <p>
-      <a class="service-link" href="https://www.almiraaj.com/kuwait-embassy-attestation-in-chennai" target="_blank" rel="noopener noreferrer">Kuwait Embassy Attestation</a> and 
-      <a class="service-link" href="https://www.almiraaj.com/kuwait-visa-stamping-in-chennai" target="_blank" rel="noopener noreferrer">Visa Stamping</a> for employment and family relocation.
-    </p>
-  </div>
+    /* Services cards */
+    .card {
+      border-radius: 12px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 
-  <!-- China -->
-  <div class="col-md-4 service-card" style="margin-bottom: 25px; text-align:center;">
-    <img src="https://flagcdn.com/w320/cn.png" alt="China Flag" style="width:50px; margin-bottom:10px;">
-    <h3 style="color:#006699; font-size:18px;">China</h3>
-    <p><a class="service-link" href="https://www.almiraaj.com/china-embassy-attestation" target="_blank" rel="noopener noreferrer">China Embassy Attestation</a> for business, study, and travel purposes.</p>
-  </div>
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
 
-  <!-- Bahrain -->
-  <div class="col-md-4 service-card" style="margin-bottom: 25px; text-align:center;">
-    <img src="https://flagcdn.com/w320/bh.png" alt="Bahrain Flag" style="width:50px; margin-bottom:10px;">
-    <h3 style="color:#006699; font-size:18px;">Bahrain</h3>
-    <p><a class="service-link" href="https://www.almiraaj.com/bahrain-embassy-attestation" target="_blank" rel="noopener noreferrer">Bahrain Embassy Attestation</a> for professional and personal documentation.</p>
-  </div>
+    .card-title a {
+      text-decoration: none;
+    }
 
-  <!-- Egypt -->
-  <div class="col-md-4 service-card" style="margin-bottom: 25px; text-align:center;">
-    <img src="https://flagcdn.com/w320/eg.png" alt="Egypt Flag" style="width:50px; margin-bottom:10px;">
-    <h3 style="color:#006699; font-size:18px;">Egypt</h3>
-    <p><a class="service-link" href="https://www.almiraaj.com/egypt-embassy-attestation" target="_blank" rel="noopener noreferrer">Egypt Embassy Attestation</a> for academic, employment, and migration purposes.</p>
-  </div>
+    /* Utilities */
+    .lead-sm {
+      font-size: 17px;
+    }
 
-</div>
+    /* Footer */
+    footer {
+      background: var(--brand-secondary);
+      color: #fff;
+      padding: 22px 0;
+      text-align: center;
+      margin-top: 48px;
+    }
+  </style>
+</head>
+<body>
 
+  <!-- Intro / Attestation content -->
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="content-block">
+          <p class="lead-sm mb-2">
+            <span class="highlight">Welcome to AL-MIRAAJ INTERNATIONAL!</span><br>
+            Your trusted partner for <strong>certificate attestation, apostille, and visa services in Chennai</strong>. With over 25 years of government-approved expertise and an IATA license, we deliver fast, reliable, and professional solutions for individuals and businesses worldwide.
+          </p>
 
-      
-        <h2 style="margin-top: 25px; color: #004466;">🇮🇳 Domestic Services</h2>
-        <p>
-          For dedicated apostille, visa stamping, and attestation services within India, visit our sister site 
-          <a href="https://almiraaj.in/" target="_blank" rel="noopener noreferrer">Almiraaj.in</a>. Together, we simplify document legalization and visa solutions across borders.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
+          <h2 class="section-title">🌍 Certificate attestation and apostille services</h2>
+          <p>
+            Looking for dependable
+            <a href="https://www.almiraaj.com/certificate-attestation-services-in-chennai" target="_blank" rel="noopener noreferrer">certificate attestation services in Chennai</a>?
+            We handle
+            <a href="https://www.almiraaj.com/degree-certificate-attestation-in-chennai" target="_blank" rel="noopener noreferrer">degree certificate attestation</a>,
+            <a href="https://www.almiraaj.com/marriage-certificate-attestation" target="_blank" rel="noopener noreferrer">marriage certificate attestation</a>, and
+            <a href="https://www.almiraaj.com/certificate-apostille-mea-in-chennai" target="_blank" rel="noopener noreferrer">apostille services</a>
+            approved by the Ministry of External Affairs (MEA).
+          </p>
 
+          <h2 class="section-title">🏛 Embassy attestation services</h2>
+          <p>
+            AL-MIRAAJ INTERNATIONAL offers trusted
+            <a href="https://www.almiraaj.com/embassy-attestation-in-chennai" target="_blank" rel="noopener noreferrer">embassy attestation services in Chennai</a>
+            for multiple countries. Our team ensures fast, reliable legalization of documents for education, employment, migration, and business purposes.
+          </p>
 
-
-
-    
- <!-- AL-MIRAAJ Services Section -->
-<section id="services" class="py-5">
-  <div class="container text-center">
-    <h2 class="fw-bold text-primary fs-4 mb-4">AL-MIRAAJ INTERNATIONAL — One Stop Solution for All Your Travel Needs</h2>
-    <hr>
-
-    <div class="row justify-content-center">
-      <!-- Each service card starts here -->
-      <!-- Example: Flight Bookings -->
-      <div class="col-lg-4 my-4">
-        <div class="card shadow-sm border-primary h-100">
-          <div class="card-body">
-            <h5 class="card-title">
-              <a href="https://almiraaj.com" class="text-primary">Flight Bookings</a>
-            </h5>
-            <p class="card-text">Book Your Flights with Ease. Experience hassle-free ticket booking and exclusive deals for domestic and international travel.</p>
-            <a href="https://almiraaj.com" class="btn btn-sm btn-primary">Check more info</a>
+          <!-- Embassy country grid -->
+          <div class="row g-4 mt-2">
+            <!-- Qatar -->
+            <div class="col-md-6 col-lg-4">
+              <div class="service-card h-100">
+                <img src="https://flagcdn.com/w320/qa.png" alt="Qatar flag">
+                <h3>Qatar</h3>
+                <p><a href="https://www.almiraaj.com/qatar-embassy-attestation" target="_blank" rel="noopener noreferrer">Qatar Embassy Attestation</a> for educational, personal, and commercial certificates.</p>
+              </div>
+            </div>
+            <!-- UAE -->
+            <div class="col-md-6 col-lg-4">
+              <div class="service-card h-100">
+                <img src="https://flagcdn.com/w320/ae.png" alt="United Arab Emirates flag">
+                <h3>UAE</h3>
+                <p><a href="https://www.almiraaj.com/uae-embassy-attestation-in-chennai" target="_blank" rel="noopener noreferrer">UAE Embassy Attestation</a> for employment, residency, and family visas.</p>
+              </div>
+            </div>
+            <!-- Saudi Arabia -->
+            <div class="col-md-6 col-lg-4">
+              <div class="service-card h-100">
+                <img src="https://flagcdn.com/w320/sa.png" alt="Saudi Arabia flag">
+                <h3>Saudi Arabia</h3>
+                <p><a href="https://www.almiraaj.com/saudi-embassy-attestation-in-chennai" target="_blank" rel="noopener noreferrer">Saudi Embassy Attestation</a> for work permits, higher studies, and family visas.</p>
+              </div>
+            </div>
+            <!-- Oman -->
+            <div class="col-md-6 col-lg-4">
+              <div class="service-card h-100">
+                <img src="https://flagcdn.com/w320/om.png" alt="Oman flag">
+                <h3>Oman</h3>
+                <p><a href="https://www.almiraaj.com/oman-embassy-attestation" target="_blank" rel="noopener noreferrer">Oman Embassy Attestation</a> for migration and business expansion.</p>
+              </div>
+            </div>
+            <!-- Malaysia -->
+            <div class="col-md-6 col-lg-4">
+              <div class="service-card h-100">
+                <img src="https://flagcdn.com/w320/my.png" alt="Malaysia flag">
+                <h3>Malaysia</h3>
+                <p><a href="https://www.almiraaj.com/malaysia-embassy-attestation" target="_blank" rel="noopener noreferrer">Malaysia Embassy Attestation</a> for academic admissions and corporate ventures.</p>
+              </div>
+            </div>
+            <!-- Kuwait -->
+            <div class="col-md-6 col-lg-4">
+              <div class="service-card h-100">
+                <img src="https://flagcdn.com/w320/kw.png" alt="Kuwait flag">
+                <h3>Kuwait</h3>
+                <p>
+                  <a href="https://www.almiraaj.com/kuwait-embassy-attestation-in-chennai" target="_blank" rel="noopener noreferrer">Kuwait Embassy Attestation</a> and
+                  <a href="https://www.almiraaj.com/kuwait-visa-stamping-in-chennai" target="_blank" rel="noopener noreferrer">Visa Stamping</a> for employment and family relocation.
+                </p>
+              </div>
+            </div>
+            <!-- China -->
+            <div class="col-md-6 col-lg-4">
+              <div class="service-card h-100">
+                <img src="https://flagcdn.com/w320/cn.png" alt="China flag">
+                <h3>China</h3>
+                <p><a href="https://www.almiraaj.com/china-embassy-attestation" target="_blank" rel="noopener noreferrer">China Embassy Attestation</a> for business, study, and travel purposes.</p>
+              </div>
+            </div>
+            <!-- Bahrain -->
+            <div class="col-md-6 col-lg-4">
+              <div class="service-card h-100">
+                <img src="https://flagcdn.com/w320/bh.png" alt="Bahrain flag">
+                <h3>Bahrain</h3>
+                <p><a href="https://www.almiraaj.com/bahrain-embassy-attestation" target="_blank" rel="noopener noreferrer">Bahrain Embassy Attestation</a> for professional and personal documentation.</p>
+              </div>
+            </div>
+            <!-- Egypt -->
+            <div class="col-md-6 col-lg-4">
+              <div class="service-card h-100">
+                <img src="https://flagcdn.com/w320/eg.png" alt="Egypt flag">
+                <h3>Egypt</h3>
+                <p><a href="https://www.almiraaj.com/egypt-embassy-attestation" target="_blank" rel="noopener noreferrer">Egypt Embassy Attestation</a> for academic, employment, and migration purposes.</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <!-- Repeat for other services with respective color themes and links -->
-      <!-- Hotel Reservations -->
-      <div class="col-lg-4 my-4">
-        <div class="card shadow-sm border-success h-100">
-          <div class="card-body">
-            <h5 class="card-title">
-              <a href="https://almiraaj.com" class="text-success">Hotel Reservations</a>
-            </h5>
-            <p class="card-text">Find your perfect stay with our expert hotel booking services, offering global accommodations and great discounts.</p>
-            <a href="https://www.almiraaj.com/tour-packages" class="btn btn-sm btn-success">Check more info</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tour Packages -->
-      <div class="col-lg-4 my-4">
-        <div class="card shadow-sm border-warning h-100">
-          <div class="card-body">
-            <h5 class="card-title">
-              <a href="https://www.almiraaj.com/tour-packages" class="text-warning">Tour Packages</a>
-            </h5>
-            <p class="card-text">Explore destinations with customized tour packages tailored to your interests and travel style.</p>
-            <a href="https://almiraaj.com" class="btn btn-sm btn-warning">Check more info</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Travel Insurance -->
-      <div class="col-lg-4 my-4">
-        <div class="card shadow-sm border-danger h-100">
-          <div class="card-body">
-            <h5 class="card-title">
-              <a href="https://almiraaj.com" class="text-danger">Travel Insurance</a>
-            </h5>
-            <p class="card-text">Protect your trip with comprehensive travel insurance for cancellations, medical emergencies, and lost luggage.</p>
-            <a href="https://almiraaj.com" class="btn btn-sm btn-danger">Check more info</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Visa Assistance -->
-      <div class="col-lg-4 my-4">
-        <div class="card shadow-sm border-info h-100">
-          <div class="card-body">
-            <h5 class="card-title">
-              <a href="https://almiraaj.com/visa_services_10.html" class="text-info">Visa Assistance</a>
-            </h5>
-            <p class="card-text">Simplify the visa application process with expert help and fast turnaround times.</p>
-            <a href="https://almiraaj.com/visa_services_10.html" class="btn btn-sm btn-info">Check more info</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Custom Itineraries -->
-      <div class="col-lg-4 my-4">
-        <div class="card shadow-sm border-dark h-100">
-          <div class="card-body">
-            <h5 class="card-title">
-              <a href="https://almiraaj.com" class="text-dark">Custom Itineraries</a>
-            </h5>
-            <p class="card-text">Personalized travel schedules created by our experts, designed for convenience and unforgettable experiences.</p>
-            <a href="https://almiraaj.com" class="btn btn-sm btn-dark">Check more info</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Certificate Apostille -->
-      <div class="col-lg-4 my-4">
-        <div class="card shadow-sm border-success h-100">
-          <div class="card-body">
-            <h5 class="card-title">
-              <a href="https://almiraaj.com/certificate-apostille-mea-in-chennai" class="text-success">Certificate Apostille</a>
-            </h5>
-            <p class="card-text">Get your documents recognized abroad quickly with our apostille services.</p>
-            <a href="https://almiraaj.com/certificate-apostille-mea-in-chennai" class="btn btn-sm btn-success">Check more info</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Embassy Attestation -->
-      <div class="col-lg-4 my-4">
-        <div class="card shadow-sm border-warning h-100">
-          <div class="card-body">
-            <h5 class="card-title">
-              <a href="https://almiraaj.com/embassy-attestation-in-chennai.html" class="text-warning">Embassy Attestation</a>
-            </h5>
-            <p class="card-text">Efficient document attestation for embassy requirements—quick and professional service.</p>
-            <a href="https://almiraaj.com/embassy-attestation-in-chennai.html" class="btn btn-sm btn-warning">Check more info</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Forex Service -->
-      <div class="col-lg-4 my-4">
-        <div class="card shadow-sm border-primary h-100">
-          <div class="card-body">
-            <h5 class="card-title">
-              <a href="https://almiraaj.com" class="text-primary">Forex Service</a>
-            </h5>
-            <p class="card-text">Competitive exchange rates and smooth forex transactions for your travel convenience.</p>
-            <a href="https://almiraaj.com" class="btn btn-sm btn-primary">Check more info</a>
-          </div>
+          <h2 class="section-title">🇮🇳 Domestic services</h2>
+          <p>
+            For dedicated apostille, visa stamping, and attestation services within India, visit our sister site
+            <a href="https://almiraaj.in/" target="_blank" rel="noopener noreferrer">Almiraaj.in</a>. Together, we simplify document legalization and visa solutions across borders.
+          </p>
         </div>
       </div>
     </div>
-    <hr>
   </div>
-</section>
+
+  <!-- Travel services cards -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold text-primary fs-4 mb-4">AL-MIRAAJ INTERNATIONAL — One Stop Solution for All Your Travel Needs</h2>
+      <hr>
+      <div class="row justify-content-center">
+        <!-- Flight Bookings -->
+        <div class="col-lg-4 my-4">
+          <div class="card shadow-sm border-primary h-100">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="https://almiraaj.com" class="text-primary">Flight Bookings</a>
+              </h5>
+              <p class="card-text">Book your flights with ease. Experience hassle-free ticket booking and exclusive deals for domestic and international travel.</p>
+              <a href="https://almiraaj.com" class="btn btn-sm btn-primary">Check more info</a>
+            </div>
+          </div>
+        </div>
+        <!-- Hotel Reservations -->
+        <div class="col-lg-4 my-4">
+          <div class="card shadow-sm border-success h-100">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="https://almiraaj.com" class="text-success">Hotel Reservations</a>
+              </h5>
+              <p class="card-text">Find your perfect stay with our expert hotel booking services, offering global accommodations and great discounts.</p>
+              <a href="https://www.almiraaj.com/tour-packages" class="btn btn-sm btn-success">Check more info</a>
+            </div>
+          </div>
+        </div>
+        <!-- Tour Packages -->
+        <div class="col-lg-4 my-4">
+          <div class="card shadow-sm border-warning h-100">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="https://www.almiraaj.com/tour-packages" class="text-warning">Tour Packages</a>
+              </h5>
+              <p class="card-text">Explore destinations with customized tour packages tailored to your interests and travel style.</p>
+              <a href="https://almiraaj.com" class="btn btn-sm btn-warning">Check more info</a>
+            </div>
+          </div>
+        </div>
+        <!-- Travel Insurance -->
+        <div class="col-lg-4 my-4">
+          <div class="card shadow-sm border-danger h-100">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="https://almiraaj.com" class="text-danger">Travel Insurance</a>
+              </h5>
+              <p class="card-text">Protect your trip with comprehensive travel insurance for cancellations, medical emergencies, and lost luggage.</p>
+              <a href="https://almiraaj.com" class="btn btn-sm btn-danger">Check more info</a>
+            </div>
+          </div>
+        </div>
+        <!-- Visa Assistance -->
+        <div class="col-lg-4 my-4">
+          <div class="card shadow-sm border-info h-100">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="https://almiraaj.com/visa_services_10.html" class="text-info">Visa Assistance</a>
+              </h5>
+              <p class="card-text">Simplify the visa application process with expert help and fast turnaround times.</p>
+              <a href="https://almiraaj.com/visa_services_10.html" class="btn btn-sm btn-info">Check more info</a>
+            </div>
+          </div>
+        </div>
+        <!-- Custom Itineraries -->
+        <div class="col-lg-4 my-4">
+          <div class="card shadow-sm border-dark h-100">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="https://almiraaj.com" class="text-dark">Custom Itineraries</a>
+              </h5>
+              <p class="card-text">Personalized travel schedules created by our experts, designed for convenience and unforgettable experiences.</p>
+              <a href="https://almiraaj.com" class="btn btn-sm btn-dark">Check more info</a>
+            </div>
+          </div>
+        </div>
+        <!-- Certificate Apostille -->
+        <div class="col-lg-4 my-4">
+          <div class="card shadow-sm border-success h-100">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="https://almiraaj.com/certificate-apostille-mea-in-chennai" class="text-success">Certificate Apostille</a>
+              </h5>
+              <p class="card-text">Get your documents recognized abroad quickly with our apostille services.</p>
+              <a href="https://almiraaj.com/certificate-apostille-mea-in-chennai" class="btn btn-sm btn-success">Check more info</a>
+            </div>
+          </div>
+        </div>
+        <!-- Embassy Attestation -->
+        <div class="col-lg-4 my-4">
+          <div class="card shadow-sm border-warning h-100">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="https://almiraaj.com/embassy-attestation-in-chennai.html" class="text-warning">Embassy Attestation</a>
+              </h5>
+              <p class="card-text">Efficient document attestation for embassy requirements—quick and professional service.</p>
+              <a href="https://almiraaj.com/embassy-attestation-in-chennai.html" class="btn btn-sm btn-warning">Check more info</a>
+            </div>
+          </div>
+        </div>
+        <!-- Forex Service -->
+        <div class="col-lg-4 my-4">
+          <div class="card shadow-sm border-primary h-100">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="https://almiraaj.com" class="text-primary">Forex Service</a>
+              </h5>
+              <p class="card-text">Competitive exchange rates and smooth forex transactions for your travel convenience.</p>
+              <a href="https://almiraaj.com" class="btn btn-sm btn-primary">Check more info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </section>
+
+
 
 <!-- Branch Locations Section -->
 <hr>
