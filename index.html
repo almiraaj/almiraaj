@@ -382,7 +382,6 @@
     </div>
   </div>
 </div>
-
 <!-- Styles -->
 <style>
   .blink {
@@ -432,6 +431,14 @@
     font-size: 17px;
   }
 
+  /* ✅ Embassy flag images fix */
+  .service-card img {
+    width: 60px;       /* same width for all flags */
+    height: 40px;      /* same height for all flags */
+    object-fit: cover; /* crop/scale to fit nicely */
+    margin-bottom: 10px;
+  }
+
   footer {
     background: var(--brand-secondary);
     color: #fff;
@@ -440,6 +447,7 @@
     margin-top: 48px;
   }
 </style>
+
 <body>
 
   <!-- Intro / Attestation content -->
