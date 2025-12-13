@@ -288,7 +288,7 @@
 <header id="hero" style="
   position: relative;
   height: 100vh;
-  background: url('https://www.almiraaj.com/images/spain-apostille.png')no-repeat center center;
+  background: url('https://www.almiraaj.com/images/spain-apostille.png') no-repeat center center;
   background-size: cover;
 ">
   <!-- Overlay -->
@@ -299,12 +299,12 @@
     z-index: 1;
   "></div>
 
-  <!-- Centered Text -->
+  <!-- Bottom Text -->
   <div style="
     position: absolute;
-    top: 50%;
+    bottom: 5%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     z-index: 2;
     color: #fff;
     padding: 1.5rem 2.5rem;
@@ -323,14 +323,15 @@
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translate(-50%, -65%);
+    transform: translateX(-50%) translateY(20%);
   }
   100% {
     opacity: 1;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%) translateY(0);
   }
 }
 </style>
+
 
 
 <!-- Breadcrumbs -->
