@@ -37,11 +37,10 @@
   <link href="/css/magnific-popup.css" rel="stylesheet">
   <link href="/css/styles.css" rel="stylesheet">
   <link href="/css/css.css" rel="stylesheet">
-</head>
-<body data-spy="scroll" data-target=".fixed-top">
 
-   <!-- Custom Navbar Styles -->
+  <!-- Custom Styles -->
   <style>
+    /* Navbar */
     .navbar {
       background-color: #00264d !important;
     }
@@ -69,26 +68,20 @@
       color: #00264d !important;
     }
     header,
-.navbar,
-.navbar-wrapper,
-.top-bar {
-  background-color: #00264d !important;
-}
+    .navbar,
+    .navbar-wrapper,
+    .top-bar {
+      background-color: #00264d !important;
+    }
 
+    /* Embassy image */
+    .uae-embassy-img {
+      max-width: 100%;
+      height: 450px;
+      object-fit: cover;
+    }
 
-  </style>
-  <style>
-  .uae-embassy-img {
-    max-width: 100%;
-    height: 450px;
-    object-fit: cover;
-  }
-</style>
-
-  <head>
-  ...
-  <!-- Custom Card Hover Styles -->
-  <style>
+    /* Card hover */
     .card:hover {
       transform: scale(1.02);
       transition: all 0.3s ease-in-out;
@@ -97,8 +90,48 @@
     .card-title a:hover {
       text-decoration: underline;
     }
+
+    /* Hero header centering */
+    .ex-header {
+      position: relative;
+      overflow: hidden;
+    }
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 1;
+    }
+    .centered-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      z-index: 2;
+    }
   </style>
 </head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+  <!-- Hero Header -->
+  <header id="header" class="ex-header">
+    <img src="https://www.almiraaj.com/images/japan-visa-in-chennai.png" 
+         alt="Japan Visa Services-Chennai" 
+         class="img-fluid w-100" 
+         style="filter: brightness(50%);" />
+    <div class="overlay"></div>
+    <div class="centered-text">
+      <h1 class="display-5 fw-bold mb-2">Japan Visa Services</h1>
+      <p class="lead mb-0">At Your Doorstep by <strong>Almiraaj International</strong></p>
+    </div>
+  </header>
+
+</body>
+</html>
+
 
 
 <body>
