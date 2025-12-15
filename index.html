@@ -254,6 +254,18 @@
 
 <!-- ✅ PREMIUM WHITE ANIMATED CAROUSEL STYLING -->
 <style>
+    /* Prevent white flash between slides */
+    .carousel-item {
+        background-color: #000 !important;
+    }
+
+    /* Ensure images always cover the slide */
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     /* Soft dark overlay for readability */
     .carousel-item::before {
         content: "";
@@ -380,7 +392,7 @@
 
       <!-- ✅ Slide 1 -->
       <div class="carousel-item homepagecarousel active">
-          <img class="homepagecarousel" src="./homepageCarousel/visa-holiday-tour.png" alt="Visa Services" width="1100" height="500">
+          <img class="homepagecarousel" src="./homepageCarousel/visa-holiday-tour.png" alt="Visa Services">
           <div class="carousel-caption caour-caption">
               <h4>Gateway to the World • Swift, Secure, Simple • Visa Expertise at Your Fingertips • Your Trusted Visa Partner</h4>
 
@@ -401,7 +413,7 @@
 
       <!-- ✅ Slide 2 -->
       <div class="carousel-item homepagecarousel">
-          <img class="homepagecarousel" src="./homepageCarousel/gflight1.png" alt="Travel Services" width="1100" height="500">
+          <img class="homepagecarousel" src="./homepageCarousel/gflight1.png" alt="Travel Services">
           <div class="carousel-caption caour-caption">
               <h4>Your Journey, Our Priority • Seamless Escapes Await • Discover Boundless Adventures • Travel Simplified, Joy Amplified</h4>
 
@@ -422,7 +434,7 @@
 
       <!-- ✅ Slide 3 -->
       <div class="carousel-item homepagecarousel">
-          <img class="homepagecarousel" src="./homepageCarousel/indian-apostille.png" alt="Apostille Services" width="1100" height="500">
+          <img class="homepagecarousel" src="./homepageCarousel/indian-apostille.png" alt="Apostille Services">
           <div class="carousel-caption caour-caption">
               <h4>Fast Apostille & Embassy Attestation • Trusted Worldwide • Hassle‑Free Document Legalization</h4>
 
@@ -443,7 +455,7 @@
 
       <!-- ✅ Slide 4 -->
       <div class="carousel-item homepagecarousel">
-          <img class="homepagecarousel" src="./homepageCarousel/document-attestation-apostille-india.jpg" alt="Document Attestation" width="1100" height="500">
+          <img class="homepagecarousel" src="./homepageCarousel/document-attestation-apostille-india.jpg" alt="Document Attestation">
           <div class="carousel-caption caour-caption">
               <h4>Embassy Attestation • Global Trust Secured • Authenticity You Can Count On • Verified for International Use</h4>
 
@@ -464,7 +476,7 @@
 
       <!-- ✅ Slide 5 -->
       <div class="carousel-item homepagecarousel">
-          <img class="homepagecarousel" src="./homepageCarousel/gflight2.png" alt="Certificate Apostille" width="1100" height="500">
+          <img class="homepagecarousel" src="./homepageCarousel/gflight2.png" alt="Certificate Apostille">
           <div class="carousel-caption caour-caption">
               <h4>Certificate Apostille • Global Recognition Made Easy • Certified. Recognized. Accepted.</h4>
 
@@ -495,6 +507,7 @@
 
 </div>
 <!-- ✅ END HEADER -->
+
 
 
 
