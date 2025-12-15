@@ -252,22 +252,33 @@
        
     <!-- end of navbar -->
 
-<!-- ✅ PREMIUM WHITE ANIMATED CAROUSEL STYLING -->
+<!-- ✅ FINAL FIXED CAROUSEL WITH NO WHITE FLASH -->
 <style>
-    /* Prevent white flash between slides */
+    /* ✅ Force ALL carousel layers to stay black */
+    .carousel,
+    .carousel-inner,
     .carousel-item {
         background-color: #000 !important;
-        position: relative;
     }
 
-    /* Ensure images always cover the slide */
+    /* ✅ Fade transition (prevents white flash) */
+    .carousel.carousel-fade .carousel-item {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .carousel.carousel-fade .carousel-item.active {
+        opacity: 1;
+    }
+
+    /* ✅ Ensure images always cover fully */
     .carousel-item img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 
-    /* Soft dark overlay for readability */
+    /* ✅ Soft dark overlay */
     .carousel-item::before {
         content: "";
         position: absolute;
@@ -275,14 +286,11 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(
-            rgba(0, 0, 0, 0.55),
-            rgba(0, 0, 0, 0.35)
-        );
+        background: rgba(0,0,0,0.45);
         z-index: 1;
     }
 
-    /* ✅ DARK BACKGROUND BEHIND TEXT (fixes white flash + improves readability) */
+    /* ✅ Dark background behind text */
     .carousel-caption {
         z-index: 2;
         padding: 25px 30px;
@@ -293,32 +301,24 @@
         animation: fadeUp 1.2s ease-out;
     }
 
-    /* Fade-up animation */
+    /* ✅ Fade-up animation */
     @keyframes fadeUp {
-        0% {
-            opacity: 0;
-            transform: translateY(25px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        0% { opacity: 0; transform: translateY(25px); }
+        100% { opacity: 1; transform: translateY(0); }
     }
 
-    /* Bright white headings with glow */
+    /* ✅ White glowing text */
     .carousel-caption h4 {
         font-size: 1.55rem;
         font-weight: 700;
-        line-height: 1.5;
-        margin-bottom: 18px;
-        color: #ffffff !important;
+        color: #fff;
         text-shadow:
             0 0 8px rgba(255,255,255,0.7),
             0 0 12px rgba(255,255,255,0.5),
             0 3px 8px rgba(0,0,0,0.7);
     }
 
-    /* Premium white contact bar */
+    /* ✅ Contact bar */
     .contact-bar {
         font-size: 1.28rem;
         font-weight: 700;
@@ -327,7 +327,7 @@
         justify-content: center;
         gap: 35px;
         flex-wrap: wrap;
-        color: #ffffff;
+        color: #fff;
         text-shadow:
             0 0 8px rgba(255,255,255,0.7),
             0 0 12px rgba(255,255,255,0.5),
@@ -340,7 +340,7 @@
         gap: 8px;
     }
 
-    /* Icon glow pulse */
+    /* ✅ Icon glow pulse */
     @keyframes pulseGlow {
         0% { text-shadow: 0 0 4px rgba(255,255,255,0.6); }
         50% { text-shadow: 0 0 12px rgba(255,255,255,1); }
@@ -349,12 +349,12 @@
 
     .contact-item i {
         font-size: 1.5rem;
-        color: #ffffff !important;
+        color: #fff;
         animation: pulseGlow 2.5s infinite ease-in-out;
     }
 
     .contact-item a {
-        color: #ffffff !important;
+        color: #fff;
         font-weight: 700;
         text-decoration: none;
     }
@@ -363,13 +363,13 @@
         text-decoration: underline;
     }
 
-    /* White button with glow hover */
+    /* ✅ White button with glow */
     .btn-solid-lg {
         font-size: 1.1rem;
         padding: 10px 28px;
         border-radius: 6px;
         font-weight: 700;
-        background: #ffffff;
+        background: #fff;
         color: #000 !important;
         border: none;
         box-shadow: 0 4px 12px rgba(0,0,0,0.3);
@@ -383,8 +383,8 @@
     }
 </style>
 
-<!-- ✅ CAROUSEL START -->
-<div id="demo" class="carousel slide homepagecarousel" data-ride="carousel">
+<!-- ✅ CAROUSEL START (FADE MODE ENABLED) -->
+<div id="demo" class="carousel slide carousel-fade homepagecarousel" data-ride="carousel">
 
   <ul class="carousel-indicators">
       <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -397,107 +397,67 @@
   <div class="carousel-inner homepagecarousel">
 
       <!-- ✅ Slide 1 -->
-      <div class="carousel-item homepagecarousel active">
-          <img class="homepagecarousel" src="./homepageCarousel/visa-holiday-tour.png" alt="Visa Services">
-          <div class="carousel-caption caour-caption">
-              <h4>Gateway to the World • Swift, Secure, Simple • Visa Expertise at Your Fingertips • Your Trusted Visa Partner</h4>
-
+      <div class="carousel-item active">
+          <img src="./homepageCarousel/visa-holiday-tour.png" alt="Visa Services">
+          <div class="carousel-caption">
+              <h4>Gateway to the World • Swift, Secure, Simple • Visa Expertise at Your Fingertips</h4>
               <p class="contact-bar">
-                  <span class="contact-item">
-                      <i class="fa fa-phone"></i>
-                      <a href="tel:+917448899809">+91 74488 99809</a>
-                  </span>
-                  <span class="contact-item">
-                      <i class="fa fa-whatsapp"></i>
-                      <a href="https://wa.me/+919940589665">+91 99405 89665</a>
-                  </span>
+                  <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+917448899809">+91 74488 99809</a></span>
+                  <span class="contact-item"><i class="fa fa-whatsapp"></i><a href="https://wa.me/+919940589665">+91 99405 89665</a></span>
               </p>
-
-              <a class="btn-solid-lg page-scroll" href="https://wa.me/+919940589665">Get in Touch</a>
+              <a class="btn-solid-lg" href="https://wa.me/+919940589665">Get in Touch</a>
           </div>
       </div>
 
       <!-- ✅ Slide 2 -->
-      <div class="carousel-item homepagecarousel">
-          <img class="homepagecarousel" src="./homepageCarousel/gflight1.png" alt="Travel Services">
-          <div class="carousel-caption caour-caption">
-              <h4>Your Journey, Our Priority • Seamless Escapes Await • Discover Boundless Adventures • Travel Simplified, Joy Amplified</h4>
-
+      <div class="carousel-item">
+          <img src="./homepageCarousel/gflight1.png" alt="Travel Services">
+          <div class="carousel-caption">
+              <h4>Your Journey, Our Priority • Seamless Escapes Await • Travel Simplified, Joy Amplified</h4>
               <p class="contact-bar">
-                  <span class="contact-item">
-                      <i class="fa fa-phone"></i>
-                      <a href="tel:+917448899809">+91 74488 99809</a>
-                  </span>
-                  <span class="contact-item">
-                      <i class="fa fa-whatsapp"></i>
-                      <a href="https://wa.me/+919940589665">+91 99405 89665</a>
-                  </span>
+                  <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+917448899809">+91 74488 99809</a></span>
+                  <span class="contact-item"><i class="fa fa-whatsapp"></i><a href="https://wa.me/+919940589665">+91 99405 89665</a></span>
               </p>
-
-              <a class="btn-solid-lg page-scroll" href="https://wa.me/+919940589665">Get in Touch</a>
+              <a class="btn-solid-lg" href="https://wa.me/+919940589665">Get in Touch</a>
           </div>
       </div>
 
       <!-- ✅ Slide 3 -->
-      <div class="carousel-item homepagecarousel">
-          <img class="homepagecarousel" src="./homepageCarousel/indian-apostille.png" alt="Apostille Services">
-          <div class="carousel-caption caour-caption">
-              <h4>Fast Apostille & Embassy Attestation • Trusted Worldwide • Hassle‑Free Document Legalization</h4>
-
+      <div class="carousel-item">
+          <img src="./homepageCarousel/indian-apostille.png" alt="Apostille Services">
+          <div class="carousel-caption">
+              <h4>Fast Apostille & Embassy Attestation • Trusted Worldwide • Hassle‑Free Legalization</h4>
               <p class="contact-bar">
-                  <span class="contact-item">
-                      <i class="fa fa-phone"></i>
-                      <a href="tel:+917448899809">+91 74488 99809</a>
-                  </span>
-                  <span class="contact-item">
-                      <i class="fa fa-whatsapp"></i>
-                      <a href="https://wa.me/+919940589665">+91 99405 89665</a>
-                  </span>
+                  <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+917448899809">+91 74488 99809</a></span>
+                  <span class="contact-item"><i class="fa fa-whatsapp"></i><a href="https://wa.me/+919940589665">+91 99405 89665</a></span>
               </p>
-
-              <a class="btn-solid-lg page-scroll" href="https://wa.me/+919940589665">Get in Touch</a>
+              <a class="btn-solid-lg" href="https://wa.me/+919940589665">Get in Touch</a>
           </div>
       </div>
 
       <!-- ✅ Slide 4 -->
-      <div class="carousel-item homepagecarousel">
-          <img class="homepagecarousel" src="./homepageCarousel/document-attestation-apostille-india.jpg" alt="Document Attestation">
-          <div class="carousel-caption caour-caption">
-              <h4>Embassy Attestation • Global Trust Secured • Authenticity You Can Count On • Verified for International Use</h4>
-
+      <div class="carousel-item">
+          <img src="./homepageCarousel/document-attestation-apostille-india.jpg" alt="Document Attestation">
+          <div class="carousel-caption">
+              <h4>Embassy Attestation • Global Trust Secured • Verified for International Use</h4>
               <p class="contact-bar">
-                  <span class="contact-item">
-                      <i class="fa fa-phone"></i>
-                      <a href="tel:+917448899809">+91 74488 99809</a>
-                  </span>
-                  <span class="contact-item">
-                      <i class="fa fa-whatsapp"></i>
-                      <a href="https://wa.me/+919940589665">+91 99405 89665</a>
-                  </span>
+                  <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+917448899809">+91 74488 99809</a></span>
+                  <span class="contact-item"><i class="fa fa-whatsapp"></i><a href="https://wa.me/+919940589665">+91 99405 89665</a></span>
               </p>
-
-              <a class="btn-solid-lg page-scroll" href="https://wa.me/+919940589665">Get in Touch</a>
+              <a class="btn-solid-lg" href="https://wa.me/+919940589665">Get in Touch</a>
           </div>
       </div>
 
       <!-- ✅ Slide 5 -->
-      <div class="carousel-item homepagecarousel">
-          <img class="homepagecarousel" src="./homepageCarousel/gflight2.png" alt="Certificate Apostille">
-          <div class="carousel-caption caour-caption">
+      <div class="carousel-item">
+          <img src="./homepageCarousel/gflight2.png" alt="Certificate Apostille">
+          <div class="carousel-caption">
               <h4>Certificate Apostille • Global Recognition Made Easy • Certified. Recognized. Accepted.</h4>
-
               <p class="contact-bar">
-                  <span class="contact-item">
-                      <i class="fa fa-phone"></i>
-                      <a href="tel:+917448899809">+91 74488 99809</a>
-                  </span>
-                  <span class="contact-item">
-                      <i class="fa fa-whatsapp"></i>
-                      <a href="https://wa.me/+919940589665">+91 99405 89665</a>
-                  </span>
+                  <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+917448899809">+91 74488 99809</a></span>
+                  <span class="contact-item"><i class="fa fa-whatsapp"></i><a href="https://wa.me/+919940589665">+91 99405 89665</a></span>
               </p>
-
-              <a class="btn-solid-lg page-scroll" href="https://wa.me/+919940589665">Get in Touch</a>
+              <a class="btn-solid-lg" href="https://wa.me/+919940589665">Get in Touch</a>
           </div>
       </div>
 
@@ -512,6 +472,7 @@
   </a>
 
 </div>
+
 <!-- ✅ END HEADER -->
 
 
