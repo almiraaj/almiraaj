@@ -257,6 +257,7 @@
     /* Prevent white flash between slides */
     .carousel-item {
         background-color: #000 !important;
+        position: relative;
     }
 
     /* Ensure images always cover the slide */
@@ -281,9 +282,14 @@
         z-index: 1;
     }
 
+    /* ✅ DARK BACKGROUND BEHIND TEXT (fixes white flash + improves readability) */
     .carousel-caption {
         z-index: 2;
-        padding-bottom: 40px;
+        padding: 25px 30px;
+        background: rgba(0, 0, 0, 0.55);
+        border-radius: 12px;
+        backdrop-filter: blur(4px);
+        display: inline-block;
         animation: fadeUp 1.2s ease-out;
     }
 
