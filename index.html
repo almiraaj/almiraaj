@@ -252,7 +252,7 @@
        
     <!-- end of navbar -->
 
-<!-- ✅ PREMIUM WHITE CAROUSEL STYLING -->
+<!-- ✅ PREMIUM WHITE ANIMATED CAROUSEL STYLING -->
 <style>
     /* Soft dark overlay for readability */
     .carousel-item::before {
@@ -272,16 +272,32 @@
     .carousel-caption {
         z-index: 2;
         padding-bottom: 40px;
+        animation: fadeUp 1.2s ease-out;
     }
 
-    /* Bright white headings */
+    /* Fade-up animation */
+    @keyframes fadeUp {
+        0% {
+            opacity: 0;
+            transform: translateY(25px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Bright white headings with glow */
     .carousel-caption h4 {
         font-size: 1.55rem;
         font-weight: 700;
         line-height: 1.5;
         margin-bottom: 18px;
         color: #ffffff !important;
-        text-shadow: 0 3px 8px rgba(0,0,0,0.7);
+        text-shadow:
+            0 0 8px rgba(255,255,255,0.7),
+            0 0 12px rgba(255,255,255,0.5),
+            0 3px 8px rgba(0,0,0,0.7);
     }
 
     /* Premium white contact bar */
@@ -294,7 +310,10 @@
         gap: 35px;
         flex-wrap: wrap;
         color: #ffffff;
-        text-shadow: 0 3px 8px rgba(0,0,0,0.7);
+        text-shadow:
+            0 0 8px rgba(255,255,255,0.7),
+            0 0 12px rgba(255,255,255,0.5),
+            0 3px 8px rgba(0,0,0,0.7);
     }
 
     .contact-item {
@@ -303,9 +322,17 @@
         gap: 8px;
     }
 
+    /* Icon glow pulse */
+    @keyframes pulseGlow {
+        0% { text-shadow: 0 0 4px rgba(255,255,255,0.6); }
+        50% { text-shadow: 0 0 12px rgba(255,255,255,1); }
+        100% { text-shadow: 0 0 4px rgba(255,255,255,0.6); }
+    }
+
     .contact-item i {
         font-size: 1.5rem;
         color: #ffffff !important;
+        animation: pulseGlow 2.5s infinite ease-in-out;
     }
 
     .contact-item a {
@@ -318,7 +345,7 @@
         text-decoration: underline;
     }
 
-    /* White button with black text */
+    /* White button with glow hover */
     .btn-solid-lg {
         font-size: 1.1rem;
         padding: 10px 28px;
@@ -328,11 +355,13 @@
         color: #000 !important;
         border: none;
         box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        transition: 0.3s ease;
     }
 
     .btn-solid-lg:hover {
         background: #e6e6e6;
-        color: #000 !important;
+        box-shadow: 0 0 12px rgba(255,255,255,0.9);
+        transform: translateY(-2px);
     }
 </style>
 
