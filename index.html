@@ -423,6 +423,53 @@
                 0 2px 6px rgba(0,0,0,0.6) !important;
         }
     }
+    /* ✅ FINAL MOBILE FIXES */
+@media (max-width: 768px) {
+
+    /* Show more of the image */
+    .carousel-item img {
+        height: 70vh !important;   /* show more image vertically */
+        object-fit: contain !important; /* prevent aggressive cropping */
+        background-color: #000; /* fill empty space with black */
+    }
+
+    /* Move caption LOWER so it's visible */
+    .carousel-caption {
+        bottom: 20px !important;
+        top: auto !important;
+        transform: none !important;
+        padding: 12px 15px !important;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    /* Smaller heading text */
+    .carousel-caption h4 {
+        font-size: 1rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* Stack phone numbers cleanly */
+    .contact-bar {
+        flex-direction: column !important;
+        gap: 10px !important;
+        font-size: 0.95rem !important;
+        text-align: center;
+    }
+
+    .contact-item i {
+        font-size: 1.1rem !important;
+    }
+
+    /* Button fits mobile */
+    .btn-solid-lg {
+        font-size: 0.9rem !important;
+        padding: 7px 18px !important;
+        margin-top: 8px;
+    }
+}
+
 </style>
 
 <!-- ✅ CAROUSEL START -->
