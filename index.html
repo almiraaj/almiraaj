@@ -469,6 +469,52 @@
         margin-top: 8px;
     }
 }
+/* ✅ FINAL MOBILE FIX — FULL IMAGE + VISIBLE CAPTION + NO BLACK BOTTOM */
+@media (max-width: 768px) {
+
+    /* Make image fill the screen height */
+    .carousel-item img {
+        height: 100vh !important;   /* full mobile height */
+        object-fit: cover !important; /* fill screen without black bars */
+    }
+
+    /* Move caption lower so it's visible */
+    .carousel-caption {
+        bottom: 40px !important;
+        top: auto !important;
+        transform: none !important;
+        padding: 15px 18px !important;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Smaller heading text */
+    .carousel-caption h4 {
+        font-size: 1.05rem !important;
+        line-height: 1.35 !important;
+        margin-bottom: 12px !important;
+    }
+
+    /* Stack phone numbers neatly */
+    .contact-bar {
+        flex-direction: column !important;
+        gap: 10px !important;
+        font-size: 1rem !important;
+        text-align: center;
+    }
+
+    .contact-item i {
+        font-size: 1.2rem !important;
+    }
+
+    /* Button fits mobile */
+    .btn-solid-lg {
+        font-size: 0.95rem !important;
+        padding: 8px 20px !important;
+        margin-top: 10px;
+    }
+}
+
 
 </style>
 
