@@ -1113,6 +1113,110 @@
 
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Client Reviews Demo</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <style>
+    /* Carousel section: premium white card style */
+    section.bg-white {
+      background-color: #ffffff !important; /* pure white */
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* subtle shadow */
+      padding: 2rem;
+      color: #000000;
+    }
+
+    /* Carousel items: transparent so section background shows through */
+    #reviewsCarousel .carousel-inner,
+    #reviewsCarousel .carousel-item {
+      background-color: transparent !important;
+      color: #000000;
+      padding: 2rem;
+    }
+
+    /* Golden stars */
+    .text-warning {
+      color: #ffc107 !important;
+    }
+
+    /* Arrows for white background */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: none;
+    }
+    .carousel-control-prev-icon::after {
+      content: '◀';
+      font-size: 2rem;
+      color: #000000;
+    }
+    .carousel-control-next-icon::after {
+      content: '▶';
+      font-size: 2rem;
+      color: #000000;
+    }
+  </style>
+</head>
+<body style="background-color:#f0f0f0;"> <!-- light gray page background -->
+
+  <!-- Client Reviews Carousel -->
+  <section class="mb-5 bg-white p-4 rounded shadow-sm">
+    <h2 class="section-title text-primary text-center">💬 What Our Clients Say</h2>
+    
+    <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-inner">
+
+        <!-- Review 1 -->
+        <div class="carousel-item active">
+          <div class="p-4 text-center">
+            <p class="lead">"Excellent service, very professional and prompt."</p>
+            <h5 class="mt-3">– Dr. Afreen Javed</h5>
+            <div class="text-warning">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="carousel-item">
+          <div class="p-4 text-center">
+            <p class="lead">"Work done on time, great follow-up."</p>
+            <h5 class="mt-3">– Makesh Justin</h5>
+            <div class="text-warning">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="carousel-item">
+          <div class="p-4 text-center">
+            <p class="lead">"Delivered exactly what we wanted, great expertise."</p>
+            <h5 class="mt-3">– Ameer Alaudeen ALAGIRI</h5>
+            <div class="text-warning">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
 
 
