@@ -67,34 +67,47 @@
 
 <!-- Custom Styles -->
 <style>
-  /* Force the whole carousel area to be white */
+  /* Carousel section: shiny blue background with white text */
+  section.bg-blue {
+    background: linear-gradient(to bottom right, #00264d, #003366); /* gradient blue */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+    color: #ffffff;
+  }
+
+  /* Carousel items: transparent so section background shows through */
   #reviewsCarousel .carousel-item {
-    background-color: #ffffff !important;
-    color: #000000; /* ensure text stays readable */
+    background-color: transparent !important;
+    color: #ffffff;
     padding: 2rem;
   }
 
-  /* Make sure the section itself is white */
-  section.bg-white {
-    background-color: #ffffff !important;
+  /* Shiny text effect */
+  #reviewsCarousel .lead,
+  #reviewsCarousel h5 {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
   }
 
-  /* Adjust carousel controls (arrows) for light background */
+  /* Golden stars for contrast */
+  .text-warning {
+    color: #ffc107 !important;
+  }
+
+  /* Adjust carousel controls (arrows) for blue background */
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
-    background-image: none; /* remove default black semi-transparent icons */
+    background-image: none;
   }
-
   .carousel-control-prev-icon::after {
     content: '◀';
     font-size: 2rem;
-    color: #000000; /* dark arrow */
+    color: #ffffff; /* white arrow */
   }
-
   .carousel-control-next-icon::after {
     content: '▶';
     font-size: 2rem;
-    color: #000000; /* dark arrow */
+    color: #ffffff; /* white arrow */
   }
 
   /* Navbar styles */
@@ -132,6 +145,7 @@
   }
 </style>
 </head>
+
 
 <body data-spy="scroll" data-target=".fixed-top">
 
