@@ -65,75 +65,74 @@
   </script>
 </head>
 
+<!-- Custom Styles -->
+<style>
+  /* Force the whole carousel area to be white */
+  #reviewsCarousel .carousel-item {
+    background-color: #ffffff !important;
+    color: #000000; /* ensure text stays readable */
+    padding: 2rem;
+  }
 
+  /* Make sure the section itself is white */
+  section.bg-white {
+    background-color: #ffffff !important;
+  }
 
-  <!-- Custom Styles -->
-/* Force the whole carousel area to be white */
-#reviewsCarousel .carousel-item {
-  background-color: #ffffff !important;
-  color: #000000; /* ensure text stays readable */
-  padding: 2rem;
-}
+  /* Adjust carousel controls (arrows) for light background */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-image: none; /* remove default black semi-transparent icons */
+  }
 
-/* Make sure the section itself is white */
-section.bg-white {
-  background-color: #ffffff !important;
-}
+  .carousel-control-prev-icon::after {
+    content: '◀';
+    font-size: 2rem;
+    color: #000000; /* dark arrow */
+  }
 
-/* Adjust carousel controls (arrows) for light background */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-image: none; /* remove default black semi-transparent icons */
-}
+  .carousel-control-next-icon::after {
+    content: '▶';
+    font-size: 2rem;
+    color: #000000; /* dark arrow */
+  }
 
-.carousel-control-prev-icon::after {
-  content: '◀';
-  font-size: 2rem;
-  color: #000000; /* dark arrow */
-}
-
-.carousel-control-next-icon::after {
-  content: '▶';
-  font-size: 2rem;
-  color: #000000; /* dark arrow */
-}
-
-
-  <style>
-    .navbar {
-      background-color: #00264d !important;
-    }
-    .navbar .navbar-brand h3 {
-      color: white !important;
-      font-weight: 700;
-      font-size: 1.3rem;
-      margin: 0;
-    }
-    .navbar .nav-link {
-      color: white !important;
-      transition: 0.3s ease-in-out;
-    }
-    .navbar .nav-link:hover {
-      color: #c99b33 !important;
-    }
-    .dropdown-menu {
-      background-color: #00264d;
-    }
-    .dropdown-item {
-      color: white !important;
-    }
-    .dropdown-item:hover {
-      background-color: #c99b33;
-      color: #00264d !important;
-    }
-    header,
-    .navbar,
-    .navbar-wrapper,
-    .top-bar {
-      background-color: #00264d !important;
-    }
-  </style>
+  /* Navbar styles */
+  .navbar {
+    background-color: #00264d !important;
+  }
+  .navbar .navbar-brand h3 {
+    color: white !important;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  .navbar .nav-link {
+    color: white !important;
+    transition: 0.3s ease-in-out;
+  }
+  .navbar .nav-link:hover {
+    color: #c99b33 !important;
+  }
+  .dropdown-menu {
+    background-color: #00264d;
+  }
+  .dropdown-item {
+    color: white !important;
+  }
+  .dropdown-item:hover {
+    background-color: #c99b33;
+    color: #00264d !important;
+  }
+  header,
+  .navbar,
+  .navbar-wrapper,
+  .top-bar {
+    background-color: #00264d !important;
+  }
+</style>
 </head>
+
 <body data-spy="scroll" data-target=".fixed-top">
 
 <!-- Navbar -->
