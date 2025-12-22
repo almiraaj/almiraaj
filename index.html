@@ -68,15 +68,36 @@
 
 
   <!-- Custom Styles -->
-   <style>
-.carousel-item {
-  background-color: #ffffff;
+/* Force the whole carousel area to be white */
+#reviewsCarousel .carousel-item {
+  background-color: #ffffff !important;
+  color: #000000; /* ensure text stays readable */
+  padding: 2rem;
 }
+
+/* Make sure the section itself is white */
+section.bg-white {
+  background-color: #ffffff !important;
+}
+
+/* Adjust carousel controls (arrows) for light background */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: invert(100%);
+  background-image: none; /* remove default black semi-transparent icons */
 }
-</style>
+
+.carousel-control-prev-icon::after {
+  content: '◀';
+  font-size: 2rem;
+  color: #000000; /* dark arrow */
+}
+
+.carousel-control-next-icon::after {
+  content: '▶';
+  font-size: 2rem;
+  color: #000000; /* dark arrow */
+}
+
 
   <style>
     .navbar {
