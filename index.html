@@ -1112,9 +1112,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!DOCTYPE html>
-<html lang="en">
-<head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -1125,22 +1122,28 @@
 
   <!-- Custom Styles -->
   <style>
-    /* Blue background with white text for carousel section */
-    section.bg-blue {
-      background: linear-gradient(to bottom right, #00264d, #003366); /* gradient blue */
+    /* Clean white card style for carousel section */
+    section.bg-white {
+      background-color: #ffffff !important;
       border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* subtle shadow */
       padding: 2rem;
-      color: #ffffff;
+      color: #000000;
     }
 
-    /* Carousel items inherit white text */
+    /* Carousel items: inherit white background */
     #reviewsCarousel .carousel-item {
       background-color: transparent !important;
-      color: #ffffff;
+      color: #000000;
+      padding: 2rem;
     }
 
-    /* Adjust carousel controls for blue background */
+    /* Golden stars for contrast */
+    .text-warning {
+      color: #ffc107 !important;
+    }
+
+    /* Adjust carousel controls for white background */
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       background-image: none;
@@ -1148,25 +1151,54 @@
     .carousel-control-prev-icon::after {
       content: '◀';
       font-size: 2rem;
-      color: #ffffff;
+      color: #000000; /* dark arrow */
     }
     .carousel-control-next-icon::after {
       content: '▶';
       font-size: 2rem;
-      color: #ffffff;
+      color: #000000; /* dark arrow */
     }
 
-    /* Optional: make stars golden for contrast */
-    .text-warning {
-      color: #ffc107 !important;
+    /* Navbar styles (kept from your earlier code) */
+    .navbar {
+      background-color: #00264d !important;
+    }
+    .navbar .navbar-brand h3 {
+      color: white !important;
+      font-weight: 700;
+      font-size: 1.3rem;
+      margin: 0;
+    }
+    .navbar .nav-link {
+      color: white !important;
+      transition: 0.3s ease-in-out;
+    }
+    .navbar .nav-link:hover {
+      color: #c99b33 !important;
+    }
+    .dropdown-menu {
+      background-color: #00264d;
+    }
+    .dropdown-item {
+      color: white !important;
+    }
+    .dropdown-item:hover {
+      background-color: #c99b33;
+      color: #00264d !important;
+    }
+    header,
+    .navbar,
+    .navbar-wrapper,
+    .top-bar {
+      background-color: #00264d !important;
     }
   </style>
 </head>
 <body>
 
   <!-- Client Reviews Carousel -->
-  <section class="mb-5 bg-blue p-4 rounded shadow-sm">
-    <h2 class="section-title text-center">💬 What Our Clients Say</h2>
+  <section class="mb-5 bg-white p-4 rounded shadow-sm">
+    <h2 class="section-title text-primary text-center">💬 What Our Clients Say</h2>
     
     <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
       <div class="carousel-inner">
