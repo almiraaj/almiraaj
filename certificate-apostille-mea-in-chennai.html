@@ -437,10 +437,10 @@
 
 <!-- Intro Section -->
 <div class="container my-5">
-  <div class="row align-items-center">
+  <div class="row align-items-stretch">
     
     <!-- Image Column -->
-    <div class="col-lg-5 mb-4 mb-lg-0 d-flex justify-content-center">
+    <div class="col-lg-5 mb-4 mb-lg-0 d-flex">
       <div class="image-container w-100 h-100">
         <img
           class="img-fluid w-100 h-100 object-fit-cover rounded shadow"
@@ -451,8 +451,8 @@
     </div>
 
     <!-- Text Column -->
-    <div class="col-lg-7">
-      <div class="text-container">
+    <div class="col-lg-7 d-flex">
+      <div class="text-container my-auto">
         <h1 class="fw-bold mb-4">MEA Apostille Services in Chennai</h1>
         
         <ul class="list-unstyled li-space-lg">
@@ -462,28 +462,24 @@
               Apostille is an official legalization under the Hague Convention, applied by India’s Ministry of External Affairs (MEA). It certifies Indian‑issued documents so they are accepted directly in Hague Convention countries without further embassy attestation.
             </div>
           </li>
-
           <li class="media mb-3">
             <i class="fas fa-check text-success me-2"></i>
             <div class="media-body">
               Whether you need to study, work, marry, establish a business, or immigrate abroad, getting an MEA Apostille ensures your documents are recognized as genuine and prevents delays in visas, admissions, employment, or registrations.
             </div>
           </li>
-
           <li class="media mb-3">
             <i class="fas fa-check text-success me-2"></i>
             <div class="media-body">
               The Apostille sticker/seal includes a unique reference and security features. Authorities in Hague Convention countries can verify authenticity, which speeds up approvals and reduces the need for multiple legalizations.
             </div>
           </li>
-
           <li class="media mb-3">
             <i class="fas fa-check text-success me-2"></i>
             <div class="media-body">
               Completing your Apostille early is recommended, as many overseas institutions and immigration offices set strict timelines. A properly apostilled document avoids rejections and repeat submissions.
             </div>
           </li>
-
           <li class="media mb-3">
             <i class="fas fa-check text-success me-2"></i>
             <div class="media-body">
@@ -499,6 +495,25 @@
   </div>
 </div>
 <!-- End of Intro Section -->
+
+<!-- CSS Fixes -->
+<style>
+  .object-fit-cover {
+    object-fit: cover;
+  }
+  .image-container {
+    min-height: 100%;
+  }
+  @media (max-width: 991px) {
+    .image-container img {
+      height: auto; /* On mobile, let image scale naturally */
+    }
+    .text-container {
+      padding-top: 1rem;
+    }
+  }
+</style>
+
 
 
 <!DOCTYPE html>
