@@ -279,26 +279,27 @@
     <i class="fab fa-whatsapp fa-2x text-success"></i>
   </a>
 </div>
+<!-- Corporate Hero Header -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-<!-- Spacer for layout -->
-<div class="my-5"></div>
-
-<!-- Hero Header with Full Background Image -->
 <header id="hero" style="
   position: relative;
   height: 100vh;
   background: url('https://www.almiraaj.com/images/swizz.jpg') no-repeat center center;
   background-size: cover;
+  font-family: 'Roboto', sans-serif;
 ">
-  <!-- Overlay -->
+  <!-- Overlay Gradient -->
   <div style="
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.45);
+    background: linear-gradient(rgba(0,40,80,0.6), rgba(0,0,0,0.6));
     z-index: 1;
   "></div>
 
-  <!-- Centered Text -->
+  <!-- Centered Content -->
   <div style="
     position: absolute;
     top: 50%;
@@ -306,15 +307,19 @@
     transform: translate(-50%, -50%);
     z-index: 2;
     color: #fff;
-    padding: 1.5rem 2.5rem;
-    background: rgba(0,0,0,0.55);
-    border-radius: 10px;
-    backdrop-filter: blur(6px);
-    text-shadow: 1px 1px 8px rgba(0,0,0,0.8);
+    padding: 2rem 3rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 6px;
+    backdrop-filter: blur(8px);
     animation: fadeInUp 1.2s ease-out;
+    text-align: center;
   ">
-    <h1 class="display-5 fw-bold mb-3">Certificate Apostille For Switzerland</h1>
-    <p class="lead mb-0">Provided by <strong>Almiraaj International</strong></p>
+    <h1 style="font-size:2.5rem; font-weight:700; margin-bottom:1rem;">
+      Certificate Apostille for Switzerland
+    </h1>
+    <p style="font-size:1.2rem; margin:0;">
+      Provided by <strong>Almiraaj International</strong>
+    </p>
   </div>
 </header>
 
@@ -329,7 +334,13 @@
     transform: translate(-50%, -50%);
   }
 }
+
+@media (max-width: 768px) {
+  #hero h1 { font-size: 1.8rem; }
+  #hero p { font-size: 1rem; }
+}
 </style>
+
 
 
 <!-- Breadcrumbs -->
