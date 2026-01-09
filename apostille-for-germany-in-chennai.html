@@ -57,224 +57,197 @@
 </head>
 
 
-  <!-- Custom Styles -->
-  <style>
-    body {
-      font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #333;
-      margin: 0;
-      padding: 0;
-      background-color: #f6faff;
-    }
+  <!-- Fonts & Stylesheets -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
 
-    .navbar {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-      background-color: #00264d !important;
-    }
+<!-- CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/fontawesome-all.css" rel="stylesheet">
+<link href="/css/swiper.css" rel="stylesheet">
+<link href="/css/magnific-popup.css" rel="stylesheet">
+<link href="/css/styles.css" rel="stylesheet">
 
-    .navbar .navbar-brand {
-      color: white !important;
-      font-weight: 700;
-      font-size: 1.3rem;
-    }
+</head>
 
-    .navbar .nav-link {
-      color: white !important;
-      transition: 0.3s ease-in-out;
-    }
 
-    .navbar .nav-link:hover {
-      color: #c99b33 !important;
-    }
+<!-- Custom Navbar Styles -->
+<style>
+  /* Navbar */
+  .navbar {
+    background-color: #00264d !important;
+  }
+  .navbar-brand {
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  .navbar-brand:hover {
+    color: #c99b33 !important;
+  }
+  .nav-link {
+    color: #fff !important;
+    transition: color 0.3s ease-in-out;
+  }
+  .nav-link:hover {
+    color: #c99b33 !important;
+  }
 
-    .dropdown-menu {
-      background-color: #00264d;
-    }
+  /* Dropdown */
+  .dropdown-menu {
+    background-color: #00264d !important;
+    border: none;
+    box-shadow: none;
+  }
+  .dropdown-item {
+    color: #fff !important;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  .dropdown-item:hover {
+    background-color: #c99b33 !important;
+    color: #00264d !important;
+  }
 
-    .dropdown-item {
-      color: white !important;
-    }
+  /* Image */
+  .bahrain-embassy-img {
+    max-width: 100%;
+    height: 450px;
+    object-fit: cover;
+  }
 
-    .dropdown-item:hover {
-      background-color: #c99b33;
-      color: #00264d !important;
-    }
-
-    .ex-header {
-      padding: 140px 15px 40px;
-      background-color: #00264d;
-      text-align: center;
-    }
-
-    .ex-header h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #ffffff;
-      margin: 0;
-      word-wrap: break-word;
-    }
-
-    @media (max-width: 768px) {
-      .ex-header {
-        padding-top: 160px;
-      }
-
-      .ex-header h1 {
-        font-size: 1.5rem;
-      }
-    }
-
-    .card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border-radius: 8px;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .card-title {
-      font-weight: 600;
-      font-size: 1.2rem;
-    }
-
-    ul.list-unstyled li {
-      margin-bottom: 8px;
-    }
-
-    .breadcrumbs {
-      font-size: 0.95rem;
-      color: #666;
-      margin-bottom: 20px;
-    }
-
-    .breadcrumbs a {
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    .breadcrumbs i {
-      margin: 0 5px;
-    }
-
-    .whatsapp-widget {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 999;
-    }
-
-    .whatsapp-widget i {
-      color: #25d366;
-    }
-
-    .cta a {
-      background-color: #007bff;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background-color 0.3s ease;
-    }
-
-    .cta a:hover {
-      background-color: #0056b3;
-    }
-  </style>
+  /* Card */
+  .card {
+    transition: all 0.3s ease-in-out;
+  }
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  .card-title a:hover {
+    text-decoration: underline;
+  }
+</style>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-    <a class="navbar-brand" href="index.html">AL-MIRAAJ International</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsMain"
-      aria-controls="navbarsMain" aria-expanded="false" aria-label="Toggle navigation">
+<!-- ✅ Navbar Start -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <div class="container-fluid">
+
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold text-white mb-0" href="index.html">
+      AL-MIRAAJ INTERNATIONAL
+    </a>
+
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarsMain">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link page-scroll" href="./index.html#header">HOME</a></li>
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto">
 
-        <!-- Certificate Attestation -->
+        <!-- Certificate Attestation Dropdown -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="certDropdown" role="button" data-toggle="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="certificateDropdown" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
             Certificate Attestation
           </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="birth-certificate-attestation.html">Birth Certificate</a>
-            <a class="dropdown-item" href="marriage-certificate-attestation.html">Marriage Certificate</a>
-            <a class="dropdown-item" href="degree-certificate-attestation-in-chennai.html">Educational Certificate</a>
-            <a class="dropdown-item" href="unmarriedcertificateapostille.html">Single Status Certificate</a>
-            <a class="dropdown-item" href="commercial-documents-attestation.html">Commercial Documents</a>
-            <a class="dropdown-item" href="power-of-attorney-apostilleattestation-in-chennai.html">Power of Attorney</a>
-            <a class="dropdown-item" href="pcc-apostille-attestation.html">PCC Apostille</a>
-          </div>
+          <ul class="dropdown-menu" aria-labelledby="certificateDropdown">
+            <li><a class="dropdown-item" href="../birth-certificate-attestation.html">Birth Certificate Attestation</a></li>
+            <li><a class="dropdown-item" href="../marriage-certificate-attestation.html">Marriage Certificate Attestation</a></li>
+            <li><a class="dropdown-item" href="../degree-certificate-attestation-in-chennai.html">Educational Certificate Attestation</a></li>
+            <li><a class="dropdown-item" href="../unmarriedcertificateapostille.html">Single Status Certificate Apostille</a></li>
+            <li><a class="dropdown-item" href="../how-to-get-single-status-certificate-in-chennai.html">How to Get Single Status Certificate</a></li>
+            <li><a class="dropdown-item" href="../commercial-documents-attestation.html">Commercial Documents Attestation</a></li>
+            <li><a class="dropdown-item" href="../power-of-attorney-apostilleattestation-in-chennai.html">Power of Attorney Apostille</a></li>
+            <li><a class="dropdown-item" href="../hrd-attestation-process.html">HRD Attestation Process</a></li>
+            <li><a class="dropdown-item" href="../home-mantralaya-attestation.html">Home-Mantralaya Attestation</a></li>
+          </ul>
         </li>
 
-        <!-- Embassy Attestation -->
+        <!-- Embassy Attestation Dropdown -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="embassyDropdown" role="button" data-toggle="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="embassyDropdown" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
             Embassy Attestation
           </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="uae-embassy-attestation.html">UAE</a>
-            <a class="dropdown-item" href="saudi-embassy-attestation-in-chennai.html">Saudi Arabia</a>
-            <a class="dropdown-item" href="kuwait-embassy-attestation.html">Kuwait</a>
-            <a class="dropdown-item" href="qatar-embassy-attestation.html">Qatar</a>
-            <a class="dropdown-item" href="oman-embassy-attestation.html">Oman</a>
-          </div>
+          <ul class="dropdown-menu" aria-labelledby="embassyDropdown">
+            <li><a class="dropdown-item" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a></li>
+            <li><a class="dropdown-item" href="../kuwait-embassy-attestation.html">Kuwait Embassy Attestation</a></li>
+            <li><a class="dropdown-item" href="../bahrain-embassy-attestation.html">Bahrain Embassy Attestation</a></li>
+            <li><a class="dropdown-item" href="../qatar-embassy-attestation.html">Qatar Embassy Attestation</a></li>
+            <li><a class="dropdown-item" href="../oman-embassy-attestation.html">Oman Embassy Attestation</a></li>
+            <li><a class="dropdown-item" href="../china-embassy-attestation.html">China Embassy Attestation</a></li>
+            <li><a class="dropdown-item" href="../malaysia-embassy-attestation.html">Malaysia Embassy Attestation</a></li>
+            <li><a class="dropdown-item" href="../saudi-embassy-attestation-in-chennai.html">Saudi Embassy Attestation</a></li>
+            <li><a class="dropdown-item" href="../egypt-embassy-attestation.html">Egypt Embassy Attestation</a></li>
+          </ul>
         </li>
 
-        <!-- Apostille MEA -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="apostilleDropdown" role="button" data-toggle="dropdown">
-            Apostille MEA
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="https://www.almiraaj.com/personal-certificate-apostille">Personal Certificates</a>
-            <a class="dropdown-item" href="https://www.almiraaj.com/degree-certificate-apostille">Educational Certificates</a>
-            <a class="dropdown-item" href="https://www.almiraaj.com/commercial-certificate-apostille">Commercial Certificates</a>
-          </div>
-        </li>
+      <!-- Apostille MEA Dropdown -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="apostilleDropdown" role="button"
+     data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+    Apostille MEA
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="apostilleDropdown">
+    <li><a class="dropdown-item" href="https://www.almiraaj.com/personal-certificate-apostille">Personal Certificates Apostille</a></li>
+    <li><a class="dropdown-item" href="https://www.almiraaj.com/degree-certificate-apostille">Educational Certificates Apostille</a></li>
+    <li><a class="dropdown-item" href="https://www.almiraaj.com/commercial-certificate-apostille">Commercial Certificates Apostille</a></li>
+  </ul>
+</li>
 
-        <!-- Visa Services -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="visaDropdown" role="button" data-toggle="dropdown">
-            Visa Services
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="china-visa-services.html">China</a>
-            <a class="dropdown-item" href="dubai_tourist_visa_47.html">Dubai</a>
-            <a class="dropdown-item" href="japan-visa-services.html">Japan</a>
-            <a class="dropdown-item" href="singapore_tourist_visa_29.html">Singapore</a>
-            <a class="dropdown-item" href="bahrain-visa-services.html">Bahrain</a>
-          </div>
-        </li>
+<!-- Visa Services Dropdown -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="visaDropdown" role="button"
+     data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+    Visa Services
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="visaDropdown">
+    <li><a class="dropdown-item" href="../australia-visa-32.html">Australia Visa</a></li>
+    <li><a class="dropdown-item" href="../brunei-visa-stamping-33.html">Brunei Visa Stamping</a></li>
+    <li><a class="dropdown-item" href="../china-visa-services.html">China Visa Services</a></li>
+    <li><a class="dropdown-item" href="../dubai-tourist-visa-47.html">Dubai Tourist Visa Services</a></li>
+    <li><a class="dropdown-item" href="../egypt-visa-services.html">Egypt Visa Services</a></li>
+    <li><a class="dropdown-item" href="../japan-visa-services.html">Japan Visa Services</a></li>
+    <li><a class="dropdown-item" href="../kuwait-visa-stamping-28.html">Kuwait Visa Stamping</a></li>
+    <li><a class="dropdown-item" href="../malaysia-tourist-visa-30.html">Malaysia Visa Services</a></li>
+    <li><a class="dropdown-item" href="../saudi-visa-stamping-27.html">Saudi Visa Stamping</a></li>
+    <li><a class="dropdown-item" href="../singapore-visa-services.html">Singapore Tourist Visa</a></li>
+    <li><a class="dropdown-item" href="../sri-lanka-visa-services.html">Sri Lanka Visa Services</a></li>
+    <li><a class="dropdown-item" href="../thailand-visa-services-in-chennai.html">Thailand Visa Services</a></li>
+    <li><a class="dropdown-item" href="../taiwan-visa-services.html">Taiwan Visa Services</a></li>
+  </ul>
+</li>
 
-        <!-- Contact -->
-        <li class="nav-item">
-          <a class="nav-link" href="https://wa.me/919087559669?text=Hi Almiraaj!!!">CONTACT</a>
-        </li>
-      </ul>
+<!-- Contact -->
+<li class="nav-item">
+  <a class="nav-link" href="https://wa.me/919087559669?text=Hi%20Almiraaj!!!" target="_blank" rel="noopener noreferrer">
+    Contact
+  </a>
+</li>
 
-      <!-- WhatsApp Icon -->
-      <span class="nav-item social-icons">
-        <span class="fa-stack">
-          <a href="https://wa.me/+919176160055" aria-label="Chat with Al Miraaj on WhatsApp">
-            <span class="hexagon"></span>
-            <i class="fab fa-whatsapp fa-stack-1x"></i>
-          </a>
-        </span>
-      </span>
-    </div>
-  </nav>
+<!-- WhatsApp Icon -->
+<li class="nav-item ms-3">
+  <a href="https://wa.me/919176160055" target="_blank" rel="noopener noreferrer" class="nav-link" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp fa-lg text-success"></i>
+  </a>
+</li>
+
+</ul> <!-- Close navbar-nav -->
+</div> <!-- Close navbar-collapse -->
+</div> <!-- Close container -->
+</nav>
+
+
+<!-- Spacer for layout -->
+<div class="my-5"></div>
+
 <!-- Header Section -->
 <header class="ex-header text-center">
   <h1 class="fw-bold mb-3">Certificate Apostille for Germany</h1>
