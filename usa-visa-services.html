@@ -234,25 +234,64 @@
       </ul>
     </div>
   </div>
+<style>
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+    margin: 24px 0;
+  }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px; /* keeps equal height */
+  }
+  .card h3 {
+    margin: 0 0 8px;
+    font-size: 1.1rem;
+    color: #0b5ed7;
+  }
+  .card ul {
+    margin: 0;
+    padding-left: 18px;
+    font-size: .95rem;
+  }
+  .card p {
+    margin: 0;
+    font-size: .95rem;
+    color: #374151;
+  }
+</style>
+
 <main class="container">
 
   <!-- Visa Types -->
   <section id="visa-types">
     <h2>Visa Types</h2>
-    <div class="grid-2">
-      <div class="list">
-        <ul>
-          <li><strong>B1/B2:</strong> Tourism, family visits, short business.</li>
-          <li><strong>F‑1/M‑1:</strong> Academic or vocational study.</li>
-          <li><strong>H‑1B/L‑1:</strong> Work with employer petition.</li>
-          <li><strong>J‑1:</strong> Exchange programs, internships.</li>
-          <li><strong>O‑1:</strong> Extraordinary ability visas.</li>
-          <li><strong>K‑1:</strong> Fiancé(e) visa.</li>
-          <li><strong>Immigrant:</strong> Family, employment, DV lottery.</li>
-        </ul>
+    <div class="card-grid">
+      <div class="card">
+        <h3>B1/B2 Visitor</h3>
+        <p>Tourism, family visits, short business trips.</p>
+        <ul><li>Stay up to 6 months</li><li>DS‑160 + interview</li></ul>
       </div>
-      <div class="note">
-        <p><strong>Tip:</strong> Pick the visa that matches your purpose. Check <a href="https://travel.state.gov/content/travel/en/us-visas.html" target="_blank">travel.state.gov</a> for latest rules.</p>
+      <div class="card">
+        <h3>F‑1/M‑1 Student</h3>
+        <p>Academic or vocational study at US schools.</p>
+        <ul><li>I‑20 form</li><li>SEVIS fee</li></ul>
+      </div>
+      <div class="card">
+        <h3>H‑1B/L‑1 Work</h3>
+        <p>Employer‑sponsored specialty jobs or transfers.</p>
+        <ul><li>I‑797 approval</li><li>Employer docs</li></ul>
+      </div>
+      <div class="card">
+        <h3>Other Visas</h3>
+        <p>Exchange (J‑1), extraordinary ability (O‑1), fiancé(e) (K‑1), immigrant visas.</p>
       </div>
     </div>
   </section>
@@ -260,130 +299,40 @@
   <!-- Process -->
   <section id="process">
     <h2>Application Process</h2>
-    <ol class="list">
-      <li>Complete DS‑160 online.</li>
-      <li>Pay visa fee & save receipt.</li>
-      <li>Book VAC + interview slots.</li>
-      <li>Prepare passport, photo, receipts, proofs.</li>
-      <li>Attend VAC biometrics.</li>
-      <li>Interview at Embassy/Consulate.</li>
-      <li>Track passport delivery.</li>
-    </ol>
-    <p class="note"><strong>Apply at:</strong> US Embassy New Delhi or Consulates in Chennai, Mumbai, Hyderabad, Kolkata.</p>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Step 1</h3>
+        <p>Complete DS‑160 online and save confirmation.</p>
+      </div>
+      <div class="card">
+        <h3>Step 2</h3>
+        <p>Pay visa fee, book VAC + interview slots.</p>
+      </div>
+      <div class="card">
+        <h3>Step 3</h3>
+        <p>Attend VAC biometrics and consular interview.</p>
+      </div>
+      <div class="card">
+        <h3>Step 4</h3>
+        <p>Track passport delivery after approval.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Documents -->
   <section id="documents">
     <h2>Documents</h2>
-    <div class="grid-2">
-      <div class="list">
+    <div class="card-grid">
+      <div class="card">
         <h3>Core</h3>
-        <ul>
-          <li>Passport</li>
-          <li>Photo (2x2 inch)</li>
-          <li>DS‑160 confirmation</li>
-          <li>Fee receipt</li>
-          <li>Appointment letters</li>
-        </ul>
+        <ul><li>Passport</li><li>Photo</li><li>DS‑160</li><li>Fee receipt</li></ul>
       </div>
-      <div class="list">
+      <div class="card">
         <h3>Extra</h3>
-        <ul>
-          <li>B1/B2: Itinerary, finances</li>
-          <li>F‑1/M‑1: I‑20, SEVIS fee, academics</li>
-          <li>H‑1B/L‑1: I‑797, employer docs</li>
-          <li>J‑1: DS‑2019, sponsor letter</li>
-        </ul>
+        <ul><li>B1/B2: itinerary, finances</li><li>F‑1: I‑20, academics</li><li>H‑1B: I‑797</li></ul>
       </div>
     </div>
-    <p class="note">Certificates often need Apostille. See <a href="https://www.almiraaj.com/apostille-for-usa-in-chennai" target="_blank">Apostille for USA in Chennai</a>.</p>
-  </section>
-
-  <!-- Processing Time -->
-  <section id="processing-time">
-    <h2>Processing Time</h2>
-    <ul class="list">
-      <li>DS‑160: same day</li>
-      <li>Appointments: varies by season</li>
-      <li>Post‑interview: few days if approved</li>
-      <li>Admin review: weeks/months</li>
-    </ul>
-    <p class="note">Book early and track slots regularly.</p>
-  </section>
-
-  <!-- Fees -->
-  <section id="fees">
-    <h2>Visa Fees</h2>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr><th>Category</th><th>Fee</th><th>Link</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>B1/B2</td><td>MRV fee</td><td><a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/fees.html" target="_blank">Details</a></td></tr>
-          <tr><td>F‑1/M‑1</td><td>MRV + SEVIS</td><td><a href="https://www.fmjfee.com/i901fee/" target="_blank">SEVIS</a></td></tr>
-          <tr><td>H‑1B/L‑1</td><td>MRV + petition</td><td><a href="https://www.uscis.gov/forms/filing-fees" target="_blank">USCIS</a></td></tr>
-          <tr><td>J‑1</td><td>MRV + SEVIS</td><td><a href="https://j1visa.state.gov/" target="_blank">J‑1</a></td></tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- Notes -->
-  <section id="important-notes">
-    <h2>Before Applying</h2>
-    <ul class="list">
-      <li>Match DS‑160 with documents.</li>
-      <li>Show funds & ties to India.</li>
-      <li>Be clear in interview.</li>
-      <li>Respect visa conditions.</li>
-      <li>Apostille certificates if required.</li>
-    </ul>
-  </section>
-
-  <!-- Places -->
-  <section id="places">
-    <h2>Popular US Destinations</h2>
-    <div class="grid-2">
-      <div class="list">
-        <h3>Cities</h3>
-        <ul>
-          <li>New York</li>
-          <li>San Francisco</li>
-          <li>Los Angeles</li>
-          <li>Chicago</li>
-          <li>Boston</li>
-        </ul>
-      </div>
-      <div class="list">
-        <h3>Study Hubs</h3>
-        <ul>
-          <li>Boston/Cambridge</li>
-          <li>Bay Area</li>
-          <li>New York</li>
-          <li>Texas</li>
-          <li>North Carolina</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Apostille -->
-  <section id="apostille">
-    <h2>Apostille Legalization</h2>
-    <p class="list"><strong>Why:</strong> Apostille makes Indian documents valid in the USA. Needed for study, work, marriage, immigration. See <a href="https://www.almiraaj.com/apostille-for-usa-in-chennai" target="_blank">Apostille Chennai</a>.</p>
-  </section>
-
-  <!-- Links -->
-  <section id="links">
-    <h2>Useful Links</h2>
-    <ul class="list">
-      <li><a href="https://travel.state.gov/content/travel/en/us-visas.html" target="_blank">US Visas</a></li>
-      <li><a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/fees.html" target="_blank">Visa Fees</a></li>
-      <li><a href="https://www.uscis.gov/forms/filing-fees" target="_blank">USCIS Fees</a></li>
-      <li><a href="https://www.fmjfee.com/i901fee/" target="_blank">SEVIS Fee</a></li>
-      <li><a href="https://j1visa.state.gov/" target="_blank">J‑1 Programs</a></li>
-    </ul>
+    <p class="note">Certificates may need Apostille: <a href="https://www.almiraaj.com/apostille-for-usa-in-chennai" target="_blank">Apostille Chennai</a>.</p>
   </section>
 
 </main>
