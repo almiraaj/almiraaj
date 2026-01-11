@@ -54,315 +54,106 @@
 </html>
 
 
-  <!-- Styles -->
-  <style>
-    :root{
-      --primary:#0b5ed7;
-      --secondary:#0dcaf0;
-      --accent:#ffc107;
-      --bg:#f7f9fc;
-      --text:#1f2937;
-      --muted:#6b7280;
-      --card1:#e3f2fd;
-      --card2:#e8f5e9;
-      --card3:#fff3e0;
-      --card4:#f3e5f5;
-      --radius:14px;
-      --shadow:0 10px 24px rgba(0,0,0,.08);
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
-      color:var(--text);
-      background:var(--bg);
-      line-height:1.6;
-    }
-    a{color:var(--primary);text-decoration:none}
-    a:hover{text-decoration:underline}
-    header{
-      background:linear-gradient(135deg, #0b5ed7 0%, #0dcaf0 100%);
-      color:#fff;
-      padding:48px 20px 28px;
-    }
-    .container{max-width:1100px;margin:0 auto;padding:0 20px}
-    .hero{
-      display:grid;
-      grid-template-columns:1.2fr 1fr;
-      gap:24px;
-      align-items:center;
-    }
-    .hero h1{
-      margin:0 0 10px;
-      font-size:2.2rem;
-      letter-spacing:.2px;
-    }
-    .hero p{margin:0 0 16px;color:#eaf6ff}
-    .hero .cta{
-      display:flex;gap:12px;flex-wrap:wrap;margin-top:8px
-    }
-    .btn{
-      display:inline-block;
-      padding:12px 16px;
-      border-radius:10px;
-      font-weight:600;
-      box-shadow:var(--shadow);
-      transition:.2s ease;
-      background:#fff;color:#0b5ed7;border:2px solid #ffffff22
-    }
-    .btn.secondary{background:#111827;color:#fff;border-color:#111827}
-    .btn:hover{transform:translateY(-2px)}
-    .hero img{
-      width:100%;height:auto;border-radius:16px;
-      box-shadow:var(--shadow);border:4px solid #ffffff33
-      }
+ <!-- Header Section -->
+<section class="container text-center my-5">
+  <h2 class="text-success display-5 fw-bold">USA Visa Services: Your Gateway to the United States</h2>
+  <div class="quote fst-italic text-muted mt-3">"From study and work to tourism and family visits, the USA welcomes you with the right visa support."</div>
+  
+  <!-- Clickable header image -->
+  <div class="mt-4">
+    <a href="https://www.almiraaj.com/images/visa-for-usa.png" target="_blank" class="btn btn-outline-primary">
+      👁️ View Sample Visa
+    </a>
+  </div>
+</section>
 
-    /* Cards: 2 per line */
-    .cards{
-      display:grid;
-      grid-template-columns:repeat(2, 1fr);
-      gap:18px;
-      margin-top:-24px;
-      position:relative;
-      z-index:2;
-    }
-    .card{
-      border-radius:var(--radius);
-      padding:18px;
-      box-shadow:var(--shadow);
-      border:1px solid #e5e7eb;
-      background:#fff;
-    }
-    .card.color1{background:var(--card1)}
-    .card.color2{background:var(--card2)}
-    .card.color3{background:var(--card3)}
-    .card.color4{background:var(--card4)}
-    .card h3{margin:0 0 8px;font-size:1.15rem}
-    .card p{margin:0 0 10px;color:#374151}
-    .card ul{margin:8px 0 0;padding-left:18px}
-    .badge{
-      display:inline-block;background:#111827;color:#fff;
-      padding:4px 10px;border-radius:999px;font-size:.8rem;margin-bottom:8px
-    }
+<!-- Info Cards in 2-column layout -->
+<section class="container my-5">
+  <div class="row g-4">
 
-    section{padding:28px 0}
-    section h2{font-size:1.6rem;margin:0 0 10px}
-    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    .note{
-      background:#fff;border:1px dashed #cbd5e1;border-radius:12px;
-      padding:14px;color:#334155
-    }
-    .list{
-      background:#fff;border:1px solid #e5e7eb;border-radius:12px;
-      padding:14px
-    }
-    .list li{margin:6px 0}
-    .table-wrap{overflow:auto;background:#fff;border:1px solid #e5e7eb;border-radius:12px}
-    table{width:100%;border-collapse:collapse}
-    th,td{padding:12px;border-bottom:1px solid #e5e7eb;text-align:left}
-    th{background:#f8fafc}
-    .footer{
-      background:#0f172a;color:#cbd5e1;padding:28px 20px;margin-top:24px
-    }
-    .footer a{color:#93c5fd}
-    .terms small{color:var(--muted)}
-    @media (max-width:900px){
-      .hero{grid-template-columns:1fr}
-    }
-    @media (max-width:720px){
-      .cards{grid-template-columns:1fr}
-      .grid-2{grid-template-columns:1fr}
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Header / Hero -->
-  <header>
-    <div class="container hero">
-      <div>
-        <span class="badge">Welcome to AL‑MIRAAJ INTERNATIONAL</span>
-        <h1>USA Visa Services for Indians</h1>
-        <p>Plan your travel, study, work, or business in the United States with clear guidance on visa types, application steps, documents, fees, and timelines—plus certificate apostille legalization support in Chennai.</p>
-        <div class="cta">
-          <a class="btn" href="#visa-types">Explore Visa Types</a>
-          <a class="btn secondary" href="https://www.almiraaj.com/apostille-for-usa-in-chennai" target="_blank" rel="noopener">Apostille for USA in Chennai</a>
+    <!-- Card 1 -->
+    <div class="col-md-6">
+      <div class="card h-100 border-0 shadow-sm bg-light">
+        <div class="card-body">
+          <h4 class="card-title text-primary">Major Types of USA Visa Services</h4>
+          <p>
+            Almiraaj International assists with multiple categories of US visas including visitor (B1/B2), student (F‑1/M‑1), work visas (H‑1B/L‑1), exchange visas (J‑1), and immigrant visas. Each type requires specific documentation such as valid passport, DS‑160 form, photographs, and proof of funds to ensure smooth processing at the US Embassy or Consulates.
+          </p>
+          <p><strong>Keywords:</strong> USA Visa Services Chennai, B1 B2 Visa India, F1 Student Visa USA, H1B Work Visa India</p>
         </div>
       </div>
-      <div>
-        <img src="https://www.almiraaj.com/images/visa-for-usa.png" alt="USA Visa Services for Indians - AL-MIRAAJ INTERNATIONAL" />
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-6">
+      <div class="card h-100 border-0 shadow-sm bg-light">
+        <div class="card-body">
+          <h4 class="card-title text-success">Tourist & Short-Term Visit Visas</h4>
+          <p>
+            For leisure travel, sightseeing, or visiting friends and relatives, US visitor visas (B1/B2) require itinerary details, proof of financial stability, and sometimes invitation letters. Almiraaj ensures your application is complete and compliant with embassy requirements, so you can explore iconic attractions like New York City, Los Angeles, and San Francisco.
+          </p>
+          <p><strong>Keywords:</strong> USA Tourist Visa India, Visiting Relatives USA, Short-Term Stay Visa USA</p>
+        </div>
       </div>
     </div>
-  </header>
 
-  <!-- Cards: 2 per line, total 4 -->
-  <div class="container cards">
-    <div class="card color1">
-      <h3>Visitor & Tourism (B1/B2)</h3>
-      <p>Short‑term travel for tourism, family visits, conferences, or business meetings. Not permitted to work.</p>
-      <ul>
-        <li><strong>Stay:</strong> Typically up to 6 months</li>
-        <li><strong>Form:</strong> DS‑160 + interview</li>
-        <li><strong>Docs:</strong> Passport, photo, itinerary, finances</li>
-      </ul>
+    <!-- Card 3 -->
+    <div class="col-md-6">
+      <div class="card h-100 border-0 shadow-sm bg-light">
+        <div class="card-body">
+          <h4 class="card-title text-danger">Business & Work Visa Services</h4>
+          <p>
+            US work visas such as H‑1B and L‑1 are essential for employment and corporate transfers. Requirements include employer petitions (I‑797 approval), offer letters, and qualification proofs. Almiraaj guides applicants through every step for a hassle-free process.
+          </p>
+          <p><strong>Keywords:</strong> USA Business Visa Chennai, H1B Visa India, L1 Visa Chennai, Employer Petition USA</p>
+        </div>
+      </div>
     </div>
-    <div class="card color2">
-      <h3>Student (F‑1/M‑1)</h3>
-      <p>Academic (F‑1) or vocational (M‑1) study at SEVP‑approved schools. Optional Practical Training may apply.</p>
-      <ul>
-        <li><strong>I‑20:</strong> Issued by school</li>
-        <li><strong>SEVIS fee:</strong> Pay before interview</li>
-        <li><strong>Proof:</strong> Funds, academics, intent to return</li>
-      </ul>
+
+    <!-- Card 4 -->
+    <div class="col-md-6">
+      <div class="card h-100 border-0 shadow-sm bg-light">
+        <div class="card-body">
+          <h4 class="card-title text-warning">Application & Processing Timeline</h4>
+          <p>
+            US visa applications generally take a few days to weeks depending on category and appointment availability. Almiraaj ensures timely DS‑160 submission, fee payment, biometrics scheduling, and interview preparation, with updates on passport delivery once the visa is issued.
+          </p>
+          <p><strong>Keywords:</strong> USA Visa Processing Time, US Consulate Chennai, Visa Application Support India</p>
+        </div>
+      </div>
     </div>
-    <div class="card color3">
-      <h3>Work & Business (H‑1B/L‑1)</h3>
-      <p>Specialty occupation (H‑1B) or intra‑company transfer (L‑1). Employer petition required before stamping.</p>
-      <ul>
-        <li><strong>Petition:</strong> USCIS approval (I‑797)</li>
-        <li><strong>Docs:</strong> Offer letter, qualifications</li>
-        <li><strong>Dependents:</strong> H‑4/L‑2 options</li>
-      </ul>
+
+    <!-- Card 5 -->
+    <div class="col-md-6">
+      <div class="card h-100 border-0 shadow-sm bg-light">
+        <div class="card-body">
+          <h4 class="card-title text-info">Required Documentation</h4>
+          <p>
+            US visa applications require a valid passport, DS‑160 confirmation, recent photograph, fee receipt, and appointment letters. Category-specific documents include I‑20 for students, I‑797 for work visas, and DS‑2019 for exchange programs. 
+            In certain cases, applicants may also need 
+            <a href="https://www.almiraaj.com/apostille-for-usa-in-chennai" target="_blank" class="text-decoration-none text-success">
+              Apostille Legalization for USA
+            </a> 
+            to ensure documents are officially recognized and accepted by US authorities.
+          </p>
+          <p><strong>Keywords:</strong> USA Visa Documents, US Visa Requirements Chennai, Visa Application Checklist, Apostille USA Chennai</p>
+        </div>
+      </div>
     </div>
-    <div class="card color4">
-      <h3>Exchange & Other (J, O, E, etc.)</h3>
-      <p>Programs for research, training, extraordinary ability, investors, and more—each with specific criteria.</p>
-      <ul>
-        <li><strong>J‑1:</strong> DS‑2019 sponsor form</li>
-        <li><strong>O‑1:</strong> Evidence of achievements</li>
-        <li><strong>E‑2:</strong> Substantial investment</li>
-      </ul>
+
+    <!-- Card 6 -->
+    <div class="col-md-6">
+      <div class="card h-100 border-0 shadow-sm bg-light">
+        <div class="card-body">
+          <h4 class="card-title text-danger">Family & Dependent Visa Support</h4>
+          <p>
+            For applicants visiting spouses, children, or relatives in the USA, Almiraaj provides specialized assistance with dependent and family visas. This includes preparing kinship proof, invitation letters, and guarantee documents to ensure smooth approval by the US Consulate. 
+            Our team also advises on additional requirements such as notarization and apostille legalization when family-related documents need to be validated.
+          </p>
+          <p><strong>Keywords:</strong> USA Family Visa Chennai, Dependent Visa USA, Visiting Relatives USA, Apostille Support Chennai</p>
+        </div>
+      </div>
     </div>
+
   </div>
-<style>
-  .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 18px;
-    margin: 24px 0;
-  }
-  .card {
-    background: #fff;
-    border-radius: 12px;
-    padding: 16px;
-    box-shadow: 0 4px 12px rgba(0,0,0,.08);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 200px;
-  }
-  .card h3 {
-    margin: 0 0 8px;
-    font-size: 1.1rem;
-    color: #0b5ed7;
-  }
-  .card ul {
-    margin: 0;
-    padding-left: 18px;
-    font-size: .95rem;
-  }
-  .card p {
-    margin: 0;
-    font-size: .95rem;
-    color: #374151;
-  }
-</style>
-
-<main class="container">
-
-  <!-- Visa Types -->
-  <section id="visa-types">
-    <h2>Visa Types</h2>
-    <div class="card-grid">
-      <div class="card"><h3>B1/B2 Visitor</h3><p>Tourism, family visits, short business trips.</p></div>
-      <div class="card"><h3>F‑1/M‑1 Student</h3><p>Academic or vocational study at US schools.</p></div>
-      <div class="card"><h3>H‑1B/L‑1 Work</h3><p>Employer‑sponsored jobs or company transfers.</p></div>
-      <div class="card"><h3>Other Visas</h3><p>Exchange (J‑1), extraordinary ability (O‑1), fiancé(e) (K‑1), immigrant visas.</p></div>
-    </div>
-  </section>
-
-  <!-- Process -->
-  <section id="process">
-    <h2>Application Process</h2>
-    <div class="card-grid">
-      <div class="card"><h3>Step 1</h3><p>Complete DS‑160 online.</p></div>
-      <div class="card"><h3>Step 2</h3><p>Pay fee & book VAC + interview.</p></div>
-      <div class="card"><h3>Step 3</h3><p>Attend biometrics & interview.</p></div>
-      <div class="card"><h3>Step 4</h3><p>Track passport delivery.</p></div>
-    </div>
-  </section>
-
-  <!-- Documents -->
-  <section id="documents">
-    <h2>Documents</h2>
-    <div class="card-grid">
-      <div class="card"><h3>Core</h3><ul><li>Passport</li><li>Photo</li><li>DS‑160</li><li>Fee receipt</li></ul></div>
-      <div class="card"><h3>Extra</h3><ul><li>B1/B2: itinerary</li><li>F‑1: I‑20, academics</li><li>H‑1B: I‑797</li></ul></div>
-    </div>
-    <p class="note">Certificates may need Apostille: <a href="https://www.almiraaj.com/apostille-for-usa-in-chennai" target="_blank">Apostille Chennai</a>.</p>
-  </section>
-
-  <!-- Processing Time -->
-  <section id="processing-time">
-    <h2>Processing Time</h2>
-    <div class="card-grid">
-      <div class="card"><h3>DS‑160</h3><p>Same day if docs ready.</p></div>
-      <div class="card"><h3>Appointments</h3><p>Varies by season.</p></div>
-      <div class="card"><h3>Post‑Interview</h3><p>Few days if approved.</p></div>
-      <div class="card"><h3>Admin Review</h3><p>Weeks/months if required.</p></div>
-    </div>
-  </section>
-
-  <!-- Fees -->
-  <section id="fees">
-    <h2>Visa Fees</h2>
-    <div class="card-grid">
-      <div class="card"><h3>B1/B2</h3><p>MRV fee</p><a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/fees.html" target="_blank">Details</a></div>
-      <div class="card"><h3>F‑1/M‑1</h3><p>MRV + SEVIS</p><a href="https://www.fmjfee.com/i901fee/" target="_blank">SEVIS</a></div>
-      <div class="card"><h3>H‑1B/L‑1</h3><p>MRV + petition</p><a href="https://www.uscis.gov/forms/filing-fees" target="_blank">USCIS</a></div>
-      <div class="card"><h3>J‑1</h3><p>MRV + SEVIS</p><a href="https://j1visa.state.gov/" target="_blank">J‑1 Info</a></div>
-    </div>
-  </section>
-
-  <!-- Notes -->
-  <section id="important-notes">
-    <h2>Before Applying</h2>
-    <div class="card-grid">
-      <div class="card"><h3>Accuracy</h3><p>DS‑160 must match documents.</p></div>
-      <div class="card"><h3>Funds</h3><p>Show financial stability & ties to India.</p></div>
-      <div class="card"><h3>Interview</h3><p>Be clear and truthful.</p></div>
-      <div class="card"><h3>Compliance</h3><p>Respect visa conditions.</p></div>
-    </div>
-  </section>
-
-  <!-- Places -->
-  <section id="places">
-    <h2>Popular US Destinations</h2>
-    <div class="card-grid">
-      <div class="card"><h3>Cities</h3><ul><li>New York</li><li>San Francisco</li><li>Los Angeles</li></ul></div>
-      <div class="card"><h3>Study Hubs</h3><ul><li>Boston</li><li>Bay Area</li><li>Texas</li></ul></div>
-    </div>
-  </section>
-
-  <!-- Apostille -->
-  <section id="apostille">
-    <h2>Apostille Legalization</h2>
-    <div class="card-grid">
-      <div class="card"><h3>Why</h3><p>Makes Indian documents valid in USA.</p></div>
-      <div class="card"><h3>Steps</h3><p>Notary → State → MEA Apostille.</p></div>
-    </div>
-    <p class="note">See <a href="https://www.almiraaj.com/apostille-for-usa-in-chennai" target="_blank">Apostille Chennai</a> for support.</p>
-  </section>
-
-  <!-- Links -->
-  <section id="links">
-    <h2>Useful Links</h2>
-    <div class="card-grid">
-      <div class="card"><h3>US Visas</h3><a href="https://travel.state.gov/content/travel/en/us-visas.html" target="_blank">travel.state.gov</a></div>
-      <div class="card"><h3>Visa Fees</h3><a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/fees.html" target="_blank">Fee page</a></div>
-      <div class="card"><h3>USCIS</h3><a href="https://www.uscis.gov/forms/filing-fees" target="_blank">USCIS fees</a></div>
-      <div class="card"><h3>SEVIS</h3><a href="https://www.fmjfee.com/i901fee/" target="_blank">fmjfee.com</a></div>
-    </div>
-  </section>
-
-</main>
+</section>
