@@ -686,100 +686,96 @@
 <!-- Branch Addresses Section -->
 <section class="container my-5">
   <h3 class="text-center text-success fw-bold mb-4">📍 AL-MIRAAJ International Branches</h3>
-  <div class="row g-4 justify-content-center">
+  
+  <style>
+    .branch-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: nowrap; /* keeps them in one line on large screens */
+    }
+    .branch-card {
+      flex: 1;
+      max-width: 220px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      padding: 18px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .branch-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+    }
+    .branch-card h5 {
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .branch-card p {
+      margin: 4px 0;
+      font-size: 0.9rem;
+      color: #374151;
+    }
+    .branch-card .btn {
+      margin-top: 10px;
+      font-size: 0.8rem;
+    }
+    @media(max-width: 992px) {
+      .branch-row { flex-wrap: wrap; } /* stack on tablets/mobiles */
+    }
+  </style>
 
-    <!-- Card Template Example -->
-    <style>
-      .branch-card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        border-radius: 12px;
-      }
-      .branch-card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-      }
-      .branch-card h5 {
-        font-weight: 700;
-        margin-bottom: 12px;
-      }
-      .branch-card p {
-        font-size: 0.9rem;
-        margin-bottom: 6px;
-      }
-      .branch-card .btn {
-        margin-top: 8px;
-        font-size: 0.8rem;
-      }
-    </style>
+  <div class="branch-row">
 
     <!-- Chennai -->
-    <div class="col-md-2 col-sm-6">
-      <div class="card h-100 shadow-sm bg-light text-center branch-card">
-        <div class="card-body">
-          <h5 class="card-title text-primary">Chennai</h5>
-          <p>10-CASA Major Road</p>
-          <p>B3-Elcanso, Egmore</p>
-          <p>Tamil Nadu - 600008</p>
-          <p>📞 +91 44 4203 7273</p>
-          <a href="https://maps.google.com/?q=Egmore+Chennai" target="_blank" class="btn btn-sm btn-outline-primary">📍 View Map</a>
-        </div>
-      </div>
+    <div class="branch-card">
+      <h5 class="text-primary">Chennai</h5>
+      <p>10-CASA Major Road</p>
+      <p>B3-Elcanso, Egmore</p>
+      <p>Tamil Nadu - 600008</p>
+      <p>📞 +91 44 4203 7273</p>
+      <a href="https://maps.google.com/?q=Egmore+Chennai" target="_blank" class="btn btn-sm btn-outline-primary">📍 View Map</a>
     </div>
 
     <!-- Trichy -->
-    <div class="col-md-2 col-sm-6">
-      <div class="card h-100 shadow-sm bg-light text-center branch-card">
-        <div class="card-body">
-          <h5 class="card-title text-success">Trichy</h5>
-          <p>28-Pattabi Raman Salai</p>
-          <p>Tennur, 2nd Floor</p>
-          <p>Tiruchirappalli - 620001</p>
-          <p>📞 +91 9159589163</p>
-          <a href="https://maps.google.com/?q=Tennur+Trichy" target="_blank" class="btn btn-sm btn-outline-success">📍 View Map</a>
-        </div>
-      </div>
+    <div class="branch-card">
+      <h5 class="text-success">Trichy</h5>
+      <p>28-Pattabi Raman Salai</p>
+      <p>Tennur, 2nd Floor</p>
+      <p>Tiruchirappalli - 620001</p>
+      <p>📞 +91 9159589163</p>
+      <a href="https://maps.google.com/?q=Tennur+Trichy" target="_blank" class="btn btn-sm btn-outline-success">📍 View Map</a>
     </div>
 
     <!-- Madurai -->
-    <div class="col-md-2 col-sm-6">
-      <div class="card h-100 shadow-sm bg-light text-center branch-card">
-        <div class="card-body">
-          <h5 class="card-title text-danger">Madurai</h5>
-          <p>7, E2, PT Rajan Rd</p>
-          <p>Zumbropuram, Narimedu</p>
-          <p>Madurai - 625020</p>
-          <p>📞 +91 452 2600 456</p>
-          <a href="https://maps.google.com/?q=Narimedu+Madurai" target="_blank" class="btn btn-sm btn-outline-danger">📍 View Map</a>
-        </div>
-      </div>
+    <div class="branch-card">
+      <h5 class="text-danger">Madurai</h5>
+      <p>7, E2, PT Rajan Rd</p>
+      <p>Zumbropuram, Narimedu</p>
+      <p>Madurai - 625020</p>
+      <p>📞 +91 452 2600 456</p>
+      <a href="https://maps.google.com/?q=Narimedu+Madurai" target="_blank" class="btn btn-sm btn-outline-danger">📍 View Map</a>
     </div>
 
     <!-- Coimbatore -->
-    <div class="col-md-2 col-sm-6">
-      <div class="card h-100 shadow-sm bg-light text-center branch-card">
-        <div class="card-body">
-          <h5 class="card-title text-warning">Coimbatore</h5>
-          <p>Green Tick, 12 4th South Cross St</p>
-          <p>Nehru Nagar West</p>
-          <p>Coimbatore - 641018</p>
-          <p>📞 +91 91595 89163</p>
-          <a href="https://maps.google.com/?q=Nehru+Nagar+Coimbatore" target="_blank" class="btn btn-sm btn-outline-warning">📍 View Map</a>
-        </div>
-      </div>
+    <div class="branch-card">
+      <h5 class="text-warning">Coimbatore</h5>
+      <p>Green Tick, 12 4th South Cross St</p>
+      <p>Nehru Nagar West</p>
+      <p>Coimbatore - 641018</p>
+      <p>📞 +91 91595 89163</p>
+      <a href="https://maps.google.com/?q=Nehru+Nagar+Coimbatore" target="_blank" class="btn btn-sm btn-outline-warning">📍 View Map</a>
     </div>
 
     <!-- Tuticorin -->
-    <div class="col-md-2 col-sm-6">
-      <div class="card h-100 shadow-sm bg-light text-center branch-card">
-        <div class="card-body">
-          <h5 class="card-title text-info">Tuticorin</h5>
-          <p>Hongkong Complex</p>
-          <p>28-Palai Road</p>
-          <p>Tuticorin - 628001</p>
-          <p>📞 +91 9176160055</p>
-          <a href="https://maps.google.com/?q=Palai+Road+Tuticorin" target="_blank" class="btn btn-sm btn-outline-info">📍 View Map</a>
-        </div>
-      </div>
+    <div class="branch-card">
+      <h5 class="text-info">Tuticorin</h5>
+      <p>Hongkong Complex</p>
+      <p>28-Palai Road</p>
+      <p>Tuticorin - 628001</p>
+      <p>📞 +91 9176160055</p>
+      <a href="https://maps.google.com/?q=Palai+Road+Tuticorin" target="_blank" class="btn btn-sm btn-outline-info">📍 View Map</a>
     </div>
 
   </div>
