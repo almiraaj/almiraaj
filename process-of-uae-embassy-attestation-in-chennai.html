@@ -245,7 +245,7 @@
 <!-- Spacer for layout -->
 <div class="my-5"></div>
 
-<!-- Corporate-Style Header with Enhanced Readability -->
+<!-- Corporate-Style Header -->
 <header id="header" class="ex-header text-center py-5" style="position: relative; overflow: hidden;">
   <div style="position: relative;">
     <img 
@@ -254,7 +254,7 @@
       class="img-fluid w-100" 
       style="filter: brightness(55%); object-fit: cover; max-height: 450px;" />
 
-    <!-- Overlay for better text contrast -->
+    <!-- Overlay -->
     <div style="
       position: absolute;
       top: 0;
@@ -273,15 +273,15 @@
       transform: translate(-50%, -50%);
       z-index: 2;
       color: #fff;
-      padding: 1rem 2rem;
+      padding: 0.8rem 1.5rem;
       background: rgba(0, 0, 0, 0.55);
       border-radius: 8px;
       backdrop-filter: blur(4px);
       text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
       animation: fadeInUp 1.2s ease-out;
-      max-width: 90%;
+      white-space: nowrap; /* Keeps text in one line */
     ">
-      <h1 class="display-5 fw-bold mb-2">UAE Embassy Attestation</h1>
+      <h1 class="fw-bold mb-0" style="font-size:2rem; text-align:center;">UAE Embassy Attestation</h1>
     </div>
 
     <!-- Bottom Tagline -->
@@ -298,6 +298,7 @@
       text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
       font-size: 1.1em;
       animation: fadeInUp 1.5s ease-out;
+      white-space: nowrap;
     ">
       <p class="lead mb-0">Doorstep Collection & Delivery <strong>By Almiraaj</strong></p>
     </div>
@@ -316,6 +317,7 @@
   }
 }
 </style>
+
 
 
 <!-- Breadcrumbs -->
