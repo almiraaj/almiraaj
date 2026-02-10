@@ -6,7 +6,7 @@
 
   <!-- SEO Meta Tags -->
   <title>UAE Embassy Attestation in Chennai | AL MIRAAJ International</title>
-  <meta name="description" content="AL MIRAAJ International offers expert UAE Embassy Attestation services in Chennai. Get your educational, personal, and commercial documents legalized for UAE visas, employment, study, and business. Contact +91-44-4203 7273 or attestation@almiraaj.com.">
+  <meta name="description" content="AL MIRAAJ International offers expert UAE Embassy Attestation services in Chennai with door-step collection and delivery in Trichy, Madurai, Coimbatore, Tuticorin, and across Tamil Nadu. Fast, secure, and reliable legalization for UAE visas, employment, study, and business. Contact +91-44-4203 7273 or attestation@almiraaj.com.">
   <link rel="canonical" href="https://www.almiraaj.com/uae-embassy-attestation-in-chennai">
   <link rel="icon" href="https://www.almiraaj.com/images/ALMINT.png" type="image/png">
 
@@ -14,13 +14,13 @@
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
   <meta property="og:title" content="UAE Embassy Attestation in Chennai | AL MIRAAJ International">
-  <meta property="og:description" content="Fast, secure, and reliable UAE Embassy Attestation services in Chennai. Legalize your certificates for employment, study, family, and business in the UAE.">
+  <meta property="og:description" content="Fast, secure, and reliable UAE Embassy Attestation services in Chennai with door-step collection and delivery across Tamil Nadu.">
   <meta property="og:image" content="https://www.almiraaj.com/images/certificate-attestation-tamilnadu.png">
   <meta property="og:url" content="https://www.almiraaj.com/uae-embassy-attestation-in-chennai">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="UAE Embassy Attestation in Chennai | AL MIRAAJ International">
-  <meta name="twitter:description" content="Trusted UAE Embassy Attestation in Chennai. Educational, personal, and commercial documents legalized for UAE visas and residency.">
+  <meta name="twitter:description" content="Trusted UAE Embassy Attestation in Chennai with door-step collection in Trichy, Madurai, Coimbatore, Tuticorin, and all over Tamil Nadu.">
   <meta name="twitter:image" content="https://www.almiraaj.com/images/certificate-attestation-tamilnadu.png">
 
   <!-- Structured Data -->
@@ -49,49 +49,58 @@
       "https://www.instagram.com/almiraajinternational",
       "https://www.linkedin.com/company/almiraajinternational"
     ],
-    "description": "AL MIRAAJ International provides UAE Embassy Attestation services in Chennai for educational, personal, and commercial documents. Trusted for fast, secure, and reliable legalization for UAE visas and residency."
+    "description": "AL MIRAAJ International provides UAE Embassy Attestation services in Chennai with door-step collection and delivery in Trichy, Madurai, Coimbatore, Tuticorin, and almost all over Tamil Nadu. Trusted for fast, secure, and reliable legalization for UAE visas and residency."
   }
   </script>
 
   <!-- Fonts and Styles -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap" rel="stylesheet">
-  <link href="/css/bootstrap.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/fontawesome-all.css" rel="stylesheet">
-  <link href="/css/swiper.css" rel="stylesheet">
-  <link href="/css/magnific-popup.css" rel="stylesheet">
   <link href="/css/styles.css" rel="stylesheet">
-  <link href="/css/css.css" rel="stylesheet">
 
-  <!-- Custom Navbar Styles -->
+  <!-- Custom Corporate Navbar Styles -->
   <style>
     .navbar {
       background-color: #00264d !important;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     }
     .navbar-brand {
       color: #fff !important;
       font-weight: 700;
       font-size: 1.3rem;
-      margin: 0;
     }
     .navbar-brand:hover {
       color: #c99b33 !important;
     }
     .nav-link {
       color: #fff !important;
+      position: relative;
       transition: color 0.3s ease-in-out;
     }
     .nav-link:hover {
       color: #c99b33 !important;
     }
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #c99b33;
+      transition: width 0.3s ease-in-out;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
     .dropdown-menu {
       background-color: #00264d !important;
       border: none;
-      box-shadow: none;
     }
     .dropdown-item {
       color: #fff !important;
-      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     }
     .dropdown-item:hover {
       background-color: #c99b33 !important;
@@ -101,7 +110,7 @@
 </head>
 <body>
 
-<!-- ✅ Navbar Start -->
+<!-- ✅ Corporate Navbar -->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top">
   <div class="container-fluid">
 
@@ -111,7 +120,8 @@
     </a>
 
     <!-- Toggle Button -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -119,44 +129,43 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ms-auto">
 
+        <!-- Home -->
         <li class="nav-item">
           <a class="nav-link" href="https://www.almiraaj.com/">Home</a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.almiraaj.com/certificate-attestation-services-in-chennai">Certificate Attestation</a>
+        <!-- Services Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" 
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="https://www.almiraaj.com/certificate-attestation-services-in-chennai">Certificate Attestation</a></li>
+            <li><a class="dropdown-item" href="https://www.almiraaj.com/embassy-attestation-in-chennai">Embassy Attestation</a></li>
+            <li><a class="dropdown-item" href="https://www.almiraaj.com/certificate-apostille-mea-in-chennai">Certificate Apostille</a></li>
+          </ul>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.almiraaj.com/embassy-attestation-in-chennai">Embassy Attestation</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.almiraaj.com/certificate-apostille-mea-in-chennai">Certificate Apostille</a>
-        </li>
-
+        <!-- Visa Services -->
         <li class="nav-item">
           <a class="nav-link" href="https://www.almiraaj.com/visa-services">Visa Services</a>
         </li>
 
+        <!-- Contact -->
         <li class="nav-item">
-          <a class="nav-link" href="https://api.whatsapp.com/send/?phone=919087559669&text=Hi+Almiraaj%21%21%21&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">Contact</a>
+          <a class="nav-link" href="https://api.whatsapp.com/send/?phone=919087559669&text=Hi+Almiraaj%21%21%21&type=phone_number&app_absent=0" 
+             target="_blank" rel="noopener noreferrer">Contact</a>
         </li>
 
       </ul>
     </div>
   </div>
 </nav>
-<!-- ✅ Navbar End -->
-
-
-      </ul> <!-- Close navbar-nav -->
-    </div> <!-- Close navbar-collapse -->
-  </div> <!-- Close container -->
-</nav>
 
 <!-- Spacer for layout -->
 <div class="my-5"></div>
+
 
 <!-- Corporate-Style Header with Enhanced Readability -->
 <header id="header" class="ex-header text-center py-5" style="position: relative; overflow: hidden;">
