@@ -1211,12 +1211,20 @@
     Reach out to our <strong>customer care team</strong> for instant support and personalized guidance.
   </p>
 
-  <!-- Embedded form -->
-  <iframe 
-    src="https://almiraaj.in/#7b08f443-3dcc-4ba9-9fbc-c4b83291abd9" 
-    style="width:100%; height:600px; border:none;" 
-    title="Contact Form">
-  </iframe>
+  <!-- Toggle button -->
+  <button onclick="document.getElementById('contactForm').style.display='block'" 
+          style="padding:10px 20px; background:#0059b3; color:#fff; border:none; cursor:pointer;">
+    Show Form
+  </button>
+
+  <!-- Hidden form container -->
+  <div id="contactForm" style="display:none; margin-top:20px;">
+    <iframe 
+      src="https://almiraaj.in/#7b08f443-3dcc-4ba9-9fbc-c4b83291abd9" 
+      style="width:100%; height:600px; border:none;" 
+      title="Contact Form">
+    </iframe>
+  </div>
 </div>
 <hr>
 
