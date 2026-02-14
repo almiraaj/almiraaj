@@ -1204,8 +1204,7 @@
 }
 </style>
 
-
-<form id="almiraajForm" method="POST" action="mailto:info@almiraaj.com" enctype="text/plain" style="max-width:500px; margin:auto; font-family:Arial, sans-serif;">
+<form id="almiraajForm" action="https://formspree.io/f/mpqjdzoq" method="POST" style="max-width:500px; margin:auto; font-family:Arial, sans-serif;">
   <label for="name">Name:</label><br>
   <input type="text" id="name" name="Name" required style="width:100%; padding:8px; margin:6px 0;"><br>
 
@@ -1240,9 +1239,16 @@
 <script>
   // Show confirmation message after submission
   document.getElementById('almiraajForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // prevent default mailto popup
-    document.getElementById('almiraajForm').style.display = 'none';
-    document.getElementById('confirmation').style.display = 'block';
+    e.preventDefault();
+    fetch(this.action, {
+      method: this.method,
+      body: new FormData(this)
+    }).then(() => {
+      document.getElementById('almiraajForm').style.display = 'none';
+      document.getElementById('confirmation').style.display = 'block';
+    }).catch(() => {
+      alert("There was an error submitting the form. Please try again.");
+    });
   });
 </script>
 
