@@ -1210,7 +1210,7 @@
   Contact AL‑MIRAAJ INTERNATIONAL
 </h2>
 
-<form action="https://formspree.io/f/mpqjdzoq" method="POST" style="max-width:500px; margin:auto; font-family:Arial, sans-serif;">
+<form id="almiraajForm" action="https://formspree.io/f/mpqjdzoq" method="POST" style="max-width:500px; margin:auto; font-family:Arial, sans-serif;">
   <label for="name">Name:</label><br>
   <input type="text" id="name" name="Name" required style="width:100%; padding:8px; margin:6px 0;"><br>
 
@@ -1228,9 +1228,8 @@
   </button>
 </form>
 
-
 <!-- Confirmation message -->
-<div id="confirmation" style="display:none; margin-top:20px; text-align:center; color:green;">
+<div id="confirmation" style="display:none; margin-top:20px; text-align:center; color:green; font-family:Arial, sans-serif;">
   <p><strong>Thanks for contacting AL‑MIRAAJ INTERNATIONAL!</strong><br>
   We’ve received your request and will get back to you shortly.</p>
   <p>📞 For quick service:<br>
@@ -1244,21 +1243,20 @@
 </div>
 
 <script>
-  // Show confirmation message after submission
+  // Intercept submission and show custom thank-you message
   document.getElementById('almiraajForm').addEventListener('submit', function(e) {
     e.preventDefault();
     fetch(this.action, {
       method: this.method,
       body: new FormData(this)
     }).then(() => {
-      document.getElementById('almiraajForm').style.display = 'none';
+      this.style.display = 'none';
       document.getElementById('confirmation').style.display = 'block';
     }).catch(() => {
       alert("There was an error submitting the form. Please try again.");
     });
   });
 </script>
-
 
 
 
