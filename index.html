@@ -105,36 +105,55 @@
 </head>
 
 
-
 <!-- Custom Styles -->
 <style>
   /* Navbar styles */
   .navbar {
-    background-color: #00264d !important;
+    background-color: #00264d !important; /* unified dark blue */
   }
+
   .navbar .navbar-brand h3 {
-    color: white !important;
+    color: #ffffff !important;
     font-weight: 700;
     font-size: 1.3rem;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
   }
+
   .navbar .nav-link {
-    color: white !important;
+    color: #ffffff !important;
     transition: 0.3s ease-in-out;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
   }
-  .navbar .nav-link:hover {
-    color: #c99b33 !important;
+
+  .navbar .nav-link:hover,
+  .navbar .nav-link:focus,
+  .navbar .nav-link.active {
+    color: #ffffff !important; /* keep text white */
+    background-color: #00264d !important; /* same dark blue */
   }
+
+  /* Dropdown menu */
   .dropdown-menu {
-    background-color: #00264d;
+    background-color: #00264d !important; /* unified dark blue */
+    border: none; /* cleaner look */
   }
+
   .dropdown-item {
-    color: white !important;
+    color: #ffffff !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.95rem;
   }
-  .dropdown-item:hover {
-    background-color: #c99b33;
-    color: #00264d !important;
+
+  .dropdown-item:hover,
+  .dropdown-item:focus,
+  .dropdown-item.active {
+    background-color: #00264d !important; /* same dark blue */
+    color: #ffffff !important; /* keep text white */
   }
+
+  /* Apply same dark blue to other top elements */
   header,
   .navbar,
   .navbar-wrapper,
