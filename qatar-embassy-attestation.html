@@ -247,26 +247,28 @@
     <i class="fab fa-whatsapp fa-2x text-success"></i>
   </a>
 </div>
-
 <!-- Spacer for layout -->
 <div class="my-5"></div>
 
-<!-- Corporate-Style Header with Enhanced Readability -->
-<header id="header" class="ex-header text-center py-5" style="position: relative; overflow: hidden;">
+<!-- Corporate-Style Header -->
+<header id="header" class="ex-header text-center py-5 position-relative overflow-hidden">
+  <!-- Background Image with Lazy Loading -->
   <img 
     src="https://www.almiraaj.com/images/qatar-embassy-attestation-india.webp" 
-    alt="Qatar Embassy Attestation - Almiraaj International" 
+    alt="Qatar Embassy Attestation Services in Chennai by AL-MIRAAJ INTERNATIONAL" 
     class="img-fluid w-100" 
-    style="filter: brightness(50%);" />
+    style="filter: brightness(50%);" 
+    loading="lazy" 
+    decoding="async" />
 
-  <!-- Overlay for better text contrast -->
+  <!-- Overlay -->
   <div class="overlay"></div>
 
   <!-- Centered Text -->
   <div class="centered-text">
-    <h2 class="text-white display-5 fw-bold">Qatar Embassy Attestation</h2>
+    <h1 class="text-white display-5 fw-bold">Qatar Embassy Attestation</h1>
     <p class="lead mb-0 text-white">
-      in Chennai <strong>By AL-MIRAAJ INTERNATIONAL</strong>
+      in Chennai <strong>by AL-MIRAAJ INTERNATIONAL</strong>
     </p>
   </div>
 </header>
@@ -276,19 +278,16 @@
   /* Overlay */
   .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    inset: 0; /* shorthand for top, right, bottom, left */
+    background: rgba(0, 0, 0, 0.45);
     z-index: 1;
   }
 
   /* Centered Text Box */
   .centered-text {
     position: absolute;
-    top: 50%;   /* vertical center */
-    left: 50%;  /* horizontal center */
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
     color: #fff;
@@ -319,12 +318,11 @@
       padding: 1rem 1.5rem;
       font-size: 0.9rem;
     }
-    .centered-text h2 {
+    .centered-text h1 {
       font-size: 1.5rem;
     }
   }
 </style>
-
 
 
 
