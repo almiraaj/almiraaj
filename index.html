@@ -961,6 +961,49 @@
   </div>
 </section>
 
+<!-- Custom Styles -->
+<style>
+  /* Service card styling */
+  .service-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background: #ffffff;
+    transition: 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+  .service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+  }
+
+  /* Flag icons - uniform size */
+  .flag-icon {
+    width: 80px;          /* fixed width */
+    height: 55px;         /* fixed height */
+    object-fit: cover;    /* crop/scale to fit nicely */
+    border-radius: 4px;   /* subtle rounded corners */
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* polished look */
+  }
+
+  /* Country title */
+  .country-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  /* Links inside cards */
+  .service-card a {
+    color: #00264d;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .service-card a:hover {
+    text-decoration: underline;
+  }
+</style>
 <!-- Domestic Services -->
 <section class="mb-5">
   <h2 class="section-title text-success">🇮🇳 Domestic Services</h2>
