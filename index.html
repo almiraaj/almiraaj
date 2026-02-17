@@ -45,59 +45,131 @@
   <link rel="icon" href="/images/ALMINT.png" type="image/png">
 
   <!-- Structured Data -->
+
+  <!-- Breadcrumb Schema (Certificate Attestation page) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.almiraaj.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://www.almiraaj.com/certificate-apostille-mea-in-chennai"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Certificate Attestation",
+        "item": "https://www.almiraaj.com/certificate-attestation-services-in-chennai"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Service Schema (Certificate Attestation page) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Certificate Attestation",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "AL-MIRAAJ INTERNATIONAL",
+      "url": "https://www.almiraaj.com/"
+    },
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Tamil Nadu, India"
+    },
+    "description": "Government-approved certificate attestation services in Chennai for education, employment, and migration."
+  }
+  </script>
+
+  <!-- Local Business Schema: Broadway Office -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "AL-MIRAAJ INTERNATIONAL",
+    "name": "AL-MIRAAJ INTERNATIONAL - Broadway Office",
     "url": "https://www.almiraaj.com",
-    "logo": "https://www.almiraaj.com/images/mea_apostille_attestation_tamilnadu.png",
+    "logo": "https://www.almiraaj.com/images/certificate-attestation-chennai.webp",
     "image": "https://www.almiraaj.com/images/apostille-india-now.webp",
     "telephone": "+91-44-4203-7273",
     "email": "attestation@almiraaj.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Your Street Address",
+      "streetAddress": "180/F3-Prakasam Salai, 2nd Flr, Broadway",
       "addressLocality": "Chennai",
       "addressRegion": "Tamil Nadu",
-      "postalCode": "600033",
+      "postalCode": "600108",
       "addressCountry": "IN"
     },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+91-44-4203-7273",
-      "contactType": "customer service",
-      "areaServed": "IN",
-      "availableLanguage": "en"
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:30",
+      "closes": "18:30"
     },
+    "priceRange": "$$",
+    "sameAs": [
+      "https://www.facebook.com/almiraajattestation",
+      "https://www.instagram.com/almiraajattestation"
+    ]
+  }
+  </script>
+
+  <!-- Local Business Schema: Egmore Office -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "AL-MIRAAJ INTERNATIONAL - Egmore Office",
+    "url": "https://www.almiraaj.com",
+    "logo": "https://www.almiraaj.com/images/certificate-attestation-chennai.webp",
+    "image": "https://www.almiraaj.com/images/apostille-india-now.webp",
+    "telephone": "+91-44-4203-7273",
+    "email": "visa@almiraaj.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "No.10 CASA Major Road, B3-Elcanso Plaza, Egmore",
+      "addressLocality": "Chennai",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "600008",
+      "addressCountry": "IN"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:30",
+      "closes": "18:30"
+    },
+    "priceRange": "$$",
     "sameAs": [
       "https://www.facebook.com/almiraajattestation",
       "https://www.instagram.com/almiraajattestation"
     ],
-    "serviceOffered": [
+    "contactPoint": [
       {
-        "@type": "Service",
-        "name": "Certificate Attestation",
-        "description": "Government-approved certificate attestation services in Chennai for education, employment, and migration.",
-        "areaServed": "IN"
+        "@type": "ContactPoint",
+        "telephone": "+91-44-4203-7273",
+        "contactType": "customer service",
+        "areaServed": "IN",
+        "availableLanguage": "en"
       },
       {
-        "@type": "Service",
-        "name": "Apostille Services",
-        "description": "MEA apostille and HRD attestation services for international document legalization.",
-        "areaServed": "IN"
-      },
-      {
-        "@type": "Service",
-        "name": "Embassy Authentication",
-        "description": "Embassy attestation services for Qatar, Bahrain, Kuwait, Dubai, and China.",
-        "areaServed": "IN"
-      },
-      {
-        "@type": "Service",
-        "name": "Visa Services",
-        "description": "Visa stamping, tourist visa, and immigration support for multiple countries.",
-        "areaServed": "IN"
+        "@type": "ContactPoint",
+        "telephone": "+91-9176159922",
+        "contactType": "WhatsApp support",
+        "areaServed": "IN",
+        "availableLanguage": "en"
       }
     ]
   }
