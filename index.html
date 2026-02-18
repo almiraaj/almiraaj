@@ -384,381 +384,242 @@
 
        
     <!-- end of navbar -->
-
-<!-- ✅ FINAL PREMIUM CAROUSEL (NO WHITE FLASH + MOBILE OPTIMIZED) -->
+<!-- ✅ FINAL PREMIUM CAROUSEL -->
 <style>
-    /* ✅ Force ALL carousel layers to stay black (fixes white flash) */
-    .carousel,
-    .carousel-inner,
-    .carousel-item {
-        background-color: #000 !important;
-    }
-
-    /* ✅ Fade transition (smooth, no flashing) */
-    .carousel.carousel-fade .carousel-item {
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
-    .carousel.carousel-fade .carousel-item.active {
-        opacity: 1;
-    }
-
-    /* ✅ Ensure images always cover fully */
-    .carousel-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    /* ✅ Soft dark overlay */
-    .carousel-item::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0.45);
-        z-index: 1;
-    }
-
-    /* ✅ Caption background (dark, readable, premium) */
-    .carousel-caption {
-        z-index: 2;
-        padding: 25px 30px;
-        background: rgba(0, 0, 0, 0.55);
-        border-radius: 12px;
-        backdrop-filter: blur(4px);
-        display: inline-block;
-        animation: fadeUp 1.2s ease-out;
-    }
-
-    /* ✅ Fade-up animation */
-    @keyframes fadeUp {
-        0% { opacity: 0; transform: translateY(25px); }
-        100% { opacity: 1; transform: translateY(0); }
-    }
-
-    /* ✅ White glowing heading */
-    .carousel-caption h4 {
-        font-size: 1.55rem;
-        font-weight: 700;
-        color: #fff;
-        line-height: 1.5;
-        margin-bottom: 18px;
-        text-shadow:
-            0 0 8px rgba(255,255,255,0.7),
-            0 0 12px rgba(255,255,255,0.5),
-            0 3px 8px rgba(0,0,0,0.7);
-    }
-
-    /* ✅ Contact bar */
-    .contact-bar {
-        font-size: 1.28rem;
-        font-weight: 700;
-        margin-top: 12px;
-        display: flex;
-        justify-content: center;
-        gap: 35px;
-        flex-wrap: wrap;
-        color: #fff;
-        text-shadow:
-            0 0 8px rgba(255,255,255,0.7),
-            0 0 12px rgba(255,255,255,0.5),
-            0 3px 8px rgba(0,0,0,0.7);
-    }
-
-    .contact-item {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    /* ✅ Icon glow pulse */
-    @keyframes pulseGlow {
-        0% { text-shadow: 0 0 4px rgba(255,255,255,0.6); }
-        50% { text-shadow: 0 0 12px rgba(255,255,255,1); }
-        100% { text-shadow: 0 0 4px rgba(255,255,255,0.6); }
-    }
-
-    .contact-item i {
-        font-size: 1.5rem;
-        color: #fff;
-        animation: pulseGlow 2.5s infinite ease-in-out;
-    }
-
-    .contact-item a {
-        color: #fff;
-        font-weight: 700;
-        text-decoration: none;
-    }
-
-    .contact-item a:hover {
-        text-decoration: underline;
-    }
-
-    /* ✅ Button styling */
-    .btn-solid-lg {
-        font-size: 1.1rem;
-        padding: 10px 28px;
-        border-radius: 6px;
-        font-weight: 700;
-        background: #fff;
-        color: #000 !important;
-        border: none;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        transition: 0.3s ease;
-    }
-
-    .btn-solid-lg:hover {
-        background: #e6e6e6;
-        box-shadow: 0 0 12px rgba(255,255,255,0.9);
-        transform: translateY(-2px);
-    }
-
-    /* ✅ MOBILE FIXES */
-    @media (max-width: 768px) {
-
-        .carousel-caption {
-            padding: 15px 18px !important;
-            border-radius: 10px;
-            max-width: 90%;
-            margin: 0 auto;
-        }
-
-        .carousel-caption h4 {
-            font-size: 1.05rem !important;
-            line-height: 1.4 !important;
-            margin-bottom: 12px !important;
-        }
-
-        .contact-bar {
-            font-size: 1rem !important;
-            gap: 18px !important;
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .contact-item i {
-            font-size: 1.2rem !important;
-        }
-
-        .btn-solid-lg {
-            font-size: 0.95rem !important;
-            padding: 8px 20px !important;
-            margin-top: 10px;
-        }
-
-        .carousel-caption h4,
-        .contact-bar {
-            text-shadow:
-                0 0 5px rgba(255,255,255,0.5),
-                0 2px 6px rgba(0,0,0,0.6) !important;
-        }
-    }
-    /* ✅ FINAL MOBILE FIXES */
-@media (max-width: 768px) {
-
-    /* Show more of the image */
-    .carousel-item img {
-        height: 70vh !important;   /* show more image vertically */
-        object-fit: contain !important; /* prevent aggressive cropping */
-        background-color: #000; /* fill empty space with black */
-    }
-
-    /* Move caption LOWER so it's visible */
-    .carousel-caption {
-        bottom: 20px !important;
-        top: auto !important;
-        transform: none !important;
-        padding: 12px 15px !important;
-        max-width: 95%;
-        margin: 0 auto;
-    }
-
-    /* Smaller heading text */
-    .carousel-caption h4 {
-        font-size: 1rem !important;
-        line-height: 1.3 !important;
-        margin-bottom: 10px !important;
-    }
-
-    /* Stack phone numbers cleanly */
-    .contact-bar {
-        flex-direction: column !important;
-        gap: 10px !important;
-        font-size: 0.95rem !important;
-        text-align: center;
-    }
-
-    .contact-item i {
-        font-size: 1.1rem !important;
-    }
-
-    /* Button fits mobile */
-    .btn-solid-lg {
-        font-size: 0.9rem !important;
-        padding: 7px 18px !important;
-        margin-top: 8px;
-    }
+/* Base Carousel Styling */
+.carousel,
+.carousel-inner,
+.carousel-item {
+    background-color: #000 !important;
 }
-/* ✅ FINAL MOBILE FIX — FULL IMAGE + VISIBLE CAPTION + NO BLACK BOTTOM */
+.carousel.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.carousel.carousel-fade .carousel-item.active {
+    opacity: 1;
+}
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay */
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.45);
+    z-index: 1;
+}
+
+/* Captions */
+.carousel-caption {
+    z-index: 2;
+    padding: 25px 30px;
+    background: rgba(0,0,0,0.55);
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    display: inline-block;
+    animation: fadeUp 1.2s ease-out;
+}
+@keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(25px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+.carousel-caption h4 {
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.5;
+    margin-bottom: 18px;
+    text-shadow: 0 0 8px rgba(255,255,255,0.7),
+                 0 0 12px rgba(255,255,255,0.5),
+                 0 3px 8px rgba(0,0,0,0.7);
+}
+
+/* Buttons */
+.btn-solid-lg {
+    font-size: 1.1rem;
+    padding: 10px 28px;
+    border-radius: 6px;
+    font-weight: 700;
+    background: #fff;
+    color: #000 !important;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+}
+.btn-solid-lg:hover {
+    background: #e6e6e6;
+    box-shadow: 0 0 12px rgba(255,255,255,0.9);
+    transform: translateY(-2px);
+}
+
+/* Mobile Fixes */
 @media (max-width: 768px) {
-
-    /* Make image fill the screen height */
     .carousel-item img {
-        height: 100vh !important;   /* full mobile height */
-        object-fit: cover !important; /* fill screen without black bars */
+        height: 100vh !important;
+        object-fit: cover !important;
+        background-color: #000;
     }
-
-    /* Move caption lower so it's visible */
     .carousel-caption {
         bottom: 40px !important;
         top: auto !important;
-        transform: none !important;
         padding: 15px 18px !important;
         max-width: 90%;
         margin: 0 auto;
     }
-
-    /* Smaller heading text */
     .carousel-caption h4 {
         font-size: 1.05rem !important;
         line-height: 1.35 !important;
         margin-bottom: 12px !important;
+        text-shadow: 0 0 5px rgba(255,255,255,0.5),
+                     0 2px 6px rgba(0,0,0,0.6) !important;
     }
-
-    /* Stack phone numbers neatly */
-    .contact-bar {
-        flex-direction: column !important;
-        gap: 10px !important;
-        font-size: 1rem !important;
-        text-align: center;
-    }
-
-    .contact-item i {
-        font-size: 1.2rem !important;
-    }
-
-    /* Button fits mobile */
     .btn-solid-lg {
         font-size: 0.95rem !important;
         padding: 8px 20px !important;
         margin-top: 10px;
     }
 }
+
+/* Equal Card */
 .equal-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
 }
 .equal-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-
+/* Contact Bar (Global, outside carousel) */
+.contact-bar {
+    font-size: 1.28rem;
+    font-weight: 700;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    color: #fff;
+    text-shadow: 0 0 8px rgba(255,255,255,0.7),
+                 0 0 12px rgba(255,255,255,0.5),
+                 0 3px 8px rgba(0,0,0,0.7);
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+@keyframes pulseGlow {
+    0% { text-shadow: 0 0 4px rgba(255,255,255,0.6); }
+    50% { text-shadow: 0 0 12px rgba(255,255,255,1); }
+    100% { text-shadow: 0 0 4px rgba(255,255,255,0.6); }
+}
+.contact-item i {
+    font-size: 1.5rem;
+    color: #fff;
+    animation: pulseGlow 2.5s infinite ease-in-out;
+}
+.contact-item a {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+.contact-item a:hover {
+    text-decoration: underline;
+}
 </style>
 
 <!-- ✅ CAROUSEL START -->
-<div id="demo" class="carousel slide carousel-fade homepagecarousel" data-ride="carousel">
+<div id="demo" class="carousel slide carousel-fade homepagecarousel" data-bs-ride="carousel" data-bs-interval="7000">
 
-  <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
-      <li data-target="#demo" data-slide-to="3"></li>
-      <li data-target="#demo" data-slide-to="4"></li>
-  </ul>
-
-  <div class="carousel-inner homepagecarousel">
-
-      <!-- ✅ Slide 1 -->
-      <div class="carousel-item active">
-          <img src="./homepageCarousel/visa-holiday-tour.png" alt="Visa Services">
-          <div class="carousel-caption">
-              <h4>Gateway to the World • Swift, Secure, Simple • Visa Expertise at Your Fingertips</h4>
-              <p class="contact-bar">
-                  <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+917448899809">+91 74488 99809</a></span>
-                  <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+919176160055">+91 9176160055</a></span>
-                <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+91 99405 89665">+91 99405 89665</a></span>
-              </p>
-              <a class="btn-solid-lg" href="https://wa.me/+917448899809">Get in Touch</a>
-          </div>
-      </div>
-
-      <!-- ✅ Slide 2 -->
-      <div class="carousel-item">
-          <img src="./homepageCarousel/gflight1.png" alt="Travel Services">
-          <div class="carousel-caption">
-              <h4>Your Journey, Our Priority • Seamless Escapes Await • Travel Simplified, Joy Amplified</h4>
-              <p class="contact-bar">
-                  <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+917448899809">+91 74488 99809</a></span>
-                  <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+919176160055">+91 9176160055</a></span>
-                <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+91 99405 89665">+91 99405 89665</a></span>
-              </p>
-              <a class="btn-solid-lg" href="https://wa.me/+917448899809">Get in Touch</a>
-          </div>
-      </div>
-
-      <!-- ✅ Slide 3 -->
-      <div class="carousel-item">
-          <img src="./homepageCarousel/indian-apostille.png" alt="Apostille Services">
-          <div class="carousel-caption">
-              <h4>Fast Apostille & Embassy Attestation • Trusted Worldwide • Hassle‑Free Legalization</h4>
-              <p class="contact-bar">
-                  <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+917448899809">+91 74488 99809</a></span>
-                  <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+919176160055">+91 9176160055</a></span>
-                <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+91 99405 89665">+91 99405 89665</a></span>
-              </p>
-              <a class="btn-solid-lg" href="https://wa.me/+917448899809">Get in Touch</a>
-          </div>
-      </div>
-
-      <!-- ✅ Slide 4 -->
-      <div class="carousel-item">
-          <img src="./homepageCarousel/document-attestation-apostille-india.jpg" alt="Document Attestation">
-          <div class="carousel-caption">
-              <h4>Embassy Attestation • Global Trust Secured • Verified for International Use</h4>
-              <p class="contact-bar">
-                  <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+917448899809">+91 74488 99809</a></span>
-                  <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+919176160055">+91 9176160055</a></span>
-                <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+91 99405 89665">+91 99405 89665</a></span>
-              </p>
-              <a class="btn-solid-lg" href="https://wa.me/+917448899809">Get in Touch</a>
-          </div>
-      </div>
-
-      <!-- ✅ Slide 5 -->
-      <div class="carousel-item">
-          <img src="./homepageCarousel/gflight2.png" alt="Certificate Apostille">
-          <div class="carousel-caption">
-              <h4>Certificate Apostille • Global Recognition Made Easy • Certified. Recognized. Accepted.</h4>
-              <p class="contact-bar">
-                  <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+917448899809">+91 74488 99809</a></span>
-                  <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+919176160055">+91 9176160055</a></span>
-                <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+91 99405 89665">+91 99405 89665</a></span>
-              </p>
-              <a class="btn-solid-lg" href="https://wa.me/+917448899809">Get in Touch</a>
-          </div>
-      </div>
-
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="4" aria-label="Slide 5"></button>
   </div>
 
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-  </a>
+  <!-- Slides -->
+  <div class="carousel-inner homepagecarousel">
 
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-  </a>
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+          <img src="./homepageCarousel/visa-holiday-tour.png" alt="Visa Services – Holiday Tour Banner" loading="lazy">
+          <div class="carousel-caption">
+              <h4>Gateway to the World • Swift, Secure, Simple • Visa Expertise at Your Fingertips</h4>
+              <a class="btn-solid-lg" href="https://wa.me/+917448899809">Get in Touch</a>
+          </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+          <img src="./homepageCarousel/gflight1.png" alt="Travel Services – Flight Booking Banner" loading="lazy">
+          <div class="carousel-caption">
+              <h4>Your Journey, Our Priority • Seamless Escapes Await • Travel Simplified, Joy Amplified</h4>
+              <a class="btn-solid-lg" href="https://wa.me/+917448899809">Get in Touch</a>
+          </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+          <img src="./homepageCarousel/indian-apostille.png" alt="Apostille Services – Legalization Banner" loading="lazy">
+          <div class="carousel-caption">
+              <h4>Fast Apostille & Embassy Attestation • Trusted Worldwide • Hassle‑Free Legalization</h4>
+              <a class="btn-solid-lg" href="https://wa.me/+917448899809">Get in Touch</a>
+          </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="carousel-item">
+          <img src="./homepageCarousel/document-attestation-apostille-india.jpg" alt="Document Attestation – Embassy Verification Banner" loading="lazy">
+          <div class="carousel-caption">
+              <h4>Embassy Attestation • Global Trust Secured • Verified for International Use</h4>
+              <a class="btn-solid-lg" href="https://wa.me/+917448899809">Get in Touch</a>
+          </div>
+      </div>
+      <!-- Slide 5 -->
+      <div class="carousel-item">
+          <img src="./homepageCarousel/gflight2.png" alt="Certificate Apostille – Global Recognition Banner" loading="lazy">
+          <div class="carousel-caption">
+              <h4>Certificate Apostille • Global Recognition Made Easy • Certified. Recognized. Accepted.</h4>
+              <a class="btn-solid-lg" href="https://wa.me/+917448899809">Get in Touch</a>
+          </div>
+      </div>
+
+  </div> <!-- end carousel-inner -->
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </button>
 
 </div>
+<!-- ✅ CAROUSEL END -->
 
+<!-- ✅ Global Contact Bar (outside carousel) -->
+<div class="contact-bar">
+    <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+917448899809">+91 74488 99809</a></span>
+    <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+919176160055">+91 9176160055</a></span>
+    <span class="contact-item"><i class="fa fa-phone"></i><a href="tel:+919940589665">+91 99405 89665</a></span>
+</div>
 
 <!-- ✅ END HEADER -->
 
