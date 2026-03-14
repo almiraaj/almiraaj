@@ -216,7 +216,6 @@
 </div>
 
 
-
 <!-- Corporate-Style Header with Enhanced Readability -->
 <header id="header" class="ex-header text-center py-5" style="position: relative; overflow: hidden;">
   <div style="position: relative;">
@@ -242,7 +241,7 @@
       position: absolute;
       bottom: 20px;   /* distance from bottom edge */
       left: 50%;
-      transform: translateX(-50%);  /* keep it horizontally centered */
+      transform: translate(-50%, 0);  /* keep horizontally centered */
       z-index: 2;
       color: #fff;
       padding: 1rem 2rem;
@@ -262,14 +261,15 @@
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(20px); /* start slightly lower */
+    transform: translate(-50%, 20px); /* centered horizontally, 20px lower */
   }
   100% {
     opacity: 1;
-    transform: translateY(0); /* settle into place */
+    transform: translate(-50%, 0); /* centered horizontally, final position */
   }
 }
 </style>
+
 
 
 
