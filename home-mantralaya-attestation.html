@@ -355,7 +355,45 @@
     </div>
   </div>
 </header>
+<style>
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+.breadcrumbs {
+  font-size: 0.95rem;
+  margin: 1rem 0;
+}
+.breadcrumbs a {
+  color: #198754; /* Bootstrap success green */
+  text-decoration: none;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+</style>
 
+<!-- Breadcrumbs -->
+<div class="ex-basic-1 py-3 bg-light border-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+  <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+  <li class="breadcrumb-item active" aria-current="page">Home-Mantralaya Attestation</li>
+</ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
 
  <!-- Mantralaya Attestation Services -->
 <section id="mantralaya-attestation" class="py-5 bg-light">
