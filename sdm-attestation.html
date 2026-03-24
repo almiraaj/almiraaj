@@ -60,834 +60,211 @@
 </head>
 
 
-  <!-- Custom Styles -->
-  <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
-    }
 
-    .section-title {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #007bff;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .highlight {
-      background: linear-gradient(to right, #007bff, #17a2b8);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 600;
-    }
-
-    .info-box {
-      background-color: #ffffff;
-      border-radius: 12px;
-      padding: 30px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      margin-bottom: 40px;
-    }
-
-    .info-box h3 {
-      color: #343a40;
-      font-weight: 600;
-      margin-bottom: 15px;
-    }
-
-    .info-box p {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-
-    .certificate-cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      margin: 40px 0;
-    }
-
-    .card {
-      flex: 1 1 300px;
-      max-width: 400px;
-      background-color: #ffffff;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card h3 {
-      font-size: 1.4em;
-      margin-bottom: 15px;
-      color: #333;
-    }
-
-    .card ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .card ul li {
-      padding: 6px 0;
-      border-bottom: 1px solid #eee;
-      font-size: 0.95em;
-      color: #555;
-    }
-
-    .card.personal { background-color: #f0f8ff; }
-    .card.educational { background-color: #fff0f5; }
-    .card.commercial { background-color: #f5fff0; }
-
-    @media (max-width: 768px) {
-      .certificate-cards {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-
-    .navbar,
-    header,
-    .navbar-wrapper,
-    .top-bar {
-      background-color: #00264d !important;
-    }
-
-    .navbar .navbar-brand h3 {
-      color: white !important;
-      font-weight: 700;
-      font-size: 1.3rem;
-      margin: 0;
-    }
-
-    .navbar .nav-link {
-      color: white !important;
-      transition: 0.3s ease-in-out;
-    }
-
-    .navbar .nav-link:hover {
-      color: #c99b33 !important;
-    }
-
-    .dropdown-menu {
-      background-color: #00264d;
-    }
-
-    .dropdown-item {
-      color: white !important;
-    }
-
-    .dropdown-item:hover {
-      background-color: #c99b33;
-      color: #00264d !important;
-    }
-  </style>
+ 
+  <!-- Fonts & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/fontawesome-all.css" rel="stylesheet">
+  <link href="/css/swiper.css" rel="stylesheet">
+  <link href="/css/magnific-popup.css" rel="stylesheet">
+  <link href="/css/styles.css" rel="stylesheet">
 </head>
+ 
+<!-- Custom Navbar Styles -->
+<style>
+  /* Navbar */
+  .navbar {
+    background-color: #00264d !important;
+  }
+  .navbar-brand {
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  .navbar-brand:hover {
+    color: #c99b33 !important;
+  }
+  .nav-link {
+    color: #fff !important;
+    transition: color 0.3s ease-in-out;
+  }
+  .nav-link:hover {
+    color: #c99b33 !important;
+  }
 
-<body data-spy="scroll" data-target=".fixed-top">
-  <!-- Body content goes here -->
-</body>
-</html>
+  /* Dropdown */
+  .dropdown-menu {
+    background-color: #00264d !important;
+    border: none;
+    box-shadow: none;
+  }
+  .dropdown-item {
+    color: #fff !important;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  .dropdown-item:hover {
+    background-color: #c99b33 !important;
+    color: #00264d !important;
+  }
 
+  /* Image */
+  .bahrain-embassy-img {
+    max-width: 100%;
+    height: 450px;
+    object-fit: cover;
+  }
 
-   <!-- Navbar -->
+  /* Card */
+  .card {
+    transition: all 0.3s ease-in-out;
+  }
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  .card-title a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+ <!-- Navbar -->
 <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-  <!-- Logo -->
-  <a class="navbar-brand logo-image" href="index.html">
-    <h3 class="logo-image">AL-MIRAAJ International</h3>
+  <div class="container-fluid">
+    <!-- Brand Logo -->
+    <a class="navbar-brand logo-image" href="index.html">
+      <h3 class="logo-image">AL-MIRAAJ INTERNATIONAL</h3>
+    </a>
+
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav ml-auto">
+
+        <!-- HOME -->
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="./index.html#header">HOME</a>
+        </li>
+
+<!-- Certificate Attestation -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle page-scroll" href="../certificate-attestation-services-in-chennai.html" id="certificateDropdown" aria-haspopup="true" aria-expanded="false">
+    Certificate Attestation
   </a>
+  <div class="dropdown-menu" aria-labelledby="certificateDropdown">
+    <a class="dropdown-item" href="../birth-certificate-attestation.html">Birth Certificate</a>
+    <a class="dropdown-item" href="../marriage-certificate-attestation.html">Marriage Certificate</a>
+    <a class="dropdown-item" href="../degree-certificate-attestation-in-chennai.html">Educational Certificate</a>
+    <a class="dropdown-item" href="../divorce-decree-certificate-apostille-embassy-attestation.html">Divorce Certificate</a>
+    <a class="dropdown-item" href="../death-certificate-attestation.html">Death Certificate</a>
+    <a class="dropdown-item" href="../unmarriedcertificateapostille.html">Single Status Certificate</a>
+    <a class="dropdown-item" href="../commercial-documents-attestation.html">Commercial Document</a>
+    <a class="dropdown-item" href="../power-of-attorney-apostilleattestation-in-chennai.html">Power of Attorney (POA)</a>
+    <a class="dropdown-item" href="../legal-heir-certificate-attestation.html">Legal Heir Certificate</a>
+    <a class="dropdown-item" href="../pcc-apostille-attestation.html">Police Clearance Certificate (PCC)</a>
+    <a class="dropdown-item" href="../hrd-attestation-process.html">HRD Attestation</a>
+    <a class="dropdown-item" href="../home-mantralaya-attestation.html">Home/Mantralaya Attestation</a>
+    <a class="dropdown-item" href="../coc-chamberofcommerce-attestation.html">Chamber of Commerce (COC) </a>
+    <a class="dropdown-item" href="https://www.almiraaj.com/medical-certificate-attestation">Medical Certificate Attestation</a>
+  </div>
+</li>
 
-  <!-- Mobile Toggle -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-awesome fas fa-bars"></span>
-    <span class="navbar-toggler-awesome fas fa-times"></span>
-  </button>
 
-  <!-- Navbar Links -->
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link page-scroll" href="./index.html#header">HOME <span class="sr-only">(current)</span></a>
-      </li>
 
-      <!-- Certificate Attestation -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle page-scroll" href="../certificate-attestation-services-in-chennai.html" id="certificateDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Certificate Attestation</a>
-        <ul class="dropdown-menu" aria-labelledby="certificateDropdown">
-          <li><a class="dropdown-item" href="../birth-certificate-attestation.html">Birth Certificate Attestation</a></li>
-          <li><a class="dropdown-item" href="../marriage-certificate-attestation.html">Marriage Certificate Attestation</a></li>
-          <li><a class="dropdown-item" href="../degree-certificate-attestation-in-chennai.html">Educational Certificate Attestation</a></li>
-          <li><a class="dropdown-item" href="../unmarriedcertificateapostille.html">Single Status Certificate Apostille / Attestation</a></li>
-          <li><a class="dropdown-item" href="../how-to-get-single-status-certificate-in-chennai.html">How to Get Single Status Certificate in Chennai</a></li>
-          <li><a class="dropdown-item" href="../commercial-documents-attestation.html">Commercial Documents Attestation</a></li>
-          <li><a class="dropdown-item" href="../power-of-attorney-apostilleattestation-in-chennai.html">Power of Attorney Apostille/Attestation</a></li>
-          <li><a class="dropdown-item" href="../hrd-attestation-process.html">HRD Attestation Process</a></li>
-          <li><a class="dropdown-item" href="../home-mantralaya-attestation.html">Home-Mantralaya Attestation</a></li>
-        </ul>
-      </li>
+        <!-- Embassy Attestation -->
+        <li class="nav-item dropdown">
+ <a class="nav-link dropdown-toggle page-scroll " href="../embassy-attestation-in-chennai.html" aria-haspopup="true"
+         aria-expanded="false">Embassy Attestation</a>
+          <div class="dropdown-menu" aria-labelledby="embassyDropdown">
+            <a class="dropdown-item" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a>
+            <a class="dropdown-item" href="../kuwait-embassy-attestation-in-chennai.html">Kuwait Embassy Attestation</a>
+            <a class="dropdown-item" href="../bahrain-embassy-attestation.html">Bahrain Embassy Attestation</a>
+            <a class="dropdown-item" href="../qatar-embassy-attestation.html">Qatar Embassy Attestation</a>
+            <a class="dropdown-item" href="../oman-embassy-attestation.html">Oman Embassy Attestation</a>
+            <a class="dropdown-item" href="../china-embassy-attestation.html">China Embassy Attestation</a>
+            <a class="dropdown-item" href="../malaysia-embassy-attestation.html">Malaysia Embassy Attestation</a>
+            <a class="dropdown-item" href="../saudi-embassy-attestation-in-chennai.html">Saudi Embassy Attestation</a>
+            <a class="dropdown-item" href="../egypt-embassy-attestation.html">Egypt Embassy Attestation</a>
+<a class="dropdown-item" href="../embassy-attestation-in-chennai.html">Other Embassy Attestation</a>
 
-      <!-- Embassy Attestation -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle page-scroll" href="../embassy-attestation-in-chennai.html" id="embassyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Embassy Attestation</a>
-        <ul class="dropdown-menu" aria-labelledby="embassyDropdown">
-          <li><a class="dropdown-item" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a></li>
-          <li><a class="dropdown-item" href="../kuwait-embassy-attestation.html">Kuwait Embassy Attestation</a></li>
-          <li><a class="dropdown-item" href="../bahrain-embassy-attestation.html">Bahrain Embassy Attestation</a></li>
-          <li><a class="dropdown-item" href="../qatar-embassy-attestation.html">Qatar Embassy Attestation</a></li>
-          <li><a class="dropdown-item" href="../oman-embassy-attestation.html">Oman Embassy Attestation</a></li>
-          <li><a class="dropdown-item" href="../china-embassy-attestation.html">China Embassy Attestation</a></li>
-          <li><a class="dropdown-item" href="../malaysia-embassy-attestation.html">Malaysia Embassy Attestation</a></li>
-          <li><a class="dropdown-item" href="../saudi-embassy-attestation-in-chennai.html">Saudi Embassy Attestation</a></li>
-          <li><a class="dropdown-item" href="../egypt-embassy-attestation.html">Egypt Embassy Attestation</a></li>
-        </ul>
-      </li>
+          </div>
+        </li>
 
-      <!-- Apostille MEA -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle page-scroll" href="../certificate-apostille-mea-in-chennai.html" id="apostilleDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Apostille MEA</a>
-        <ul class="dropdown-menu" aria-labelledby="apostilleDropdown">
-          <li><a class="dropdown-item" href="https://www.almiraaj.com/personal-certificate-apostille">Personal Certificates Apostille</a></li>
-          <li><a class="dropdown-item" href="https://www.almiraaj.com/degree-certificate-apostille">Educational Certificates Apostille</a></li>
-          <li><a class="dropdown-item" href="https://www.almiraaj.com/commercial-certificate-apostille">Commercial Certificates Apostille</a></li>
-        </ul>
-      </li>
+        
 
-      <!-- Visa Services -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle page-scroll" href="../visa_services_10.html" id="visaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Visa Services</a>
-        <ul class="dropdown-menu" aria-labelledby="visaDropdown">
-          <li><a class="dropdown-item" href="../australia_visa_32.html">Australia Visa</a></li>
-          <li><a class="dropdown-item" href="../brunei_visa_stamping_33.html">Brunei Visa Stamping</a></li>
-          <li><a class="dropdown-item" href="../china-visa-services.html">China Visa Services</a></li>
-          <li><a class="dropdown-item" href="../dubai_tourist_visa_47.html">Dubai Tourist Visa</a></li>
-          <li><a class="dropdown-item" href="../egypt-visa-services.html">Egypt Visa Services</a></li>
-          <li><a class="dropdown-item" href="../japan-visa-services.html">Japan Visa Services</a></li>
-          <li><a class="dropdown-item" href="../kuwait_visa_stamping_28.html">Kuwait Visa Stamping</a></li>
-          <li><a class="dropdown-item" href="../malaysia_tourist_visa_30.html">Malaysia Visa Services</a></li>
-          <li><a class="dropdown-item" href="../saudi_visa_stamping_27.html">Saudi Visa Stamping</a></li>
-          <li><a class="dropdown-item" href="../singapore_tourist_visa_29.html">Singapore Tourist Visa</a></li>
-          <li><a class="dropdown-item" href="../sri-lanka-visa-services.html">Sri Lanka Visa Services</a></li>
-          <li><a class="dropdown-item" href="../thailand-visa-services-in-chennai.html">Thailand Visa Services</a></li>
-          <li><a class="dropdown-item" href="../taiwan-visa-services.html">Taiwan Visa Services</a></li>
-        </ul>
-      </li>
+  <!-- Apostille MEA -->
+        <li class="nav-item dropdown">
+ <a class="nav-link dropdown-toggle page-scroll " href="../certificate-apostille-mea-in-chennai.html" aria-haspopup="true"
+         aria-expanded="false">Apostille Certificate MEA</a>
+          <div class="dropdown-menu" aria-labelledby="apostilleDropdown">
+            <a class="dropdown-item" href="https://www.almiraaj.com/personal-certificate-apostille">Personal Certificates Apostille</a>
+            <a class="dropdown-item" href="https://www.almiraaj.com/degree-certificate-apostille">Educational Certificates Apostille</a>
+            <a class="dropdown-item" href="https://www.almiraaj.com/commercial-certificate-apostille">Commercial Certificates Apostille</a>
+          </div>
+        </li>
 
-      <!-- Contact -->
-      <li class="nav-item">
-        <a class="nav-link page-scroll" href="https://wa.me/919087559669?text=Hi%20Almiraaj!!!" target="_blank" rel="noopener">Contact</a>
-      </li>
-    </ul>
 
-    <!-- WhatsApp Icon -->
-    <span class="nav-item social-icons ml-3">
-      <span class="fa-stack">
-        <a href="https://wa.me/+919176160055" target="_blank" rel="noopener">
-          <span class="hexagon"></span>
-          <i class="fab fa-whatsapp fa-stack-1x text-success"></i>
-        </a>
+
+       
+
+        <!-- Visa Services -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle page-scroll" href="https://www.almiraaj.com/visa-services"aria-haspopup="true"              
+        aria-expanded="false">Visa Services </a>
+          <div class="dropdown-menu" aria-labelledby="visaDropdown">
+            <a class="dropdown-item" href="../australia_visa_32.html">Australia Visa</a>
+            <a class="dropdown-item" href="../brunei_visa_stamping_33.html">Brunei Visa Stamping</a>
+            <a class="dropdown-item" href="../china-visa-services.html">China Visa Services</a>
+            <a class="dropdown-item" href="../dubai_tourist_visa_47.html">Dubai Tourist Visa Services</a>
+            <a class="dropdown-item" href="../egypt-visa-services.html">Egypt Visa Services</a>
+            <a class="dropdown-item" href="../japan-visa-services.html">Japan Visa Services</a>
+            <a class="dropdown-item" href="../kuwait_visa_stamping_28.html">Kuwait Visa Stamping</a>
+            <a class="dropdown-item" href="../malaysia_tourist_visa_30.html">Malaysia Visa Services</a>
+            <a class="dropdown-item" href="../saudi_visa_stamping_27.html">Saudi Visa Stamping</a>
+            <a class="dropdown-item" href="../singapore_tourist_visa_29.html">Singapore Tourist Visa</a>
+            <a class="dropdown-item" href="../sri-lanka-visa-services.html">Sri Lanka Visa Services</a>
+            <a class="dropdown-item" href="../thailand-visa-services-in-chennai.html">Thailand Visa Services in Chennai</a>
+            <a class="dropdown-item" href="../taiwan-visa-services.html">Taiwan Visa Services</a>
+<a class="dropdown-item" href="../visa-services.html">Other Countries Visa Services</a>
+          </div>
+        </li>
+
+        <!-- Contact -->
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="https://wa.me/919087559669?text=Hi%20Almiraaj!!!" target="_blank" rel="noopener">Contact</a>
+        </li>
+
+      </ul>
+
+      <!-- WhatsApp Icon -->
+      <span class="nav-item social-icons ml-3">
+        <span class="fa-stack">
+          <a href="https://wa.me/+919176160055" target="_blank" rel="noopener">
+            <span class="hexagon"></span>
+            <i class="fab fa-whatsapp fa-stack-1x text-success"></i>
+          </a>
+        </span>
       </span>
-    </span>
+    </div>
   </div>
 </nav>
 
-<!-- WhatsApp Floating Widget -->
-<div class="whatsapp-widget position-fixed" style="bottom: 20px; right: 20px;">
-  <a href="https://wa.me/+919176160055" target="_blank" rel="noopener">
-    <i class="fab fa-whatsapp fa-2x text-success"></i>
-  </a>
-</div>
+</ul> <!-- Close navbar-nav -->
+</div> <!-- Close navbar-collapse -->
+</div> <!-- Close container -->
+</nav>
 
 
-
-   
-
-   <!-- Page Header -->
-<header class="text-center py-5 bg-light border-bottom mt-5" style="font-family: 'Segoe UI', 'Roboto', sans-serif;">
-  <div class="container">
-    <!-- Header Image -->
-    <img 
-      src="https://www.almiraaj.com/images/certificate-attestation-tamilnadu.png" 
-      alt="SDM Attestation Services in Tamil Nadu - Almiraaj International" 
-      class="img-fluid mb-4" 
-      style="margin-top: 80px; max-height: 400px; object-fit: contain; width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" 
-      loading="lazy"
-    >
-
-    <!-- Title and CTA -->
-    <h1 class="section-title text-primary responsive-title">
-      ✅ SDM Attestation Services Across India
-    </h1>
-    <p class="lead text-muted" style="font-size: 1.1rem; line-height: 1.8; color: #444;">
-      Need <span style="color:#17a2b8; font-weight:600;">fast & certified SDM attestation</span> for your documents? <strong>Almiraaj International</strong> provides expert legalization for <strong>birth certificates, marriage certificates, educational records</strong>, and more. Our SDM attestation process is a trusted alternative to State Home Department verification and is fully valid for:
-      <ul style="list-style: none; padding-left: 0; font-size: 1.05rem;">
-        <li>🔹 <a href="https://www.almiraaj.com/certificate-apostille-mea-in-chennai" style="color:#28a745; font-weight:600;" target="_blank">Certificate Apostille by MEA for HCCH Member Countries</a></li>
-        <li>🔹 <a href="https://www.almiraaj.com/mea-attestation-procedures" style="color:#28a745; font-weight:600;" target="_blank">MEA Attestation Procedures</a></li>
-        <li>🔹 <a href="https://www.almiraaj.com/embassy-attestation-in-chennai" style="color:#28a745; font-weight:600;" target="_blank">Embassy Attestation Services</a></li>
-      </ul>
-      We offer <strong>doorstep pickup, MEA Attestation, translation services</strong>, and <span style="color:#dc3545; font-weight:600;">priority processing</span> to meet urgent timelines. Whether you're applying for a visa, studying abroad, or relocating internationally—<strong>Almiraaj ensures your documents are authenticated quickly and correctly</strong>.
-      <br><br>
-      <span style="font-size: 1.05rem;"><strong>📞 Call Now:</strong> <a href="tel:+919176159922" style="color:#007bff;">+91 91761 59922</a> &nbsp; | &nbsp; 
-      <strong>📧 Email:</strong> <a href="mailto:attestation@almiraaj.com" style="color:#007bff;">attestation@almiraaj.com</a></span>
-    </p>
-    <a href="https://wa.me/919087559669?text=Hi%20Almiraaj!!!" target="_blank" class="btn btn-success mt-3" style="font-size: 1.1rem; padding: 10px 20px; border-radius: 6px;">
-      <i class="fab fa-whatsapp"></i> Chat Now for SDM Attestation
-    </a>
-  </div>
-
-  <!-- Responsive Title Styling -->
-  <style>
-    .responsive-title {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #007bff;
-    }
-
-    @media (max-width: 768px) {
-      .responsive-title {
-        font-size: 1.8rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .responsive-title {
-        font-size: 1.5rem;
-      }
-    }
-  </style>
-</header>
-
-
-
-<!-- SDM Attestation Info Cards -->
-<section class="container py-5">
-  <style>
-    .section-title {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #007bff;
-      margin-bottom: 30px;
-    }
-
-    .card-title {
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: #007bff;
-    }
-
-    .card-text {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #333;
-    }
-
-    .card ul li {
-      margin-bottom: 8px;
-      font-size: 0.95rem;
-    }
-
-    .highlight {
-      background: linear-gradient(to right, #007bff, #17a2b8);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 600;
-    }
-
-    .card {
-      border: none;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      background-color: #ffffff;
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    @media (max-width: 768px) {
-      .card-title {
-        font-size: 1.2rem;
-      }
-    }
-  </style>
-
-  <h3 class="text-center section-title">About SDM Attestation</h3>
-  <div class="row g-4">
-
-    <!-- Card 1 -->
-    <div class="col-md-6">
-      <div class="card h-100">
-        <div class="card-body">
-          <h4 class="card-title text-success">Why Is SDM Attestation Required?</h4>
-          <p class="card-text">
-            SDM Attestation is crucial for legalizing documents for foreign use—whether for a <span class="highlight">residence visa, student visa, or employment abroad</span>. It’s a reliable alternative to SHD and HRD attestation, especially when those are delayed or inaccessible.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="col-md-6">
-      <div class="card h-100">
-        <div class="card-body">
-          <h4 class="card-title text-success">How to Obtain SDM Attestation</h4>
-          <p class="card-text">
-            Issued only by the <strong>Sub-Divisional Magistrate in New Delhi</strong>, the process begins with Notary Attestation. AL-MIRAAJ simplifies it with pickup/drop, certificate verification, MEA Attestation, and translation services.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="col-md-6">
-      <div class="card h-100">
-        <div class="card-body">
-          <h4 class="card-title text-success">SDM Attestation Procedure</h4>
-          <p class="card-text">
-            <strong>Step 1:</strong> Notary Attestation<br>
-            <strong>Step 2:</strong> Submission to SDM office<br>
-            <strong>Step 3:</strong> Optional MEA/Embassy legalization<br>
-            AL-MIRAAJ ensures smooth, compliant processing.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="col-md-6">
-      <div class="card h-100">
-        <div class="card-body">
-          <h4 class="card-title text-success">How Long Does It Take?</h4>
-          <p class="card-text">
-            SDM Attestation typically takes <strong>2 business days</strong>. For urgent needs, AL-MIRAAJ offers <span class="highlight">priority processing</span> and fast-track delivery to meet tight deadlines.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 5 -->
-    <div class="col-md-6">
-      <div class="card h-100">
-        <div class="card-body">
-          <h4 class="card-title text-success">Cost of SDM Attestation</h4>
-          <p class="card-text">
-            Fees range from <strong>₹1,500 to ₹5,000</strong> depending on urgency, logistics, translation, and embassy coordination. Contact AL-MIRAAJ for a personalized quote.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 6 -->
-    <div class="col-md-6">
-      <div class="card h-100">
-        <div class="card-body">
-          <h4 class="card-title text-success">Why Choose AL-MIRAAJ?</h4>
-          <p class="card-text">
-            With <strong>25+ years of expertise</strong>, AL-MIRAAJ is trusted nationwide for fast, accurate, and transparent attestation services—ideal for NRIs, students, and professionals.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 7 -->
-    <div class="col-md-6">
-      <div class="card h-100">
-        <div class="card-body">
-          <h4 class="card-title text-success">Service Highlights</h4>
-          <ul class="list-unstyled">
-            <li>✅ <strong>Fast & Reliable:</strong> Govt-authorized processes</li>
-            <li>🚚 <strong>Free Pickup & Drop:</strong> Doorstep convenience</li>
-            <li>🌐 <strong>Nationwide Coverage:</strong> All major cities</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 8 -->
-    <div class="col-md-6">
-      <div class="card h-100">
-        <div class="card-body">
-          <h4 class="card-title text-success">Digital & Support</h4>
-          <ul class="list-unstyled">
-            <li>📞 <strong>24×7 Support:</strong> Always available</li>
-            <li>🔒 <strong>Authenticity:</strong> Transparent handling</li>
-            <li>📱 <strong>Digital Tools:</strong> Online tracking & secure payments</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-<!-- Contact & Branch Info -->
-<section class="container py-5">
-  <style>
-    .contact-section h3 {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #007bff;
-      margin-bottom: 20px;
-    }
-
-    .contact-section p {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #333;
-    }
-
-    .contact-section a {
-      color: #007bff;
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    .contact-section a:hover {
-      text-decoration: underline;
-    }
-
-    .whatsapp-links a {
-      display: inline-block;
-      margin: 5px 8px;
-      padding: 6px 12px;
-      background-color: #e9f7ef;
-      border-radius: 6px;
-      color: #28a745;
-      font-weight: 600;
-      transition: background 0.3s ease;
-    }
-
-    .whatsapp-links a:hover {
-      background-color: #d4edda;
-    }
-
-    .branch-card {
-      border: none;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      background-color: #ffffff;
-      transition: transform 0.3s ease;
-    }
-
-    .branch-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .branch-card h5 {
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    .branch-card p {
-      font-size: 0.95rem;
-      color: #555;
-    }
-
-    .btn-outline-primary {
-      font-weight: 600;
-      padding: 10px 20px;
-    }
-  </style>
-
- 
-
- <!-- Branch Locations -->
-<section class="container py-5">
-  <style>
-    .branch-card {
-      border: none;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      background-color: #ffffff;
-      height: 100%;
-      transition: transform 0.3s ease;
-    }
-
-    .branch-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .branch-card .card-body {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-      padding: 25px;
-    }
-
-    .branch-card h5 {
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin-bottom: 15px;
-    }
-
-    .branch-card p {
-      font-size: 0.95rem;
-      color: #555;
-      margin-bottom: 0;
-    }
-
-    @media (max-width: 768px) {
-      .branch-card h5 {
-        font-size: 1rem;
-      }
-
-      .branch-card p {
-        font-size: 0.9rem;
-      }
-    }
-  </style>
-
-<!-- Branch Locations Section -->
-<section id="our-locations" class="py-5 bg-light border-top">
-  <div class="container">
-    <h2 class="text-center text-success fw-bold mb-4 display-6">🌍 Our Branch Locations</h2>
-
-    <!-- Helpline Numbers -->
-    <div class="alert alert-info text-center fw-semibold shadow-sm rounded-pill" role="alert">
-      📞 <strong>Helpline (Call & WhatsApp):</strong><br>
-      <a href="https://wa.me/919176159922?text=Hi%20Almiraaj!" class="text-decoration-none mx-2 text-primary" target="_blank">+91 9176159922</a> |
-      <a href="https://wa.me/919176160055?text=Hi%20Almiraaj!" class="text-decoration-none mx-2 text-success" target="_blank">+91 9176160055</a> |
-      <a href="https://wa.me/919159589163?text=Hi%20Almiraaj!" class="text-decoration-none mx-2 text-danger" target="_blank">+91 9159589163</a> |
-      <a href="https://wa.me/919940589665?text=Hi%20Almiraaj!" class="text-decoration-none mx-2 text-warning" target="_blank">+91 9940589665</a> |
-      <a href="https://wa.me/919087559669?text=Hi%20Almiraaj!" class="text-decoration-none mx-2 text-info" target="_blank">+91 9087559669</a>
-    </div>
-
-    <!-- Branch Cards -->
-    <div class="row g-4 mt-4">
-      <!-- Chennai -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 shadow-sm text-center">
-          <div class="card-body">
-            <h5 class="card-title text-primary">📍 Chennai</h5>
-            <p class="card-text">180, Prakasam Road<br>Broadway, Opp. Mannadi Metro<br><strong>Chennai – 600108</strong></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Trichy -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 shadow-sm text-center">
-          <div class="card-body">
-            <h5 class="card-title text-success">📍 Trichy</h5>
-            <p class="card-text">No. 28, Nirmal Ravi Complex<br>Pattabiraman Salai, Tennur<br><strong>Tiruchirappalli – 620017</strong></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Madurai -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 shadow-sm text-center">
-          <div class="card-body">
-            <h5 class="card-title text-danger">📍 Madurai</h5>
-            <p class="card-text">No. 7, E2, PT Rajan Road<br>Zumbropuram, Narimedu<br><strong>Madurai – 625002</strong></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tuticorin -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 shadow-sm text-center">
-          <div class="card-body">
-            <h5 class="card-title text-warning">📍 Tuticorin</h5>
-            <p class="card-text">Hongkong Complex<br>18A/57A, Palai Road<br><strong>Tuticorin – 628008</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-                    <!-- end of row -->
-                    </div> <!-- end of text-container-->
-                      <!-- end of text-container -->
- 
-  
-</div>
-</div> <!-- end of row -->
-<a class="btn-outline-reg back m-1" href="../index.html">BACK</a>
-<a class="btn-outline-reg back m-1" href="../index.html#contact">CONTACT</a>
-</div> <!-- end of col-->
-</div> <!-- end of row -->
-</div> <!-- end of container -->
-</div> <!-- end of ex-basic-2 -->
-<!-- end of privacy content -->
-
-
-<!-- Footer -->
-<footer class="footer mt-5">
-  <style>
-    footer {
-      background-color: #00264d !important;
-      color: #ffffff;
-      padding: 60px 0 30px;
-      font-family: 'Segoe UI', sans-serif;
-      font-size: 15px;
-      line-height: 1.7;
-    }
-
-    footer h5 {
-      font-size: 20px;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-      color: #c99b33;
-      font-weight: bold;
-    }
-
-    footer ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    footer ul li {
-      margin-bottom: 10px;
-      font-size: 15px;
-    }
-
-    footer a {
-      color: #ffffff;
-      text-decoration: none;
-      transition: color 0.3s ease-in-out;
-    }
-
-    footer a:hover {
-      color: #f7c04a;
-      text-decoration: underline;
-    }
-
-    .footer-contact {
-      font-size: 14px;
-    }
-
-    .footer-contact a {
-      color: #f7c04a;
-      font-weight: 600;
-    }
-
-    .social-icons a {
-      font-size: 18px;
-      margin: 0 10px;
-      color: #ffffff;
-      transition: transform 0.3s ease;
-    }
-
-    .social-icons a:hover {
-      transform: scale(1.2);
-      color: #f7c04a;
-    }
-
-    .footer-bottom {
-      background-color: #001f3a;
-      padding: 20px 0;
-      font-size: 13px;
-    }
-
-    @media (max-width: 768px) {
-      footer {
-        padding: 40px 20px;
-      }
-
-      footer h5 {
-        font-size: 18px;
-      }
-
-      footer ul li {
-        font-size: 14px;
-      }
-    }
-  </style>
-
-  <div class="container">
-    <div class="row">
-
-     <!-- Embassy Attestation -->
-      <div class="col-md-3">
-        <h5>Embassy</h5>
-        <ul>
-          <li><a href="http://almiraaj.com/uae-embassy-attestation">UAE Embassy Attestation</a></li>
-          <li><a href="https://www.almiraaj.com/qatar-embassy-attestation">Qatar Embassy Verification</a></li>
-          <li><a href="https://www.almiraaj.com/Bahrain-embassy-attestation">Bahrain Document Attestation</a></li>
-          <li><a href="https://www.almiraaj.com/saudi-embassy-attestation">Saudi Legalization Services</a></li>
-          <li><a href="https://www.almiraaj.com/apostille-certificate-for-russia-in-chennai">Russia Embassy Apostille</a></li>
-        </ul>
-      </div>
-
-         <!-- Certificate Attestation -->
-      <div class="col-md-3">
-        <h5>Attestation</h5>
-        <ul>
-          <li><a href="https://www.almiraaj.com/home-mantralaya-attestation"> Home Department Mantralaya</a></li>
-          <li><a href="https://www.almiraaj.com/sdm-attestation"> SDM-Sub Divisional Magistrate </a></li>
-          <li><a href="https://www.almiraaj.com/mea-attestation-procedures"> MEA-Ministry of External Affairs </a></li>
-          <li><a href="https://www.almiraaj.com/coc-chamberofcommerce-attestation"> COC-Chamber of Commerce </a></li>
-          <li><a href="https://www.almiraaj.com/embassy-attestation-in-chennai">Embassy - Attestation Process</a></li>
-        </ul>
-      </div>
-
-      <!-- Type of Certificate Attestation -->
-      <div class="col-md-3">
-        <h5>Certificates</h5>
-        <ul>
-          <li><a href="https://www.almiraaj.com/birth-certificate-attestation">Birth Certificate Authentication</a></li>
-          <li><a href="https://www.almiraaj.com/degree-certificate-attestation-in-chennai">Degree Certificate Verification</a></li>
-          <li><a href="https://www.almiraaj.com/marriage-certificate-attestation">Marriage Certificate Attestation</a></li>
-          <li><a href="https://www.almiraaj.com/pcc-apostille-attestation">PCC Apostille | Attestation</a></li>
-          <li><a href="https://www.almiraaj.com/legal-heir-certificate-attestation">Legal Heir Certificate Validation</a></li>
-        </ul>
-      </div>
-
-      <!-- Apostille Countries -->
-      <div class="col-md-3">
-        <h5>Apostille</h5>
-        <ul>
-          <li><a href="https://www.almiraaj.com/apostille-for-usa-in-chennai">Apostille for USA</a></li>
-          <li><a href="https://www.almiraaj.com/apostille-for-uk">Apostille for UK</a></li>
-          <li><a href="https://www.almiraaj.com/apostille-for-australia-in-chennai">Apostille for Australia</a></li>
-          <li><a href="https://www.almiraaj.com/apostille-certificate-embassy-attestation-for-france">Apostille for France</a></li>
-          <li><a href="https://www.almiraaj.com/apostille-for-germany-in-chennai">Apostille for Germany</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-    <!-- Contact Info -->
-    <div class="row mt-4">
-      <div class="col-12 text-center footer-contact">
-        <hr class="border-light w-100" />
-        <p>📍 <strong>Address:</strong> 10, CASA Major Rd, Elcanso Plaza, Near Don Bosco School, Egmore, Chennai – 600008, TN, India</p>
-        <p>
-          ☎️ <strong>Call:</strong> <a href="tel:+914442037273">+91 44 4203 7273</a> |
-          💬 <strong>WhatsApp:</strong> <a href="https://wa.me/919176159922" target="_blank" rel="noopener">+91 9176159922</a> |
-          ✉️ <strong>Email:</strong> <a href="mailto:apostille@almiraaj.com">apostille@almiraaj.com</a>
-        </p>
-      </div>
-    </div>
-
-    <!-- Social Media -->
-    <div class="row mt-3">
-      <div class="col-12 text-center social-icons">
-        <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-        <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://wa.me/919176159922" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Copyright -->
-  <div class="footer-bottom text-center mt-4">
-    <p class="mb-0">
-      &copy; 2026 <a href="https://almiraaj.com" class="text-light fw-semibold" target="_blank" rel="noopener">AL-MIRAAJ International</a>. All rights reserved.
-    </p>
-  </div>
-</footer>
+<!-- Spacer for layout -->
+<div class="my-5"></div>
