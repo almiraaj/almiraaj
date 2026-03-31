@@ -442,16 +442,41 @@
 <!-- Center Line Section -->
 <section class="container text-center my-4">
   <div class="uae-highlight uae-intro">
-    <p class="mb-0">
+    <p class="mb-3">
       🌍 🇮🇳🤝🇦🇪 <span>UAE</span> is one of the most sought-after destinations for Indians, offering opportunities in education, healthcare, engineering, IT, and business. 
       <span>Coimbatore</span>, known as the "Manchester of South India," is a hub of industry, textiles, and education. Many professionals and students from Coimbatore migrate to the UAE for better career prospects and global exposure. 
       The city’s strong academic institutions and entrepreneurial spirit make it a natural gateway for international opportunities. 
       Attestation of documents such as <span>educational, marriage, birth, and commercial certificates</span> is essential for securing jobs, higher studies, or business ventures in the UAE. 
       Legalizing documents through <span>UAE Embassy Attestation</span> ensures smooth recognition abroad, connecting Coimbatore’s talent and enterprises with the thriving UAE market.
     </p>
+
+    <!-- Toggle Button -->
+    <button id="toggleImageBtn" class="btn btn-primary mt-3">View Latest Digital Attestation Sample</button>
+
+    <!-- Hidden Image -->
+    <div id="attestedImage" style="display:none; margin-top:20px;">
+      <img src="https://www.almiraaj.com/images/new-uae-digital-attestation-2026.jpg" 
+           alt="New UAE Digital Attestation Sample 2026" 
+           class="img-fluid rounded shadow" />
+    </div>
   </div>
 </section>
 <hr>
+
+<!-- Script for Toggle -->
+<script>
+  document.getElementById("toggleImageBtn").addEventListener("click", function() {
+    var imgDiv = document.getElementById("attestedImage");
+    if (imgDiv.style.display === "none") {
+      imgDiv.style.display = "block";
+      this.textContent = "Hide Digital Attestation Sample";
+    } else {
+      imgDiv.style.display = "none";
+      this.textContent = "View Latest Digital Attestation Sample";
+    }
+  });
+</script>
+
 
         </div>
       </div>
