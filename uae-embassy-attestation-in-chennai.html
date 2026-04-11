@@ -432,7 +432,7 @@
   </p>
   
  </section>
-
+<!-- Info Cards in 2-column layout -->
 <section class="container my-5">
   <div class="row g-4">
 
@@ -498,32 +498,22 @@
             <li>📑 Power of Attorney</li>
           </ul>
           <p class="visually-hidden">UAE Study Visa Attestation, UAE Commercial Attestation, UAE Family Visa Documents</p>
+
+          <!-- Toggle Button -->
+          <button class="btn btn-outline-success mt-3" onclick="toggleImage()">View / Hide Sample Image</button>
+          
+          <!-- Hidden Image -->
+          <div id="uaeImage" style="display:none;" class="mt-3 text-center">
+            <img src="https://www.almiraaj.com/images/new-uae-digital-attestation-2026.jpg"
+                 alt="UAE Embassy Attestation Process in Chennai"
+                 class="img-fluid rounded shadow-sm"
+                 loading="lazy"
+                 style="max-width:100%; height:auto;">
+          </div>
         </div>
       </div>
     </div>
 
-  </div>
-
-  <!-- Digital Attestation Image -->
-  <div class="text-center my-5">
-    <h3 class="text-danger fw-bold">Latest UAE Embassy Digital Attestation</h3>
-    <p class="text-muted">Recently updated by the UAE Embassy, digital attestation streamlines certificate verification.</p>
-    <img src="https://www.almiraaj.com/images/new-uae-digital-attestation-2026.jpg" 
-         alt="UAE Embassy Digital Attestation Sample" 
-         class="img-fluid rounded shadow-sm" style="max-width:400px; cursor:pointer;"
-         data-bs-toggle="modal" data-bs-target="#attestationImageModal">
-  </div>
-
-  <!-- Modal for Image -->
-  <div class="modal fade" id="attestationImageModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-        <div class="modal-body p-0">
-          <img src="https://www.almiraaj.com/images/new-uae-digital-attestation-2026.jpg" 
-               alt="UAE Embassy Digital Attestation Sample" class="img-fluid w-100">
-        </div>
-      </div>
-    </div>
   </div>
 
   <!-- Related Services -->
@@ -547,8 +537,16 @@
   </div>
 </section>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function toggleImage() {
+  var imgDiv = document.getElementById("uaeImage");
+  if (imgDiv.style.display === "none") {
+    imgDiv.style.display = "block";
+  } else {
+    imgDiv.style.display = "none";
+  }
+}
+</script>
 
 <!-- FAQ Section -->
 <section class="container my-5">
