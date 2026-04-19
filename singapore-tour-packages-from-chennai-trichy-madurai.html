@@ -673,39 +673,31 @@
 </section>
 
 <!-- Inquiry Modal -->
-<div class="modal fade" id="inquiryModal" tabindex="-1" aria-labelledby="inquiryModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="inquiryModalLabel">Tour Inquiry Form</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <!-- Replace the action URL with your Formspree endpoint -->
-        <form id="tourForm" method="POST" action="https://formspree.io/f/abcd1234">
-          <div class="mb-3">
-            <label for="destination" class="form-label">Selected Package</label>
-            <input type="text" class="form-control" id="destination" name="destination" readonly>
-          </div>
-          <div class="mb-3">
-            <label for="name" class="form-label">Full Name</label>
-            <input type="text" class="form-control" id="name" name="name" required>
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-          </div>
-          <div class="mb-3">
-            <label for="phone" class="form-label">Phone Number</label>
-            <input type="tel" class="form-control" id="phone" name="phone" required>
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message / Preferences</label>
-            <textarea class="form-control" id="message" name="message" rows="3"></textarea>
-          </div>
-          <button type="submit" class="btn btn-success w-100">Submit Inquiry</button>
-          <div id="formMessage" class="alert alert-success mt-3 d-none">Thank you! Your inquiry has been submitted.</div>
-        </form>
+<form id="tourForm" method="POST" action="https://formspree.io/f/xqegnwjq">
+  <div class="mb-3">
+    <label for="destination" class="form-label">Selected Package</label>
+    <input type="text" class="form-control" id="destination" name="destination" readonly>
+  </div>
+  <div class="mb-3">
+    <label for="name" class="form-label">Full Name</label>
+    <input type="text" class="form-control" id="name" name="name" required>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email Address</label>
+    <!-- Formspree expects _replyto for email -->
+    <input type="email" class="form-control" id="email" name="_replyto" required>
+  </div>
+  <div class="mb-3">
+    <label for="phone" class="form-label">Phone Number</label>
+    <input type="tel" class="form-control" id="phone" name="phone" required>
+  </div>
+  <div class="mb-3">
+    <label for="message" class="form-label">Message / Preferences</label>
+    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-success w-100">Submit Inquiry</button>
+</form>
+
       </div>
     </div>
   </div>
