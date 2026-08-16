@@ -714,23 +714,74 @@ UAE Embassy Attestation Coimbatore, Bahrain Certificate Legalization Coimbatore,
 
   <div class="row mt-4 g-4 justify-content-center">
 
-    <!-- Step 1 -->
-    <div class="col-lg-4 col-md-6">
-      <div class="card branch-card border-primary h-100">
-        <div class="card-body d-flex flex-column text-center">
-          <h4 class="text-primary mb-3"><i class="bi bi-telephone"></i> Step 1: Contact Us</h4>
-          <p class="small">
-            <strong>Degree Certificate Attestation in Chennai</strong><br>
-            <br>Almiraaj,100-Thadagam Road, Opp-Velandi Palayam Bus Standor Rd,Coimbatore-641025,  TN, India <br>
-            📞 <a href="tel:+919176159922" class="text-decoration-none text-dark">+91 9176159922</a><br>
-            📧 <a href="mailto:attestation@almiraaj.com" class="text-decoration-none text-danger">attestation@almiraaj.com</a>
-          </p>
-          <div class="mt-auto">
-            <a href="/" class="btn btn-sm btn-primary w-100">Get Started</a>
-          </div>
-        </div>
+   <!-- Step 1 -->
+<div class="col-lg-4 col-md-6">
+  <div class="card branch-card border-primary h-100">
+    <div class="card-body d-flex flex-column text-center">
+      <h4 class="text-primary mb-3"><i class="bi bi-telephone"></i> Step 1: Contact Us</h4>
+      <p class="small">
+        <strong>Degree Certificate Attestation in Coimbatore</strong><br>
+        Almiraaj, 100-Thadagam Road, Opp-Velandi Palayam Bus Stop, Rajagopal Nagar, Coimbatore – 641025, TN, India <br>
+        📞 <a href="tel:+919176159922" class="text-decoration-none text-dark">+91 9176159922</a><br>
+        📧 <a href="mailto:attestation@almiraaj.com" class="text-decoration-none text-danger">attestation@almiraaj.com</a>
+      </p>
+      <div class="mt-auto">
+        <!-- Trigger button for modal -->
+        <button type="button" class="btn btn-sm btn-primary w-100" data-bs-toggle="modal" data-bs-target="#attestationInquiryModal">
+          Get Started
+        </button>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- Attestation Inquiry Modal -->
+<div class="modal fade" id="attestationInquiryModal" tabindex="-1" aria-labelledby="attestationInquiryLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="attestationInquiryLabel">Degree Certificate Attestation Inquiry</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form action="https://formspree.io/f/xqegnwjq" method="POST">
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" name="phone" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" name="_replyto" required>
+          </div>
+          <div class="mb-3">
+            <label for="documentType" class="form-label">Document Type</label>
+            <select class="form-select" id="documentType" name="documentType" required>
+              <option value="">Select Document</option>
+              <option value="Degree Certificate">Degree Certificate</option>
+              <option value="Diploma Certificate">Diploma Certificate</option>
+              <option value="Mark Sheets">Mark Sheets</option>
+              <option value="Personal Certificate">Personal Certificate</option>
+              <option value="Commercial Document">Commercial Document</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="destinationCountry" class="form-label">Destination Country</label>
+            <input type="text" class="form-control" id="destinationCountry" name="destinationCountry" placeholder="e.g., UAE, Qatar, Saudi Arabia" required>
+          </div>
+          <div class="mb-3">
+            <label for="details" class="form-label">Additional Details</label>
+            <textarea class="form-control" id="details" name="details" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Submit Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Step 2 -->
     <div class="col-lg-4 col-md-6">
