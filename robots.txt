@@ -1,0 +1,13 @@
+# robots.txt for almiraaj.com
+User-agent: *
+Allow: /css/
+Allow: /js/
+Allow: https://fonts.googleapis.com/
+Allow: https://fonts.gstatic.com/
+
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+Sitemap: https://www.almiraaj.com/sitemap.xml
