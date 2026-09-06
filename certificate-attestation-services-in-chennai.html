@@ -32,228 +32,92 @@
   <!-- Robots -->
   <meta name="robots" content="index, follow" />
 
-  <!-- Structured Data -->
+  <!-- Structured Data (Organization + Branches) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "AL-MIRAAJ Certificate Attestation Services",
-    "image": "https://www.almiraaj.com/images/certificate-attestation-chennai.webp",
-    "url": "https://www.almiraaj.com/certificate-attestation-services-in-chennai",
-    "telephone": "+91 91761 59922",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Apartment B3, 8 Tamizhl Salai 9, Halls Rd, opp. Fresh2day Super Market, Elcanso",
-      "addressLocality": "Chennai",
-      "addressRegion": "Tamil Nadu",
-      "postalCode": "600008",
-      "addressCountry": "IN"
-    },
-    "openingHours": "Mo-Sa 08:00-22:00, Su 11:00-14:00",
-    "priceRange": "$$",
-    "sameAs": [
-      "https://www.facebook.com/almiraaj",
-      "https://www.linkedin.com/company/almiraaj",
-      "https://wa.me/919176159922"
-    ],
-    "servesCuisine": "Not applicable",
-    "description": "Certificate Attestation in Chennai provides trusted certificate attestation, apostille, and embassy legalization services for marriage, degree, and personal documents. Recognized by Gulf embassies and MEA authorities."
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.almiraaj.com#organization",
+        "name": "AL-MIRAAJ Certificate Attestation Services",
+        "url": "https://www.almiraaj.com",
+        "logo": "https://www.almiraaj.com/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-9176159922",
+          "contactType": "customer service",
+          "areaServed": "IN",
+          "availableLanguage": "en"
+        },
+        "sameAs": [
+          "https://www.facebook.com/AttestationAndApostille/",
+          "https://www.instagram.com/almiraajapostille",
+          "https://www.linkedin.com/company/almiraaj"
+        ]
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.almiraaj.com/certificate-attestation-services-in-chennai",
+        "name": "AL-MIRAAJ Certificate Attestation Services - Egmore, Chennai",
+        "telephone": "+91-9176159922",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Apartment B3, 8 Tamizhl Salai 9, Halls Rd, opp. Fresh2day Super Market, Elcanso",
+          "addressLocality": "Chennai",
+          "addressRegion": "Tamil Nadu",
+          "postalCode": "600008",
+          "addressCountry": "IN"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": "13.0685", "longitude": "80.2496" },
+        "priceRange": "₹₹",
+        "openingHours": ["Mo-Sa 08:00-22:00","Su 11:00-14:00"],
+        "image": "https://www.almiraaj.com/images/certificate-attestation-chennai.webp",
+        "serviceType": "Certificate Attestation Services",
+        "areaServed": ["Egmore","Chennai","Tamil Nadu","India"],
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "983" }
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.almiraaj.com/trichy-attestation",
+        "name": "AL-MIRAAJ Certificate Attestation Services - Trichy Branch",
+        "telephone": "+91-9159589163",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "No 28, Nirmal Ravi Complex, Pattabiraman Salai, Anna Nagar, Tennur",
+          "addressLocality": "Tiruchirappalli",
+          "addressRegion": "Tamil Nadu",
+          "postalCode": "620017",
+          "addressCountry": "IN"
+        },
+        "openingHours": ["Mo-Sa 08:00-22:00","Su 11:00-14:00"],
+        "image": "https://www.almiraaj.com/images/certificate-attestation-chennai.webp",
+        "serviceType": "Certificate Attestation Services",
+        "areaServed": ["Trichy","Tamil Nadu","India"]
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.almiraaj.com/madurai-attestation",
+        "name": "AL-MIRAAJ Certificate Attestation Services - Madurai Branch",
+        "telephone": "+91-7010855811",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "No 7, E2, PT Rajan Rd, Zumbropuram, Narimedu",
+          "addressLocality": "Madurai",
+          "addressRegion": "Tamil Nadu",
+          "postalCode": "625002",
+          "addressCountry": "IN"
+        },
+        "openingHours": ["Mo-Sa 08:00-22:00","Su 11:00-14:00"],
+        "image": "https://www.almiraaj.com/images/certificate-attestation-chennai.webp",
+        "serviceType": "Certificate Attestation Services",
+        "areaServed": ["Madurai","Tamil Nadu","India"]
+      }
+    ]
   }
   </script>
 </head>
 
-  <!-- Robots -->
-  <meta name="robots" content="index, follow" />
-
-  <!-- Structured Data (Organization + LocalBusiness branches) -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://www.almiraaj.com#organization",
-      "name": "AL-MIRAAJ Certificate Attestation Services",
-      "url": "https://www.almiraaj.com",
-      "logo": "https://www.almiraaj.com/logo.png",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+91-9176160055",
-        "contactType": "customer service",
-        "areaServed": "IN",
-        "availableLanguage": "en"
-      },
-      "sameAs": [
-        "https://www.facebook.com/AttestationAndApostille/",
-        "https://www.instagram.com/almiraajapostille"
-      ]
-    },
-    {
-      "@type": "LocalBusiness",
-      "@id": "https://www.almiraaj.com/egmore-attestation",
-      "name": "AL-MIRAAJ Certificate Attestation Services - Egmore, Chennai",
-      "telephone": "+91-9176160055",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Elcanso Complex, 10/B3, CASA Major Rd, Egmore",
-        "addressLocality": "Chennai",
-        "addressRegion": "Tamil Nadu",
-        "postalCode": "600008",
-        "addressCountry": "IN"
-      },
-      "geo": { "@type": "GeoCoordinates", "latitude": "13.0685", "longitude": "80.2496" },
-      "priceRange": "₹₹",
-      "openingHours": ["Mon-Fri 09:30-18:30","Sat 10:00-14:00"],
-      "image": "https://www.almiraaj.com/images/certificate-attestation-chennai.webp",
-      "serviceType": "Certificate Attestation Services",
-      "areaServed": ["Egmore","Central Chennai","Tamil Nadu","India"],
-      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "983" },
-      "review": [
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Trancil Sahaya" },
-          "datePublished": "2026-08-09",
-          "reviewBody": "Excellent Service! Delivered before promised date, securely packed despite rain. Truly professional and reliable!",
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-        },
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Mohamed Yoosuf" },
-          "datePublished": "2026-07-29",
-          "reviewBody": "Great experience for degree and marriage certificate attestation. Completed in 7 days express option.",
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-        },
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Rengarajan Kalidoss" },
-          "datePublished": "2026-06-12",
-          "reviewBody": "Highly recommend! Coordinated internationally, collected documents at doorstep, clear payments, shipped securely to Europe. Whole process completed in 12 days.",
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-        }
-      ]
-    },
-    {
-      "@type": "LocalBusiness",
-      "@id": "https://www.almiraaj.com/broadway-attestation",
-      "name": "AL-MIRAAJ Certificate Attestation Services - Broadway, Chennai",
-      "telephone": "+91-9087559669",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "2nd Flr, Broadway, 180/2-Prakasam Salai, Opp. Mannady Metro",
-        "addressLocality": "Chennai",
-        "addressRegion": "Tamil Nadu",
-        "postalCode": "600108",
-        "addressCountry": "IN"
-      },
-      "geo": { "@type": "GeoCoordinates", "latitude": "13.0878", "longitude": "80.2785" },
-      "priceRange": "₹₹",
-      "openingHours": ["Mon-Fri 09:30-18:30","Sat 10:00-14:00"],
-      "image": "https://www.almiraaj.com/images/certificate-attestation-chennai.webp",
-      "serviceType": "Certificate Attestation Services",
-      "areaServed": ["Broadway","George Town","North Chennai","Tamil Nadu","India"]
-    },
-    {
-      "@type": "LocalBusiness",
-      "@id": "https://www.almiraaj.com/trichy-attestation",
-      "name": "AL-MIRAAJ Certificate Attestation Services - Trichy Branch",
-      "telephone": "+91-9159589163",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "No 28, Nirmal Ravi Complex, Pattabiraman Salai, Anna Nagar, Tennur",
-        "addressLocality": "Tiruchirappalli",
-        "addressRegion": "Tamil Nadu",
-        "postalCode": "620017",
-        "addressCountry": "IN"
-      },
-      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "983" },
-      "priceRange": "₹₹",
-      "openingHours": ["Mon-Fri 09:30-18:30","Sat 10:00-14:00"],
-      "image": "https://www.almiraaj.com/images/certificate-attestation-chennai.webp",
-      "serviceType": "Certificate Attestation Services",
-      "areaServed": ["Trichy","Tamil Nadu","India"]
-    },
-    {
-      "@type": "LocalBusiness",
-      "@id": "https://www.almiraaj.com/madurai-attestation",
-      "name": "AL-MIRAAJ Certificate Attestation Services - Madurai Branch",
-      "telephone": "+91-7010855811",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "No 7, E2, PT Rajan Rd, Zumbropuram, Narimedu",
-        "addressLocality": "Madurai",
-        "addressRegion": "Tamil Nadu",
-        "postalCode": "625002",
-        "addressCountry": "IN"
-      },
-      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "36" },
-      "priceRange": "₹₹",
-      "openingHours": ["Mon-Fri 09:30-18:30","Sat 10:00-14:00"],
-      "image": "https://www.almiraaj.com/images/certificate-attestation-chennai.webp",
-      "serviceType": "Certificate Attestation Services",
-      "areaServed": ["Madurai","Tamil Nadu","India"]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is Certificate Attestation and why is it required?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Certificate Attestation is the process of verifying Indian documents to make them valid abroad. It is required for higher education admissions, employment visas, family/dependent visas, and business setup." }
-        },
-        {
-          "@type": "Question",
-          "name": "Which documents require attestation for Middle East countries?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Documents commonly requiring attestation include educational certificates, personal certificates, police clearance certificates, and commercial documents." }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the step-by-step process for Certificate Attestation in India?",
-          "acceptedAnswer": { "@type": "Answer", "text": "The process includes Notary Attestation, State Home Department / HRD Authentication, MEA Attestation, Embassy Attestation, and MOFA legalization." }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does Certificate Attestation take in Chennai?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Typically 5–10 working days depending on the type of document and issuing authority. Urgent services may be available for faster processing." }
-        },
-        {
-          "@type": "Question",
-          "name": "Why choose AL-MIRAAJ for Certificate Attestation in Chennai?",
-          "acceptedAnswer": { "@type": "Answer", "text": "AL-MIRAAJ offers end-to-end support including Notary, HRD, MEA, Embassy, and MOFA attestation. They provide doorstep pickup and delivery, fast and reliable processing, and are trusted by students, professionals, and businesses across Chennai." }
-        },
-        {
-          "@type": "Question",
-          "name": "Does AL-MIRAAJ provide doorstep certificate attestation services across Tamil Nadu?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, AL-MIRAAJ International offers doorstep pickup and delivery for certificate attestation services across Tamil Nadu, covering major cities including Chennai, Trichy, Madurai, Coimbatore, Salem, Tuticorin, Nagercoil, Tirunelveli, and more."
-          }
-        }
-      ]
-    },
-    {
-      "@type": "Service",
-      "serviceType": "Educational Certificate Attestation",
-      "provider": { "@id": "https://www.almiraaj.com/egmore-attestation" },
-      "areaServed": "Chennai",
-      "description": "Degree, diploma, and mark sheet attestation services in Chennai for employment visas and higher studies."
-    },
-    {
-      "@type": "Service",
-      "serviceType": "Personal Certificate Attestation",
-      "provider": { "@id": "https://www.almiraaj.com/egmore-attestation" },
-      "areaServed": "Chennai",
-      "description": "Marriage, birth, divorce, death, affidavit, PCC, and legal heir certificate attestation services in Chennai for family and immigration purposes."
-    },
-    {
-      "@type": "Service",
-      "serviceType": "Commercial Document Attestation",
-      "provider": { "@id": "https://www.almiraaj.com/egmore-attestation" },
-      "areaServed": "Chennai",
-      "description": "Company registration, partnership deeds, trade licenses, invoices, and export document attestation services in Chennai for international business compliance."
-    }
-  ]
-}
-</script>
 
   <!-- Fonts & Stylesheets -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
