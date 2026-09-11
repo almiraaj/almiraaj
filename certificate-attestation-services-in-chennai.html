@@ -31,92 +31,109 @@
 
   <!-- Robots -->
   <meta name="robots" content="index, follow" />
+<!-- Structured Data (Organization + Branches) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.almiraaj.com#organization",
+      "name": "Almiraaj International",
+      "url": "https://www.almiraaj.com",
+      "logo": "https://www.almiraaj.com/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-9176160055",
+        "contactType": "customer service",
+        "areaServed": "IN",
+        "availableLanguage": "en"
+      },
+      "sameAs": [
+        "https://www.facebook.com/AttestationAndApostille/",
+        "https://www.instagram.com/almiraajapostille",
+        "https://www.linkedin.com/company/almiraaj"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.almiraaj.com/certificate-attestation-services-in-chennai",
+      "name": "Almiraaj International - Chennai Branch",
+      "telephone": "+91-9176160055",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Apartment B3, 8 Tamizhl Salai 9, Halls Rd, opp. Fresh2day Super Market, Elcanso",
+        "addressLocality": "Chennai",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "600008",
+        "addressCountry": "IN"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": "13.0685", "longitude": "80.2496" },
+      "priceRange": "₹₹",
+      "openingHours": ["Mo-Sa 08:00-22:00","Su 11:00-14:00"],
+      "image": "https://www.almiraaj.com/images/certificate-attestation-chennai.webp",
+      "serviceType": "Certificate Attestation Services",
+      "areaServed": ["Chennai","Tamil Nadu","India"],
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "983" }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.almiraaj.com/trichy-attestation",
+      "name": "Almiraaj International - Trichy Branch",
+      "telephone": "+91-9159589163",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "No 28, Nirmal Ravi Complex, Pattabiraman Salai, Anna Nagar, Tennur",
+        "addressLocality": "Tiruchirappalli",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "620017",
+        "addressCountry": "IN"
+      },
+      "openingHours": ["Mo-Sa 08:00-22:00","Su 11:00-14:00"],
+      "image": "https://www.almiraaj.com/images/certificate-attestation-trichy.webp",
+      "serviceType": "Certificate Attestation Services",
+      "areaServed": ["Trichy","Tamil Nadu","India"]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.almiraaj.com/madurai-attestation",
+      "name": "Almiraaj International - Madurai Branch",
+      "telephone": "+91-9940592202",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "No 7, E2, PT Rajan Rd, Zumbropuram, Narimedu",
+        "addressLocality": "Madurai",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "625002",
+        "addressCountry": "IN"
+      },
+      "openingHours": ["Mo-Sa 08:00-22:00","Su 11:00-14:00"],
+      "image": "https://www.almiraaj.com/images/certificate-attestation-madurai.webp",
+      "serviceType": "Certificate Attestation Services",
+      "areaServed": ["Madurai","Tamil Nadu","India"]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.almiraaj.com/coimbatore-attestation",
+      "name": "Almiraaj International - Coimbatore Branch",
+      "telephone": "+91-9087559669",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "No 12, 2nd Floor, Crosscut Road, Gandhipuram",
+        "addressLocality": "Coimbatore",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "641012",
+        "addressCountry": "IN"
+      },
+      "openingHours": ["Mo-Sa 08:00-22:00","Su 11:00-14:00"],
+      "image": "https://www.almiraaj.com/images/certificate-attestation-coimbatore.webp",
+      "serviceType": "Certificate Attestation Services",
+      "areaServed": ["Coimbatore","Tamil Nadu","India"]
+    }
+  ]
+}
+</script>
 
-  <!-- Structured Data (Organization + Branches) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://www.almiraaj.com#organization",
-        "name": "AL-MIRAAJ Certificate Attestation Services",
-        "url": "https://www.almiraaj.com",
-        "logo": "https://www.almiraaj.com/logo.png",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+91-9176159922",
-          "contactType": "customer service",
-          "areaServed": "IN",
-          "availableLanguage": "en"
-        },
-        "sameAs": [
-          "https://www.facebook.com/AttestationAndApostille/",
-          "https://www.instagram.com/almiraajapostille",
-          "https://www.linkedin.com/company/almiraaj"
-        ]
-      },
-      {
-        "@type": "LocalBusiness",
-        "@id": "https://www.almiraaj.com/certificate-attestation-services-in-chennai",
-        "name": "AL-MIRAAJ Certificate Attestation Services - Egmore, Chennai",
-        "telephone": "+91-9176159922",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Apartment B3, 8 Tamizhl Salai 9, Halls Rd, opp. Fresh2day Super Market, Elcanso",
-          "addressLocality": "Chennai",
-          "addressRegion": "Tamil Nadu",
-          "postalCode": "600008",
-          "addressCountry": "IN"
-        },
-        "geo": { "@type": "GeoCoordinates", "latitude": "13.0685", "longitude": "80.2496" },
-        "priceRange": "₹₹",
-        "openingHours": ["Mo-Sa 08:00-22:00","Su 11:00-14:00"],
-        "image": "https://www.almiraaj.com/images/certificate-attestation-chennai.webp",
-        "serviceType": "Certificate Attestation Services",
-        "areaServed": ["Egmore","Chennai","Tamil Nadu","India"],
-        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "983" }
-      },
-      {
-        "@type": "LocalBusiness",
-        "@id": "https://www.almiraaj.com/trichy-attestation",
-        "name": "AL-MIRAAJ Certificate Attestation Services - Trichy Branch",
-        "telephone": "+91-9159589163",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "No 28, Nirmal Ravi Complex, Pattabiraman Salai, Anna Nagar, Tennur",
-          "addressLocality": "Tiruchirappalli",
-          "addressRegion": "Tamil Nadu",
-          "postalCode": "620017",
-          "addressCountry": "IN"
-        },
-        "openingHours": ["Mo-Sa 08:00-22:00","Su 11:00-14:00"],
-        "image": "https://www.almiraaj.com/images/certificate-attestation-chennai.webp",
-        "serviceType": "Certificate Attestation Services",
-        "areaServed": ["Trichy","Tamil Nadu","India"]
-      },
-      {
-        "@type": "LocalBusiness",
-        "@id": "https://www.almiraaj.com/madurai-attestation",
-        "name": "AL-MIRAAJ Certificate Attestation Services - Madurai Branch",
-        "telephone": "+91-7010855811",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "No 7, E2, PT Rajan Rd, Zumbropuram, Narimedu",
-          "addressLocality": "Madurai",
-          "addressRegion": "Tamil Nadu",
-          "postalCode": "625002",
-          "addressCountry": "IN"
-        },
-        "openingHours": ["Mo-Sa 08:00-22:00","Su 11:00-14:00"],
-        "image": "https://www.almiraaj.com/images/certificate-attestation-chennai.webp",
-        "serviceType": "Certificate Attestation Services",
-        "areaServed": ["Madurai","Tamil Nadu","India"]
-      }
-    ]
-  }
-  </script>
-</head>
 
 
   <!-- Fonts & Stylesheets -->
