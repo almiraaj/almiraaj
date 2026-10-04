@@ -310,79 +310,53 @@
         display: block;
         width: 100%;
         height: auto;
-        filter: brightness(72%);
-        object-fit: cover;
+        filter: brightness(90%);
       "
     />
 
-    <!-- Professional Gradient Overlay -->
+    <!-- Very Soft Overlay -->
     <div style="
       position: absolute;
       inset: 0;
-      background:
-        linear-gradient(
-          90deg,
-          rgba(0,0,0,0.45) 0%,
-          rgba(0,0,0,0.18) 50%,
-          rgba(0,0,0,0.40) 100%
-        );
+      background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.05),
+        rgba(0,0,0,0.18)
+      );
       z-index: 1;
     "></div>
 
-    <!-- Corporate Content -->
+    <!-- AL-MIRAAJ Branding -->
     <div style="
       position: absolute;
-      top: 50%;
+      bottom: 7%;
       left: 50%;
-      transform: translate(-50%, -50%);
-      width: 90%;
-      max-width: 900px;
-      text-align: center;
+      transform: translateX(-50%);
       z-index: 2;
-      color: #ffffff;
+      text-align: center;
     ">
 
-      <!-- Main Heading -->
-      <h1 style="
-        font-size: clamp(1.8rem, 4vw, 3.5rem);
-        font-weight: 700;
-        line-height: 1.15;
-        margin: 0 0 12px;
-        color: #ffffff;
-        text-shadow: 0 3px 10px rgba(0,0,0,0.65);
-      ">
-        UAE Embassy Attestation
-        <br>
-        <span style="font-weight: 500;">in Coimbatore</span>
-      </h1>
-
-      <!-- Divider -->
-      <div style="
-        width: 70px;
-        height: 3px;
-        background: #ffffff;
-        margin: 15px auto;
-        border-radius: 10px;
-      "></div>
-
-      <!-- Brand -->
       <div style="
         display: inline-block;
-        padding: 9px 22px;
-        border: 1px solid rgba(255,255,255,0.65);
+        padding: 10px 24px;
+        border: 1px solid rgba(255,255,255,0.8);
         border-radius: 30px;
-        background: rgba(0,0,0,0.22);
+        background: rgba(0,0,0,0.35);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
       ">
+
         <span style="
-          font-size: clamp(0.9rem, 2vw, 1.2rem);
+          color: #ffffff;
+          font-size: 15px;
           font-weight: 600;
           letter-spacing: 1.5px;
-          color: #ffffff;
+          white-space: nowrap;
         ">
           AL-MIRAAJ INTERNATIONAL
         </span>
+
       </div>
 
     </div>
