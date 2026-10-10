@@ -439,119 +439,475 @@
       <div class="col"><a href="https://www.almiraaj.com/saudi-visa-stamping" class="btn btn-outline-success w-100 shadow-sm">Resident Visa Services</a></div>
     </div>
 
- <!-- Unified Intro -->
-<div class="certificate-highlight certificate-intro mt-5">
-  <h5 class="fw-bold text-success mb-3">Saudi Visa Stamping – Seamless & Reliable</h5>
-  <p class="mb-0">
-    With <span class="fw-bold">Almiraaj International</span> in Chennai, your Saudi visa process is seamless and reliable.  
-    🌍✈️ <span>Saudi Visa Service</span> is the critical step for travelers, professionals, and pilgrims entering the Kingdom.  
-    It ensures your <span>documents are authenticated</span> and your entry is legally recognized by the Saudi Embassy and Consulate.  
-    From <span>Umrah and Hajj pilgrims</span> to <span>business leaders and employees</span>, stamping secures smooth travel and compliance with Saudi regulations.  
-    Fast, reliable, and professional, our team assists with <span>employment, business, tourist, family/resident, and pilgrimage visas</span>—along with attestation, medical reports, and embassy submissions.  
-    Start your <span>Saudi Visa Stamping process</span> today and unlock opportunities in the Kingdom 🚀
-  </p>
-</div>
+
+<style>
+/* Saudi Visa Stamping - Corporate Design */
+.saudi-visa-section {
+    --visa-green: #176b45;
+    --visa-dark: #124b34;
+    --visa-light: #f3f8f5;
+    --visa-border: #d8e5dc;
+    --visa-text: #34443b;
+
+    padding: 35px 0 45px;
+    color: var(--visa-text);
+    font-family: inherit;
+}
+
+/* Introductory banner */
+.saudi-visa-intro {
+    position: relative;
+    padding: 30px;
+    margin-bottom: 32px;
+    background: linear-gradient(135deg, #f4faf6, #ffffff);
+    border: 1px solid var(--visa-border);
+    border-left: 5px solid var(--visa-green);
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(25, 75, 49, 0.07);
+}
+
+.saudi-visa-intro h2 {
+    color: var(--visa-dark);
+    font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+    font-weight: 750;
+    line-height: 1.35;
+    margin-bottom: 15px;
+}
+
+.saudi-visa-intro p {
+    font-size: 1rem;
+    line-height: 1.9;
+    margin: 0;
+}
+
+/* Responsive card grid */
+.saudi-visa-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    align-items: stretch;
+}
+
+/* Individual visa cards */
+.saudi-visa-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-width: 0;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid var(--visa-border);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(23, 75, 47, 0.07);
+    transition: transform 0.25s ease, box-shadow 0.25s ease,
+                border-color 0.25s ease;
+}
+
+.saudi-visa-card:hover {
+    transform: translateY(-4px);
+    border-color: #8bb99d;
+    box-shadow: 0 10px 28px rgba(23, 75, 47, 0.13);
+}
+
+.saudi-visa-card-header {
+    padding: 21px 24px;
+    background: var(--visa-light);
+    border-bottom: 1px solid var(--visa-border);
+    border-top: 4px solid var(--visa-green);
+}
+
+.saudi-visa-card-header h3 {
+    color: var(--visa-dark);
+    font-size: 1.3rem;
+    font-weight: 750;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.saudi-visa-card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.saudi-visa-card-body h4 {
+    color: var(--visa-dark);
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 15px;
+}
+
+.saudi-visa-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 22px;
+}
+
+.saudi-visa-card ul li {
+    position: relative;
+    padding-left: 23px;
+    margin-bottom: 12px;
+    font-size: 0.96rem;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+}
+
+.saudi-visa-card ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    color: var(--visa-green);
+    font-weight: 800;
+}
+
+.saudi-visa-note {
+    display: block;
+    margin-top: 4px;
+    color: #64756a;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.saudi-visa-process {
+    margin-top: auto;
+    padding: 17px;
+    background: #f6f9f7;
+    border: 1px solid #e3ebe5;
+    border-radius: 8px;
+    font-size: 0.94rem;
+    line-height: 1.8;
+}
+
+.saudi-visa-process strong {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--visa-dark);
+    font-size: 1rem;
+}
+
+.saudi-visa-section a {
+    color: var(--visa-green);
+    font-weight: 650;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    overflow-wrap: anywhere;
+}
+
+.saudi-visa-section a:hover {
+    color: var(--visa-dark);
+}
+
+.saudi-visa-alert {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: #fff7e8;
+    border-left: 3px solid #d89b2b;
+    border-radius: 4px;
+    color: #79551b;
+    font-weight: 650;
+    line-height: 1.6;
+}
+
+.saudi-visa-cta {
+    margin-top: 30px;
+    padding: 24px;
+    text-align: center;
+    background: var(--visa-dark);
+    border-radius: 12px;
+    color: #fff;
+}
+
+.saudi-visa-cta h3 {
+    margin: 0 0 10px;
+    font-size: 1.35rem;
+    font-weight: 750;
+    color: #fff;
+}
+
+.saudi-visa-cta p {
+    margin: 0 0 15px;
+    line-height: 1.7;
+    color: #edf6ef;
+}
+
+.saudi-visa-cta a {
+    display: inline-block;
+    margin: 5px;
+    padding: 11px 20px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    color: var(--visa-dark);
+    background: #fff;
+    text-decoration: none;
+    font-weight: 750;
+}
+
+.saudi-visa-cta a:hover {
+    background: #e9f4ec;
+    color: var(--visa-dark);
+}
+
+@media (max-width: 767px) {
+    .saudi-visa-section {
+        padding: 20px 0 30px;
+    }
+
+    .saudi-visa-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .saudi-visa-intro {
+        padding: 22px 19px;
+        margin-bottom: 22px;
+    }
+
+    .saudi-visa-card-header {
+        padding: 18px 20px;
+    }
+
+    .saudi-visa-card-body {
+        padding: 20px;
+    }
+
+    .saudi-visa-card-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .saudi-visa-cta {
+        padding: 22px 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .saudi-visa-card {
+        transition: none;
+    }
+
+    .saudi-visa-card:hover {
+        transform: none;
+    }
+}
+</style>
+
+<section class="saudi-visa-section">
+
+    <!-- Corporate Introduction -->
+    <div class="saudi-visa-intro">
+        <h2>Saudi Visa Stamping Services in Chennai</h2>
+        <p>
+            <strong>Almiraaj International</strong> provides professional
+            assistance with Saudi visa stamping and document preparation
+            in Chennai. Visa stamping is an important step for eligible
+            travelers, professionals, business visitors, and pilgrims
+            planning to enter the Kingdom of Saudi Arabia.
+            Our team assists applicants in organizing the required
+            documentation and coordinating relevant submission procedures.
+            From <strong>employment and business visas</strong> to
+            <strong>tourist and Umrah visas</strong>, we offer guidance
+            on document attestation, medical documentation, appointment
+            coordination, and embassy or consulate submission requirements,
+            as applicable. Requirements vary by visa category and applicant.
+            Contact our team for guidance on your Saudi visa application.
+        </p>
+    </div>
+
+    <!-- Visa Service Cards -->
+    <div class="saudi-visa-grid">
+
+        <!-- Tourist Visa -->
+        <article class="saudi-visa-card">
+            <div class="saudi-visa-card-header">
+                <h3>Saudi Tourist Visa</h3>
+            </div>
+
+            <div class="saudi-visa-card-body">
+                <h4>Documents Checklist</h4>
+                <ul>
+                    <li>Valid passport and previous passport, if available</li>
+                    <li>Recent photographs with a white background, as required</li>
+                    <li>Bank statements or financial supporting documents, if applicable</li>
+                    <li>Accommodation details</li>
+                    <li>Travel itinerary</li>
+                    <li>Travel insurance, as applicable</li>
+                </ul>
+
+                <div class="saudi-visa-process">
+                    <strong>Application Process</strong>
+                    Contact our team to confirm the applicable requirements
+                    and appointment procedure. Submit the required documents,
+                    complete biometrics if required, and pay the applicable
+                    service and visa fees. Issuance is subject to the
+                    relevant Saudi authorities' approval.
+                    <br><br>
+                    <a href="tel:+919176160055">Call +91 91761 60055</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Business / Commercial Visa -->
+        <article class="saudi-visa-card">
+            <div class="saudi-visa-card-header">
+                <h3>Saudi Business / Commercial Visa</h3>
+            </div>
+
+            <div class="saudi-visa-card-body">
+                <h4>Documents Checklist</h4>
+                <ul>
+                    <li>Valid passport with the required validity and blank pages</li>
+                    <li>Recent photographs with a white background, as required</li>
+                    <li>
+                        Invitation letter from the Saudi company, with
+                        applicable Chamber of Commerce attestation
+                    </li>
+                    <li>
+                        Educational qualification documents, apostilled
+                        or attested where required
+                        <span class="saudi-visa-note">
+                            Assistance with educational certificate apostille
+                            and attestation is available.
+                        </span>
+                    </li>
+                    <li>
+                        Indian Chamber of Commerce recommendation or
+                        supporting letter, where applicable
+                        <span class="saudi-visa-note">
+                            Our team can guide you through the applicable
+                            documentation procedure.
+                        </span>
+                    </li>
+                    <li>Covering letter with travel plans and sponsor details</li>
+                    <li>Identity proofs, such as Aadhaar or PAN, where required</li>
+                    <li>Business proposals, meeting schedules, or other supporting documents</li>
+                    <li>
+                        Travel itinerary and medical or travel insurance,
+                        as applicable
+                        <span class="saudi-visa-note">
+                            Assistance with itinerary and insurance arrangements
+                            is available.
+                        </span>
+                    </li>
+                </ul>
+
+                <div class="saudi-visa-process">
+                    <strong>Application Process</strong>
+                    We guide you through document preparation and appointment
+                    coordination. Submit the required documents through the
+                    designated channel, complete biometrics if required,
+                    and pay the applicable fees. Final approval rests with
+                    the relevant Saudi authorities.
+                    <br><br>
+                    <a href="tel:+919176160055">Call +91 91761 60055</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Employment Visa -->
+        <article class="saudi-visa-card">
+            <div class="saudi-visa-card-header">
+                <h3>Saudi Employment Visa</h3>
+            </div>
+
+            <div class="saudi-visa-card-body">
+                <h4>Documents Checklist</h4>
+                <ul>
+                    <li>Valid passport and previous passport, if available</li>
+                    <li>Recent photographs with a white background, as required</li>
+                    <li>Visa authorization or visa document issued by Saudi authorities</li>
+                    <li>Medical report from an approved GAMCA/Wafid medical centre, as applicable</li>
+                    <li>
+                        Wakala authorization
+                        <a href="https://www.almiraaj.com/images/sv-wakala-gh.jpg"
+                           target="_blank" rel="noopener noreferrer">
+                            View Sample
+                        </a>
+                    </li>
+                    <li>Offer letter with applicable Chamber of Commerce and MOFA attestation</li>
+                    <li>Educational certificate apostille or attestation, as required</li>
+                    <li>QVP / SVP completion, where applicable to the profession</li>
+                    <li>Biometric submission and appointment documentation, as applicable</li>
+                </ul>
+
+                <div class="saudi-visa-process">
+                    <strong>Application Process</strong>
+                    Our team assists with document verification, appointment
+                    coordination, and submission preparation. Complete the
+                    applicable medical and qualification verification
+                    requirements, submit your documents through the
+                    designated channel, and pay the relevant fees.
+                    Visa issuance is subject to the relevant authorities'
+                    approval.
+                    <br><br>
+                    <a href="tel:+919176160055">Call +91 91761 60055</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Umrah Visa -->
+        <article class="saudi-visa-card">
+            <div class="saudi-visa-card-header">
+                <h3>Saudi Umrah Visa</h3>
+            </div>
+
+            <div class="saudi-visa-card-body">
+                <h4>Documents Checklist</h4>
+                <ul>
+                    <li>Valid passport and previous passport, if available</li>
+                    <li>Recent photographs, as required</li>
+                    <li>Accommodation details</li>
+                    <li>Travel itinerary</li>
+                    <li>Travel insurance, where applicable</li>
+                    <li>Iqama copy, if applicable</li>
+                </ul>
+
+                <div class="saudi-visa-process">
+                    <strong>Application Process</strong>
+                    Contact our team to confirm the current Umrah visa
+                    requirements and submission procedure. Prepare the
+                    required documents, complete any applicable formalities,
+                    and pay the relevant fees. Approval is subject to the
+                    applicable Saudi authorities' requirements.
+
+                    <p class="saudi-visa-alert">
+                        Biometric requirements depend on the applicant's
+                        circumstances and the current applicable procedure.
+                        Please confirm before your appointment.
+                    </p>
+
+                    <p style="margin: 14px 0 0;">
+                        <a href="https://www.almiraaj.com/umrah-visa-services"
+                           target="_blank" rel="noopener noreferrer">
+                            Explore Our Umrah Visa Services →
+                        </a>
+                    </p>
+
+                    <a href="tel:+919176160055">Call +91 91761 60055</a>
+                </div>
+            </div>
+        </article>
+
+    </div>
+
+    <!-- Contact Call to Action -->
+    <div class="saudi-visa-cta">
+        <h3>Need Assistance with Saudi Visa Stamping?</h3>
+        <p>
+            Speak with Almiraaj International for guidance on your visa
+            documentation, attestation, and application process.
+        </p>
+        <a href="tel:+919176160055">Call Our Team: +91 91761 60055</a>
+        <a href="https://www.almiraaj.com/umrah-visa-services"
+           target="_blank" rel="noopener noreferrer">
+            Umrah Visa Services
+        </a>
+    </div>
+
 </section>
 
-  <div class="row g-4 mt-4">
-
-    <!-- Tourist Visa -->
-    <div class="col-md-6">
-      <div class="card h-100 border-0 shadow-sm bg-light">
-        <div class="card-body">
-          <h4 class="card-title text-success">Tourist Visa</h4>
-          <ul class="mb-3">
-            <li>Passport + old passport if available</li>
-            <li>Photographs with white background</li>
-            <li>Bank statement</li>
-            <li>Accommodation details</li>
-            <li>Travel itinerary</li>
-            <li>Travel insurance</li>
-          </ul>
-          <p><strong>Process:</strong> Book appointment for submission and biometric (call 
-            <a href="tel:+919176160055">+91-9176160055</a>), submit with VFS, and pay the fee. Embassy approval required.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Business / Commercial Visa -->
-<div class="col-md-6">
-  <div class="card h-100 border-0 shadow-sm bg-light">
-    <div class="card-body">
-      <h4 class="card-title text-success">Business / Commercial Visa</h4>
-      <ul class="mb-3">
-        <li>Valid passport (six months validity, two blank pages)</li>
-        <li>Photographs with white background</li>
-        <li>Invitation letter from Saudi company, attested by Chamber of Commerce</li>
-        <li>
-          Apostilled educational qualification relevant to designation  
-          <span class="text-muted fst-italic">— we can get apostille for your educational certificates</span>
-        </li>
-        <li>
-          Indian Chamber of Commerce recommendation letter  
-          <span class="text-muted fst-italic">— we can guide you to obtain chamber attestation</span>
-        </li>
-        <li>Covering letter with travel plans and sponsor details</li>
-        <li>ID proofs (Aadhaar, PAN, etc.)</li>
-        <li>Supporting documents (business proposals, meeting schedules)</li>
-        <li>
-          Confirmed travel itinerary + medical insurance  
-          <span class="text-muted fst-italic">— we can arrange both travel itinerary and insurance</span>
-        </li>
-      </ul>
-      <p><strong>Process:</strong> Book appointment, submit documents with VFS, complete biometric, and pay the fee. Embassy approval required.</p>
-    </div>
-  </div>
-</div>
-
-
-    <!-- Employment Visa -->
-    <div class="col-md-6">
-      <div class="card h-100 border-0 shadow-sm bg-light">
-        <div class="card-body">
-          <h4 class="card-title text-success">Employment Visa</h4>
-          <ul class="mb-3">
-            <li>Passport + old passport if available</li>
-            <li>Photographs with white background</li>
-            <li>Visa paper issued by Saudi authorities</li>
-            <li>Medical report (GAMCA GCC approved clinic)</li>
-            <li>Wakala authorization 
-              <a href="https://www.almiraaj.com/images/sv-wakala-gh.jpg" target="_blank">[View Sample]</a>
-            </li>
-            <li>Offer letter attested by Chamber of Commerce & MOFA</li>
-            <li>Educational certificate apostille/attestation</li>
-            <li>QVP / SVP completion as per profession</li>
-            <li>Biometric submission with VFS (mandatory)</li>
-          </ul>
-          <p><strong>Process:</strong> Collect documents, book biometric appointment (call 
-            <a href="tel:+919176160055">+91-9176160055</a>), submit with VFS, and pay the fee. Embassy approval required.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Umrah Visa -->
-    <div class="col-md-6">
-      <div class="card h-100 border-0 shadow-sm bg-light">
-        <div class="card-body">
-          <h4 class="card-title text-success">Umrah Visa</h4>
-          <ul class="mb-3">
-            <li>Passport + old passport if available</li>
-            <li>Photographs with white background</li>
-            <li>Accommodation details</li>
-            <li>Travel itinerary</li>
-            <li>Travel insurance</li>
-            <li>Iqama copy (if available)</li>
-          </ul>
-          <p><strong>Process:</strong> Collect documents, book appointment (call 
-            <a href="tel:+919176160055">+91-9176160055</a>), submit with VFS, and pay the fee. 
-            <span class="text-danger fw-bold">Biometric not required for Umrah visas</span>. Embassy/Consulate approval required.</p>
-          <p><a href="https://www.almiraaj.com/umrah-visa-services" target="_blank" class="text-decoration-underline text-primary fw-bold">Learn more about Umrah Visa Services</a></p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
 
 
 <!-- QVP & SVP Section -->
