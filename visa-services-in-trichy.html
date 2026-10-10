@@ -858,6 +858,347 @@
           </div>
         </div>
       </div>
+<!-- Other Countries Visa Inquiry Modal -->
+<div class="modal fade" id="inquiryModal" tabindex="-1"
+     aria-labelledby="inquiryModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content border-0 shadow">
+
+      <!-- Modal Header -->
+      <div class="modal-header bg-primary text-white">
+        <div>
+          <h5 class="modal-title fw-bold" id="inquiryModalLabel">
+            Other Countries Visa
+          </h5>
+          <small>International Visa Inquiry – AL-MIRAAJ International</small>
+        </div>
+        <button type="button" class="btn-close btn-close-white"
+                data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body p-4">
+
+        <p class="text-muted mb-4">
+          Planning to travel abroad? Submit your visa requirements below.
+          Our team can guide you on the application process and required documents.
+        </p>
+
+        <form id="visaForm"
+              action="https://formspree.io/f/xqegnwjq"
+              method="POST">
+
+          <!-- Email Subject -->
+          <input type="hidden" name="_subject"
+                 value="New Other Countries Visa Inquiry - AL-MIRAAJ">
+
+          <!-- Inquiry Type -->
+          <input type="hidden" name="inquiry_type"
+                 value="Other Countries Visa">
+
+          <!-- Full Name -->
+          <div class="mb-3">
+            <label for="visaName" class="form-label fw-semibold">
+              Full Name <span class="text-danger">*</span>
+            </label>
+            <input type="text" class="form-control" id="visaName"
+                   name="name" autocomplete="name"
+                   placeholder="Enter your full name" required>
+          </div>
+
+          <!-- Phone and Email -->
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="visaPhone" class="form-label fw-semibold">
+                Phone / WhatsApp Number <span class="text-danger">*</span>
+              </label>
+              <input type="tel" class="form-control" id="visaPhone"
+                     name="phone" autocomplete="tel"
+                     placeholder="Enter contact number"
+                     pattern="[+]?[0-9() -]{7,20}" required>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="visaEmail" class="form-label fw-semibold">
+                Email Address <span class="text-danger">*</span>
+              </label>
+              <input type="email" class="form-control" id="visaEmail"
+                     name="_replyto" autocomplete="email"
+                     placeholder="Enter your email address" required>
+            </div>
+          </div>
+
+          <!-- Destination -->
+          <div class="mb-3">
+            <label for="visaDestination" class="form-label fw-semibold">
+              Destination Country <span class="text-danger">*</span>
+            </label>
+            <select class="form-select" id="visaDestination"
+                    name="destination_country" required>
+              <option value="">Select destination country</option>
+              <option value="Singapore">Singapore</option>
+              <option value="Thailand">Thailand</option>
+              <option value="United Arab Emirates (Dubai)">United Arab Emirates (Dubai)</option>
+              <option value="Malaysia">Malaysia</option>
+              <option value="China">China</option>
+              <option value="Egypt">Egypt</option>
+              <option value="Kuwait">Kuwait</option>
+              <option value="United States of America">United States of America (USA)</option>
+              <option value="Australia">Australia</option>
+              <option value="South Korea">South Korea</option>
+              <option value="Other Country">Other Country</option>
+            </select>
+          </div>
+
+          <!-- Other Country -->
+          <div class="mb-3 d-none" id="otherCountryWrapper">
+            <label for="otherCountry" class="form-label fw-semibold">
+              Enter Country Name <span class="text-danger">*</span>
+            </label>
+            <input type="text" class="form-control" id="otherCountry"
+                   name="other_country"
+                   placeholder="Enter the country you wish to visit"
+                   disabled>
+          </div>
+
+          <!-- Visa Type -->
+          <div class="mb-3">
+            <label for="visaType" class="form-label fw-semibold">
+              Visa Type <span class="text-danger">*</span>
+            </label>
+            <select class="form-select" id="visaType"
+                    name="visa_type" required>
+              <option value="">Select visa type</option>
+              <option value="Tourist / Visitor Visa">Tourist / Visitor Visa</option>
+              <option value="Business Visa">Business Visa</option>
+              <option value="Student Visa">Student Visa</option>
+              <option value="Employment / Work Visa">Employment / Work Visa</option>
+              <option value="Family / Dependent Visa">Family / Dependent Visa</option>
+              <option value="Transit Visa">Transit Visa</option>
+              <option value="Visa Stamping">Visa Stamping</option>
+              <option value="Not Sure - Need Guidance">Not Sure - Need Guidance</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <!-- Nationality and Applicants -->
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="visaNationality" class="form-label fw-semibold">
+                Passport Nationality <span class="text-danger">*</span>
+              </label>
+              <select class="form-select" id="visaNationality"
+                      name="passport_nationality" required>
+                <option value="">Select nationality</option>
+                <option value="Indian">Indian</option>
+                <option value="Other Nationality">Other Nationality</option>
+              </select>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="visaApplicants" class="form-label fw-semibold">
+                Number of Applicants <span class="text-danger">*</span>
+              </label>
+              <input type="number" class="form-control" id="visaApplicants"
+                     name="number_of_applicants" min="1" max="50"
+                     value="1" required>
+            </div>
+          </div>
+
+          <!-- Intended Travel Date -->
+          <div class="mb-3">
+            <label for="travelDate" class="form-label fw-semibold">
+              Intended Travel Date
+            </label>
+            <input type="date" class="form-control" id="travelDate"
+                   name="intended_travel_date">
+            <small class="text-muted">
+              Enter your tentative travel date, if known.
+            </small>
+          </div>
+
+          <!-- Passport Status -->
+          <div class="mb-3">
+            <label for="passportStatus" class="form-label fw-semibold">
+              Do you have a valid passport?
+            </label>
+            <select class="form-select" id="passportStatus"
+                    name="passport_status">
+              <option value="">Please select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              <option value="Renewal in progress">Renewal in progress</option>
+            </select>
+          </div>
+
+          <!-- Additional Details -->
+          <div class="mb-3">
+            <label for="visaDetails" class="form-label fw-semibold">
+              Additional Requirements
+            </label>
+            <textarea class="form-control" id="visaDetails"
+                      name="additional_details" rows="3"
+                      placeholder="Mention your travel purpose, previous visa details, or any questions (optional)."></textarea>
+          </div>
+
+          <!-- Consent -->
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox"
+                   id="visaConsent" name="contact_consent"
+                   value="Yes" required>
+            <label class="form-check-label small" for="visaConsent">
+              I agree to be contacted by AL-MIRAAJ International regarding
+              my visa inquiry.
+            </label>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" id="visaSubmitBtn"
+                  class="btn btn-primary w-100 py-2 fw-bold">
+            Submit Visa Inquiry
+          </button>
+
+          <p class="small text-muted mt-3 mb-0">
+            Visa requirements and approval depend on the destination country's
+            immigration authorities. Submitting this form does not guarantee
+            visa approval.
+          </p>
+
+        </form>
+
+        <!-- Success Message -->
+        <div id="visaFormMessage"
+             class="alert alert-success mt-3 d-none" role="status"
+             aria-live="polite">
+          <strong>Thank you for your inquiry!</strong>
+          Your details have been submitted successfully. Our team will contact
+          you regarding your visa requirements.
+        </div>
+
+        <!-- Error Message -->
+        <div id="visaFormError"
+             class="alert alert-danger mt-3 d-none" role="alert">
+          We could not submit your inquiry. Please try again or contact our team.
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS: Include only if it is not already loaded on your website -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const modal = document.getElementById('inquiryModal');
+  const form = document.getElementById('visaForm');
+  const destination = document.getElementById('visaDestination');
+  const otherCountryWrapper = document.getElementById('otherCountryWrapper');
+  const otherCountry = document.getElementById('otherCountry');
+  const message = document.getElementById('visaFormMessage');
+  const error = document.getElementById('visaFormError');
+  const submitBtn = document.getElementById('visaSubmitBtn');
+
+  // Set minimum travel date to today.
+  const travelDate = document.getElementById('travelDate');
+  const today = new Date();
+  const localToday = [
+    today.getFullYear(),
+    String(today.getMonth() + 1).padStart(2, '0'),
+    String(today.getDate()).padStart(2, '0')
+  ].join('-');
+
+  travelDate.min = localToday;
+
+  // Show the country text field when "Other Country" is selected.
+  function updateOtherCountry() {
+    const isOther = destination.value === 'Other Country';
+
+    otherCountryWrapper.classList.toggle('d-none', !isOther);
+    otherCountry.disabled = !isOther;
+    otherCountry.required = isOther;
+
+    if (!isOther) {
+      otherCountry.value = '';
+    }
+  }
+
+  destination.addEventListener('change', updateOtherCountry);
+
+  // Allow buttons elsewhere on the page to preselect a destination.
+  modal.addEventListener('show.bs.modal', function (event) {
+    const trigger = event.relatedTarget;
+
+    message.classList.add('d-none');
+    error.classList.add('d-none');
+
+    if (trigger && trigger.dataset.destination) {
+      const requestedDestination = trigger.dataset.destination;
+      const matchingOption = Array.from(destination.options).find(
+        option => option.value.toLowerCase() === requestedDestination.toLowerCase()
+      );
+
+      if (matchingOption) {
+        destination.value = matchingOption.value;
+      } else {
+        destination.value = 'Other Country';
+        otherCountry.value = requestedDestination;
+      }
+    }
+
+    updateOtherCountry();
+  });
+
+  // Submit inquiry to Formspree.
+  form.addEventListener('submit', async function (event) {
+    event.preventDefault();
+
+    if (!form.reportValidity()) {
+      return;
+    }
+
+    message.classList.add('d-none');
+    error.classList.add('d-none');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Submitting...';
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error('Form submission failed');
+      }
+
+      form.reset();
+      updateOtherCountry();
+
+      message.classList.remove('d-none');
+      submitBtn.textContent = 'Submitted Successfully';
+
+    } catch (err) {
+      error.classList.remove('d-none');
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Submit Visa Inquiry';
+
+    }
+  });
+
+  // Restore the submit button when the modal is opened again.
+  modal.addEventListener('hidden.bs.modal', function () {
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Submit Visa Inquiry';
+  });
+});
+</script>
+
 
     </div>
   </div>
