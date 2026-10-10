@@ -880,6 +880,147 @@
     </div>
   </div>
 </div>
+<!-- Other Country Visa Enquiry Form -->
+<div class="container my-4">
+  <div class="visa-form-container">
+
+    <div class="visa-form-heading">
+      Inquiry for Other Country Visa Services
+    </div>
+
+    <form action="/send-visa-enquiry.php" method="POST"
+          class="visa-enquiry-form">
+
+      <div class="mb-3">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName"
+               class="form-control" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="phone">Phone Number / WhatsApp</label>
+        <input type="tel" id="phone" name="phone"
+               class="form-control" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email"
+               class="form-control" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="country">Destination Country</label>
+        <input type="text" id="country" name="country"
+               class="form-control"
+               placeholder="Enter the country you wish to visit"
+               required>
+      </div>
+
+      <div class="mb-3">
+        <label for="visaType">Visa Type</label>
+        <select id="visaType" name="visaType"
+                class="form-select" required>
+          <option value="">Select Visa Type</option>
+          <option>Tourist / Visit Visa</option>
+          <option>Business Visa</option>
+          <option>Student Visa</option>
+          <option>Work Visa</option>
+          <option>Family / Dependent Visa</option>
+          <option>Transit Visa</option>
+          <option>Visa Stamping</option>
+          <option>Other / Not Sure</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="applicants">No. of Applicants</label>
+          <input type="number" id="applicants"
+                 name="applicants" class="form-control"
+                 min="1" max="100" value="1" required>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="travelDate">Expected Travel Date</label>
+          <input type="date" id="travelDate"
+                 name="travelDate" class="form-control">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="details">Other Details</label>
+        <textarea id="details" name="details"
+                  class="form-control" rows="4"
+                  placeholder="Tell us about your visa requirements"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100">
+        Submit Visa Enquiry
+      </button>
+
+      <p class="text-muted small text-center mt-3 mb-0">
+        AL-MIRAAJ International | Visa Assistance Services
+      </p>
+
+    </form>
+  </div>
+</div>
+
+<style>
+.visa-form-container {
+  max-width: 650px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.visa-form-heading {
+  padding: 13px 16px;
+  border-bottom: 1px solid #ddd;
+  font-size: 17px;
+  font-weight: 700;
+  color: #444;
+}
+
+.visa-enquiry-form {
+  padding: 15px;
+}
+
+.visa-enquiry-form label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 13px;
+  color: #777;
+}
+
+.visa-enquiry-form .form-control,
+.visa-enquiry-form .form-select {
+  min-height: 38px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.visa-enquiry-form textarea.form-control {
+  min-height: 90px;
+}
+
+.visa-enquiry-form .btn-primary {
+  background-color: #087cf0;
+  border-color: #087cf0;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 9px;
+}
+
+.visa-enquiry-form .btn-primary:hover {
+  background-color: #0565c5;
+}
+</style>
 
 
     </div>
