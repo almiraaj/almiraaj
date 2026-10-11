@@ -912,8 +912,169 @@
     </div>
   </div>
 </section>
+<!-- Visa Services Inquiry Modal -->
+<div class="modal fade" id="inquiryModal" tabindex="-1"
+     aria-labelledby="inquiryModalLabel" aria-hidden="true">
 
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
 
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="inquiryModalLabel">
+          Visa Services Inquiry Form
+        </h5>
+        <button type="button" class="btn-close"
+                data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+
+        <form id="visaForm"
+              action="https://formspree.io/f/xqegnwjq"
+              method="POST">
+
+          <!-- Name -->
+          <div class="mb-3">
+            <label for="visaName" class="form-label">Full Name</label>
+            <input type="text" class="form-control"
+                   id="visaName" name="name"
+                   placeholder="Enter your full name" required>
+          </div>
+
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="visaEmail" class="form-label">Email Address</label>
+            <input type="email" class="form-control"
+                   id="visaEmail" name="_replyto"
+                   placeholder="Enter your email address" required>
+          </div>
+
+          <!-- Phone Number -->
+          <div class="mb-3">
+            <label for="visaPhone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control"
+                   id="visaPhone" name="phone"
+                   placeholder="Enter your phone number"
+                   autocomplete="tel" required>
+          </div>
+
+          <!-- Destination Country -->
+          <div class="mb-3">
+            <label for="visaDestination" class="form-label">
+              Destination Country
+            </label>
+            <input type="text" class="form-control"
+                   id="visaDestination" name="destination_country"
+                   placeholder="e.g. Canada, USA, UK, Australia" required>
+          </div>
+
+          <!-- Purpose of Visit -->
+          <div class="mb-3">
+            <label for="visaPurpose" class="form-label">
+              Purpose of Visit
+            </label>
+            <select class="form-select" id="visaPurpose"
+                    name="purpose_of_visit" required>
+              <option value="" selected disabled>
+                Select purpose of visit
+              </option>
+              <option value="Tourism / Holiday">Tourism / Holiday</option>
+              <option value="Business">Business</option>
+              <option value="Study">Study</option>
+              <option value="Work / Employment">Work / Employment</option>
+              <option value="Family / Friends Visit">Family / Friends Visit</option>
+              <option value="Medical Treatment">Medical Treatment</option>
+              <option value="Transit">Transit</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <!-- Other Details -->
+          <div class="mb-3">
+            <label for="visaDetails" class="form-label">
+              Other Details (If Any)
+            </label>
+            <textarea class="form-control" id="visaDetails"
+                      name="other_details" rows="4"
+                      placeholder="Tell us about your visa requirements, travel dates, or any questions..."></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary w-100"
+                  id="visaSubmitBtn">
+            Submit Visa Inquiry
+          </button>
+
+        </form>
+
+        <!-- Success Message -->
+        <div id="visaFormMessage"
+             class="alert alert-success mt-3 d-none" role="status">
+          ✅ Thank you! Your visa inquiry has been submitted successfully.
+          Our team will contact you soon.
+        </div>
+
+        <!-- Error Message -->
+        <div id="visaErrorMessage"
+             class="alert alert-danger mt-3 d-none" role="alert">
+          Sorry, something went wrong. Please try again.
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS (include only once if already loaded) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Visa Form Submission Script -->
+<script>
+  const visaForm = document.getElementById('visaForm');
+  const visaSuccess = document.getElementById('visaFormMessage');
+  const visaError = document.getElementById('visaErrorMessage');
+  const visaSubmitBtn = document.getElementById('visaSubmitBtn');
+
+  visaForm.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    visaSuccess.classList.add('d-none');
+    visaError.classList.add('d-none');
+
+    visaSubmitBtn.disabled = true;
+    visaSubmitBtn.textContent = 'Submitting...';
+
+    try {
+      const response = await fetch(visaForm.action, {
+        method: 'POST',
+        body: new FormData(visaForm),
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        visaForm.reset();
+        visaSuccess.classList.remove('d-none');
+      } else {
+        visaError.classList.remove('d-none');
+      }
+    } catch (error) {
+      visaError.classList.remove('d-none');
+    } finally {
+      visaSubmitBtn.disabled = false;
+      visaSubmitBtn.textContent = 'Submit Visa Inquiry';
+    }
+  });
+</script>
+
+<button type="button" class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#inquiryModal">
+  Apply for Visa Assistance
+</button>
 
 <!-- Visa Application Support Section -->
 <section class="py-5 bg-light">
