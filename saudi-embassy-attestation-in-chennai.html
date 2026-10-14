@@ -355,10 +355,72 @@
   </div>
 </section>
   
-
 <style>
+.saudi-section{
+    background:#f8fafc;
+    padding:40px 0;
+}
+
 .saudi-section .container{
     max-width:1200px;
+}
+
+.saudi-card{
+    background:#fff;
+    border-radius:18px;
+    border:1px solid #e9ecef;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    overflow:hidden;
+    height:100%;
+    transition:all .3s ease;
+}
+
+.saudi-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.saudi-card-header{
+    height:5px;
+    background:linear-gradient(90deg,#198754,#0d6efd);
+}
+
+.saudi-card-body{
+    padding:25px;
+}
+
+.saudi-card-title{
+    font-size:1.4rem;
+    font-weight:700;
+    margin-bottom:15px;
+    color:#0b3d6d;
+}
+
+.saudi-card p,
+.saudi-card li{
+    line-height:1.8;
+}
+
+.keyword-box{
+    background:#f8f9fa;
+    border-left:4px solid #198754;
+    padding:12px;
+    border-radius:8px;
+    margin-top:20px;
+    font-size:.92rem;
+}
+
+.sample-box{
+    background:#f8f9fa;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    padding:20px;
+}
+
+.sample-btn{
+    border-radius:30px;
+    padding:10px 22px;
+    font-weight:600;
 }
 
 body{
@@ -368,11 +430,11 @@ body{
 @media (max-width:768px){
 
     .saudi-card-body{
-        padding:15px;
+        padding:18px;
     }
 
     .saudi-card-title{
-        font-size:22px;
+        font-size:1.2rem;
     }
 
     .saudi-card p,
@@ -381,8 +443,12 @@ body{
         line-height:1.7;
     }
 
-    .row.g-4 > div{
-        margin-bottom:15px;
+    .sample-btn{
+        width:100%;
+    }
+
+    .keyword-box{
+        font-size:14px;
     }
 }
 </style>
