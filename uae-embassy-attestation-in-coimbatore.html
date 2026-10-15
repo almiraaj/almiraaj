@@ -290,7 +290,6 @@
 </div> <!-- Close navbar-collapse -->
 </div> <!-- Close container -->
 </nav>
-
 <!-- HERO BANNER -->
 <section class="hero-banner">
     <img
@@ -305,25 +304,26 @@
 /* HERO BANNER */
 .hero-banner{
     width:100%;
-    background:#fff;
-    overflow:hidden;
     margin:0;
     padding:0;
-    line-height:0;
+    overflow:hidden;
+    background:#ffffff;
+    text-align:center;
 }
 
+/* IMAGE */
 .hero-img{
     width:100%;
+    max-width:1920px;
     height:auto;
     display:block;
-    object-fit:contain;
+    margin:auto;
 }
 
-/* Large Screens */
+/* Desktop */
 @media (min-width:1200px){
     .hero-img{
         width:100%;
-        height:auto;
     }
 }
 
@@ -331,7 +331,6 @@
 @media (max-width:991px){
     .hero-img{
         width:100%;
-        height:auto;
     }
 }
 
@@ -344,7 +343,7 @@
     .hero-img{
         width:100%;
         height:auto;
-        object-fit:contain;
+        display:block;
     }
 }
 
@@ -356,7 +355,6 @@
     }
 }
 </style>
-
 
 <!-- Breadcrumbs -->
 <div class="ex-basic-1 py-3 bg-light border-bottom">
