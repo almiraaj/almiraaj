@@ -292,67 +292,31 @@
 </nav>
 
 <!-- HERO BANNER -->
-<section class="hero-banner">
-    <img
-        src="https://www.almiraaj.com/images/uae-embassy-attestation-in-coimbatore-tn.webp"
-        alt="UAE Embassy Attestation in Coimbatore"
-        class="hero-img"
-        loading="eager"
-        decoding="async">
-</section>
+<header id="hero"></header>
 
 <style>
-/* HERO BANNER */
-.hero-banner{
+#hero{
     width:100%;
-    background:#fff;
-    overflow:hidden;
-    margin:0;
-    padding:0;
-    line-height:0;
-}
-
-.hero-img{
-    width:100%;
-    height:auto;
-    display:block;
-    object-fit:contain;
-}
-
-/* Large Screens */
-@media (min-width:1200px){
-    .hero-img{
-        width:100%;
-        height:auto;
-    }
+    height:650px;
+    background-image:url('https://www.almiraaj.com/images/uae-embassy-attestation-in-coimbatore-wide.webp');
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:100% auto;
 }
 
 /* Tablet */
 @media (max-width:991px){
-    .hero-img{
-        width:100%;
-        height:auto;
+    #hero{
+        height:450px;
     }
 }
 
 /* Mobile */
 @media (max-width:768px){
-    .hero-banner{
-        padding:0;
-    }
-
-    .hero-img{
-        width:100%;
-        height:auto;
-        object-fit:contain;
-    }
-}
-
-/* Small Mobile */
-@media (max-width:480px){
-    .hero-img{
-        width:100%;
-        height:auto;
+    #hero{
+        height:250px;
+        background-size:100% auto;
+        background-position:center center;
     }
 }
 </style>
