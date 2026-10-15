@@ -299,28 +299,37 @@
         loading="eager"
         decoding="async">
 </section>
+<!-- HERO BANNER -->
+<section class="hero-banner">
+    <img
+        src="https://www.almiraaj.com/images/uae-digital-attestation.webp"
+        alt="UAE Embassy Attestation in Coimbatore"
+        class="hero-img"
+        loading="eager"
+        decoding="async">
+</section>
 
 <style>
-/* HERO BANNER */
+
+/* FULL WIDTH HERO BANNER */
 .hero-banner{
-    width:100%;
-    margin:0;
+    width:100vw;
+    margin-left:calc(50% - 50vw);
+    margin-right:calc(50% - 50vw);
     padding:0;
-    overflow:hidden;
     background:#ffffff;
-    text-align:center;
+    overflow:hidden;
 }
 
 /* IMAGE */
 .hero-img{
-    width:100%;
-    max-width:1920px;
-    height:auto;
     display:block;
-    margin:auto;
+    width:100%;
+    height:auto;
+    max-width:100%;
 }
 
-/* Desktop */
+/* Large Desktop */
 @media (min-width:1200px){
     .hero-img{
         width:100%;
@@ -331,19 +340,21 @@
 @media (max-width:991px){
     .hero-img{
         width:100%;
+        height:auto;
     }
 }
 
 /* Mobile */
 @media (max-width:768px){
     .hero-banner{
-        padding:0;
+        width:100%;
+        margin-left:0;
+        margin-right:0;
     }
 
     .hero-img{
         width:100%;
         height:auto;
-        display:block;
     }
 }
 
@@ -354,12 +365,8 @@
         height:auto;
     }
 }
-</style>
-.hero-banner{
-    width:100vw;
-    margin-left:calc(50% - 50vw);
-}
 
+</style>
 <!-- Breadcrumbs -->
 <div class="ex-basic-1 py-3 bg-light border-bottom">
   <div class="container">
