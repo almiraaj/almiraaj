@@ -291,87 +291,54 @@
 </div> <!-- Close container -->
 </nav>
 
-<!-- HERO SECTION -->
-<section class="hero-section">
-
+<!-- Hero Banner -->
+<section class="hero-banner">
     <img
         src="https://www.almiraaj.com/images/uae-embassy-attestation-in-coimbatore-tn.webp"
         alt="UAE Embassy Attestation in Coimbatore"
-        class="hero-image"
+        class="hero-img"
         loading="eager"
     >
-
-    <div class="hero-overlay"></div>
-
 </section>
 
 <style>
-/* HERO SECTION */
-.hero-section{
-    position:relative;
+.hero-banner{
     width:100%;
     overflow:hidden;
     background:#fff;
+    line-height:0;
 }
 
-/* IMAGE */
-.hero-image{
+.hero-img{
     width:100%;
     height:auto;
     display:block;
 }
 
-/* OVERLAY */
-.hero-overlay{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.10);
-    pointer-events:none;
-}
-
-/* LARGE DESKTOP */
-@media (min-width:1400px){
-    .hero-image{
-        width:100%;
-        height:auto;
-    }
-}
-
-/* DESKTOP */
-@media (min-width:992px) and (max-width:1399px){
-    .hero-image{
-        width:100%;
-        height:auto;
-    }
-}
-
-/* TABLET */
+/* Tablets */
 @media (max-width:991px){
-    .hero-image{
+    .hero-img{
         width:100%;
         height:auto;
     }
 }
 
-/* MOBILE */
+/* Mobile */
 @media (max-width:768px){
-    .hero-section{
-        background:#fff;
+    .hero-banner{
+        padding:0;
     }
 
-    .hero-image{
+    .hero-img{
         width:100%;
         height:auto;
         object-fit:contain;
     }
 }
 
-/* SMALL MOBILE */
+/* Small Mobile */
 @media (max-width:480px){
-    .hero-image{
+    .hero-img{
         width:100%;
         height:auto;
     }
