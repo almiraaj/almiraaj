@@ -291,21 +291,24 @@
 </div> <!-- Close container -->
 </nav>
 
-<!-- Hero Banner -->
+<!-- HERO BANNER -->
 <section class="hero-banner">
     <img
         src="https://www.almiraaj.com/images/uae-embassy-attestation-in-coimbatore-tn.webp"
         alt="UAE Embassy Attestation in Coimbatore"
         class="hero-img"
         loading="eager"
-    >
+        decoding="async">
 </section>
 
 <style>
+/* HERO BANNER */
 .hero-banner{
     width:100%;
-    overflow:hidden;
     background:#fff;
+    overflow:hidden;
+    margin:0;
+    padding:0;
     line-height:0;
 }
 
@@ -313,9 +316,18 @@
     width:100%;
     height:auto;
     display:block;
+    object-fit:contain;
 }
 
-/* Tablets */
+/* Large Screens */
+@media (min-width:1200px){
+    .hero-img{
+        width:100%;
+        height:auto;
+    }
+}
+
+/* Tablet */
 @media (max-width:991px){
     .hero-img{
         width:100%;
