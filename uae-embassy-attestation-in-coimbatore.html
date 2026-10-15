@@ -293,41 +293,65 @@
 
 
 
-
-<!-- Spacer for layout -->
-<div class="my-5"></div>
 <!-- Hero Section -->
-<header id="hero" style="
-  position: relative;
-  min-height: 100vh;
-  background: url('https://www.almiraaj.com/images/uae-embassy-attestation-in-coimbatore-tn.webp') no-repeat center center;
-  background-size: cover;
-">
-  <!-- Overlay -->
-  <div style="
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.55);
-    z-index: 1;
-  "></div>
-
-  <!-- Centered Content -->
-
+<header id="hero">
+    <div class="hero-overlay"></div>
 </header>
 
 <style>
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -65%);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
+#hero{
+    position:relative;
+    min-height:70vh;
+    background-image:url('https://www.almiraaj.com/images/uae-embassy-attestation-in-coimbatore-tn.webp');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* Dark Overlay */
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.55);
+}
+
+/* Desktop */
+@media (min-width:992px){
+    #hero{
+        min-height:80vh;
+    }
+}
+
+/* Mobile */
+@media (max-width:768px){
+    #hero{
+        min-height:40vh;
+        background-position:center center;
+        background-size:cover;
+    }
+}
+
+/* Small Mobile */
+@media (max-width:480px){
+    #hero{
+        min-height:35vh;
+    }
+}
+
+@keyframes fadeInUp{
+    0%{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 </style>
-
 <!-- Breadcrumbs -->
 <div class="ex-basic-1 py-3 bg-light border-bottom">
   <div class="container">
