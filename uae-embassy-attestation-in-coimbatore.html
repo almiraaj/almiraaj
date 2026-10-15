@@ -292,31 +292,67 @@
 </nav>
 
 <!-- HERO BANNER -->
-<header id="hero"></header>
+<section class="hero-banner">
+    <img
+        src="https://www.almiraaj.com/images/uae-embassy-attestation-in-coimbatore-tn.webp"
+        alt="UAE Embassy Attestation in Coimbatore"
+        class="hero-img"
+        loading="eager"
+        decoding="async">
+</section>
 
 <style>
-#hero{
+/* HERO BANNER */
+.hero-banner{
     width:100%;
-    height:650px;
-    background-image:url('https://www.almiraaj.com/images/uae-embassy-attestation-in-coimbatore-wide.webp');
-    background-repeat:no-repeat;
-    background-position:center center;
-    background-size:100% auto;
+    background:#fff;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    line-height:0;
+}
+
+.hero-img{
+    width:100%;
+    height:auto;
+    display:block;
+    object-fit:contain;
+}
+
+/* Large Screens */
+@media (min-width:1200px){
+    .hero-img{
+        width:100%;
+        height:auto;
+    }
 }
 
 /* Tablet */
 @media (max-width:991px){
-    #hero{
-        height:450px;
+    .hero-img{
+        width:100%;
+        height:auto;
     }
 }
 
 /* Mobile */
 @media (max-width:768px){
-    #hero{
-        height:250px;
-        background-size:100% auto;
-        background-position:center center;
+    .hero-banner{
+        padding:0;
+    }
+
+    .hero-img{
+        width:100%;
+        height:auto;
+        object-fit:contain;
+    }
+}
+
+/* Small Mobile */
+@media (max-width:480px){
+    .hero-img{
+        width:100%;
+        height:auto;
     }
 }
 </style>
