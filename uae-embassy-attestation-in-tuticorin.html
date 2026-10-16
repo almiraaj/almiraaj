@@ -322,33 +322,63 @@
     <i class="fab fa-whatsapp fa-2x text-success"></i>
   </a>
 </div>
-
 <!-- Corporate-Style Header -->
 <header id="header" class="ex-header text-center py-5" style="position: relative; overflow: hidden;">
+
   <div style="position: relative;">
-    <img src="https://www.almiraaj.com/images/uae-embassy-attestation-in-tuticorin.webp" 
-         alt="UAE Embassy Attestation - Almiraaj International" 
-         class="img-fluid w-100" 
-         style="filter: brightness(50%);" />
 
-    <!-- Overlay -->
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
-                background: rgba(0, 0, 0, 0.4); z-index: 1;"></div>
+    <!-- Background Image -->
+    <img
+      src="https://www.almiraaj.com/images/uae-embassy-attestation-in-tuticorin.webp"
+      alt="UAE Embassy Attestation - Almiraaj International"
+      class="img-fluid w-100"
+      style="width:100%; height:auto; filter: brightness(105%) contrast(105%) saturate(110%);"
+    />
 
-    <!-- Centered Text (empty, no background box) -->
-<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-            z-index: 2; color: #fff; text-align: center;">
-  <!-- Intentionally left blank -->
-</div>
+    <!-- Light Overlay -->
+    <div
+      style="
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,0.15);
+        z-index:1;
+      ">
+    </div>
+
+    <!-- Centered Content -->
+    <div
+      style="
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        z-index:2;
+        color:#ffffff;
+        text-align:center;
+        animation:fadeInUp 1s ease-out;
+      ">
+
+      <!-- Add Heading Here If Needed -->
+
+    </div>
 
   </div>
-</header>
 
+</header>
 
 <style>
 @keyframes fadeInUp {
-  0% { opacity: 0; transform: translate(-50%, -60%); }
-  100% { opacity: 1; transform: translate(-50%, -50%); }
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
 </style>
 
