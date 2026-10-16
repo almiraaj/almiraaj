@@ -284,64 +284,88 @@
 <!-- Spacer for layout -->
 <div class="my-5"></div>
 
+<!-- Premium Corporate Header -->
+<header id="header" class="ex-header text-center py-5" style="position:relative;overflow:hidden;">
 
-<!-- Corporate-Style Header with Enhanced Readability -->
-<header id="header" class="ex-header text-center py-5" style="position: relative; overflow: hidden;">
-  <div style="position: relative;">
-    <img 
-      src="https://www.almiraaj.com/images/degree-attestation-embassy.png" 
-      alt="Degree Certificate Attestation - Almiraaj International" 
-      class="img-fluid w-100" 
-      style="filter: brightness(50%);" />
+    <!-- Background Image -->
+    <img
+        src="https://www.almiraaj.com/images/degree-attestation-embassy.png"
+        alt="Degree Certificate Attestation Chennai"
+        class="img-fluid w-100"
+        style="
+            width:100%;
+            height:auto;
+            filter: brightness(85%) contrast(110%) saturate(115%);
+        ">
 
-    <!-- Overlay for better text contrast -->
+    <!-- Light Gradient Overlay -->
     <div style="
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.4);
-      z-index: 1;
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background:linear-gradient(
+            rgba(0,0,0,0.20),
+            rgba(0,0,0,0.40)
+        );
+        z-index:1;
     "></div>
 
-    <!-- Centered Text Block -->
+    <!-- Content -->
     <div style="
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2;
-      color: #fff;
-      padding: 1rem 2rem;
-      background: rgba(0, 0, 0, 0.5);
-      border-radius: 8px;
-      backdrop-filter: blur(4px);
-      text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
-      animation: fadeInUp 1.2s ease-out;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        z-index:2;
+        width:90%;
+        max-width:850px;
+        padding:20px 30px;
+        background:rgba(0,0,0,0.35);
+        backdrop-filter:blur(8px);
+        border-radius:15px;
+        border:1px solid rgba(255,255,255,0.15);
+        box-shadow:0 10px 30px rgba(0,0,0,0.25);
+        animation:fadeInUp 1s ease-out;
     ">
-      <h1 class="display-5 fw-bold mb-2">Degree Certificate Attestation in Chennai</h1>
-      <p class="lead mb-0">Doorstep Service by <strong>Almiraaj International</strong></p>
-    </div>
-  </div>
-</header>
 
+        <h1 style="
+            color:#fff;
+            font-size:clamp(2rem,4vw,3.5rem);
+            font-weight:700;
+            margin-bottom:10px;
+            text-shadow:2px 2px 12px rgba(0,0,0,0.6);
+        ">
+            Degree Certificate Attestation in Chennai
+        </h1>
+
+        <p style="
+            color:#fff;
+            font-size:1.15rem;
+            margin:0;
+            text-shadow:1px 1px 8px rgba(0,0,0,0.6);
+        ">
+            Fast, Secure & Doorstep Service by
+            <strong style="color:#FFD166;">Almiraaj International</strong>
+        </p>
+
+    </div>
+
+</header>
 
 <style>
 @keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -60%);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
+    from {
+        opacity:0;
+        transform:translate(-50%,-45%);
+    }
+    to {
+        opacity:1;
+        transform:translate(-50%,-50%);
+    }
 }
 </style>
-
-
-
 <!-- Breadcrumbs -->
 <div class="ex-basic-1">
     <div class="container">
