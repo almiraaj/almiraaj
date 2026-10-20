@@ -398,64 +398,32 @@ GERMANY APOSTILLE SECTION
 }
 
 /* Cards */
+
+
 .germany-card{
     background:#fff;
-    border:2px solid #e5eaf1;
-    border-top:6px solid #198754;
+    border:2px solid #dbe7f5;
     border-radius:18px;
-    padding:28px;
-    height:100%;
-    box-shadow:0 8px 25px rgba(0,0,0,.06);
-    transition:all .3s ease;
+    padding:30px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.3s;
+    overflow:hidden;
+    position:relative;
+}
+
+.germany-card:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:6px;
+    background:linear-gradient(90deg,#198754,#0d6efd);
 }
 
 .germany-card:hover{
-    transform:translateY(-6px);
-    border-color:#0d6efd;
-    box-shadow:0 18px 35px rgba(0,0,0,.12);
-}
-
-.germany-card h4{
-    color:#198754;
-    font-size:24px;
-    font-weight:700;
-    margin-bottom:15px;
-}
-
-.germany-card p{
-    color:#222;
-    line-height:1.8;
-}
-
-.germany-card ul{
-    padding-left:20px;
-    margin-bottom:0;
-}
-
-.germany-card ul li{
-    color:#222;
-    line-height:1.9;
-    margin-bottom:7px;
-}
-
-.germany-card strong{
-    color:#0d6efd;
-}
-
-.germany-seo{
-    display:none;
-}
-
-@media(max-width:768px){
-
-.germany-header h2{
-    font-size:28px;
-}
-
-.germany-card{
-    margin-bottom:20px;
-}
-
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
 }
 </style>
 
