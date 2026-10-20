@@ -434,148 +434,57 @@
 </section>
 
 
- <hr><style>
+ <hr><style><style>
 .ssc-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:repeat(2,minmax(0,1fr));
     gap:20px;
-    margin-top:25px;
+    margin:30px 0;
 }
 
 .ssc-card{
     background:#fff;
-    border-radius:16px;
-    padding:25px;
-    border:1px solid #e5e7eb;
-    box-shadow:0 6px 20px rgba(0,0,0,.08);
+    border:1px solid #dde7f2;
+    border-top:4px solid #1e88e5;
+    border-radius:14px;
+    padding:22px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
     transition:all .3s ease;
-    position:relative;
-    overflow:hidden;
-}
-
-.ssc-card::before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:5px;
-    background:linear-gradient(90deg,#007bff,#00c6ff);
-}
-
-.ssc-card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 12px 30px rgba(0,0,0,.15);
-}
-
-.ssc-card h3{
-    color:#0d3b66;
-    margin-bottom:15px;
-    font-size:1.3rem;
-}
-
-.ssc-card p{
-    color:#555;
-    line-height:1.8;
-}
-
-.ssc-card ul{
-    padding-left:20px;
-}
-
-.ssc-card ul li{
-    margin-bottom:8px;
-    line-height:1.7;
-}
-
-.quote-card{
-    background:linear-gradient(135deg,#0d3b66,#0056b3);
-    color:#fff;
-}
-
-.quote-card h3,
-.quote-card p{
-    color:#fff;
-}
-
-.highlight{
-    color:#007bff;
-    font-weight:700;
-}
-
-.country-tags{
-    display:flex;
-    flex-wrap:wrap;
-    gap:8px;
-    margin-top:10px;
-}
-
-.country-tags span{
-    background:#eef6ff;
-    color:#0056b3;
-    padding:7px 12px;
-    border-radius:30px;
-    font-size:13px;
-    font-weight:600;
-}
-.ssc-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:24px;
-    margin-top:30px;
-}
-
-.ssc-card{
-    background:#fff;
-    border-radius:18px;
-    padding:28px;
-    border:1px solid #e5e7eb;
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-    transition:all .3s ease;
-    position:relative;
-    overflow:hidden;
     height:100%;
 }
 
-.ssc-card::before{
-    content:'';
-    position:absolute;
-    top:0;
-    left:0;
-    height:5px;
-    width:100%;
-    background:linear-gradient(90deg,#0078ff,#00c6ff);
-}
-
 .ssc-card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    transform:translateY(-4px);
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
 }
 
 .ssc-card h3{
-    font-size:28px;
+    font-size:22px;
+    font-weight:700;
     color:#0d3b66;
-    margin-bottom:18px;
-    line-height:1.3;
     text-align:center;
+    margin-bottom:15px;
+    line-height:1.4;
 }
 
 .ssc-card p{
-    font-size:17px;
-    line-height:1.9;
+    font-size:16px;
+    line-height:1.8;
     color:#444;
+    margin-bottom:0;
     text-align:justify;
 }
 
 .ssc-card ul{
-    margin:0;
     padding-left:22px;
+    margin-bottom:0;
 }
 
 .ssc-card ul li{
-    margin-bottom:12px;
     font-size:16px;
     line-height:1.8;
+    margin-bottom:8px;
+    color:#444;
 }
 
 .country-tags{
@@ -588,41 +497,58 @@
 .country-tags span{
     background:#eef5ff;
     color:#0056b3;
-    border-radius:40px;
+    border:1px solid #d9e8ff;
+    border-radius:30px;
     padding:8px 14px;
     font-size:14px;
     font-weight:600;
 }
 
-.quote-card{
+.tick-list{
+    list-style:none !important;
+    padding-left:0 !important;
+}
+
+.tick-list li{
+    padding:5px 0;
+}
+
+.tick-list li::before{
+    content:"✅ ";
+}
+
+.quote-banner{
     background:linear-gradient(135deg,#003366,#0056b3);
     color:#fff;
+    padding:25px;
+    border-radius:14px;
+    text-align:center;
+    font-size:18px;
+    font-style:italic;
+    font-weight:600;
+    margin-top:25px;
+    box-shadow:0 6px 20px rgba(0,0,0,.12);
 }
 
-.quote-card h3,
-.quote-card p{
-    color:#fff;
-}
-
-@media (max-width:991px){
+@media(max-width:992px){
 
     .ssc-grid{
         grid-template-columns:1fr;
+        gap:15px;
     }
 
     .ssc-card{
-        padding:22px;
+        padding:18px;
     }
 
     .ssc-card h3{
-        font-size:24px;
+        font-size:20px;
     }
 
     .ssc-card p,
     .ssc-card ul li{
         font-size:15px;
     }
-
 }
 </style>
 
