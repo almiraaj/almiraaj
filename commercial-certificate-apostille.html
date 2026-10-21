@@ -355,6 +355,41 @@ COMPLETE REPLACEMENT CODE
 .breadcrumbs a{
     text-decoration:none;
 }
+.hero-section{
+    width:100%;
+    overflow:hidden;
+}
+
+.hero-banner{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:0;
+    object-fit:cover;
+}
+
+/* Desktop */
+@media (min-width:992px){
+    .hero-banner{
+        max-height:500px;
+    }
+}
+
+/* Tablet */
+@media (max-width:991px){
+    .hero-banner{
+        max-height:350px;
+    }
+}
+
+/* Mobile */
+@media (max-width:576px){
+    .hero-banner{
+        max-height:220px;
+        object-position:center;
+    }
+}
+
 </style>
 
 <!-- Hero Section -->
