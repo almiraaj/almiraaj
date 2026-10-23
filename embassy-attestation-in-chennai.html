@@ -734,6 +734,84 @@
     </button>
 </div>
 </div>
+<div class="modal fade" id="otherCountryModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title">
+          Embassy Attestation Assistance Request
+        </h5>
+        <button type="button" class="btn-close btn-close-white"
+          data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <form action="https://formspree.io/f/xqegnwjq" method="POST">
+
+          <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control"
+              name="Full Name" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Phone Number</label>
+            <input type="tel" class="form-control"
+              name="Phone Number" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control"
+              name="Email Address">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Document Type</label>
+            <select class="form-select"
+              name="Document Type" required>
+              <option value="">Select</option>
+              <option>Degree Certificate</option>
+              <option>Diploma Certificate</option>
+              <option>Birth Certificate</option>
+              <option>Marriage Certificate</option>
+              <option>PCC</option>
+              <option>Commercial Document</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Destination Country</label>
+            <input type="text" class="form-control"
+              name="Destination Country"
+              placeholder="Example: Germany, France, Japan"
+              required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">
+              Message / Additional Requirements
+            </label>
+
+            <textarea class="form-control"
+              rows="4"
+              name="Message"></textarea>
+          </div>
+
+          <button type="submit"
+            class="btn btn-success w-100">
+            Submit Request
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
 </section>
    <!-- end of button-container -->
     <!-- end of card -->
