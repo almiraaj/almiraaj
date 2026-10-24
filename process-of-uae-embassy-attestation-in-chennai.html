@@ -289,57 +289,52 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
-    body {
-      background-color: #f8f9fa;
-      font-family: 'Segoe UI', sans-serif;
-    }
-    h2, h3 {
-      font-weight: 700;
-    }
-    .accordion-button {
-      font-size: 1rem;
-      font-weight: 600;
-    }
-    .accordion-body {
-      background-color: #ffffff;
-      border-radius: 0 0 0.5rem 0.5rem;
-      padding: 1rem;
-    }
-    .accordion-item {
-      border-radius: 0.5rem;
-      overflow: hidden;
-    }
-    .accordion-item + .accordion-item {
-      margin-top: 1rem;
-    }
-  </style>
-</head>
-<body>
+#header {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
 
-<!-- Corporate-Style Header -->
-<header id="header" class="ex-header text-center py-5" style="position: relative; overflow: hidden;">
-  <div style="position: relative;">
-    <img 
-      src="https://www.almiraaj.com/images/uae-doorstep.webp" 
-      alt="Certificate collection and delivery service with a smile in Chennai – UAE Embassy Attestation by Almiraaj International" 
-      class="img-fluid w-100" 
-      style="filter: brightness(50%);" 
-      loading="lazy" />
-    <!-- Overlay -->
-    <div style="position:absolute;top:0;left:0;width:100%;height:100%;
-                background:rgba(0,0,0,0.4);z-index:1;"></div>
+#header img{
+    transition:transform .6s ease;
+}
 
-    <!-- Centered Text Block -->
-    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-                z-index:2;color:#fff;padding:1rem 2rem;background:rgba(0,0,0,0.5);
-                border-radius:8px;backdrop-filter:blur(4px);
-                text-shadow:1px 1px 6px rgba(0,0,0,0.7);
-                animation: fadeInUp 1.2s ease-out;">
-      <h1 class="display-5 fw-bold mb-2">UAE Embassy Attestation </h1>
-      <p class="lead mb-0">Door-Step Collection & Delivery</p>
-    </div>
-  </div>
+#header:hover img{
+    transform:scale(1.02);
+}
+</style>
+<!-- Premium Corporate Header -->
+<header id="header" class="ex-header" style="position:relative; overflow:hidden;">
+
+    <img
+        src="https://www.almiraaj.com/images/uae-doorstep.webp"
+        alt="UAE Embassy Attestation Chennai"
+        class="img-fluid w-100"
+        loading="lazy"
+        style="
+            width:100%;
+            min-height:420px;
+            object-fit:cover;
+            display:block;
+        "
+    >
+
+    <!-- Premium Gradient Overlay -->
+    <div style="
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background:
+            linear-gradient(
+                90deg,
+                rgba(0,28,61,0.75) 0%,
+                rgba(0,28,61,0.40) 50%,
+                rgba(0,28,61,0.15) 100%
+            );
+    "></div>
+
 </header>
+
 
 <!-- Breadcrumbs -->
 <div class="ex-basic-1">
