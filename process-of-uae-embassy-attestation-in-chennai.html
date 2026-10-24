@@ -288,59 +288,126 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <style>
-    body {
-      background-color: #f8f9fa;
-      font-family: 'Segoe UI', sans-serif;
-    }
-    h2, h3 {
-      font-weight: 700;
-    }
-    .accordion-button {
-      font-size: 1rem;
-      font-weight: 600;
-    }
-    .accordion-body {
-      background-color: #ffffff;
-      border-radius: 0 0 0.5rem 0.5rem;
-      padding: 1rem;
-    }
-    .accordion-item {
-      border-radius: 0.5rem;
-      overflow: hidden;
-    }
-    .accordion-item + .accordion-item {
-      margin-top: 1rem;
-    }
-  </style>
-</head>
-<body>
+  <!-- Premium Corporate Header -->
+<header id="header" class="position-relative overflow-hidden">
 
-<!-- Corporate-Style Header -->
-<header id="header" class="ex-header text-center py-5" style="position: relative; overflow: hidden;">
-  <div style="position: relative;">
-    <img 
-      src="https://www.almiraaj.com/images/uae-doorstep.webp" 
-      alt="Certificate collection and delivery service with a smile in Chennai – UAE Embassy Attestation by Almiraaj International" 
-      class="img-fluid w-100" 
-      style="filter: brightness(50%);" 
-      loading="lazy" />
-    <!-- Overlay -->
-    <div style="position:absolute;top:0;left:0;width:100%;height:100%;
-                background:rgba(0,0,0,0.4);z-index:1;"></div>
+    <img
+        src="https://www.almiraaj.com/images/uae-doorstep.webp"
+        alt="UAE Embassy Attestation in Chennai by Almiraaj International"
+        class="img-fluid w-100"
+        loading="lazy"
+        style="
+            width:100%;
+            min-height:420px;
+            object-fit:cover;
+            display:block;
+        "
+    >
 
-    <!-- Centered Text Block -->
-    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-                z-index:2;color:#fff;padding:1rem 2rem;background:rgba(0,0,0,0.5);
-                border-radius:8px;backdrop-filter:blur(4px);
-                text-shadow:1px 1px 6px rgba(0,0,0,0.7);
-                animation: fadeInUp 1.2s ease-out;">
-      <h1 class="display-5 fw-bold mb-2">UAE Embassy Attestation </h1>
-      <p class="lead mb-0">Door-Step Collection & Delivery</p>
+    <!-- Premium Text Area -->
+    <div class="hero-content">
+        <h1>UAE Embassy Attestation</h1>
+        <div class="gold-line"></div>
+        <p>Doorstep Collection & Delivery Service</p>
     </div>
-  </div>
+
 </header>
 
+<style>
+body{
+    background-color:#f8f9fa;
+    font-family:'Segoe UI',sans-serif;
+}
+
+h2,h3{
+    font-weight:700;
+}
+
+.accordion-button{
+    font-size:1rem;
+    font-weight:600;
+}
+
+.accordion-body{
+    background:#fff;
+    border-radius:0 0 .5rem .5rem;
+    padding:1rem;
+}
+
+.accordion-item{
+    border-radius:.5rem;
+    overflow:hidden;
+}
+
+.accordion-item + .accordion-item{
+    margin-top:1rem;
+}
+
+/* Hero Section */
+#header{
+    position:relative;
+}
+
+.hero-content{
+    position:absolute;
+    top:50%;
+    right:7%;
+    transform:translateY(-50%);
+    z-index:2;
+    text-align:left;
+    max-width:500px;
+}
+
+.hero-content h1{
+    color:#ffffff;
+    font-size:3.3rem;
+    font-weight:800;
+    line-height:1.15;
+    margin-bottom:12px;
+    text-shadow:0 3px 15px rgba(0,0,0,.35);
+}
+
+.hero-content p{
+    color:#f8f9fa;
+    font-size:1.25rem;
+    margin-bottom:0;
+    letter-spacing:.3px;
+}
+
+.gold-line{
+    width:90px;
+    height:4px;
+    background:#d4af37;
+    border-radius:30px;
+    margin:15px 0 20px;
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    #header img{
+        min-height:300px;
+    }
+
+    .hero-content{
+        right:5%;
+        left:5%;
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:2rem;
+    }
+
+    .gold-line{
+        margin:12px auto 18px;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+}
+</style>
 <!-- Breadcrumbs -->
 <div class="ex-basic-1">
   <div class="container">
