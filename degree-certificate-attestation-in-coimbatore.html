@@ -245,64 +245,48 @@
 </div> <!-- Close container -->
 </nav>
 
-
 <!-- Spacer for layout -->
 <div class="my-5"></div>
+<!-- Premium Corporate Header -->
+<header id="header" class="ex-header text-center py-5" style="position:relative;overflow:hidden;">
 
+    <!-- Background Image -->
+    <img
+        src="https://www.almiraaj.com/images/degree-attestation-embassy.png"
+        alt="Degree Certificate Attestation Coimbatore"
+        class="img-fluid w-100"
+        style="
+            width:100%;
+            height:auto;
+            filter: brightness(85%) contrast(110%) saturate(115%);
+        " />
 
-
-<!-- Corporate-Style Header with Enhanced Readability -->
-<header id="header" class="ex-header text-center py-5" style="position: relative; overflow: hidden;">
-  <div style="position: relative;">
-    <img 
-      src="https://www.almiraaj.com/images/degree-attestation-chennai.webp" 
-      alt="Certificate Attestation Agency-Chennai" 
-      class="img-fluid w-100" 
-      style="filter: brightness(50%);" />
-
-    <!-- Overlay for better text contrast -->
+    <!-- Light Gradient Overlay -->
     <div style="
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.4);
-      z-index: 1;
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background:linear-gradient(
+            rgba(0,0,0,0.20),
+            rgba(0,0,0,0.40)
+        );
+        z-index:1;
     "></div>
 
-    <!-- Centered Text Block -->
-    <div style="
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2;
-      color: #fff;
-      padding: 1rem 2rem;
-      background: rgba(0, 0, 0, 0.5);
-      border-radius: 8px;
-      backdrop-filter: blur(4px);
-      text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
-      animation: fadeInUp 1.2s ease-out;
-    ">
-    <br><br><br>
-      <h1 class="display-5 fw-bold mb-2">Certificate Attestation in Coimbatore</h1>
-      <p class="lead mb-0">At Your Doorstep by <strong>Almiraaj International</strong></p>
-    </div>
-  </div>
 </header>
 
 <style>
 @keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -60%);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
+    from {
+        opacity:0;
+        transform:translate(-50%,-45%);
+    }
+    to {
+        opacity:1;
+        transform:translate(-50%,-50%);
+    }
 }
 </style>
 
