@@ -658,7 +658,113 @@
             </div>
         </div>
     </div>
+<!-- Apostille Assistance Modal -->
 
+<div class="modal fade" id="otherCertificateModal" tabindex="-1" aria-labelledby="otherCertificateModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title" id="otherCertificateModalLabel">
+          Certificate Apostille Assistance Request
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <form action="https://formspree.io/f/xqegnwjq" method="POST">
+
+          <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" name="Full Name" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" name="Phone Number" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control" name="Email Address">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Certificate Type</label>
+            <select class="form-select" name="Certificate Type" required>
+              <option value="">Select Certificate</option>
+
+              <option>Degree Certificate</option>
+              <option>Birth Certificate</option>
+              <option>Marriage Certificate</option>
+              <option>Divorce Certificate</option>
+              <option>Single Status Certificate</option>
+              <option>Police Clearance Certificate (PCC)</option>
+              <option>Power of Attorney</option>
+              <option>Legal Heir Certificate</option>
+              <option>Death Certificate</option>
+              <option>Affidavit</option>
+              <option>Medical Certificate</option>
+              <option>Experience Certificate</option>
+
+              <option>Other Certificate</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Destination Country</label>
+            <input type="text"
+                   class="form-control"
+                   name="Destination Country"
+                   placeholder="Example: Germany, France, Italy, Netherlands"
+                   required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Purpose of Apostille</label>
+            <select class="form-select" name="Purpose of Apostille">
+              <option value="">Select Purpose</option>
+              <option>Employment</option>
+              <option>Higher Education</option>
+              <option>Family Visa</option>
+              <option>Dependent Visa</option>
+              <option>Immigration</option>
+              <option>Permanent Residency (PR)</option>
+              <option>Marriage Registration Abroad</option>
+              <option>Business Purpose</option>
+              <option>Property Matter</option>
+              <option>Legal Formalities</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">
+              Message / Additional Requirements
+            </label>
+            <textarea
+              class="form-control"
+              rows="4"
+              name="Message"
+              placeholder="Mention certificate details, country and any special requirements"></textarea>
+          </div>
+
+          <input type="hidden"
+                 name="Service"
+                 value="Certificate Apostille Services in Coimbatore">
+
+          <button type="submit" class="btn btn-success w-100">
+            Submit Apostille Request
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+</div>
 </div>
 
 <div class="text-center mt-5">
