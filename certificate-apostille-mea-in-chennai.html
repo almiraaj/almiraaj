@@ -725,30 +725,21 @@ CORPORATE INFORMATION CARDS
 
             </div>
 <script>
+jQuery(document).ready(function($){
 
-document.addEventListener("DOMContentLoaded", function(){
+    $("#apostilleToggle").click(function(){
 
-    const btn = document.getElementById("apostilleToggle");
-    const sample = document.getElementById("apostilleSample");
+        $("#apostilleSample").toggleClass("show");
 
-    btn.addEventListener("click", function(){
-
-        sample.classList.toggle("show");
-
-        if(sample.classList.contains("show")){
-
-            btn.innerHTML = "📜 Hide Apostille Sample";
-
+        if($("#apostilleSample").hasClass("show")){
+            $(this).html("📜 Hide Apostille Sample");
         }else{
-
-            btn.innerHTML = "📜 View Apostille Sample";
-
+            $(this).html("📜 View Apostille Sample");
         }
 
     });
 
 });
-
 </script>
         </div>
     </div>
