@@ -766,7 +766,232 @@ CORPORATE INFORMATION CARDS
 
         </div>
     </div>
+<style>
 
+/* =========================================================
+UNIFORM CORPORATE CARDS
+========================================================= */
+
+.mea-services-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:24px;
+    margin:30px 0;
+}
+
+/* SERVICE CARDS + INFO CARDS */
+
+.premium-card,
+.corporate-card{
+    background:#fff;
+    border:1px solid #dbe5f0;
+    border-radius:14px;
+    overflow:hidden;
+    height:100%;
+    box-shadow:0 5px 15px rgba(0,0,0,.07);
+    transition:.3s ease;
+}
+
+.premium-card:hover,
+.corporate-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 25px rgba(0,0,0,.12);
+}
+
+/* =========================================================
+HEADERS
+========================================================= */
+
+.service-blue,
+.service-green,
+.card-header-corp{
+    background:linear-gradient(135deg,#0b4f82,#0d6efd);
+    color:#fff;
+    padding:16px 18px;
+    text-align:center;
+}
+
+.card-header-corp h2,
+.service-header h3{
+    margin:8px 0 0;
+    color:#fff;
+    font-size:1.2rem;
+    font-weight:700;
+    line-height:1.4;
+}
+
+/* =========================================================
+ICONS
+========================================================= */
+
+.mea-service-icon{
+    width:55px;
+    height:55px;
+    margin:0 auto 12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:rgba(255,255,255,.18);
+    color:#fff;
+    font-size:24px;
+    font-weight:700;
+}
+
+/* =========================================================
+TAGS
+========================================================= */
+
+.mea-service-tag{
+    display:inline-block;
+    padding:5px 12px;
+    border-radius:30px;
+    background:rgba(255,255,255,.15);
+    color:#fff;
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:.7px;
+    text-transform:uppercase;
+}
+
+/* =========================================================
+CONTENT
+========================================================= */
+
+.mea-service-content,
+.card-content-corp{
+    padding:18px;
+}
+
+.mea-service-content p,
+.card-content-corp p{
+    margin-bottom:10px;
+    color:#555;
+    font-size:14px;
+    line-height:1.6;
+}
+
+.mea-service-content strong,
+.card-content-corp strong{
+    color:#17375e;
+}
+
+/* =========================================================
+LISTS
+========================================================= */
+
+.card-content-corp ul{
+    margin:0;
+    padding-left:18px;
+}
+
+.card-content-corp li{
+    margin-bottom:8px;
+    font-size:14px;
+    line-height:1.6;
+    color:#555;
+}
+
+.card-content-corp li:last-child{
+    margin-bottom:0;
+}
+
+/* =========================================================
+LINKS
+========================================================= */
+
+.service-header h3 a,
+.card-header-corp a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.card-content-corp a{
+    color:#0d6efd;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.card-content-corp a:hover{
+    text-decoration:underline;
+}
+
+/* =========================================================
+BUTTON
+========================================================= */
+
+.mea-service-link{
+    display:inline-block;
+    margin-top:auto;
+    padding:9px 16px;
+    background:#0d6efd;
+    color:#fff !important;
+    font-size:14px;
+    font-weight:600;
+    text-decoration:none;
+    border-radius:7px;
+    transition:.3s;
+}
+
+.mea-service-link:hover{
+    background:#084298;
+    color:#fff !important;
+}
+
+/* =========================================================
+TOP BORDERS
+========================================================= */
+
+.border-primary-top{
+    border-top:4px solid #0d6efd;
+}
+
+.border-success-top{
+    border-top:4px solid #198754;
+}
+
+.border-warning-top{
+    border-top:4px solid #f39c12;
+}
+
+.border-info-top{
+    border-top:4px solid #0dcaf0;
+}
+
+/* =========================================================
+MOBILE
+========================================================= */
+
+@media(max-width:768px){
+
+    .mea-services-grid{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .service-blue,
+    .service-green,
+    .card-header-corp{
+        padding:14px 16px;
+    }
+
+    .card-header-corp h2,
+    .service-header h3{
+        font-size:1.05rem;
+    }
+
+    .mea-service-content,
+    .card-content-corp{
+        padding:16px;
+    }
+
+    .mea-service-icon{
+        width:48px;
+        height:48px;
+        font-size:20px;
+    }
+}
+</style>
 </div>
 
 <!-- FAQ Section -->
