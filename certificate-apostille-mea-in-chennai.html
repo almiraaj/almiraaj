@@ -724,7 +724,32 @@ CORPORATE INFORMATION CARDS
 </div>
 
             </div>
+<script>
 
+document.addEventListener("DOMContentLoaded", function(){
+
+    const btn = document.getElementById("apostilleToggle");
+    const sample = document.getElementById("apostilleSample");
+
+    btn.addEventListener("click", function(){
+
+        sample.classList.toggle("show");
+
+        if(sample.classList.contains("show")){
+
+            btn.innerHTML = "📜 Hide Apostille Sample";
+
+        }else{
+
+            btn.innerHTML = "📜 View Apostille Sample";
+
+        }
+
+    });
+
+});
+
+</script>
         </div>
     </div>
 
