@@ -280,42 +280,59 @@ header,
 
 
 <!-- Spacer for layout -->
-<div class="my-5"></div>
-    <!-- Header -->
-    <header id="header" class="ex-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Gamca Medical Appointment Online</h1>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </header> <!-- end of ex-header -->
-    <!-- end of header -->
+<div class="my-5">
 
+<!-- Corporate-Style Header with Enhanced Readability -->
+<header id="header" class="ex-header text-center py-5" style="position: relative; overflow: hidden;">
+  <div style="position: relative;">
+    <img 
+      src="https://www.almiraaj.com/images/gamca.png" 
+      alt="Gamca Medical Appointment" 
+      class="img-fluid w-100" 
+      style="filter: brightness(50%);" />
 
-    <!-- Breadcrumbs -->
-    <div class="ex-basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumbs">
-                        <a href="../index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Gamca Medical Appointment Online</span>
-                    </div> <!-- end of breadcrumbs -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of breadcrumbs -->
+  </div>
+</header>
 
+<style>
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+.breadcrumbs {
+  font-size: 0.95rem;
+  margin: 1rem 0;
+}
+.breadcrumbs a {
+  color: #198754; /* Bootstrap success green */
+  text-decoration: none;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+</style>
 
-    <!-- Privacy Content -->
-    <div class="container">
-    <div class="ex-basic-2">
-        <div class="container">
-            <h2 class="text-center">Gamca Medical Appointment Online</h2>
-            <a href="https://almiraaj.com/gamca-medical"><img src="/images/gamca.png"alt="centered image" class="Apostilleimg" height="400" width="870"></a>
-
+<!-- Breadcrumbs -->
+<div class="ex-basic-1 py-3 bg-light border-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+  <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+  <li class="breadcrumb-item active" aria-current="page">Gamca Medical Appointment </li>
+</ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-container">
