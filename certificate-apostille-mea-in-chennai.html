@@ -561,6 +561,63 @@ header,
 
 </section>
 
+<style>
+
+.embassy-attestation-frame{
+    background:#ffffff;
+    border:3px solid #0b4a8b;
+    border-radius:16px;
+    padding:35px;
+    position:relative;
+    box-shadow:0 10px 35px rgba(0,0,0,0.08);
+    line-height:1.9;
+    font-size:17px;
+    color:#444;
+}
+
+.embassy-attestation-frame:before{
+    content:"";
+    position:absolute;
+    top:12px;
+    left:12px;
+    right:12px;
+    bottom:12px;
+    border:1px solid #d4af37;
+    border-radius:10px;
+    pointer-events:none;
+}
+
+.frame-title{
+    display:inline-block;
+    background:linear-gradient(135deg,#0b4a8b,#0d62b8);
+    color:#fff;
+    padding:10px 22px;
+    border-radius:30px;
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:20px;
+    box-shadow:0 4px 15px rgba(11,74,139,0.25);
+}
+
+.embassy-attestation-frame strong{
+    color:#0b4a8b;
+}
+
+@media(max-width:768px){
+
+    .embassy-attestation-frame{
+        padding:25px;
+        font-size:15px;
+        line-height:1.8;
+    }
+
+    .frame-title{
+        font-size:17px;
+    }
+
+}
+
+</style>
 
 
 <!-- FAQ Section -->
