@@ -587,7 +587,24 @@ During the GAMCA medical test, a comprehensive physical examination, blood tests
   
                         </p>
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
+    const urlParams = new URLSearchParams(window.location.search);
+
+    if (urlParams.get("form") === "gamca") {
+
+        const gamcaModal = document.getElementById("gamcaMedicalModal");
+
+        if (gamcaModal) {
+            const modal = new bootstrap.Modal(gamcaModal);
+            modal.show();
+        }
+
+    }
+
+});
+</script>
 
 </div> <!-- end of row -->
                     </div> <!-- end of row -->
