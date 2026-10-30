@@ -351,6 +351,159 @@ During the GAMCA medical test, a comprehensive physical examination, blood tests
     <!-- end of container -->
   </div>
   <!-- end of basic-1 -->
+
+<!-- GAMCA Medical Appointment Modal -->
+
+<div class="modal fade" id="gamcaMedicalModal" tabindex="-1"
+     aria-labelledby="gamcaMedicalModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title" id="gamcaMedicalModalLabel">
+          GAMCA Medical Appointment Request
+        </h5>
+
+        <button type="button" class="btn-close btn-close-white"
+                data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <form action="https://formspree.io/f/xqegnwjq" method="POST">
+
+          <!-- Full Name -->
+          <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control"
+                   name="Full Name"
+                   placeholder="Enter your full name as per passport"
+                   required>
+          </div>
+
+          <!-- Phone Number -->
+          <div class="mb-3">
+            <label class="form-label">Phone Number</label>
+            <input type="tel" class="form-control"
+                   name="Phone Number"
+                   placeholder="Enter your contact number"
+                   required>
+          </div>
+
+          <!-- Email -->
+          <div class="mb-3">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control"
+                   name="Email Address"
+                   placeholder="Enter your email address">
+          </div>
+
+          <!-- Destination Country -->
+          <div class="mb-3">
+            <label class="form-label">Destination Country</label>
+            <select class="form-select"
+                    name="Destination Country" required>
+
+              <option value="">Select Destination Country</option>
+              <option>Saudi Arabia</option>
+              <option>United Arab Emirates (UAE)</option>
+              <option>Kuwait</option>
+              <option>Qatar</option>
+              <option>Oman</option>
+              <option>Bahrain</option>
+              <option>Other</option>
+
+            </select>
+          </div>
+
+          <!-- Profession -->
+          <div class="mb-3">
+            <label class="form-label">Profession / Job Category</label>
+            <input type="text" class="form-control"
+                   name="Profession"
+                   placeholder="Example: Engineer, Driver, Technician, Accountant"
+                   required>
+          </div>
+
+          <!-- Preferred Medical City -->
+          <div class="mb-3">
+            <label class="form-label">
+              Preferred City for Medical Examination
+            </label>
+
+            <select class="form-select"
+                    name="Preferred Medical City" required>
+
+              <option value="">Select Preferred Medical City</option>
+              <option>Chennai</option>
+              <option>Trichy</option>
+              <option>Trivandrum</option>
+              <option>Bangalore</option>
+              <option>Hyderabad</option>
+              <option>Other City</option>
+
+            </select>
+          </div>
+
+          <!-- Additional Information -->
+          <div class="mb-3">
+            <label class="form-label">
+              Any Other Information
+            </label>
+
+            <textarea class="form-control"
+                      rows="4"
+                      name="Additional Information"
+                      placeholder="Mention your passport details, preferred appointment date, or any other requirements (please avoid sharing sensitive passport information unless requested securely)."></textarea>
+          </div>
+
+          <!-- Hidden Service Field -->
+          <input type="hidden"
+                 name="Service"
+                 value="GAMCA Medical Appointment Services">
+
+          <button type="submit" class="btn btn-success w-100">
+            Submit Medical Appointment Request
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- GAMCA Medical Appointment CTA Section -->
+
+<div class="text-center mt-5">
+
+  <h4 class="fw-bold text-primary">
+    Need a GAMCA Medical Appointment?
+  </h4>
+
+  <p class="text-muted">
+    Planning to travel to a Gulf country for employment?
+    We provide assistance with GAMCA / WAFID medical appointment
+    registration for Saudi Arabia, UAE, Kuwait, Qatar, Oman,
+    and Bahrain. Share your details and preferred medical city.
+    Our team will contact you to guide you through the appointment
+    booking process.
+  </p>
+
+  <button type="button"
+          class="btn btn-lg btn-success px-4 py-2 shadow-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#gamcaMedicalModal">
+
+    📋 Request GAMCA Medical Appointment
+
+  </button>
+
+</div>
+
+
 </div>
 <div class="container">
   <div class="ex-basic-2">
