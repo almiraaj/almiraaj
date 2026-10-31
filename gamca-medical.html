@@ -1003,3 +1003,59 @@ function toggleGamcaSample() {
 
     </div>
 </div>
+/* GAMCA Footer SEO Links */
+.gamca-footer-links {
+    background: #002c5f;
+    padding: 35px 25px;
+    margin-top: 30px;
+    border-radius: 4px;
+}
+
+.gamca-footer-links h3 {
+    color: #fdbf2d;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.gamca-links-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.gamca-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.gamca-column a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 12px;
+    transition: 0.3s ease;
+}
+
+.gamca-column a:hover {
+    color: #fdbf2d;
+    padding-left: 5px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .gamca-links-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .gamca-links-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gamca-footer-links {
+        padding: 25px 20px;
+    }
+}
