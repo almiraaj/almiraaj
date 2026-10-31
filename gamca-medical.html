@@ -383,85 +383,143 @@ header,
     </div>
 
 </section>
-
+<!-- GCC Countries Medical Appointment Section -->
 <section class="py-4 bg-light">
 <div class="container">
 
 <h2 class="text-center fw-bold text-primary mb-4">
     <i class="fas fa-stethoscope"></i>
-    Wafid (GAMCA) Medical Appointments for GCC Countries
+    Book Wafid (GAMCA) Medical Appointment for GCC Countries
 </h2>
+
+<p class="text-center text-muted mb-4">
+    Select your destination country and request your Wafid (formerly GAMCA) medical appointment. Our team will assist you with appointment booking for approved GCC medical centers.
+</p>
 
 <div class="row g-3">
 
+    <!-- Saudi Arabia -->
     <div class="col-lg-3 col-md-4 col-6">
         <div class="card h-100 border-success shadow-sm">
             <div class="card-body text-center">
                 <h6 class="fw-bold text-success">🇸🇦 Saudi Arabia</h6>
-                <small>Employment & Work Visa Medical Appointments</small>
+                <small class="d-block mb-3">
+                    Employment & Work Visa Medical Appointments
+                </small>
+                <button class="btn btn-success btn-sm"
+                        data-bs-toggle="modal"
+                        data-bs-target="#gamcaMedicalModal"
+                        onclick="setCountry('Saudi Arabia')">
+                    Book Appointment
+                </button>
             </div>
         </div>
     </div>
 
+    <!-- UAE -->
     <div class="col-lg-3 col-md-4 col-6">
         <div class="card h-100 border-primary shadow-sm">
             <div class="card-body text-center">
                 <h6 class="fw-bold text-primary">🇦🇪 UAE</h6>
-                <small>GCC Approved Medical Screening</small>
+                <small class="d-block mb-3">
+                    GCC Approved Medical Screening
+                </small>
+                <button class="btn btn-primary btn-sm"
+                        data-bs-toggle="modal"
+                        data-bs-target="#gamcaMedicalModal"
+                        onclick="setCountry('United Arab Emirates (UAE)')">
+                    Book Appointment
+                </button>
             </div>
         </div>
     </div>
 
+    <!-- Kuwait -->
     <div class="col-lg-3 col-md-4 col-6">
         <div class="card h-100 border-info shadow-sm">
             <div class="card-body text-center">
                 <h6 class="fw-bold text-info">🇰🇼 Kuwait</h6>
-                <small>Wafid Medical Registration Assistance</small>
+                <small class="d-block mb-3">
+                    Wafid Medical Registration Assistance
+                </small>
+                <button class="btn btn-info btn-sm text-white"
+                        data-bs-toggle="modal"
+                        data-bs-target="#gamcaMedicalModal"
+                        onclick="setCountry('Kuwait')">
+                    Book Appointment
+                </button>
             </div>
         </div>
     </div>
 
+    <!-- Qatar -->
     <div class="col-lg-3 col-md-4 col-6">
         <div class="card h-100 border-danger shadow-sm">
             <div class="card-body text-center">
                 <h6 class="fw-bold text-danger">🇶🇦 Qatar</h6>
-                <small>Medical Appointment Booking Support</small>
+                <small class="d-block mb-3">
+                    Medical Screening for Work Visas
+                </small>
+                <button class="btn btn-danger btn-sm"
+                        data-bs-toggle="modal"
+                        data-bs-target="#gamcaMedicalModal"
+                        onclick="setCountry('Qatar')">
+                    Book Appointment
+                </button>
             </div>
         </div>
     </div>
 
+    <!-- Oman -->
     <div class="col-lg-3 col-md-4 col-6">
         <div class="card h-100 border-warning shadow-sm">
             <div class="card-body text-center">
                 <h6 class="fw-bold text-warning">🇴🇲 Oman</h6>
-                <small>Employment Visa Medical Examination</small>
+                <small class="d-block mb-3">
+                    Employment Visa Medical Examination
+                </small>
+                <button class="btn btn-warning btn-sm"
+                        data-bs-toggle="modal"
+                        data-bs-target="#gamcaMedicalModal"
+                        onclick="setCountry('Oman')">
+                    Book Appointment
+                </button>
             </div>
         </div>
     </div>
 
+    <!-- Bahrain -->
     <div class="col-lg-3 col-md-4 col-6">
         <div class="card h-100 border-secondary shadow-sm">
             <div class="card-body text-center">
                 <h6 class="fw-bold text-secondary">🇧🇭 Bahrain</h6>
-                <small>Approved GCC Medical Tests</small>
+                <small class="d-block mb-3">
+                    Approved GCC Medical Tests
+                </small>
+                <button class="btn btn-secondary btn-sm"
+                        data-bs-toggle="modal"
+                        data-bs-target="#gamcaMedicalModal"
+                        onclick="setCountry('Bahrain')">
+                    Book Appointment
+                </button>
             </div>
         </div>
     </div>
 
+    <!-- Yemen -->
     <div class="col-lg-3 col-md-4 col-6">
         <div class="card h-100 border-dark shadow-sm">
             <div class="card-body text-center">
                 <h6 class="fw-bold text-dark">🇾🇪 Yemen</h6>
-                <small>Wafid Medical Appointment Assistance</small>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-3 col-md-4 col-6">
-        <div class="card h-100 border-primary shadow-sm">
-            <div class="card-body text-center">
-                <h6 class="fw-bold text-primary">🌍 GCC Countries</h6>
-                <small>Fast & Reliable Appointment Support</small>
+                <small class="d-block mb-3">
+                    Wafid Medical Appointment Assistance
+                </small>
+                <button class="btn btn-dark btn-sm"
+                        data-bs-toggle="modal"
+                        data-bs-target="#gamcaMedicalModal"
+                        onclick="setCountry('Yemen')">
+                    Book Appointment
+                </button>
             </div>
         </div>
     </div>
@@ -471,6 +529,142 @@ header,
 </div>
 </section>
 
+
+
+<!-- GAMCA Medical Appointment Modal -->
+<div class="modal fade" id="gamcaMedicalModal" tabindex="-1" aria-labelledby="gamcaMedicalModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title" id="gamcaMedicalModalLabel">
+          Request Wafid (GAMCA) Medical Appointment
+        </h5>
+
+        <button type="button" class="btn-close btn-close-white"
+                data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <form action="https://formspree.io/f/xqegnwjq" method="POST">
+
+          <div class="mb-3">
+            <label class="form-label">Full Name (As per Passport)</label>
+            <input type="text"
+                   class="form-control"
+                   name="Full Name"
+                   required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Mobile / WhatsApp Number</label>
+            <input type="tel"
+                   class="form-control"
+                   name="Phone Number"
+                   required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email Address</label>
+            <input type="email"
+                   class="form-control"
+                   name="Email Address">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Destination Country</label>
+            <input type="text"
+                   id="destinationCountry"
+                   class="form-control"
+                   name="Destination Country"
+                   readonly
+                   required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Passport Number</label>
+            <input type="text"
+                   class="form-control"
+                   name="Passport Number"
+                   required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Nationality</label>
+            <input type="text"
+                   class="form-control"
+                   name="Nationality"
+                   placeholder="Indian"
+                   required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Profession / Job Category</label>
+            <input type="text"
+                   class="form-control"
+                   name="Profession"
+                   placeholder="Engineer, Driver, Technician, Nurse"
+                   required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Preferred Medical City</label>
+            <select class="form-select"
+                    name="Preferred Medical City"
+                    required>
+                <option value="">Select City</option>
+                <option>Chennai</option>
+                <option>Bangalore</option>
+                <option>Hyderabad</option>
+                <option>Trichy</option>
+                <option>Trivandrum</option>
+                <option>Other</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Preferred Appointment Date</label>
+            <input type="date"
+                   class="form-control"
+                   name="Preferred Appointment Date">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Additional Information</label>
+            <textarea class="form-control"
+                      rows="4"
+                      name="Additional Information"
+                      placeholder="Any special requirements or comments"></textarea>
+          </div>
+
+          <input type="hidden"
+                 name="Service"
+                 value="Wafid (GAMCA) Medical Appointment">
+
+          <button type="submit"
+                  class="btn btn-success w-100">
+              Submit Medical Appointment Request
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+<!-- Auto Fill Country -->
+<script>
+function setCountry(country) {
+    document.getElementById("destinationCountry").value = country;
+}
+</script>
 <script>
 function toggleGamcaSample() {
     var sample = document.getElementById("gamcaSample");
