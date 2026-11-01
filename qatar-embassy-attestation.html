@@ -246,75 +246,52 @@
   <a href="https://wa.me/+919176160055" target="_blank" rel="noopener" aria-label="Chat with AL MIRAAJ on WhatsApp">
     <i class="fab fa-whatsapp fa-2x text-success"></i>
   </a>
-</div>
-<!-- Spacer for layout -->
+</div><!-- Spacer for layout -->
 <div class="my-5"></div>
 
-<!-- Corporate-Style Header -->
-<header id="header" class="ex-header text-center py-5 position-relative overflow-hidden">
-  <!-- Background Image with Lazy Loading -->
-  <img 
-    src="https://www.almiraaj.com/images/qatar-embassy-attestation-india.webp" 
-    alt="Qatar Embassy Attestation Services in Chennai by AL-MIRAAJ INTERNATIONAL" 
-    class="img-fluid w-100" 
-    style="filter: brightness(50%);" 
-    loading="lazy" 
-    decoding="async" />
+<!-- Corporate Hero Header -->
+<header id="header" class="ex-header text-center py-0" style="position:relative;overflow:hidden;">
 
-  <!-- Overlay -->
-  <div class="overlay"></div>
+    <img
+    src="https://www.almiraaj.com/images/qatar-embassy-attestation-india.webp"
+    alt="Qatar Embassy Attestation in Chennai"
+    class="img-fluid w-100"
+    style="
+        width:100%;
+        display:block;
+        filter:brightness(115%) contrast(110%) saturate(120%);
+    ">
+
+    <!-- Premium Light Overlay -->
+    <div style="
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        90deg,
+        rgba(0,43,92,0.12) 0%,
+        rgba(0,43,92,0.05) 40%,
+        rgba(255,255,255,0.00) 100%
+    );
+"></div>
 
 </header>
 
-<!-- Styles -->
 <style>
-  /* Overlay */
-  .overlay {
-    position: absolute;
-    inset: 0; /* shorthand for top, right, bottom, left */
-    background: rgba(0, 0, 0, 0.45);
-    z-index: 1;
-  }
+#header img{
+    transition:all 0.5s ease;
+}
 
-  /* Centered Text Box */
-  .centered-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    color: #fff;
-    padding: 1.5rem 2.5rem;
-    background: rgba(0,0,0,0.55);
-    border-radius: 10px;
-    backdrop-filter: blur(6px);
-    text-shadow: 1px 1px 8px rgba(0,0,0,0.8);
-    text-align: center;
-    animation: fadeInUp 1.2s ease-out;
-  }
+#header:hover img{
+    transform:scale(1.02);
+    filter:brightness(122%) contrast(112%) saturate(125%);
+}
 
-  /* Animation */
-  @keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translate(-50%, -60%);
+@media (max-width:768px){
+    #header img{
+        min-height:220px;
+        object-fit:cover;
     }
-    100% {
-      opacity: 1;
-      transform: translate(-50%, -50%);
-    }
-  }
-
-  /* Responsive tweak for mobile */
-  @media (max-width: 576px) {
-    .centered-text {
-      padding: 1rem 1.5rem;
-      font-size: 0.9rem;
-    }
-    .centered-text h1 {
-      font-size: 1.5rem;
-    }
-  }
+}
 </style>
 
 
