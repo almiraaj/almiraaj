@@ -281,66 +281,53 @@
     <i class="fab fa-whatsapp fa-2x text-success"></i>
   </a>
 </div>
-
 <!-- Spacer for layout -->
 <div class="my-5"></div>
 
+<!-- Corporate Hero Header -->
+<header id="header" class="ex-header text-center py-0" style="position:relative;overflow:hidden;">
 
-<!-- Corporate-Style Header with Enhanced Readability -->
-<header id="header" class="ex-header text-center py-5" style="position: relative; overflow: hidden;">
-  <div style="position: relative;">
-    <img 
-      src="https://www.almiraaj.com/images/austria-apostille.webp" 
-      alt="Certificate Apostille For Austria- Almiraaj International" 
-      class="img-fluid w-100" 
-      style="filter: brightness(50%);" />
+    <img
+    src="https://www.almiraaj.com/images/austria-apostille.webp"
+    alt="Austria-Apostille-India"
+    class="img-fluid w-100"
+    style="
+        width:100%;
+        display:block;
+        filter:brightness(115%) contrast(110%) saturate(120%);
+    ">
 
-    <!-- Overlay for better text contrast -->
+    <!-- Premium Light Overlay -->
     <div style="
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.4);
-      z-index: 1;
-    "></div>
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        90deg,
+        rgba(0,43,92,0.12) 0%,
+        rgba(0,43,92,0.05) 40%,
+        rgba(255,255,255,0.00) 100%
+    );
+"></div>
 
- <!-- Bottom Text -->
-<div style="
-  position: absolute;
-  bottom: 5%;   /* push it near the bottom */
-  left: 50%;
-  transform: translateX(-50%); /* only horizontal centering */
-  z-index: 2;
-  color: #fff;
-  padding: 1.5rem 2.5rem;
-  background: rgba(0,0,0,0.55);
-  border-radius: 10px;
-  backdrop-filter: blur(6px);
-  text-shadow: 1px 1px 8px rgba(0,0,0,0.8);
-  animation: fadeInUp 1.2s ease-out;
-">
- <h1 class="display-5 fw-bold mb-2">Certificate Apostille For Austria</h1>
-      <p class="lead mb-0"> by <strong>Almiraaj International</strong></p>
-    </div>
-  </div>
 </header>
 
-
 <style>
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -60%);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
+#header img{
+    transition:all 0.5s ease;
+}
+
+#header:hover img{
+    transform:scale(1.02);
+    filter:brightness(122%) contrast(112%) saturate(125%);
+}
+
+@media (max-width:768px){
+    #header img{
+        min-height:220px;
+        object-fit:cover;
+    }
 }
 </style>
-
 
 <!-- Breadcrumbs -->
 <div class="ex-basic-1 py-3 bg-light border-bottom">
