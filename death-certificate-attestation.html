@@ -77,17 +77,19 @@
   "image": "https://www.almiraaj.com/img/apostille_embassy_attestation_visa_tour_holidayz.png"
 }
 </script>
-<!-- Fonts and Styles -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap" rel="stylesheet">
+  <!-- Fonts & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+
+  <!-- CSS -->
   <link href="/css/bootstrap.css" rel="stylesheet">
   <link href="/css/fontawesome-all.css" rel="stylesheet">
   <link href="/css/swiper.css" rel="stylesheet">
   <link href="/css/magnific-popup.css" rel="stylesheet">
   <link href="/css/styles.css" rel="stylesheet">
   <link href="/css/css.css" rel="stylesheet">
-  <link rel="icon" href="/images/ALMINT.png" />
-</head>
 
   <!-- Custom Navbar Styles -->
   <style>
@@ -95,14 +97,14 @@
       background-color: #00264d !important;
     }
     .navbar .navbar-brand h3 {
-      color: white !important;
+      color: #fff !important;
       font-weight: 700;
       font-size: 1.3rem;
       margin: 0;
     }
     .navbar .nav-link {
-      color: white !important;
-      transition: 0.3s ease-in-out;
+      color: #fff !important;
+      transition: color 0.3s ease-in-out;
     }
     .navbar .nav-link:hover {
       color: #c99b33 !important;
@@ -111,33 +113,23 @@
       background-color: #00264d;
     }
     .dropdown-item {
-      color: white !important;
+      color: #fff !important;
     }
     .dropdown-item:hover {
       background-color: #c99b33;
       color: #00264d !important;
     }
     header,
-.navbar,
-.navbar-wrapper,
-.top-bar {
-  background-color: #00264d !important;
-}
-
-
-  </style>
-  <style>
-  .uae-embassy-img {
-    max-width: 100%;
-    height: 450px;
-    object-fit: cover;
-  }
-</style>
-
-  <head>
-  ...
-  <!-- Custom Card Hover Styles -->
-  <style>
+    .navbar,
+    .navbar-wrapper,
+    .top-bar {
+      background-color: #00264d !important;
+    }
+    .spain-apostille-img {
+      max-width: 100%;
+      height: 450px;
+      object-fit: cover;
+    }
     .card:hover {
       transform: scale(1.02);
       transition: all 0.3s ease-in-out;
@@ -149,14 +141,11 @@
   </style>
 </head>
 
-</head>
-
-<body>
 
 
+  <!-- Navbar -->
 
-   <!-- Navbar -->
-
+  
     <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
       <!-- Text Logo - Use this if you don't have a graphic logo -->
       <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
@@ -259,6 +248,10 @@
   </ul>
 </li>
 
+
+
+
+
 <!-- Visa Services Dropdown -->
 <li class="nav-item dropdown">
   <a class="nav-link dropdown-toggle page-scroll" href="../visa-services.html"id="navbarDropdown" role="button"
@@ -270,7 +263,7 @@
     <li class="dropdown-divider"></li>
     <li><a class="dropdown-item" href="../china-visa-services.html">China Visa Services</a></li>
     <li class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="../dubai_tourist_visa_47.html">Dubai Tourist Visa Services</a></li>
+    <li><a class="dropdown-item" href="../dubai-tourist-visa.html">Dubai Tourist Visa Services</a></li>
     <li class="dropdown-divider"></li>
     <li><a class="dropdown-item" href="../egypt-visa-services.html">Egypt Visa Services</a></li>
     <li class="dropdown-divider"></li>
@@ -293,149 +286,79 @@
   </ul>
         </li>
 
-        <!-- Contact -->
-        <li class="nav-item">
-          <a class="nav-link page-scroll" href="https://wa.me/919087559669?text=Hi%20Almiraaj!!!" target="_blank" rel="noopener">Contact</a>
-        </li>
+      <!-- Contact Link in Navbar -->
+<li class="nav-item">
+  <a class="nav-link page-scroll" href="https://wa.me/919087559669?text=Hi%20Almiraaj!!!" target="_blank" rel="noopener" aria-label="Contact AL MIRAAJ via WhatsApp">
+    Contact
+  </a>
+</li>
 
-      </ul>
-
-      <!-- WhatsApp Icon -->
-      <span class="nav-item social-icons ml-3">
-        <span class="fa-stack">
-          <a href="https://wa.me/+919176160055" target="_blank" rel="noopener">
-            <span class="hexagon"></span>
-            <i class="fab fa-whatsapp fa-stack-1x text-success"></i>
-          </a>
-        </span>
-      </span>
-    </div>
-  </div>
+<!-- WhatsApp Icon in Navbar -->
+<li class="nav-item">
+  <a class="nav-link" href="https://wa.me/+919176160055" target="_blank" rel="noopener" aria-label="Chat with AL MIRAAJ on WhatsApp">
+    <i class="fab fa-whatsapp fa-lg text-success"></i>
+  </a>
+</li>
+</ul> <!-- Close navbar-nav -->
+</div> <!-- Close navbar-collapse -->
+</div> <!-- Close container -->
 </nav>
 
 <!-- WhatsApp Floating Widget -->
-<div class="whatsapp-widget position-fixed" style="bottom: 20px; right: 20px;">
-  <a href="https://wa.me/+919176160055" target="_blank" rel="noopener">
+<div class="whatsapp-widget position-fixed" style="bottom: 20px; right: 20px; z-index: 999;">
+  <a href="https://wa.me/+919176160055" target="_blank" rel="noopener" aria-label="Chat with AL MIRAAJ on WhatsApp">
     <i class="fab fa-whatsapp fa-2x text-success"></i>
   </a>
 </div>
-<!-- Header with Background Image and Overlay -->
-<header id="header" class="ex-header" style="background-image: url('/images/certificate-attestation-tamilnadu.png'); background-size: cover; background-position: center; height: 500px; position: relative;">
-    <!-- Dark overlay -->
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6);"></div>
 
-   <!-- Text container -->
-<div class="container" style="position: relative; z-index: 2; height: 100%; display: flex; align-items: center; justify-content: center; text-align: center;">
-  <div>
-    <h1 style="color: #2c3e50; font-size: 36px; font-weight: 600; letter-spacing: 1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.4);">
-      ⚱️ Death Certificate Attestation Services
-    </h1>
-    <p style="color: #555; font-size: 18px; font-style: italic; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">
-      Providing respectful, secure, and verified documentation for legal and international use
-    </p>
-  </div>
-</div>
+
+<!-- Spacer for layout -->
+<div class="my-5"></div>
+
+<!-- Corporate Hero Header -->
+<header id="header" class="ex-header text-center py-0" style="position:relative;overflow:hidden;">
+
+    <img
+    src="https://www.almiraaj.com/images/death-certificate-attestation.png"
+    alt="Certificate Apostille For Spain"
+    class="img-fluid w-100"
+    style="
+        width:100%;
+        display:block;
+        filter:brightness(115%) contrast(110%) saturate(120%);
+    ">
+
+    <!-- Premium Light Overlay -->
+    <div style="
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        90deg,
+        rgba(0,43,92,0.12) 0%,
+        rgba(0,43,92,0.05) 40%,
+        rgba(255,255,255,0.00) 100%
+    );
+"></div>
+
 </header>
 
+<style>
+#header img{
+    transition:all 0.5s ease;
+}
 
-    
+#header:hover img{
+    transform:scale(1.02);
+    filter:brightness(122%) contrast(112%) saturate(125%);
+}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Destination & Helpline Buttons</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f6f8;
-      margin: 0;
-      padding: 20px;
+@media (max-width:768px){
+    #header img{
+        min-height:220px;
+        object-fit:cover;
     }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      margin-bottom: 40px;
-    }
-    h5 {
-      font-size: 1.4rem;
-      color: #003366;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    .btn-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      justify-content: center;
-    }
-    .btn {
-      text-decoration: none;
-      padding: 12px 24px;
-      border-radius: 30px;
-      font-weight: 600;
-      color: #fff;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease;
-    }
-    .btn:hover {
-      transform: scale(1.05);
-    }
-
-    /* Country Colors */
-    .bahrain { background-color: #d32f2f; }
-    .china { background-color: #f57c00; }
-    .egypt { background-color: #388e3c; }
-    .kuwait { background-color: #0288d1; }
-    .oman { background-color: #7b1fa2; }
-    .qatar { background-color: #c2185b; }
-    .saudi { background-color: #455a64; }
-    .taiwan { background-color: #e53935; }
-    .philippines { background-color: #43a047; }
-    .uae { background-color: #1e88e5; }
-    .vietnam { background-color: #fbc02d; }
-
-    /* Helpline Colors */
-    .hl1 { background-color: #4caf50; }
-    .hl2 { background-color: #00acc1; }
-    .hl3 { background-color: #ff9800; }
-    .hl4 { background-color: #e91e63; }
-    .hl5 { background-color: #5c6bc0; }
-  </style>
-</head>
-<body>
-
-<section class="container">
-  <h5>Choose The Destination Country to Get Death Certificate Attestation</h5>
-  <div class="btn-group">
-    <a href="https://www.almiraaj.com/Bahrain-embassy-attestation.html" class="btn bahrain">Bahrain</a>
-    <a href="https://www.almiraaj.com/china-embassy-attestation.html" class="btn china">China</a>
-    <a href="https://www.almiraaj.com/egypt-embassy-attestation.html" class="btn egypt">Egypt</a>
-    <a href="https://www.almiraaj.com/kuwait-embassy-attestation-in-chennai.html" class="btn kuwait">Kuwait</a>
-    <a href="https://www.almiraaj.com/oman-embassy-attestation.html" class="btn oman">Oman</a>
-    <a href="https://www.almiraaj.com/qatar-embassy-attestation.html" class="btn qatar">Qatar</a>
-    <a href="https://www.almiraaj.com/saudi-embassy-attestation-in-chennai.html" class="btn saudi">Saudi Arabia</a>
-    <a href="https://www.almiraaj.com/uae-embassy-attestation-in-chennai.html" class="btn uae">UAE</a>
-<h5>Helpline Numbers (Call / WhatsApp)</h5>
-  <div class="btn-group">
-    <a href="https://wa.me/919176159922" class="btn hl1" target="_blank">+91 9176159922</a>
-    <a href="https://wa.me/919176160055" class="btn hl2" target="_blank">+91 9176160055</a>
-    <a href="https://wa.me/919159589163" class="btn hl3" target="_blank">+91 9159589163</a>
-    <a href="https://wa.me/919940589665" class="btn hl4" target="_blank">+91 9940589665</a>
-    <a href="https://wa.me/919087559669" class="btn hl5" target="_blank">+91 9087559669</a>
-  </div>
-</section>
-
-
-</body>
-</html>
-
-
+}
+</style>
 
 
 <!DOCTYPE html>
