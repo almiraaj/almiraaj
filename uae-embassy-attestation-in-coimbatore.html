@@ -360,6 +360,61 @@
 }
 
 </style>
+
+<style>
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.breadcrumbs {
+  font-size: 0.95rem;
+  margin: 1rem 0;
+}
+
+.breadcrumbs a {
+  color: #198754;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+/* Bright Floating Help Line */.helpline-banner{
+    position:absolute;
+    bottom:120px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#edeceb;
+    color:#000;
+    padding:12px 25px;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:700;
+    z-index:10;
+    box-shadow:0 4px 15px rgba(0,0,0,.25);
+    animation:pulse 2s infinite;
+    white-space:nowrap;
+}
+
+.helpline-banner a{
+    color:#000;
+    text-decoration:none;
+    font-weight:800;
+}
+
+.helpline-banner:hover{
+    background:#ffca2c;
+}
+</style>
+
 <!-- Breadcrumbs -->
 <div class="ex-basic-1 py-3 bg-light border-bottom">
   <div class="container">
