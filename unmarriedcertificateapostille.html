@@ -636,198 +636,115 @@
 
             <div class="modal-body">
 
-                <form action="https://formspree.io/f/xqegnwjq" method="POST">
+               <div class="apostille-form">
 
-                    <div class="mb-3">
-                        <label class="form-label">Full Name *</label>
-                        <input type="text"
-                               class="form-control"
-                               name="Full Name"
-                               required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Mobile Number *</label>
-                        <input type="tel"
-                               class="form-control"
-                               name="Mobile Number"
-                               required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Email Address</label>
-                        <input type="email"
-                               class="form-control"
-                               name="Email Address">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Destination Country *</label>
-                        <select class="form-select"
-                                name="Destination Country"
-                                required>
-                            <option value="">Select Country</option>
-                            <option>Germany</option>
-                            <option>Italy</option>
-                            <option>France</option>
-                            <option>Netherlands</option>
-                            <option>Portugal</option>
-                            <option>Spain</option>
-                            <option>Poland</option>
-                            <option>Czech Republic</option>
-                            <option>Austria</option>
-                            <option>Other Country</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">
-                            Certificate Issued State *
-                        </label>
-                        <select class="form-select"
-                                name="Certificate State"
-                                required>
-                            <option value="">Select State</option>
-                            <option>Tamil Nadu</option>
-                            <option>Kerala</option>
-                            <option>Karnataka</option>
-                            <option>Andhra Pradesh</option>
-                            <option>Telangana</option>
-                            <option>Maharashtra</option>
-                            <option>Other State</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">
-                            Purpose of Apostille
-                        </label>
-                        <select class="form-select"
-                                name="Purpose">
-                            <option value="">Select Purpose</option>
-                            <option>Marriage Abroad</option>
-                            <option>Visa Application</option>
-                            <option>Residence Permit</option>
-                            <option>Registration Abroad</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">
-                            Preferred Contact Method
-                        </label>
-                        <select class="form-select"
-                                name="Preferred Contact">
-                            <option>Phone Call</option>
-                            <option>WhatsApp</option>
-                            <option>Email</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">
-                            Additional Information
-                        </label>
-                        <textarea class="form-control"
-                                  rows="4"
-                                  name="Message"
-                                  placeholder="Mention country, timeline, location, or any special requirements"></textarea>
-                    </div>
-
-                    <button type="submit"
-                            class="btn btn-success w-100">
-                        Submit Apostille Request
-                    </button>
-
-                </form>
-
-            </div>
-
-        </div>
+    <div class="form-badge">
+        📄 Unmarried Certificate Apostille Assistance
     </div>
+
+    <h3>Check Apostille Cost & Processing Time</h3>
+
+    <p>
+        Get expert guidance for apostille requirements, fees, processing time, and document pickup.
+    </p>
+
+    <form action="https://formspree.io/f/xqegnwjq" method="POST">
+
+        <input type="hidden" name="Service" value="Unmarried Certificate Apostille">
+
+        <div class="mb-3">
+            <input type="text"
+                class="form-control"
+                name="Name"
+                placeholder="Full Name *"
+                required>
+        </div>
+
+        <div class="mb-3">
+            <input type="tel"
+                class="form-control"
+                name="Mobile"
+                placeholder="Mobile Number *"
+                required>
+        </div>
+
+        <div class="mb-3">
+            <input type="text"
+                class="form-control"
+                name="Country"
+                placeholder="Destination Country *"
+                required>
+        </div>
+
+        <div class="mb-3">
+            <select class="form-select"
+                name="Purpose"
+                required>
+                <option value="">Purpose *</option>
+                <option>Marriage Abroad</option>
+                <option>Residence Permit</option>
+                <option>Visa Application</option>
+                <option>Family Reunion</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-warning w-100 fw-bold">
+            ✅ GET COST & REQUIREMENTS
+        </button>
+
+    </form>
+
+    <div class="trust-points mt-3">
+        ✅ MEA Assistance &nbsp; | &nbsp;
+        ✅ Doorstep Pickup &nbsp; | &nbsp;
+        ✅ WhatsApp Support
+    </div>
+
 </div>
-</section>
 
 <style>
-
-.unmarried-service-box{
-    max-width:1100px;
-    margin:30px auto;
-    border:2px solid #0b4f9c;
+.apostille-form{
+    background:#10214a;
+    padding:30px;
     border-radius:18px;
-    background:#fff;
-    overflow:hidden;
-}
-
-.unmarried-service-title{
-    background:#0b4f9c;
     color:#fff;
-    font-size:24px;
-    font-weight:700;
-    text-align:center;
-    padding:16px 20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
 
-.unmarried-service-content{
-    padding:30px 40px;
-    color:#555;
-    font-size:15px;
-    line-height:1.9;
-}
-
-.unmarried-service-content p{
-    margin-bottom:18px;
-}
-
-.purpose-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:12px;
-    margin:20px 0;
-}
-
-.purpose-card{
-    background:#f8fbff;
-    border:1px solid #dce8ff;
-    border-radius:10px;
-    padding:12px;
-    text-align:center;
-    color:#0b4f9c;
+.form-badge{
+    display:inline-block;
+    background:#ff6b00;
+    color:#fff;
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:13px;
     font-weight:600;
+    margin-bottom:15px;
 }
 
-.info-box{
-    background:#eef5ff;
-    border-left:4px solid #0b4f9c;
-    padding:15px;
-    border-radius:8px;
-    margin-top:20px;
-    color:#444;
+.apostille-form h3{
+    font-weight:700;
+    margin-bottom:10px;
+    color:#fff;
 }
 
-@media(max-width:768px){
-
-    .unmarried-service-box{
-        margin:20px 10px;
-    }
-
-    .unmarried-service-title{
-        font-size:20px;
-        padding:14px;
-    }
-
-    .unmarried-service-content{
-        padding:18px;
-        font-size:14px;
-    }
-
-    .purpose-grid{
-        grid-template-columns:1fr;
-    }
-
+.apostille-form p{
+    color:#d8dff7;
+    margin-bottom:20px;
 }
 
+.apostille-form .form-control,
+.apostille-form .form-select{
+    min-height:50px;
+    border-radius:10px;
+}
+
+.trust-points{
+    text-align:center;
+    font-size:14px;
+    color:#d8dff7;
+}
 </style>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
