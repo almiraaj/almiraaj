@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Embassy Attestation & Apostille Request | Almiraaj</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Embassy Attestation & Apostille Request Form | Almiraaj</title>
+
+<meta name="description" content="Submit your request for Apostille or Embassy Attestation services. Get expert assistance for educational, personal and commercial documents destined for Hague and Non-Hague countries.">
+
+<meta name="robots" content="noindex,nofollow">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -12,81 +17,129 @@
 
 body{
     background:#f4f7f9;
-    font-family:Arial,sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+.hero-section{
+    background:linear-gradient(135deg,#198754,#157347);
+    color:#fff;
+    padding:50px 20px;
+    text-align:center;
+}
+
+.hero-section h1{
+    font-size:2rem;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.hero-section p{
+    max-width:800px;
+    margin:auto;
+    opacity:.95;
 }
 
 .form-card{
     background:#fff;
     border-radius:15px;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
-    overflow:hidden;
-}
-
-.form-header{
-    background:#198754;
-    color:#fff;
-    padding:30px;
-    text-align:center;
-}
-
-.form-header h1{
-    font-size:32px;
-    font-weight:700;
-    margin-bottom:10px;
+    margin-top:-40px;
+    position:relative;
 }
 
 .form-body{
     padding:35px;
 }
 
-.form-control,
-.form-select{
-    height:50px;
+.form-label{
+    font-weight:600;
 }
 
-textarea.form-control{
-    height:auto;
+.form-control,
+.form-select{
+    min-height:50px;
 }
 
 .btn-submit{
     background:#198754;
     border:none;
-    padding:14px;
     font-size:18px;
     font-weight:600;
+    padding:14px;
 }
 
-.form-note{
-    color:#6c757d;
-    font-size:14px;
+.btn-submit:hover{
+    background:#157347;
 }
 
 .required{
-    color:red;
+    color:#dc3545;
+}
+
+.info-box{
+    background:#f8f9fa;
+    border-left:4px solid #198754;
+    padding:15px;
+    border-radius:6px;
+    margin-top:25px;
+}
+
+.contact-box{
+    background:#ffffff;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.06);
+    padding:20px;
+    margin-top:25px;
+}
+
+.contact-box h5{
+    color:#198754;
+    font-weight:700;
+}
+
+footer{
+    background:#198754;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+
+.hero-section h1{
+    font-size:1.6rem;
+}
+
+.form-body{
+    padding:20px;
+}
+
 }
 
 </style>
+
 </head>
 
 <body>
 
-<div class="container py-5">
+<section class="hero-section">
+
+<h1>Embassy Attestation & Apostille Assistance Request</h1>
+
+<p>
+Submit your document details and destination country. Our specialists will guide you with Apostille services for Hague Convention countries and Embassy Attestation services for Non‑Hague countries.
+</p>
+
+</section>
+
+<div class="container mb-5">
 
 <div class="row justify-content-center">
 
 <div class="col-lg-9">
 
 <div class="form-card">
-
-<div class="form-header">
-
-<h1>Embassy Attestation & Apostille Assistance</h1>
-
-<p class="mb-0">
-Submit your document details and our team will guide you with Apostille or Embassy Attestation requirements.
-</p>
-
-</div>
 
 <div class="form-body">
 
@@ -98,14 +151,24 @@ Submit your document details and our team will guide you with Apostille or Embas
 <label class="form-label">
 Full Name <span class="required">*</span>
 </label>
-<input type="text" class="form-control" name="Full Name" required>
+
+<input type="text"
+       name="Full Name"
+       class="form-control"
+       required>
 </div>
 
 <div class="col-md-6 mb-3">
+
 <label class="form-label">
 Mobile Number / WhatsApp <span class="required">*</span>
 </label>
-<input type="tel" class="form-control" name="Mobile Number" required>
+
+<input type="tel"
+       name="Mobile Number"
+       class="form-control"
+       required>
+
 </div>
 
 </div>
@@ -113,31 +176,42 @@ Mobile Number / WhatsApp <span class="required">*</span>
 <div class="row">
 
 <div class="col-md-6 mb-3">
-<label class="form-label">Email Address</label>
-<input type="email" class="form-control" name="Email">
+
+<label class="form-label">
+Email Address
+</label>
+
+<input type="email"
+       name="Email Address"
+       class="form-control">
+
 </div>
 
 <div class="col-md-6 mb-3">
+
 <label class="form-label">
 Destination Country <span class="required">*</span>
 </label>
+
 <input type="text"
-class="form-control"
-name="Destination Country"
-placeholder="UAE, Qatar, Germany, France..."
-required>
+       name="Destination Country"
+       class="form-control"
+       placeholder="UAE, Qatar, Germany, France, Brazil..."
+       required>
+
 </div>
 
 </div>
 
 <div class="mb-3">
+
 <label class="form-label">
 Required Service <span class="required">*</span>
 </label>
 
 <select class="form-select"
-name="Required Service"
-required>
+        name="Required Service"
+        required>
 
 <option value="">
 Select Service
@@ -148,11 +222,11 @@ Apostille (Hague Convention Country)
 </option>
 
 <option>
-Embassy Attestation (Non-Hague Country)
+Embassy Attestation (Non‑Hague Country)
 </option>
 
 <option>
-Not Sure - Need Guidance
+Not Sure – Need Guidance
 </option>
 
 </select>
@@ -168,16 +242,24 @@ Document Category <span class="required">*</span>
 </label>
 
 <select class="form-select"
-name="Document Category"
-required>
+        name="Document Category"
+        required>
 
-<option value="">Select Category</option>
+<option value="">
+Select Category
+</option>
 
-<option>Educational Certificate</option>
+<option>
+Educational Certificate
+</option>
 
-<option>Personal Certificate</option>
+<option>
+Personal Certificate
+</option>
 
-<option>Commercial Document</option>
+<option>
+Commercial Document
+</option>
 
 </select>
 
@@ -190,29 +272,26 @@ Document Type <span class="required">*</span>
 </label>
 
 <select class="form-select"
-name="Document Type"
-required>
+        name="Document Type"
+        required>
 
-<option value="">Select Document</option>
+<option value="">
+Select Document
+</option>
 
 <option>Degree Certificate</option>
-
 <option>Diploma Certificate</option>
-
-<option>Birth Certificate</option>
-
-<option>Marriage Certificate</option>
-
-<option>PCC</option>
-
-<option>Experience Certificate</option>
-
+<option>Engineering Certificate</option>
 <option>Nursing Certificate</option>
-
+<option>Medical Certificate</option>
+<option>Birth Certificate</option>
+<option>Marriage Certificate</option>
+<option>Police Clearance Certificate (PCC)</option>
+<option>Experience Certificate</option>
+<option>Salary Certificate</option>
 <option>Commercial Invoice</option>
-
 <option>Power of Attorney</option>
-
+<option>Certificate of Origin</option>
 <option>Other</option>
 
 </select>
@@ -226,17 +305,23 @@ required>
 <div class="col-md-6 mb-3">
 
 <label class="form-label">
-Processing Requirement
+Required Processing Time
 </label>
 
 <select class="form-select"
-name="Processing Time">
+        name="Processing Time">
 
-<option>Normal</option>
+<option>
+Normal Processing
+</option>
 
-<option>Urgent</option>
+<option>
+Urgent Processing
+</option>
 
-<option>Express</option>
+<option>
+Express Processing
+</option>
 
 </select>
 
@@ -249,41 +334,30 @@ Current Location
 </label>
 
 <input type="text"
-class="form-control"
-name="Location"
-placeholder="Chennai, Madurai, Coimbatore">
+       name="Current Location"
+       class="form-control"
+       placeholder="Chennai, Coimbatore, Madurai">
 
 </div>
 
 </div>
 
-<div class="mb-3">
+<div class="mb-4">
 
 <label class="form-label">
-Additional Information
+Message / Additional Information
 </label>
 
 <textarea
+name="Message"
 class="form-control"
 rows="5"
-name="Message"
-placeholder="Mention certificate details, number of documents, urgency, etc."></textarea>
+placeholder="Mention certificate details, number of documents, urgency or any special requirements."></textarea>
 
 </div>
 
-<div class="form-note mb-4">
-
-✅ Apostille Services for Hague Convention Countries
-
-<br>
-
-✅ Embassy Attestation for UAE, Qatar, Kuwait, Saudi Arabia and other Non-Hague Countries
-
-</div>
-
-<button
-type="submit"
-class="btn btn-submit btn-success w-100">
+<button type="submit"
+        class="btn btn-success btn-submit w-100">
 
 Submit Request
 
@@ -291,7 +365,47 @@ Submit Request
 
 </form>
 
+<div class="info-box">
+
+<strong>Our Services Include:</strong>
+
+<br><br>
+
+✅ Apostille Services for Hague Convention Countries
+
+<br>
+
+✅ Embassy Attestation for UAE, Qatar, Kuwait, Saudi Arabia and other Non‑Hague Countries
+
+<br>
+
+✅ Educational Certificates
+
+<br>
+
+✅ Personal Certificates
+
+<br>
+
+✅ Commercial Documents
+
 </div>
+
+<div class="contact-box text-center">
+
+<h5>Need Immediate Assistance?</h5>
+
+<p class="mb-1">
+📞 +91 9176159922
+</p>
+
+<p class="mb-1">
+📞 +91 9159589163
+</p>
+
+<p class="mb-0">
+✉️ info@almiraaj.com
+</p>
 
 </div>
 
@@ -300,6 +414,16 @@ Submit Request
 </div>
 
 </div>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Almiraaj. All Rights Reserved.
+
+</footer>
 
 </body>
 </html>
