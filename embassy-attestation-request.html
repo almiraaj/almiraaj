@@ -1,0 +1,165 @@
+<form action="https://formspree.io/f/xqegnwjq" method="POST">
+
+    <!-- Name -->
+    <div class="mb-3">
+        <label class="form-label">Full Name *</label>
+        <input type="text"
+               class="form-control"
+               name="Full Name"
+               required>
+    </div>
+
+    <!-- Phone -->
+    <div class="mb-3">
+        <label class="form-label">Mobile Number / WhatsApp *</label>
+        <input type="tel"
+               class="form-control"
+               name="Mobile Number"
+               required>
+    </div>
+
+    <!-- Email -->
+    <div class="mb-3">
+        <label class="form-label">Email Address</label>
+        <input type="email"
+               class="form-control"
+               name="Email Address">
+    </div>
+
+    <!-- Service Type -->
+    <div class="mb-3">
+        <label class="form-label">Required Service *</label>
+        <select class="form-select"
+                name="Required Service"
+                required>
+            <option value="">Select Service</option>
+
+            <option>Apostille (Hague Convention Country)</option>
+
+            <option>Embassy Attestation (Non-Hague Country)</option>
+
+            <option>Not Sure - Need Guidance</option>
+        </select>
+    </div>
+
+    <!-- Destination Country -->
+    <div class="mb-3">
+        <label class="form-label">Destination Country *</label>
+        <input type="text"
+               class="form-control"
+               name="Destination Country"
+               placeholder="Example: UAE, Qatar, Kuwait, Germany, France, Italy"
+               required>
+    </div>
+
+    <!-- Document Category -->
+    <div class="mb-3">
+        <label class="form-label">Document Category *</label>
+        <select class="form-select"
+                name="Document Category"
+                required>
+
+            <option value="">Select Category</option>
+
+            <option>Educational Certificate</option>
+
+            <option>Personal Certificate</option>
+
+            <option>Commercial Document</option>
+
+        </select>
+    </div>
+
+    <!-- Document Type -->
+    <div class="mb-3">
+        <label class="form-label">Document Type *</label>
+
+        <select class="form-select"
+                name="Document Type"
+                required>
+
+            <option value="">Select Document</option>
+
+            <option>Degree Certificate</option>
+
+            <option>Diploma Certificate</option>
+
+            <option>Engineering Certificate</option>
+
+            <option>Medical Certificate</option>
+
+            <option>Nursing Certificate</option>
+
+            <option>School Certificate</option>
+
+            <option>Birth Certificate</option>
+
+            <option>Marriage Certificate</option>
+
+            <option>Divorce Certificate</option>
+
+            <option>Police Clearance Certificate (PCC)</option>
+
+            <option>Death Certificate</option>
+
+            <option>Experience Certificate</option>
+
+            <option>Salary Certificate</option>
+
+            <option>Power of Attorney</option>
+
+            <option>Commercial Invoice</option>
+
+            <option>Certificate of Origin</option>
+
+            <option>Memorandum of Association (MOA)</option>
+
+            <option>Articles of Association (AOA)</option>
+
+            <option>Other</option>
+
+        </select>
+    </div>
+
+    <!-- Urgency -->
+    <div class="mb-3">
+        <label class="form-label">Required Processing Time</label>
+
+        <select class="form-select"
+                name="Processing Time">
+
+            <option>Normal Processing</option>
+
+            <option>Urgent Processing</option>
+
+            <option>Express Processing</option>
+
+        </select>
+    </div>
+
+    <!-- Location -->
+    <div class="mb-3">
+        <label class="form-label">Current Location</label>
+        <input type="text"
+               class="form-control"
+               name="Current Location"
+               placeholder="Example: Chennai, Coimbatore, Madurai, Tirunelveli">
+    </div>
+
+    <!-- Message -->
+    <div class="mb-3">
+        <label class="form-label">Message / Additional Requirement</label>
+
+        <textarea class="form-control"
+                  rows="5"
+                  name="Message"
+                  placeholder="Mention certificate details, number of documents, urgency, etc."></textarea>
+    </div>
+
+    <!-- Submit -->
+    <button type="submit"
+            class="btn btn-success btn-lg w-100">
+        Submit Request
+    </button>
+
+</form>
