@@ -530,51 +530,102 @@ header,
     </p>
   </div>
 </div>
-
 <!-- Related Services -->
-<section class="py-4 bg-light">
+<section class="py-5 bg-light">
     <div class="container">
 
-       <div class="text-center mb-4">
+        <div class="text-center mb-5">
 
-    <span class="badge bg-success px-3 py-2 mb-2">
-        PROFESSIONAL DOCUMENT AUTHENTICATION
-    </span>
+            <span class="badge bg-success px-3 py-2 mb-3">
+                PROFESSIONAL DOCUMENT AUTHENTICATION
+            </span>
 
-    <h2 class="fw-bold mb-2">
-        Trusted Attestation & Apostille Services in Chennai
-    </h2>
+            <h2 class="fw-bold mb-3">
+                Which Service Do You Need?
+            </h2>
 
-    <p class="text-muted mb-0">
-        Complete support for certificate attestation, embassy attestation, and MEA apostille services under one roof.
-    </p>
+            <p class="text-muted mb-0">
+                Choose the appropriate document authentication service for your educational, personal or commercial certificates.
+            </p>
 
-</div>
+        </div>
 
-        <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center">
+        <div class="row g-4">
 
-            <div class="col">
+            <!-- Certificate Attestation -->
+            <div class="col-lg-4 col-md-6">
+
                 <a href="https://www.almiraaj.com/certificate-attestation-services-in-chennai"
-                   class="service-tab-btn">
-                    <i class="fas fa-file-signature me-2"></i>
-                    Certificate Attestation
+                   class="service-card">
+
+                    <div class="service-icon">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+
+                    <h3>Certificate Attestation</h3>
+
+                    <p>
+                        For UAE, Qatar, Kuwait, Saudi Arabia and other non-Hague Convention countries.
+                    </p>
+
+                    <span class="service-btn">
+                        View Attestation Service
+                    </span>
+
                 </a>
+
             </div>
 
-            <div class="col">
+            <!-- Embassy Attestation -->
+            <div class="col-lg-4 col-md-6">
+
                 <a href="https://www.almiraaj.com/embassy-attestation-in-chennai"
-                   class="service-tab-btn">
-                    <i class="fas fa-building me-2"></i>
-                    Embassy Attestation
+                   class="service-card">
+
+                    <div class="service-icon embassy">
+                        <i class="fas fa-building"></i>
+                    </div>
+
+                    <h3>Embassy Attestation</h3>
+
+                    <p>
+                        Embassy legalization support for employment visas, family visas and business documentation.
+                    </p>
+
+                    <span class="service-btn">
+                        View Embassy Service
+                    </span>
+
                 </a>
+
             </div>
 
-            <div class="col">
+            <!-- Certificate Apostille -->
+            <div class="col-lg-4 col-md-6">
+
                 <a href="https://www.almiraaj.com/certificate-apostille-mea-in-chennai"
-                   class="service-tab-btn">
-                    <i class="fas fa-certificate me-2"></i>
-                    Certificate Apostille
+                   class="service-card featured">
+
+                    <div class="service-badge">
+                        MOST POPULAR
+                    </div>
+
+                    <div class="service-icon apostille">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+
+                    <h3>Certificate Apostille</h3>
+
+                    <p>
+                        MEA Apostille services for Brazil, France, Germany, Italy and Hague Convention countries.
+                    </p>
+
+                    <span class="service-btn">
+                        View Apostille Service
+                    </span>
+
                 </a>
+
             </div>
 
         </div>
@@ -583,29 +634,107 @@ header,
 </section>
 
 <style>
-.service-tab-btn{
+
+.service-card{
+    position:relative;
+    display:block;
+    background:#fff;
+    padding:30px 25px;
+    border-radius:18px;
+    text-align:center;
+    text-decoration:none;
+    height:100%;
+    border:2px solid #e9ecef;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:all .35s ease;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+    border-color:#198754;
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+    text-decoration:none;
+}
+
+.service-card.featured{
+    border:2px solid #f0b429;
+}
+
+.service-badge{
+    position:absolute;
+    top:-12px;
+    right:20px;
+    background:#f0b429;
+    color:#fff;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:700;
+}
+
+.service-icon{
+    width:75px;
+    height:75px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#198754;
+    color:#fff;
     display:flex;
     align-items:center;
     justify-content:center;
-    width:100%;
-    padding:14px 20px;
-    background:#fff;
-    color:#1f2937;
-    border:1px solid #dbe3ea;
-    border-radius:12px;
-    font-weight:600;
-    text-decoration:none;
-    box-shadow:0 3px 12px rgba(0,0,0,0.06);
-    transition:all .3s ease;
+    font-size:30px;
 }
 
-.service-tab-btn:hover{
+.service-icon.embassy{
+    background:#0d6efd;
+}
+
+.service-icon.apostille{
+    background:#f0b429;
+}
+
+.service-card h3{
+    color:#0d3b66;
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.service-card p{
+    color:#6c757d;
+    font-size:15px;
+    line-height:1.7;
+    min-height:90px;
+    margin-bottom:20px;
+}
+
+.service-btn{
+    display:inline-block;
     background:#198754;
     color:#fff;
-    border-color:#198754;
-    transform:translateY(-2px);
-    text-decoration:none;
+    padding:12px 22px;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
 }
+
+.service-card:hover .service-btn{
+    background:#145c32;
+    color:#fff;
+}
+
+@media (max-width:768px){
+
+    .service-card{
+        padding:25px 20px;
+    }
+
+    .service-card p{
+        min-height:auto;
+    }
+
+}
+
 </style>
 
 <!-- Certificate Apostille Chennai Introduction -->
