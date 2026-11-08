@@ -372,11 +372,56 @@
 
 <!-- Spacer for layout -->
 
+<!-- HERO BANNER START -->
 
-<!-- Hero Header -->
-<header id="header" class="ex-header" style="position:relative;overflow:hidden;">
+<style>
+/* Hero Banner */
+.attestation-hero{
+    margin:0 !important;
+    padding:0 !important;
+    background:none !important;
+    overflow:hidden !important;
+    min-height:auto !important;
+    height:auto !important;
+}
 
-    <figure style="margin:0;position:relative;">
+.attestation-hero figure{
+    margin:0;
+    padding:0;
+    position:relative;
+    line-height:0;
+}
+
+.attestation-hero img{
+    display:block;
+    width:100%;
+    height:auto;
+    max-width:100%;
+}
+
+/* Hidden SEO Caption */
+.seo-caption{
+    position:absolute;
+    left:-9999px;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+/* Override Old Template Header Styles */
+#header,
+.ex-header{
+    margin:0 !important;
+    padding:0 !important;
+    min-height:auto !important;
+    height:auto !important;
+    background:none !important;
+}
+</style>
+
+<header id="header" class="attestation-hero">
+
+    <figure>
 
         <img
             src="https://www.almiraaj.com/images/certificate-attestation-chennai.webp"
@@ -385,42 +430,21 @@
             width="1920"
             height="700"
             fetchpriority="high"
-            decoding="async"
             loading="eager"
-            class="img-fluid w-100"
-            style="display:block;width:100%;height:auto;">
-
-        <div class="hero-overlay"></div>
+            decoding="async">
 
         <figcaption class="seo-caption">
-            Certificate Attestation in Chennai, Apostille Services, Embassy Attestation and Document Legalization by AL-MIRAAJ International.
+            Certificate Attestation in Chennai, Apostille Services, Embassy Attestation, HRD Attestation and Embassy Legalization Services by AL-MIRAAJ International.
         </figcaption>
 
     </figure>
 
 </header>
 
-<style>
-.hero-overlay{
-    position:absolute;
-    inset:0;
-    background:linear-gradient(
-        90deg,
-        rgba(0,43,92,.12) 0%,
-        rgba(0,43,92,.05) 40%,
-        rgba(255,255,255,0) 100%
-    );
-    pointer-events:none;
-}
-
-.seo-caption{
-    position:absolute;
-    left:-9999px;
-    width:1px;
-    height:1px;
-    overflow:hidden;
-}
-</style>
+<link rel="preload"
+      as="image"
+      href="https://www.almiraaj.com/images/certificate-attestation-chennai.webp"
+      fetchpriority="high">
 
 <script type="application/ld+json">
 {
@@ -437,19 +461,7 @@
 }
 </script>
 
-
-<style>
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -60%);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
-}
-</style>
+<!-- HERO BANNER END -->
 
 <!-- Breadcrumbs -->
 <div class="ex-basic-1">
