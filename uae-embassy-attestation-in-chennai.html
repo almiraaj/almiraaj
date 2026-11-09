@@ -839,40 +839,40 @@ imgDiv.style.display = "none";
 }
 }
 </script>
-
 <style>
 
-.uae-faq-section{
+.uae-faq{
     font-family:'Montserrat',sans-serif;
 }
 
-.uae-faq-title{
-    font-size:2rem;
-    font-weight:700;
-    color:#0056b3;
-    margin-bottom:30px;
-}
-
 .uae-faq .accordion-item{
+    background:#fff;
     border:none;
     border-radius:12px !important;
     overflow:hidden;
     margin-bottom:15px;
-    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    transition:all .3s ease;
+}
+
+.uae-faq .accordion-item:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 28px rgba(0,0,0,.12);
 }
 
 .uae-faq .accordion-button{
     background:#ffffff;
-    color:#003366;
+    color:#1f2937;
     font-weight:600;
     font-size:1rem;
-    padding:18px 22px;
-    border-left:5px solid #00a651;
+    padding:20px 24px;
+    border-left:5px solid #0B7A4B;
 }
 
 .uae-faq .accordion-button:not(.collapsed){
-    background:#f4f9ff;
-    color:#0056b3;
+    background:#f8fffb;
+    color:#0B7A4B;
+    border-left:5px solid #d4af37;
     box-shadow:none;
 }
 
@@ -880,29 +880,53 @@ imgDiv.style.display = "none";
     box-shadow:none;
 }
 
+.uae-faq .accordion-button::after{
+    transition:all .3s ease;
+}
+
 .uae-faq .accordion-body{
-    background:#fff;
-    padding:22px;
-    line-height:1.8;
-    color:#444;
+    background:#ffffff;
+    padding:24px;
+    line-height:1.9;
+    color:#4b5563;
+    border-top:1px solid #eef2f7;
 }
 
 .uae-phone{
-    color:#00a651;
+    color:#0B7A4B;
     font-weight:700;
     text-decoration:none;
 }
 
+.uae-phone:hover{
+    color:#d4af37;
+}
+
 .uae-faq-link{
     display:inline-block;
-    margin-top:10px;
+    margin-top:12px;
+    color:#0B7A4B;
     font-weight:600;
-    color:#0056b3;
     text-decoration:none;
+    transition:all .3s ease;
 }
 
 .uae-faq-link:hover{
-    color:#00a651;
+    color:#d4af37;
+    text-decoration:none;
+}
+
+@media (max-width:768px){
+
+    .uae-faq .accordion-button{
+        font-size:15px;
+        padding:16px 18px;
+    }
+
+    .uae-faq .accordion-body{
+        padding:18px;
+    }
+
 }
 
 </style>
@@ -914,7 +938,7 @@ imgDiv.style.display = "none";
         UAE Embassy Attestation in Chennai - Frequently Asked Questions
     </h2>
 
-    <div class="accordion" id="uaeFaq">
+    <div class="accordion uae-faq" id="uaeFaq">
 
         <!-- FAQ 1 -->
         <div class="accordion-item">
@@ -956,12 +980,17 @@ imgDiv.style.display = "none";
 
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#uaeFaq">
                 <div class="accordion-body">
-                    Yes. We provide document pickup and delivery assistance across Chennai for eligible UAE attestation requests. 
-                    To arrange collection, call or WhatsApp 
+                    Yes. We provide document pickup and delivery assistance across Chennai for eligible UAE attestation requests.
+                    To arrange collection, call or WhatsApp
                     <strong>+91 7010064811</strong>.
+
                     <br><br>
-                    <a href="https://www.almiraaj.com/process-of-uae-embassy-attestation-in-chennai" target="_blank" rel="noopener noreferrer">
-                        Learn More About Our UAE Attestation Process & Pickup Service
+
+                    <a href="https://www.almiraaj.com/process-of-uae-embassy-attestation-in-chennai"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="uae-faq-link">
+                       Learn More About Our UAE Attestation Process & Pickup Service
                     </a>
                 </div>
             </div>
