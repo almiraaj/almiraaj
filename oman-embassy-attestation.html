@@ -334,9 +334,8 @@
     <i class="fab fa-whatsapp fa-2x text-success"></i>
   </a>
 </div>
-
-
 <!-- OMAN EMBASSY ATTESTATION HERO SECTION -->
+
 <header class="oman-hero">
 
     <img src="https://www.almiraaj.com/images/oman-embassy-attestation.webp"
@@ -348,18 +347,19 @@
     <div class="oman-content">
 
         <div class="oman-badge">
-            ✓ Trusted Certificate Authentication Experts
+            ✓ Trusted Oman Attestation Experts
         </div>
 
         <h1>
             Oman Embassy Attestation
-            <span>& Apostille Services</span>
         </h1>
 
+        <h2>
+            Apostille & Certificate Legalization Services
+        </h2>
+
         <p class="oman-subtitle">
-            Reliable assistance for Educational, Personal and Commercial
-            certificate attestation, apostille and embassy legalization
-            services for Oman.
+            Professional assistance for Educational, Personal and Commercial Documents for Oman.
         </p>
 
         <div class="oman-features">
@@ -386,12 +386,13 @@
     position:relative;
     overflow:hidden;
     width:100%;
+    min-height:650px;
+    background:#08254a;
 }
 
 .oman-hero-img{
     width:100%;
-    height:560px;
-    object-fit:cover;
+    height:auto;
     display:block;
 }
 
@@ -403,10 +404,11 @@
     height:100%;
     background:
     linear-gradient(
-    90deg,
-    rgba(0,26,58,0.85) 0%,
-    rgba(0,43,92,0.65) 45%,
-    rgba(0,0,0,0.35) 100%);
+        90deg,
+        rgba(0,22,52,0.80) 0%,
+        rgba(0,35,85,0.55) 45%,
+        rgba(0,0,0,0.25) 100%
+    );
 }
 
 .oman-content{
@@ -414,78 +416,69 @@
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    z-index:2;
 
-    max-width:760px;
-    width:88%;
+    width:90%;
+    max-width:640px;
 
     text-align:center;
 
-    background:rgba(5,18,38,0.55);
-    backdrop-filter:blur(8px);
+    padding:28px 30px;
 
-    border:1px solid rgba(255,255,255,0.12);
+    background:rgba(4,18,45,0.45);
 
-    border-radius:18px;
+    backdrop-filter:blur(6px);
 
-    padding:35px 40px;
+    border:1px solid rgba(255,255,255,0.15);
 
-    box-shadow:0 15px 45px rgba(0,0,0,.35);
+    border-radius:15px;
 
-    animation:fadeUp 1s ease;
+    z-index:2;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.25);
 }
 
 .oman-badge{
     display:inline-block;
-
     background:#16a34a;
     color:#fff;
 
-    padding:8px 20px;
-
+    padding:8px 18px;
     border-radius:30px;
 
     font-size:14px;
     font-weight:600;
 
-    margin-bottom:18px;
+    margin-bottom:15px;
 }
 
 .oman-content h1{
     color:#fff;
-
-    font-size:58px;
+    font-size:56px;
     font-weight:800;
-
-    line-height:1.05;
-
-    margin-bottom:20px;
-
-    text-shadow:0 3px 10px rgba(0,0,0,.45);
+    line-height:1.08;
+    margin-bottom:10px;
+    text-shadow:0 3px 8px rgba(0,0,0,.35);
 }
 
-.oman-content h1 span{
-    display:block;
+.oman-content h2{
+    color:#ffd166;
+    font-size:24px;
+    font-weight:600;
+    margin-bottom:18px;
 }
 
 .oman-subtitle{
-    color:rgba(255,255,255,0.95);
-
-    font-size:20px;
-    line-height:1.8;
-
-    margin-bottom:20px;
+    color:#ffffff;
+    font-size:19px;
+    line-height:1.7;
+    margin-bottom:15px;
 }
 
 .oman-features{
     color:#ffd166;
-
     font-size:15px;
     font-weight:600;
-
-    margin-bottom:30px;
-
-    letter-spacing:.3px;
+    margin-bottom:25px;
 }
 
 .oman-buttons{
@@ -498,80 +491,63 @@
 .btn-request{
     background:#16a34a;
     color:#fff !important;
-
-    padding:14px 30px;
-
-    border-radius:8px;
-
+    padding:13px 28px;
     text-decoration:none;
-
+    border-radius:8px;
     font-weight:700;
-
     transition:.3s;
 }
 
 .btn-request:hover{
     background:#15803d;
     color:#fff !important;
-    transform:translateY(-2px);
 }
 
 .btn-call{
-    background:#fff;
+    background:#ffffff;
     color:#002147 !important;
-
-    padding:14px 30px;
-
-    border-radius:8px;
-
+    padding:13px 28px;
     text-decoration:none;
-
+    border-radius:8px;
     font-weight:700;
-
-    transition:.3s;
 }
 
 .btn-call:hover{
     background:#f5f5f5;
-    transform:translateY(-2px);
 }
 
-@keyframes fadeUp{
+@media (max-width:991px){
 
-    from{
-        opacity:0;
-        transform:translate(-50%,-42%);
-    }
-
-    to{
-        opacity:1;
-        transform:translate(-50%,-50%);
-    }
-}
-
-@media(max-width:768px){
-
-    .oman-hero-img{
-        height:450px;
+    .oman-hero{
+        min-height:500px;
     }
 
     .oman-content{
-        width:92%;
-        padding:25px;
+        max-width:90%;
+        padding:22px;
     }
 
     .oman-content h1{
-        font-size:34px;
+        font-size:38px;
+    }
+
+    .oman-content h2{
+        font-size:20px;
     }
 
     .oman-subtitle{
         font-size:16px;
-        line-height:1.6;
+    }
+}
+
+@media (max-width:768px){
+
+    .oman-content h1{
+        font-size:32px;
     }
 
-    .oman-features{
-        font-size:13px;
-        line-height:1.6;
+    .oman-content h2{
+        font-size:18px;
     }
 
     .btn-request,
@@ -581,6 +557,7 @@
 }
 
 </style>
+
 
 <!-- Breadcrumbs -->
 <div class="ex-basic-1">
