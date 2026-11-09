@@ -335,40 +335,43 @@
   </a>
 </div>
 
-<!-- Premium Corporate Hero Banner -->
-<header id="header" class="oman-hero-banner">
+
+<!-- OMAN EMBASSY ATTESTATION HERO SECTION -->
+<header class="oman-hero">
 
     <img src="https://www.almiraaj.com/images/oman-embassy-attestation.webp"
-         alt="Oman Embassy Attestation and Apostille Services in Chennai"
-         class="hero-bg">
+         alt="Oman Embassy Attestation Services in Chennai"
+         class="oman-hero-img">
 
-    <div class="hero-overlay"></div>
+    <div class="oman-overlay"></div>
 
-    <div class="hero-content">
+    <div class="oman-content">
 
-        <span class="hero-badge">
+        <div class="oman-badge">
             ✓ Trusted Certificate Authentication Experts
-        </span>
-
-        <h1>
-            Oman Embassy Attestation & Apostille Services
-        </h1>
-
-        <p class="hero-subtitle">
-            Fast, Reliable and Professional Assistance for Educational,
-            Personal and Commercial Documents for Oman.
-        </p>
-
-        <div class="hero-company">
-            By <strong>Al Miraaj International</strong>
         </div>
 
-        <div class="hero-buttons">
-            <a href="#contact-form" class="btn-hero-primary">
+        <h1>
+            Oman Embassy Attestation
+            <span>& Apostille Services</span>
+        </h1>
+
+        <p class="oman-subtitle">
+            Reliable assistance for Educational, Personal and Commercial
+            certificate attestation, apostille and embassy legalization
+            services for Oman.
+        </p>
+
+        <div class="oman-features">
+            Educational Documents • Personal Documents • Commercial Documents
+        </div>
+
+        <div class="oman-buttons">
+            <a href="#contact-form" class="btn-request">
                 Request Assistance
             </a>
 
-            <a href="tel:+9176159922" class="btn-hero-secondary">
+            <a href="tel:+9176159922" class="btn-call">
                 Call Now
             </a>
         </div>
@@ -379,122 +382,167 @@
 
 <style>
 
-.oman-hero-banner{
+.oman-hero{
     position:relative;
     overflow:hidden;
     width:100%;
 }
 
-.hero-bg{
+.oman-hero-img{
     width:100%;
-    height:550px;
+    height:560px;
     object-fit:cover;
     display:block;
 }
 
-.hero-overlay{
+.oman-overlay{
     position:absolute;
-    inset:0;
-    background:linear-gradient(
-        90deg,
-        rgba(0,33,71,0.88) 0%,
-        rgba(0,45,98,0.72) 40%,
-        rgba(0,0,0,0.45) 100%
-    );
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:
+    linear-gradient(
+    90deg,
+    rgba(0,26,58,0.85) 0%,
+    rgba(0,43,92,0.65) 45%,
+    rgba(0,0,0,0.35) 100%);
 }
 
-.hero-content{
+.oman-content{
     position:absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
     z-index:2;
+
+    max-width:760px;
+    width:88%;
+
     text-align:center;
-    width:90%;
-    max-width:850px;
-    padding:35px;
+
+    background:rgba(5,18,38,0.55);
+    backdrop-filter:blur(8px);
+
+    border:1px solid rgba(255,255,255,0.12);
+
     border-radius:18px;
-    background:rgba(255,255,255,0.08);
-    backdrop-filter:blur(10px);
-    box-shadow:0 15px 50px rgba(0,0,0,0.35);
+
+    padding:35px 40px;
+
+    box-shadow:0 15px 45px rgba(0,0,0,.35);
+
     animation:fadeUp 1s ease;
 }
 
-.hero-badge{
+.oman-badge{
     display:inline-block;
+
     background:#16a34a;
     color:#fff;
-    padding:8px 18px;
+
+    padding:8px 20px;
+
     border-radius:30px;
+
     font-size:14px;
     font-weight:600;
-    margin-bottom:15px;
+
+    margin-bottom:18px;
 }
 
-.hero-content h1{
+.oman-content h1{
     color:#fff;
-    font-size:52px;
+
+    font-size:58px;
     font-weight:800;
-    line-height:1.15;
-    margin-bottom:15px;
-    text-shadow:0 3px 8px rgba(0,0,0,.5);
+
+    line-height:1.05;
+
+    margin-bottom:20px;
+
+    text-shadow:0 3px 10px rgba(0,0,0,.45);
 }
 
-.hero-subtitle{
-    color:#f3f4f6;
+.oman-content h1 span{
+    display:block;
+}
+
+.oman-subtitle{
+    color:rgba(255,255,255,0.95);
+
     font-size:20px;
-    line-height:1.7;
+    line-height:1.8;
+
     margin-bottom:20px;
 }
 
-.hero-company{
+.oman-features{
     color:#ffd166;
-    font-size:18px;
-    margin-bottom:25px;
+
+    font-size:15px;
+    font-weight:600;
+
+    margin-bottom:30px;
+
+    letter-spacing:.3px;
 }
 
-.hero-buttons{
+.oman-buttons{
     display:flex;
     justify-content:center;
     gap:15px;
     flex-wrap:wrap;
 }
 
-.btn-hero-primary{
+.btn-request{
     background:#16a34a;
-    color:#fff;
-    padding:13px 28px;
+    color:#fff !important;
+
+    padding:14px 30px;
+
     border-radius:8px;
+
     text-decoration:none;
+
     font-weight:700;
+
     transition:.3s;
 }
 
-.btn-hero-primary:hover{
+.btn-request:hover{
     background:#15803d;
-    color:#fff;
+    color:#fff !important;
+    transform:translateY(-2px);
 }
 
-.btn-hero-secondary{
-    background:#ffffff;
-    color:#002147;
-    padding:13px 28px;
+.btn-call{
+    background:#fff;
+    color:#002147 !important;
+
+    padding:14px 30px;
+
     border-radius:8px;
+
     text-decoration:none;
+
     font-weight:700;
+
     transition:.3s;
 }
 
-.btn-hero-secondary:hover{
-    background:#f3f4f6;
-    color:#002147;
+.btn-call:hover{
+    background:#f5f5f5;
+    transform:translateY(-2px);
 }
 
 @keyframes fadeUp{
+
     from{
         opacity:0;
-        transform:translate(-50%,-40%);
+        transform:translate(-50%,-42%);
     }
+
     to{
         opacity:1;
         transform:translate(-50%,-50%);
@@ -503,21 +551,32 @@
 
 @media(max-width:768px){
 
-    .hero-bg{
+    .oman-hero-img{
         height:450px;
     }
 
-    .hero-content{
-        padding:25px;
+    .oman-content{
         width:92%;
+        padding:25px;
     }
 
-    .hero-content h1{
+    .oman-content h1{
         font-size:34px;
     }
 
-    .hero-subtitle{
+    .oman-subtitle{
         font-size:16px;
+        line-height:1.6;
+    }
+
+    .oman-features{
+        font-size:13px;
+        line-height:1.6;
+    }
+
+    .btn-request,
+    .btn-call{
+        width:100%;
     }
 }
 
