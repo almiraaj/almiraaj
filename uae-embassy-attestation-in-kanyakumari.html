@@ -73,907 +73,206 @@
 <link rel="icon" href="/images/ALMINT.png">
    
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-      <!-- Text Logo - Use this if you don't have a graphic logo -->
-      <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+<!-- Fonts and Styles -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap" rel="stylesheet">
+  <link href="/css/bootstrap.css" rel="stylesheet">
+  <link href="/css/fontawesome-all.css" rel="stylesheet">
+  <link href="/css/swiper.css" rel="stylesheet">
+  <link href="/css/magnific-popup.css" rel="stylesheet">
+  <link href="/css/styles.css" rel="stylesheet">
+  <link href="/css/css.css" rel="stylesheet">
+  <link rel="icon" href="/images/ALMINT.png">
+
   
-      <!-- Image Logo -->
-      <a class="navbar-brand logo-image" href="index.html">
-        <h3 class="logo-image">AL-MIRAAJ International</h3>
-      </a>
+<!-- Custom Navbar Styles -->
+<style>
+  /* Navbar */
+  .navbar {
+    background-color: #00264d !important;
+  }
+  .navbar-brand {
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  .navbar-brand:hover {
+    color: #c99b33 !important;
+  }
+  .nav-link {
+    color: #fff !important;
+    transition: color 0.3s ease-in-out;
+  }
+  .nav-link:hover {
+    color: #c99b33 !important;
+  }
+
+  /* Dropdown */
+  .dropdown-menu {
+    background-color: #00264d !important;
+    border: none;
+    box-shadow: none;
+  }
+  .dropdown-item {
+    color: #fff !important;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  .dropdown-item:hover {
+    background-color: #c99b33 !important;
+    color: #00264d !important;
+  }
+
+  /* Image */
+  .bahrain-embassy-img {
+    max-width: 100%;
+    height: 450px;
+    object-fit: cover;
+  }
+
+  /* Card */
+  .card {
+    transition: all 0.3s ease-in-out;
+  }
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  .card-title a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
   
-      <!-- Mobile Menu Toggle Button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-awesome fas fa-bars"></span>
-        <span class="navbar-toggler-awesome fas fa-times"></span>
-      </button>
-      <!-- end of mobile menu toggle button -->
-  
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="./index.html#header">HOME <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle page-scroll " href="../certificate-attestation-services-in-chennai-in-tamilnadu.html" aria-haspopup="true"
-            aria-expanded="false">Certificate Attestation</a>
-            <ul id="myMenun2" class="dropdown-menu"  aria-labelledby="navbarDropdown" >
-                <div> <a class="dropdown-item"href="../birth-certificate-attestation.html"
-                    title="Birth Certificate Attestation"><span>Birth Certificate Attestation</span></a></div>
-                <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"
-                    href="../marriage-certificate-attestation
-                    title="Marriage Certificate Attestation" ><span>Marriage Certificate Attestation</span></a></div>
-                <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"
-                href="../degree-certificate-attestation-in-chennai.html"
-                    title="Educational Certificate Attestation"><span>Educational Certificate Attestation</span></a></div>
-                <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"href="../unmarriedcertificateapostille.html"
-                    title="Single Status Certificate Apostille / Attestation"><span>Single Status Certificate Apostille / Attestation</span></a></div>
-                <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"
-                    href="../how-to-get-single-status-certificate-in-chennai.html"
-                    title="how to get single status certificate in Chennai"><span>how to get single status certificate in Chennai</span></a></div>
-                <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"href="../commercial-documents-attestation.html"
-                    title="Commercial Documents Attestation"><span>Commercial Documents Attestation</span></a></div>
-                <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"
-                    href="../power-of-attorney-apostilleattestation-in-chennai.html"
-                    title="Power of Attorney Apostille/Attestation in Chennai"><span>Power of Attorney Apostille/Attestation in Chennai</span></a></div>
-                    <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"
-                    href="../hrd-attestation-process.html"
-                    title="HRD Attestation Process"
-                    ><span>HRD Attestation Process</span></a></div>
-                <div class="dropdown-items-divide-hr"></div>
-                <div>
-                  <a class="dropdown-item"
-                    href="../home-mantralaya-attestation.html"
-                    title="Home-Mantralaya Attestation"><span>Home-Mantralaya Attestation</span></a></div>
-                <div class="dropdown-items-divide-hr"></div>
-              </ul>
-          </li>
-  
-  
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle page-scroll " href="../embassy-attestation-in-chennai.html" aria-haspopup="true"
-            aria-expanded="false">Embassy Attestation</a>
-            <ul id="myMenun2" class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <div>
-                <a class="dropdown-item" href="../uae-embassy-attestation.html"
-                  title="UAE Embassy Attestation"><span>UAE Embassy Attestation</span></a>
-              </div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item" href="../kuwait-embassy-attestation.html"
-                  title="Kuwait Embassy Attestation"><span>Kuwait Embassy Attestation</span></a>
-              </div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item" href="../bahrain-embassy-attestation.html"
-                  title="Bahrain Embassy Attestation"><span>Bahrain Embassy Attestation</span></a>
-              </div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item" href="../qatar-embassy-attestation.html"
-                  title="Qatar Embassy Attestation"><span>Qatar Embassy Attestation</span></a>
-              </div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item" href="../oman-embassy-attestation.html"
-                  title="Oman Embassy Attestation"><span>Oman Embassy Attestation</span></a>
-              </div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item" href="../china-embassy-attestation.html"
-                  title="China Embassy Attestation"><span>China Embassy Attestation</span></a>
-              </div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item" href="../malaysia-embassy-attestation.html"
-                  title="Malaysia Embassy Attestation"><span>Malaysia Embassy Attestation</span></a>
-              </div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item" href="../saudi-embassy-attestation-in-chennai.html" title="Saudi Embassy Attestation"><span>Saudi Embassy Attestation</span></a>
-              </div>
-              <div class="dropdown-items-divide-hr"></div>
-              <div>
-                <a class="dropdown-item" href="../egypt-embassy-attestation.html"
-                  title="Egypt Embassy Attestation"><span>Egypt Embassy Attestation</span></a>
-              </div>
-             
-           
-              <div class="dropdown-items-divide-hr"></div>
-            </ul>
-          </li>
-  
-  
-  
-  
-          <!-- Dropdown Menu -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle page-scroll" href="../certificate-apostille-mea-in-chennai.html" id="navbarDropdown" role="button"
-              aria-haspopup="true" aria-expanded="false">Apostille MEA</a>
-            <ul id="myMenu2" class="dropdown-menu" aria-labelledby="navbarDropdown">
-  
-              <li><a class="dropdown-item" href="../certificate-apostille-mea-in-chennai.html"
-                  title="Apostille MEA Attestation IN Chennai"><span>Apostille MEA Attestation IN Chennai</span></a></li>
-              <div class="dropdown-items-divide-hr"></div>
-              <li><a class="dropdown-item" href="../apostille-mea-attestation-in-trichy.html"
-                  title="Apostille MEA Attestation in Trichy"><span>Apostille MEA Attestation in Trichy</span></a></li>
-              <div class="dropdown-items-divide-hr"></div>
-              <li><a class="dropdown-item" href="../apostille-mea-attestation-in-coimbatore.html"
-                  title="Apostille MEA Attestation in Coimbatore"><span>Apostille MEA Attestation in Coimbatore</span></a>
-              </li>
-              <div class="dropdown-items-divide-hr"></div>
-              <li><a class="dropdown-item" href="../apostille-mea-attestation-in-tirunelveli.html"
-                  title="Apostille MEA Attestation in Tirunelveli"><span>Apostille MEA Attestation in
-                    Tirunelveli</span></a></li>
-              <div class="dropdown-items-divide-hr"></div>
-              <li><a class="dropdown-item" href="../apostille-mea-attestation-in-tuticorin.html"
-                  title="Apostille MEA Attestation in Tuticorin"><span>Apostille MEA Attestation in Tuticorin</span></a>
-              </li>
-              <div class="dropdown-items-divide-hr"></div>
-              <li><a class="dropdown-item" href="../apostille-mea-attestation-in-nagercoil.html"
-                  title="Apostille MEA Attestation in Nagercoil"><span>Apostille MEA Attestation in Nagercoil</span></a>
-              </li>
-              <div class="dropdown-items-divide-hr"></div>
-              <li><a class="dropdown-item" href="../apostille-mea-attestation-in-pondicherry.html"
-                  title="Apostille MEA Attestation in Pondicherry"><span>Apostille MEA Attestation in
-                    Pondicherry</span></a></li>
-              <div class="dropdown-items-divide-hr"></div>
-              <li><a class="dropdown-item" href="../apostille-mea-attestation-in-karaikal.html"
-                  title="Apostille MEA Attestation in Karaikal"><span>Apostille MEA Attestation in Karaikal</span></a>
-              </li>
-  
-            </ul>
-          </li>
-  
-          <!-- Dropdown Menu -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle page-scroll" href="../visa_services_10.html"" id="navbarDropdown" role="button"
-              aria-haspopup="true" aria-expanded="false">Visa Services</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href=../australia_visa_32.html><span class="item-text">Australia Visa</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../brunei_visa_stamping_33.html><span class="item-text">Brunei Visa Stamping</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../china-visa-services.html><span class="item-text">China Visa Services</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../dubai_tourist_visa_47.html><span class="item-text">Dubai Tourist Visa Services</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../egypt-visa-services.html><span class="item-text">Egypt Visa Services</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../japan-visa-services.html><span class="item-text">Japan Visa Services</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../kuwait_visa_stamping_28.html><span class="item-text">Kuwait Visa Stamping</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../malaysia_tourist_visa_30.html><span class="item-text">Malaysia Visa Services</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../saudi_visa_stamping_27.html><span class="item-text">Saudi Visa Stamping</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../singapore-visa-services.html><span class="item-text">Singapore Tourist Visa</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../sri-lanka-visa-services.html><span class="item-text">Sri Lanka Visa Services</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../thailand-visa-services-in-chennai.html><span class="item-text">Thailand Visa Services in Chennai</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../taiwan-visa-services.html><span class="item-text">Taiwan Visa Services</span></a>
-               <div class="dropdown-items-divide-hr"></div>
-              <a class="dropdown-item" href=../thailand-visa-process-in-chennai.html><span class="item-text">Thailand Visa Process in Chennai</span></a>
-              
-          </li>
-          
-          
-          <!-- end of dropdown menu -->
-  
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#contact">CONTACT</a>
-          </li>
-        </ul>
-        <span class="nav-item social-icons">
-          <span class="fa-stack">
-            <a href="https://wa.me/+919176160055">
-              <span class="hexagon"></span>
-              <i class="fab fa-whatsapp  fa-stack-1x"></i>
-            </a>
-          </span>
-               </span>
-      </div>
-    </nav>
-    <div class="whatsapp-widget">
-      <!-- Use Font Awesome WhatsApp icon -->
-      <a href="https://wa.me/+919176160055" target="_blank">
-        <i class="fab fa-whatsapp fa-2x"></i>
-      </a>
-    </div>
-    <!-- end of navbar -->
-    <!-- end of navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+  <div class="container-fluid">
+    <!-- Brand Logo -->
+    <a class="navbar-brand logo-image" href="index.html">
+      <h3 class="logo-image">AL-MIRAAJ INTERNATIONAL</h3>
+    </a>
 
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <!-- Header -->
-    <header id="header" class="ex-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>UAE Embassy Attestation</h1>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </header> <!-- end of ex-header -->
-    <!-- end of header -->
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav ml-auto">
 
+        <!-- HOME -->
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="./index.html#header">HOME</a>
+        </li>
 
-    <!-- Breadcrumbs -->
-    <div class="ex-basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumbs">
-                        <a href="../index.html">Home</a><i class="fa fa-angle-double-right"></i><span>UAE Embassy Attestation</span>
-                    </div> <!-- end of breadcrumbs -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of breadcrumbs -->
-
-
-    <!-- Privacy Content -->
-    <div class="container">
-    <div class="ex-basic-2">
-        <div class="container">
-           
-            <a href="/uae-embassy-attestation-in-chennai"><img src="/images/UAE_Embassy_Attestation.png" class="Apostilleimg" alt="" srcset=""></a>
-
-            <a href="https://almiraaj.com/uae-embassy-attestation.html"><img src="/images/dubai_embassy_attestation.gif"alt="centered image" class="Apostilleimg" height="400" width="870"></a>
-                  
-            
-          
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-center">
-                        <h5> Call : +91 99405 89665 - +91 917 616 0055 - +91  917 615 9922 - +91 98407 88288 - +91 735 820 8779. </h5>
-                       <div class="text-center">
-                        <div class="row">
-                          <div class="col-lg-12">
-                              <div class="text-center">
-                                  <h5> Email : info@almiraaj.com.</h5>
-                                 <div class="text-center">
-                        <i>
-                           <br> <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation </a> in Degree Certificates,
-                           <br> <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation </a> in Marriage Certificates ,
-                           <br> <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation </a> in Birth Certificates,
-                           <br> <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation </a> in PCC - Police Clearance Certificates
-                           <br> <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation </a> in Commercial documents, 
-                        </i>
-                       </div>
-                       <hr>
-                       <div>
-                        <div class="text-center">
-                          <h1>Simplifying Document Attestation: UAE Embassy Attestation Process Explained</h1></div>
-                          <div class="text-left"><h5> Introduction:</h5>
-                          <p>Document attestation is a crucial step when dealing with international transactions, employment, or educational pursuits. If you are planning to use your documents in the United Arab Emirates (UAE), understanding the UAE embassy attestation process is essential. This article provides an overview of UAE embassy attestation, its significance, and the steps involved. </p>
-                          <h2>Understanding UAE Embassy Attestation:</h2>
-                          <p>UAE embassy attestation is a procedure that verifies the authenticity of foreign documents to ensure their legal acceptance within the UAE. It involves the verification of documents by relevant authorities, including the home country's designated departments, the Ministry of Foreign Affairs, and the UAE embassy or consulate.</p>
-                          <h2>Importance of UAE Embassy Attestation:</h2>
-                          <p>UAE embassy attestation is crucial for various purposes, such as employment visas, educational admissions, business setup, marriage certificates, and legal matters. The attestation process adds credibility and validity to the documents, making them legally recognized by UAE authorities and institutions.</p>
-                        <div class="text-left">
-
-                            Having a vast experience of morethan 20 years ,<b> “AL-MIRAAJ International”,</b> is an experienced organization for <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation </a> for Educational certificates , <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation </a> for Degree,<a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation </a> Diploma,UAE Embassy Attestation Birth certificate , UAE Embassy Attestation Commercial documents- Invoices and Certificates of origin, <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation </a> Marriage certificate, <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation </a> Death certificate attestation & Attestation of affidavits of all kinds. It is handled by experts to provide you quick and effective solutions all under one roof . We assure 100% genuine service <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation </a> attestation on all the certificates at very competitive rates. Our services are highly appreciated by our clients for their reliability. We have earned the trust of thousands of our customers including many Big Corporate house who are regularly dealing with us for their requirements.
-
-<b>AL-MIRAAJ International</b> has its presence all over India and offers efficient and reliable services to its clients in The Gulf and the Middle Eastern countries. The Office is located in the Heart of Chennai. 
-<br><br>
-<br>
-
-<div class="text-center">
-  <h2>  <a style="text-decoration: none;" href="../process-of-uae-embassy-attestation-in-chennai">UAE Embassy Attestation|Personal ,Educational , Commercial Documents Attestation.</a>  </h2></div>
-  
-                   <br>
-                   <div class="row">
-                    <div class="col-md-4 btn bg-light">
-
-                                                <h5><a style="text-decoration: none;" href="../process-of-uae-embassy-attestation-in-chennai">UAE Embassy  Attestation</a> For Birth Certificate
-  </h5>
-                     
-                      <p>Required Documents : Original Certificate , and Supporting documents copy.<br>time taken : 5 days approx</p>
-                    </div>
-                    <div class="col-md-4 btn bg-light">
-
-                                                <h5><a style="text-decoration: none;" href="../process-of-uae-embassy-attestation-in-chennai">UAE Embassy Attestation</a> For Marriage Certificate</h5>
-                      <p>Required Documents : Original Certificate , and Supporting documents copy.<br>time taken : 5 days approx.
-                      </p>
-                    </div>
-                    <div class="col-md-4 btn bg-light">
-
-                                                <h5><a style="text-decoration: none;" href="../process-of-uae-embassy-attestation-in-chennai">UAE Embassy Attestation</a> For Degree Certificate
-  </h5>
-                      <p>
-                       Required Documents : Original Certificate , and Supporting documents copy.<br>time taken : 5 days approx.
-                    
-                      </p>
-                      <div>
-                        
-                      </div>
-            </div>
-            
-  <div>
-  
-                   <br>
-                   <div class="row">
-                    <div class="col-md-4 btn bg-light">
-                                                <h5><a style="text-decoration: none;" href="../process-of-uae-embassy-attestation-in-chennai">UAE Embassy Attestation</a> For Personal Certificate</h5>
-                     
-                      <p>Required Documents : Original Certificate , and Supporting documents copy.<br>time taken : 5 days approx</p>
-                    </div>
-                    <div class="col-md-4 btn bg-light">
-
-                                                <h5><a style="text-decoration: none;" href="../process-of-uae-embassy-attestation-in-chennai">UAE Embassy Attestation</a> For Power of Attorney Documents</h5>
-                      <p>Required Documents : Original Certificate , and Supporting documents copy.<br>time taken : 5 days approx.
-                      </p>
-                    </div>
-                    <div class="col-md-4 btn bg-light">
-
-                                                <h5><a style="text-decoration: none;" href="../process-of-uae-embassy-attestation-in-chennai">UAE Embassy Attestation</a> For Commercial Documents
-  </h5>
-                      <p>
-                       Required Documents : Original Certificate , and Supporting documents copy.<br>time taken : 5 days approx.
-                    
-                      </p>
-                      <!-- end of row -->
-                    </div> <!-- end of container -->
-                    
-                      <!-- end of row -->
- 
- </ul>
-
-                        </div>
-  
-  <br>
-  <div class="text-center"> <h1>Required documents to process UAE Embassy Attestation</h1></div>
-  <br>
-  <br>
-                       <br>
-                       <div class="row">
-                        <div class="col-md-4 btn bg-light">
-                          <a href="/uae-embassy-attestation.html"><img src="/Images2023/Original.gif"  class="img-fluid rounded-circle"></a>                          <h5>1- Original Certificate</h5>
-                         
-                          <p>Original Certificate in which you want get <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation </a>.it can be educational certificates , or personal certificate like birth , marriage certificate , or commercial documents for business activities</p>
-                        </div>
-                        <div class="col-md-4 btn bg-light">
-                          <a href="/uae-embassy-attestation.html"><img src="/Images2023/Supporting documents.gif"  class="img-fluid rounded-circle"></a>                          <h5>2-Supporting Documents</h5>
-                          <p>Supporting Documents to get <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation </a> As per the Embassy / Consulate / Highcommissions / Ministry requirements..
-                          </p>
-                        </div>
-                        <div class="col-md-4 btn bg-light">
-                          <a href="/uae-embassy-attestation.html"><img src="/Images2023/passport copy.gif"  class="img-fluid rounded-circle"></a>                          <h5>3-Passport Copy</h5>
-                          <p>
-                           Passport copy of the concerned person.Passport copy is one of the supporting documents to get <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation </a> in all kind of personal , educational ,commercial documents.
-                        
-                          </p>
-                </div>
-
+<!-- Certificate Attestation -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle page-scroll" href="../certificate-attestation-services-in-chennai.html" id="certificateDropdown" aria-haspopup="true" aria-expanded="false">
+    Certificate Attestation
+  </a>
+  <div class="dropdown-menu" aria-labelledby="certificateDropdown">
+    <a class="dropdown-item" href="../birth-certificate-attestation.html">Birth Certificate</a>
+    <a class="dropdown-item" href="../marriage-certificate-attestation.html">Marriage Certificate</a>
+    <a class="dropdown-item" href="../degree-certificate-attestation-in-chennai.html">Educational Certificate</a>
+    <a class="dropdown-item" href="../divorce-decree-certificate-apostille-embassy-attestation.html">Divorce Certificate</a>
+    <a class="dropdown-item" href="../death-certificate-attestation.html">Death Certificate</a>
+    <a class="dropdown-item" href="../unmarriedcertificateapostille.html">Single Status Certificate</a>
+    <a class="dropdown-item" href="../commercial-documents-attestation.html">Commercial Document</a>
+    <a class="dropdown-item" href="../power-of-attorney-apostilleattestation-in-chennai.html">Power of Attorney (POA)</a>
+    <a class="dropdown-item" href="../legal-heir-certificate-attestation.html">Legal Heir Certificate</a>
+    <a class="dropdown-item" href="../pcc-apostille-attestation.html">Police Clearance Certificate (PCC)</a>
+    <a class="dropdown-item" href="../hrd-attestation-process.html">HRD Attestation</a>
+    <a class="dropdown-item" href="../home-mantralaya-attestation.html">Home/Mantralaya Attestation</a>
+    <a class="dropdown-item" href="../coc-chamberofcommerce-attestation.html">Chamber of Commerce (COC) Attestation</a>
+    <a class="dropdown-item" href="https://www.almiraaj.com/medical-certificate-attestation">Medical Certificate Attestation</a>
   </div>
-  <br><br>
-
-                        </p>
-                       </div>
-                        <!-- end of text-container -->
-                       <br></div>
-                       <br><div class="text-center">
-                        <h2> Get your Certificates Attestation From UAE Embassy in 3 Easy Steps : </h2></div>  
-                       <div class="tables row">
-                        <div class="col-lg-4 my-5">
-                          <div class="card">
-                            <img src="/Images2023/ctc1.png" class="card-img-top img-fluid" alt="Image description">
-                            <div class="card-body">
-                              <h5 class="card-title text-center">Step 1 Contact us</h5>
-                              <p class="card-text text-left">
-                                <b>ALMIRAAJ International.</b><br>
-                                No.10 CASA Major Road.<br>
-                                B3-Elcanso Plaza.<br>
-                                Egmore,Chennai-600008,TN,India.<br>
-                                Phone:+91 44 4203 7273.<br>
-                                Email: almiraaj.in@gmail.com.
-                              </p>
-                              <a href="/" class="btn btn-sm btn-success">Check more info</a>
-                            </div>
-                          </div>
-                        </div>
-                      
-                        <div class="col-lg-4 my-5">
-                          <div class="card">
-                            <img src="/Images2023/sbmt1.png" class="card-img-top img-fluid" alt="Image description">
-                            <div class="card-body">
-                              <h5 class="card-title text-center">Step 2 Submit the Documents.</h5>
-                              <p class="card-text text-left">
-                                Original Certificates<br>
-                                Supporting Documents as per the ministry requirements.<br>
-                                Passport Copy of the certificate holder.<br>
-                      Get the Reference Number cum acknowledgement  </p>
-                              <a href="/" class="btn btn-sm btn-success">Check more info</a>
-                            </div>
-                          </div>
-                        </div>
-                      
-                        <div class="col-lg-4 my-5">
-                          <div class="card">
-                            <img src="/Images2023/dlvr.png" class="card-img-top img-fluid" alt="Image description">
-                            <div class="card-body">
-                              <h5 class="card-title text-center">Step 3 Delivery of Documents.</h5>
-                              <p class="card-text text-left">Now Apostille Process Completed.<br>
-                                We'll inform you after completion.<br>
-                                You can collect the documents from our office.<br>
-                      if you want,we will arrange delivery at your doorstep. </p>
-                              <a href="/" class="btn btn-sm btn-success">Check more info</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                                            <br><br>
-                                          </div>
-                                          <br><br>
-
-<div class="text-left mt-3">
-    <h4>Why <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation </a> from AL-MIRAAJ.</h4>
-    <i>
-<li> 100 % Genuine service <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation </a> Attestation.</li>
-<li> 20 years experience in the field of <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation </a> industry.</li>
-<li> Safe handling of <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation </a> Documents</li>
-<li> Step by step tracking Mails to know the status of <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation </a>.</li>
-<li> Fast and Prompt <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation </a> Service.</li>
-<li> Courier used to Transfer your Documents for <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation </a> - BlueDart Express / DHL. </li>
-<li> Various Payment Options - Cash | DD | Credit Card | Bank Transfer.</li>
-<div>
-  <br>
-  
-</div>
-</div>
-<br>
+</li>
 
 
 
-</i>
-</div><br>
-  <br>
- 
-</p><div>
-  <div class="text-left">
-    <h2>Documents list We can assist you to get UAE Embassy Attestation:</h2>
-    <br>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Marriage Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Personal documents UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Marriage Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Birth Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Death Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Divorce Decree Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Passport Copies UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Marriage Affidavit UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Birth Affidavit UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Medical Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Single Status Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Driving Licence UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Apprenticeship Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Good Conduct Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Professional Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Name Change Affidavit UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Relieving Letter UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Family Composition UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Bank Statement UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Covering Letter UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Provisional Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Migration Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Adoption Deed UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Fir Copy UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Experience Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Income Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">PCC UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Dependency Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Aadhar Card UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Resume Curriculum Vitae UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Academic Book Translation UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Academic Thesis Translation UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Administrative Conversion UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Admission Essays UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Advertising Material, Etc UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Affidavits UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Deeds UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Discharge Summary UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Drug Registration Documentation UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Employee And Customer Satisfaction Surveys UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Engineering Specifications UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Equity And Bond Research Notes UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Equity Research UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Essays UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Financial Consultancy UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Financial Models UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Financial Reports UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Fund Fact Sheets UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Fund Regulations UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">General Briefs UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Government Reports UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Handwritten Medical Information UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Hospital Discharge Summary UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Immigration And Naturalization Papers UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Import / Export Licence UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Income Statement UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Insight Documents UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Installation Manuals UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Insurance UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">License UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Licensing Agreements UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Liquidations UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Lyrics UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Magazines UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Marketing Materials UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Medical Test UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Ndas UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">News Articles UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">News Releases UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Operation Manuals, Instruction Manuals UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Patents UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Patient Diagnosis Sheets/Reports UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Patient Information UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Performance Reports UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Ph.D. Translation UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Poems UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Press Releases UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Prospectus UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Recommendation Letters UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Regulatory And Compliance Documentation UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Regulatory Prospectuses UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Reports UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Safety Reports UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Short Stories UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Software And Hardware Ui UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Songs UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Specifications UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Standards UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Summons UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Syllabus Translation UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">System Requirement Documents UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Will Translation UAE Embassy Attestation IN Kanyakumari.</a></li>
-     <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Educational documents list for UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Degree Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Diploma Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Transcript Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Transfer Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">SSC Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">HSC Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">BE Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Nursing Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Nursing Registration Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Pharmacy Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">MBBS Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">MS Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">MD Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">ITI Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">College Leaving Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Mark Sheet UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Engineering Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">School Leaving Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Bonafide Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Bonafide Letter UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Books UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Diplomas UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Exam Results Translation UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Industry Studies UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Journals UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Kiids UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Leaflets UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Market Reports UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Medical Books/Literature UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Medical Device Documents And Instructions UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Medical History Record UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Medical Journals And White Papers UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Medical Prescriptions UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Medical Records UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Mental Status Examination UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html"> Operative Report UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html"> Questionnaires UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Report Cards UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Reports (Project, Dissertation) Translation UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Research Paper UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Teaching Certification UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Technical Brochures UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Technical Proposals UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Tender Documentation UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Tender Documents UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Tender Letters UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Translations Of Recommendation Letters UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">White Papers UAE Embassy Attestation IN Kanyakumari.</a></li>
-     <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Commercial documents list for UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Memorandum Of Association UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Physical Or Chemical Analysis Reports Of Products UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Invitation Letter UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Authority Letter UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Company Profile UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Power Of Attorney UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Company Agreement UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Employment Contracts Papers UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Letter From Chambers Of Commerce UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Dissolution Of Business UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">National Trade Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Company Financial Budget UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Board Resolution UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Article Of Association UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Certificate Of Incorporation UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Sales Contract UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Commercial Invoice UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Packing List UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Inspection Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Insurance Policy UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Insurance Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Product Testing Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Health Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Phytosanitary Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Fumigation Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Ata Carnet UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Consular Invoice UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Dock Receipt D/R Or Mate's Receipt UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Bill Of Lading UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">House Bill Of Lading (Groupage) UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Shipping Guarantee UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Documentary Credit D/C UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Standby Credit UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Collection Instruction UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Bill Of Exchange UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Trust Receipt UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Promissory Note UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Certificate Of Origin UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Landing Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Customs Invoice UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Shipping Bill UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Import Export Document UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Invoice Bills UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Free Sale Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">GMP Certificate UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Trademark UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Agreements And Contracts UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Annual Reports UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Arbitration UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Articles Of Incorporation UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Assessments UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Audit Documents UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Balance Sheets UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Banking Documentations UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Bill Of Materials UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Invoices Bills UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Brochures UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Brochures For Healthcare Institutions UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Business Correspondence UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Business Document UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Business Plans UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Business Proposals UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Cad Drawings UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Clinical Protocols And Trial Agreements UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Company Documentation UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Contract UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Corporate Communications UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Correspondence UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Court Documentation UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Datasheets UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Disclaimers UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Financial Statements UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Immigration Document UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Insurance Claim UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Insurance Marketing UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Insurance Translation UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Investment Marketing UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Investment Reports UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Legal Certification UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Legal Disclaimers UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Legal Marketing UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Shop Act Registration UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Patent And Trademark Filings UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Product Guides UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Profit And Loss Reports UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Regulatory Documents UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Service Agreements And Contracts UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Shareholder Information UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Shipping Order S/O UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Trademark And Patent Registration UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Price List UAE Embassy Attestation IN Kanyakumari.</a></li>
-     <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Legal documents list for UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Powerpoint Presentations UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Presentations UAE Embassy Attestation IN Kanyakumari.</a></li>
-    <li><a style="text-decoration: none;" href="../uae-embassy-attestation.html">Presentations Translations (Hard Copies / Ppt) UAE Embassy Attestation IN Kanyakumari.</a></li>
-</div></p>
-<div>
- 
-<div><marquee behavior="scroll" direction="left"><span style="font-size:18px;"><span style="font-family:Comic Sans MS,cursive;"><span style="color:#ffffff;"><em><strong><span style="background-color:#FFFFFF;">Personal documents list for <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Marriage Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Birth Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Death Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Divorce Decree Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Passport Copies <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Marriage Affidavit <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Birth Affidavit <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Medical Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Single Status Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Driving Licence <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Apprenticeship Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Good Conduct Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Professional Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Name Change Affidavit <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Relieving Letter <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Family Composition <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Bank Statement <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Covering Letter <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Provisional Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Migration Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Adoption Deed <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Fir Copy <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Experience Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Income Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . PCC <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Dependency Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Aadhar Card <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Resume Curriculum Vitae <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Academic Book Translation <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Academic Thesis Translation <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Administrative Conversion <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Admission Essays <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Advertising Material, Etc <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Affidavits <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Deeds <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Discharge Summary <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Drug Registration Documentation <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Employee And Customer Satisfaction Surveys <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Engineering Specifications <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Equity And Bond Research Notes <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Equity Research <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> .Essays <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Financial Consultancy <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Financial Models <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Financial Reports <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Fund Fact Sheets <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Fund Regulations <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . General Briefs <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Government Reports <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Handwritten Medical Information <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Hospital Discharge Summary <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Immigration And Naturalization Papers <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Import / Export Licence <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Income Statement <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Insight Documents <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Installation Manuals <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Insurance <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> .License <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Licensing Agreements <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Liquidations <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Lyrics <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Magazines <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Marketing Materials <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Medical Test <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Ndas <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . News Articles <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . News Releases <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Operation Manuals, Instruction Manuals <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Patents <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Patient Diagnosis Sheets/Reports <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Patient Information <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Performance Reports <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Ph.D. Translation <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Poems <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Press Releases <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Prospectus <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Recommendation Letters <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Regulatory And Compliance Documentation <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Regulatory Prospectuses <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Reports <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Safety Reports <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Short Stories <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Software And Hardware Ui <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Songs <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Specifications <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Standards <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Summons <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Syllabus Translation <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . System Requirement Documents <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Will Translation <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Educational documents list for <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Degree Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Diploma Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Transcript Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Transfer Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . SSC Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> .HSC Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . BE Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Nursing Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Nursing Registration Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Pharmacy Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . MBBS Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . MS Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . MD Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . ITI Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . College Leaving Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Mark Sheet <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Engineering Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . School Leaving Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Bonafide Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Bonafide Letter <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Books <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> .Diplomas <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Exam Results Translation <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Industry Studies <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Journals <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> .Kiids <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Leaflets <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Market Reports <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Medical Books/Literature <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Medical Device Documents And Instructions <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Medical History Record <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Medical Journals And White Papers <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Medical Prescriptions <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Medical Records <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Mental Status Examination <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Operative Report <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> .Questionnaires <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Report Cards <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Reports (Project, Dissertation) Translation <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Research Paper <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Teaching Certification <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Technical Brochures <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Technical Proposals <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Tender Documentation <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Tender Documents <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Tender Letters <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Translations Of Recommendation Letters <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . White Papers <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Commercial documents list for <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Memorandum Of Association <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Physical Or Chemical Analysis Reports Of Products <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Invitation Letter <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Authority Letter <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Company Profile <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Power Of Attorney <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Company Agreement <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Employment Contracts Papers <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Letter From Chambers Of Commerce <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Dissolution Of Business <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . National Trade Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Company Financial Budget <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Board Resolution <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Article Of Association <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Certificate Of Incorporation <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Sales Contract <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Commercial Invoice <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Packing List <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Inspection Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Insurance Policy <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Insurance Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Product Testing Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Health Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Phytosanitary Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Fumigation Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Ata Carnet <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Consular Invoice <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Dock Receipt D/R Or Mate's Receipt <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Bill Of Lading <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . House Bill Of Lading (Groupage) <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Shipping Guarantee <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Documentary Credit D/C <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Standby Credit <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Collection Instruction <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Bill Of Exchange <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Trust Receipt <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Promissory Note <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Certificate Of Origin <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Landing Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Customs Invoice <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Shipping Bill <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Import Export Document <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Invoice Bills <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Free Sale Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . GMP Certificate <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Trademark <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Agreements And Contracts <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Annual Reports <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Arbitration <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Articles Of Incorporation <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Assessments <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Audit Documents <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Balance Sheets <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Banking Documentations <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Bill Of Materials <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Invoices Bills <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Brochures <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Brochures For Healthcare Institutions <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Business Correspondence <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Business Document <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Business Plans <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Business Proposals <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Cad Drawings <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Clinical Protocols And Trial Agreements <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Company Documentation <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Contract <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Corporate Communications <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Correspondence <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Court Documentation <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Datasheets <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Disclaimers <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Financial Statements <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Immigration Document <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Insurance Claim <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Insurance Marketing <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> .</a> Insurance Translation <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Investment Marketing <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Investment Reports <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Legal Certification <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Legal Disclaimers <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Legal Marketing <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Shop Act Registration <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Patent And Trademark Filings <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Product Guides <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Profit And Loss Reports <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Regulatory Documents <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Service Agreements And Contracts <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Shareholder Information <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Shipping Order S/O <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Trademark And Patent Registration <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Price List <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Legal documents list for <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Powerpoint Presentations <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Presentations <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a> . Presentations Translations (Hard Copies / Ppt) <a style="text-decoration: none;" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a></span></strong></em></span></span></span></marquee> .
+        <!-- Embassy Attestation -->
+        <li class="nav-item dropdown">
+ <a class="nav-link dropdown-toggle page-scroll " href="../embassy-attestation-in-chennai.html" aria-haspopup="true"
+         aria-expanded="false">Embassy Attestation</a>
+          <div class="dropdown-menu" aria-labelledby="embassyDropdown">
+            <a class="dropdown-item" href="../uae-embassy-attestation.html">UAE Embassy Attestation</a>
+            <a class="dropdown-item" href="../kuwait-embassy-attestation-in-chennai.html">Kuwait Embassy Attestation</a>
+            <a class="dropdown-item" href="../bahrain-embassy-attestation.html">Bahrain Embassy Attestation</a>
+            <a class="dropdown-item" href="../qatar-embassy-attestation.html">Qatar Embassy Attestation</a>
+            <a class="dropdown-item" href="../oman-embassy-attestation.html">Oman Embassy Attestation</a>
+            <a class="dropdown-item" href="../china-embassy-attestation.html">China Embassy Attestation</a>
+            <a class="dropdown-item" href="../malaysia-embassy-attestation.html">Malaysia Embassy Attestation</a>
+            <a class="dropdown-item" href="../saudi-embassy-attestation-in-chennai.html">Saudi Embassy Attestation</a>
+            <a class="dropdown-item" href="../egypt-embassy-attestation.html">Egypt Embassy Attestation</a>
+<a class="dropdown-item" href="../embassy-attestation-in-chennai.html">Other Embassy Attestation</a>
 
-                        
-</i>
-</div>
-<!-- end of row -->
- </div> <!-- end of text-container-->
-   <!-- end of text-container -->
-<div>
-</div>
+          </div>
+        </li>
 
-</div>
- </div> <!-- end of row -->
- <div class="text-left mt-3">
-  <a class="btn-outline-reg back m-1" href="../index.html">BACK</a>
-  <a class="btn-outline-reg back m-1" href="https://wa.me/9176159922?text=Hello%20Almiraaj,%20I%20am%20interested%20in%20certificate%20attestation." target="_blank">CONTACT</a>
-</div>
-</div> <!-- end of col-->
-</div> <!-- end of row -->
-</div> <!-- end of container -->
-</div> <!-- end of ex-basic-2 -->
-<!-- end of privacy content -->
+        
 
-</div><!-- Footer -->
-<div class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="text-container about">
-          <h4>Few Words About Al-Miraaj International</h4>
-          <p class="white">
-            AL-MIRAAJ International , "Apostille Services & Embassy Attestation Agency"  is a trusted and reputable company dedicated to providing seamless document legalization services through apostille attestation. We understand the importance of having your documents recognized and accepted internationally, whether for <a style="text-decoration: none;" href="degree-certificate-attestation-in-chennai.html"> Educational certificates</a>   pursuits, professional endeavors, or personal matters.  we specialize in handling the complex procedures involved in attestation. Our team of experienced professionals possesses in-depth knowledge of the requirements and regulations of different countries, ensuring accurate and efficient processing of your documents for Apostille /Attestation.
-          </p>
-        </div>
-        <!-- end of text-container -->
-      </div>
-      <!-- end of col -->
-      <div class="col-md-3">
-        <div class="text-left">
-          <h4>Visa Services</h4>
-          <ul class="list-unstyled li-space-lg white">
-            <li>
-              <a class="white" href="../kuwait_visa_stamping_28.html">Kuwait Visa Services</a>
-            </li>
-            <li>
-              <a class="white" href="../dubai_tourist_visa_47.html">Dubai Visa Services</a>
-            </li>
-            <li>
-              <a class="white" href="../china-visa-services.HTML">China Visa Services
-</a>
-            </li>
-<li>
-              <a class="white" href="../malaysia_tourist_visa_30.HTML">Malaysia Visa Services
+  <!-- Apostille MEA -->
+        <li class="nav-item dropdown">
+ <a class="nav-link dropdown-toggle page-scroll " href="../certificate-apostille-mea-in-chennai.html" aria-haspopup="true"
+         aria-expanded="false">Apostille Certificate MEA</a>
+          <div class="dropdown-menu" aria-labelledby="apostilleDropdown">
+            <a class="dropdown-item" href="https://www.almiraaj.com/personal-certificate-apostille">Personal Certificates Apostille</a>
+            <a class="dropdown-item" href="https://www.almiraaj.com/degree-certificate-apostille">Educational Certificates Apostille</a>
+            <a class="dropdown-item" href="https://www.almiraaj.com/commercial-certificate-apostille">Commercial Certificates Apostille</a>
+          </div>
+        </li>
 
-</a>
-            </li>
-<li>
-              <a class="white" href="../singapore-visa-services.HTML">Singapore Visa Services
 
-</a>
-            </li>
-<li>
-              <a class="white" href="../japan-visa-services.HTML">Japan Visa Services
 
-</a>
-            </li>
-<li>
-              <a class="white" href="../egypt-visa-services.HTML">Egypt Visa Services
+       
 
-</a>
-            </li>
-          </li>
-          <li>
-                            <a class="white" href="../philippines-visa-services-in-chennai">Philippines Visa Services
-          
+        <!-- Visa Services -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle page-scroll" href="https://www.almiraaj.com/visa-services"aria-haspopup="true"              
+        aria-expanded="false">Visa Services </a>
+          <div class="dropdown-menu" aria-labelledby="visaDropdown">
+            <a class="dropdown-item" href="../australia_visa_32.html">Australia Visa</a>
+            <a class="dropdown-item" href="../brunei_visa_stamping_33.html">Brunei Visa Stamping</a>
+            <a class="dropdown-item" href="../china-visa-services.html">China Visa Services</a>
+            <a class="dropdown-item" href="../dubai_tourist_visa_47.html">Dubai Tourist Visa Services</a>
+            <a class="dropdown-item" href="../egypt-visa-services.html">Egypt Visa Services</a>
+            <a class="dropdown-item" href="../japan-visa-services.html">Japan Visa Services</a>
+            <a class="dropdown-item" href="../kuwait_visa_stamping_28.html">Kuwait Visa Stamping</a>
+            <a class="dropdown-item" href="../malaysia_tourist_visa_30.html">Malaysia Visa Services</a>
+            <a class="dropdown-item" href="../saudi_visa_stamping_27.html">Saudi Visa Stamping</a>
+            <a class="dropdown-item" href="../singapore-visa-services.html">Singapore Tourist Visa</a>
+            <a class="dropdown-item" href="../sri-lanka-visa-services.html">Sri Lanka Visa Services</a>
+            <a class="dropdown-item" href="../thailand-visa-services-in-chennai.html">Thailand Visa Services in Chennai</a>
+            <a class="dropdown-item" href="../taiwan-visa-services.html">Taiwan Visa Services</a>
+<a class="dropdown-item" href="../visa-services.html">Other Countries Visa Services</a>
+          </div>
+        </li>
+
+        <!-- Contact -->
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="https://wa.me/919087559669?text=Hi%20Almiraaj!!!" target="_blank" rel="noopener">Contact</a>
+        </li>
+
+      </ul>
+
+      <!-- WhatsApp Icon -->
+      <span class="nav-item social-icons ml-3">
+        <span class="fa-stack">
+          <a href="https://wa.me/+919176160055" target="_blank" rel="noopener">
+            <span class="hexagon"></span>
+            <i class="fab fa-whatsapp fa-stack-1x text-success"></i>
           </a>
-                          </li>
-                          <li class="media">
-                            <a class="white" href="../thailand-visa-process-in-chennai.html">Thailand Visa Services</a>
-                          </li>
-                          <li class="media">
-                            <a class="white" href="../sri-lanka-visa-services.html">Srilanka Visa Services</a>
-                          </li>
-                        </ul>
-          </ul>
-        </div>
-        <!-- end of text-container -->
-      </div>
-      <!-- end of col -->
-      <div class="col-md-3">
-        <div class="text-left">
-          <h4>Certificate Attestation</h4>
-          <ul class="list-unstyled li-space-lg">
-            <li>
-              <a class="white" href="../birth-certificate-attestation.html">Birth Certificate Attestation</a>
-            </li>
-            <li>
-              <a class="white" href="../commercial-documents-attestation.html">Commercial Certificates Attestation</a>
-            </li>
-            <li class="media">
-              <a class="white" href="../educational_certificate_attestation_45.html">Degree Certificate Attestation</a>
-            </li>
-            <li class="media">
-              <a class="white" href="../legal-heir-certificate-attestation.html">Legal heir Certificate Attestation</a>
-            </li>
-
-            <li class="media">
-              <a class="white" href="../marriage-certificate-attestation>Marriage Certificate Attestation</a>
-            </li>
-            <li class="media">
-              <a class="white" href="../medical-certificate-attestation.html">Medical Certificate Attestation</a>
-            </li>
-            <li class="media">
-              <a class="white" href="../nursing-certificate-attestation-in-chennai.html">Nursing Certificate Attestation</a>
-            </li>
-            <li class="media">
-              <a class="white" href="../police-clearance-certificate-attestation.html">PCC Certificate Attestation</a>
-            </li>
-            <li class="media">
-              <a class="white" href="../power-of-attorney-apostilleattestation-in-chennai.html">Power of Attorney Attestation</a>
-            </li>
-            <li class="media">
-              <a class="white" href="../unmarriedcertificateapostille.html">Unmarried Certificate Apostille</a>
-            </li>
-          </ul>
-        </div>
-        <!-- end of text-container -->
-      </div>
-      <!-- end of col -->
-
-      <!-- end of text-container -->
+        </span>
+      </span>
     </div>
-    <!-- end of col -->
   </div>
-  <!-- end of row -->
-</div>
-<!-- end of container -->
-</div>
-<!-- end of footer -->
-<!-- end of footer -->
+</nav>
 
-<!-- Copyright -->
-<div class="copyright">
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <p class="p-small">
-        Copyright © 2023
-        <a href="https://almiraaj.com">AL-MIRAAJ</a>
-      </p>
-    </div>
-    <!-- end of col -->
-  </div>
-  <!-- enf of row -->
-</div>
-<!-- end of container -->
-</div>
-<!-- end of copyright -->
-<!-- end of copyright -->
 
-<!-- Scripts -->
-<script src="/js/jquery.min.js"></script>
-<!-- jQuery for Bootstrap's JavaScript plugins -->
-<script src="/js/popper.min.js"></script>
-<!-- Popper tooltip library for Bootstrap -->
-<script src="/js/bootstrap.min.js"></script>
-<!-- Bootstrap framework -->
-<script src="/js/jquery.easing.min.js"></script>
-<!-- jQuery Easing for smooth scrolling between anchors -->
-<script src="/js/swiper.min.js"></script>
-<!-- Swiper for image and text sliders -->
-<script src="/js/jquery.magnific-popup.js"></script>
-<!-- Magnific Popup for lightboxes -->
-<script src="/js/morphext.min.js"></script>
-<!-- Morphtext rotating text in the header -->
-<script src="/js/isotope.pkgd.min.js"></script>
-<!-- Isotope for filter -->
-<script src="/js/validator.min.js"></script>
-<!-- Validator.js - Bootstrap plugin that validates forms -->
-<script src="/js/scripts.js"></script>
-<!-- Custom scripts -->
-</body>
-
-</html>
+</ul> <!-- Close navbar-nav -->
+</div> <!-- Close navbar-collapse -->
+</div> <!-- Close container -->
+</nav>
