@@ -999,121 +999,284 @@ Al-Miraaj , No 7, E2, PT Rajan Rd, Zumbropuram, Narimedu, Madurai, Tamil Nadu 62
 </section>
 
 
+<!-- Branch Locations Section -->
+<section class="py-5" style="background:#f8fafc;">
 
-<!-- Branch Offices -->
-<section class="py-5 bg-white border-top">
-    <div class="container">
+<style>
+.branch-header{
+    background:linear-gradient(135deg,#00264d,#004a99);
+    color:#fff;
+    border-radius:15px;
+    padding:40px 25px;
+}
 
-        <div class="text-center mb-5">
-            <h2 class="fw-bold text-uppercase" style="color:#00264d;">
-                Our Branch Locations
-            </h2>
-            <p class="text-muted">
-                Serving clients across Tamil Nadu with professional UAE Embassy Attestation,
-                MEA Attestation and Apostille services.
-            </p>
-        </div>
+.branch-card{
+    background:#fff;
+    border:none;
+    border-radius:12px;
+    box-shadow:0 4px 20px rgba(0,0,0,.08);
+    transition:.3s ease;
+    height:100%;
+}
 
-        <div class="row g-4">
+.branch-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 32px rgba(0,0,0,.15);
+}
 
-            <!-- Chennai -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body">
-                        <h3 class="h5 fw-bold">
-                            <a href="https://www.almiraaj.com/uae-embassy-attestation-in-chennai" class="text-decoration-none">
-                                UAE Embassy Attestation Chennai
-                            </a>
-                        </h3>
-                        <p class="text-muted mb-0">
-                            AL-MIRAAJ<br>
-                            180/F3 Prakasam Salai,<br>
-                            2nd Floor, Broadway,<br>
-                            Chennai - 600108
-                        </p>
-                    </div>
-                </div>
-            </div>
+.branch-card.featured{
+    border-top:4px solid #0d6efd;
+}
 
-            <!-- Trichy -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body">
-                        <h3 class="h5 fw-bold">
-                            <a href="https://www.almiraaj.com/uae-embassy-attestation-in-trichy" class="text-decoration-none">
-                                UAE Embassy Attestation Trichy
-                            </a>
-                        </h3>
-                        <p class="text-muted mb-0">
-                            AL-MIRAAJ<br>
-                            28, Nirmal Ravi Apartment,<br>
-                            Pattabiram Road, Tennur,<br>
-                            Tiruchirappalli - 620017
-                        </p>
-                    </div>
-                </div>
-            </div>
+.branch-title{
+    color:#00264d;
+    font-size:1.15rem;
+    font-weight:700;
+    line-height:1.4;
+}
 
-            <!-- Madurai -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-sm h-100 border-start border-4 border-primary">
-                    <div class="card-body">
-                        <h3 class="h5 fw-bold text-primary">
-                            UAE Embassy Attestation Madurai
-                        </h3>
-                        <p class="text-muted mb-0">
-                            AL-MIRAAJ<br>
-                            No.7, E2, PT Rajan Road,<br>
-                            Zumbropuram, Narimedu,<br>
-                            Madurai - 625002
-                        </p>
-                    </div>
-                </div>
-            </div>
+.branch-title a{
+    color:#00264d;
+    text-decoration:none;
+}
 
-            <!-- Coimbatore -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body">
-                        <h3 class="h5 fw-bold">
-                            <a href="https://www.almiraaj.com/uae-embassy-attestation-in-coimbatore" class="text-decoration-none">
-                                UAE Embassy Attestation Coimbatore
-                            </a>
-                        </h3>
-                        <p class="text-muted mb-0">
-                            AL-MIRAAJ<br>
-                            12, 4th South Cross Street,<br>
-                            Nehru Nagar West,<br>
-                            Coimbatore - 641014
-                        </p>
-                    </div>
-                </div>
-            </div>
+.branch-title a:hover{
+    color:#0d6efd;
+}
 
-            <!-- Tuticorin -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-sm h-100">
-                    <div class="card-body">
-                        <h3 class="h5 fw-bold">
-                            <a href="https://www.almiraaj.com/uae-embassy-attestation-in-tuticorin" class="text-decoration-none">
-                                UAE Embassy Attestation Tuticorin
-                            </a>
-                        </h3>
-                        <p class="text-muted mb-0">
-                            AL-MIRAAJ<br>
-                            Hongkong Complex,<br>
-                            18A/57A Palai Road,<br>
-                            Tuticorin - 628008
-                        </p>
-                    </div>
-                </div>
-            </div>
+.branch-address{
+    color:#666;
+    line-height:1.8;
+    min-height:120px;
+}
 
+.call-btn{
+    background:#0d6efd;
+    color:#fff;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    padding:10px 22px;
+    display:inline-block;
+    transition:.3s;
+}
+
+.call-btn:hover{
+    background:#00264d;
+    color:#fff;
+}
+
+.office-btn{
+    background:#00264d;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:50px;
+    display:inline-block;
+    font-size:.95rem;
+    font-weight:600;
+}
+
+.office-btn:hover{
+    background:#0d6efd;
+    color:#fff;
+}
+
+.office-label{
+    background:#eef5ff;
+    color:#0d6efd;
+    padding:5px 12px;
+    font-size:12px;
+    border-radius:30px;
+    display:inline-block;
+    margin-bottom:12px;
+    font-weight:600;
+}
+</style>
+
+<div class="container">
+
+    <!-- Main Header -->
+    <div class="branch-header text-center mb-5">
+
+        <h2 class="fw-bold text-uppercase mb-3">
+            Our Branch Locations
+        </h2>
+
+        <p class="mb-4">
+            Serving clients across Tamil Nadu for UAE Embassy Attestation,
+            UAE MOFA Attestation, MEA Attestation and Apostille Services.
+        </p>
+
+        <div>
+            <a href="tel:9176160055" class="call-btn m-1">📞 9176160055</a>
+            <a href="tel:9159529163" class="call-btn m-1">📞 9159529163</a>
+            <a href="tel:7010855811" class="call-btn m-1">📞 70108 55811</a>
+            <a href="tel:7550321535" class="call-btn m-1">📞 7550321535</a>
+            <a href="tel:9176159922" class="call-btn m-1">📞 9176159922</a>
         </div>
 
     </div>
-</section>
 
+    <div class="row g-4">
+
+        <!-- Chennai -->
+        <div class="col-lg-4 col-md-6">
+            <div class="branch-card p-4">
+
+                <div class="office-label">HEAD OFFICE</div>
+
+                <h3 class="branch-title">
+                    <a href="https://www.almiraaj.com/uae-embassy-attestation-in-chennai">
+                        UAE Embassy Attestation Chennai
+                    </a>
+                </h3>
+
+                <div class="branch-address">
+                    AL-MIRAAJ<br>
+                    180/F3 Prakasam Salai,<br>
+                    2nd Floor, Broadway,<br>
+                    Chennai - 600108
+                </div>
+
+                <a href="tel:9176160055" class="office-btn">
+                    Call Chennai Office
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Trichy -->
+        <div class="col-lg-4 col-md-6">
+            <div class="branch-card p-4">
+
+                <div class="office-label">BRANCH OFFICE</div>
+
+                <h3 class="branch-title">
+                    <a href="https://www.almiraaj.com/uae-embassy-attestation-in-trichy">
+                        UAE Embassy Attestation Trichy
+                    </a>
+                </h3>
+
+                <div class="branch-address">
+                    AL-MIRAAJ<br>
+                    28, Nirmal Ravi Apartment,<br>
+                    Pattabiram Road, Tennur,<br>
+                    Tiruchirappalli - 620017
+                </div>
+
+                <a href="tel:9159529163" class="office-btn">
+                    Call Trichy Office
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Madurai -->
+        <div class="col-lg-4 col-md-6">
+            <div class="branch-card featured p-4">
+
+                <div class="office-label">MADURAI OFFICE</div>
+
+                <h3 class="branch-title">
+                    <a href="https://www.almiraaj.com/uae-embassy-attestation-in-madurai">
+                        UAE Embassy Attestation Madurai
+                    </a>
+                </h3>
+
+                <div class="branch-address">
+                    AL-MIRAAJ<br>
+                    No.7, E2, PT Rajan Road,<br>
+                    Zumbropuram, Narimedu,<br>
+                    Madurai - 625002
+                </div>
+
+                <a href="tel:7010855811" class="office-btn">
+                    Call Madurai Office
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Coimbatore -->
+        <div class="col-lg-4 col-md-6">
+            <div class="branch-card p-4">
+
+                <div class="office-label">BRANCH OFFICE</div>
+
+                <h3 class="branch-title">
+                    <a href="https://www.almiraaj.com/uae-embassy-attestation-in-coimbatore">
+                        UAE Embassy Attestation Coimbatore
+                    </a>
+                </h3>
+
+                <div class="branch-address">
+                    AL-MIRAAJ<br>
+                    12, 4th South Cross Street,<br>
+                    Nehru Nagar West,<br>
+                    Coimbatore - 641014
+                </div>
+
+                <a href="tel:7550321535" class="office-btn">
+                    Call Coimbatore Office
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Tuticorin -->
+        <div class="col-lg-4 col-md-6">
+            <div class="branch-card p-4">
+
+                <div class="office-label">BRANCH OFFICE</div>
+
+                <h3 class="branch-title">
+                    <a href="https://www.almiraaj.com/uae-embassy-attestation-in-tuticorin">
+                        UAE Embassy Attestation Tuticorin
+                    </a>
+                </h3>
+
+                <div class="branch-address">
+                    AL-MIRAAJ<br>
+                    Hongkong Complex,<br>
+                    18A/57A Palai Road,<br>
+                    Tuticorin - 628008
+                </div>
+
+                <a href="tel:9176159922" class="office-btn">
+                    Call Tuticorin Office
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Support Centre -->
+        <div class="col-lg-4 col-md-6">
+            <div class="branch-card p-4 text-center">
+
+                <div class="office-label">CUSTOMER SUPPORT</div>
+
+                <h3 class="branch-title">
+                    UAE Attestation Assistance
+                </h3>
+
+                <div class="branch-address">
+                    Get expert support for Degree Certificates,
+                    Marriage Certificates, Birth Certificates,
+                    PCC, Commercial Documents and UAE MOFA Services.
+                </div>
+
+                <a href="tel:9176160055" class="office-btn">
+                    Speak With Our Team
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</section>
 
   <!-- Helpline -->
   <div style="margin-top: 40px; text-align: center;">
