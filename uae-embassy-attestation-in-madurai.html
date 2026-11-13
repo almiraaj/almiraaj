@@ -976,7 +976,6 @@ Al-Miraaj , No 7, E2, PT Rajan Rd, Zumbropuram, Narimedu, Madurai, Tamil Nadu 62
 </section>
    
 
-
 <!-- Branch Locations Section -->
 <section class="py-5" style="background:#f8fafc;">
 
@@ -985,32 +984,45 @@ Al-Miraaj , No 7, E2, PT Rajan Rd, Zumbropuram, Narimedu, Madurai, Tamil Nadu 62
     background:linear-gradient(135deg,#00264d,#004a99);
     color:#fff;
     border-radius:15px;
-    padding:40px 25px;
+    padding:30px 25px;
 }
 
 .branch-card{
     background:#fff;
-    border:none;
+    border:1px solid #edf1f5;
     border-radius:12px;
-    box-shadow:0 4px 20px rgba(0,0,0,.08);
-    transition:.3s ease;
+    box-shadow:0 4px 16px rgba(0,0,0,.06);
+    transition:.3s;
     height:100%;
 }
 
 .branch-card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 12px 32px rgba(0,0,0,.15);
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
 }
 
 .branch-card.featured{
     border-top:4px solid #0d6efd;
+    background:#f8fbff;
+}
+
+.office-label{
+    display:inline-block;
+    background:#eef4ff;
+    color:#0d6efd;
+    font-size:11px;
+    font-weight:700;
+    padding:5px 12px;
+    border-radius:30px;
+    margin-bottom:12px;
 }
 
 .branch-title{
-    color:#00264d;
-    font-size:1.15rem;
+    font-size:1.08rem;
     font-weight:700;
+    color:#00264d;
     line-height:1.4;
+    min-height:55px;
 }
 
 .branch-title a{
@@ -1024,24 +1036,9 @@ Al-Miraaj , No 7, E2, PT Rajan Rd, Zumbropuram, Narimedu, Madurai, Tamil Nadu 62
 
 .branch-address{
     color:#666;
-    line-height:1.8;
-    min-height:120px;
-}
-
-.call-btn{
-    background:#0d6efd;
-    color:#fff;
-    text-decoration:none;
-    border-radius:50px;
-    font-weight:600;
-    padding:10px 22px;
-    display:inline-block;
-    transition:.3s;
-}
-
-.call-btn:hover{
-    background:#00264d;
-    color:#fff;
+    line-height:1.75;
+    font-size:.95rem;
+    min-height:115px;
 }
 
 .office-btn{
@@ -1051,8 +1048,9 @@ Al-Miraaj , No 7, E2, PT Rajan Rd, Zumbropuram, Narimedu, Madurai, Tamil Nadu 62
     padding:10px 18px;
     border-radius:50px;
     display:inline-block;
-    font-size:.95rem;
+    font-size:14px;
     font-weight:600;
+    transition:.3s;
 }
 
 .office-btn:hover{
@@ -1060,33 +1058,46 @@ Al-Miraaj , No 7, E2, PT Rajan Rd, Zumbropuram, Narimedu, Madurai, Tamil Nadu 62
     color:#fff;
 }
 
-.office-label{
-    background:#eef5ff;
-    color:#0d6efd;
-    padding:5px 12px;
-    font-size:12px;
-    border-radius:30px;
+.main-btn{
+    background:#fff;
+    color:#00264d;
+    text-decoration:none;
+    border-radius:50px;
+    padding:12px 25px;
     display:inline-block;
-    margin-bottom:12px;
-    font-weight:600;
+    font-weight:700;
+    transition:.3s;
+}
+
+.main-btn:hover{
+    background:#eaf3ff;
+    color:#00264d;
+}
+
+.footer-note{
+    background:#fff;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,.05);
 }
 </style>
 
 <div class="container">
 
-    <!-- Main Header -->
+    <!-- Header -->
     <div class="branch-header text-center mb-5">
 
-        <h2 class="fw-bold text-uppercase mb-3">
+        <h2 class="fw-bold text-uppercase mb-2">
             Our Branch Locations
         </h2>
 
-        <p class="mb-4">
-            Serving clients across Tamil Nadu for UAE Embassy Attestation,
-            UAE MOFA Attestation, MEA Attestation and Apostille Services.
+        <p class="mb-3">
+            UAE Embassy Attestation, UAE MOFA, MEA Attestation and Apostille Services Across Tamil Nadu
         </p>
 
-    
+        <a href="tel:9176160055" class="main-btn">
+            📞 Speak With Our Attestation Team
+        </a>
 
     </div>
 
@@ -1095,7 +1106,6 @@ Al-Miraaj , No 7, E2, PT Rajan Rd, Zumbropuram, Narimedu, Madurai, Tamil Nadu 62
         <!-- Chennai -->
         <div class="col-lg-4 col-md-6">
             <div class="branch-card p-4">
-
                 <div class="office-label">HEAD OFFICE</div>
 
                 <h3 class="branch-title">
@@ -1112,16 +1122,14 @@ Al-Miraaj , No 7, E2, PT Rajan Rd, Zumbropuram, Narimedu, Madurai, Tamil Nadu 62
                 </div>
 
                 <a href="tel:9176160055" class="office-btn">
-                    Call Chennai Office
+                    Call Chennai
                 </a>
-
             </div>
         </div>
 
         <!-- Trichy -->
         <div class="col-lg-4 col-md-6">
             <div class="branch-card p-4">
-
                 <div class="office-label">BRANCH OFFICE</div>
 
                 <h3 class="branch-title">
@@ -1134,20 +1142,18 @@ Al-Miraaj , No 7, E2, PT Rajan Rd, Zumbropuram, Narimedu, Madurai, Tamil Nadu 62
                     AL-MIRAAJ<br>
                     28, Nirmal Ravi Apartment,<br>
                     Pattabiram Road, Tennur,<br>
-                    Tiruchirappalli - 620017
+                    Trichy - 620017
                 </div>
 
                 <a href="tel:9159529163" class="office-btn">
-                    Call Trichy Office
+                    Call Trichy
                 </a>
-
             </div>
         </div>
 
         <!-- Madurai -->
         <div class="col-lg-4 col-md-6">
             <div class="branch-card featured p-4">
-
                 <div class="office-label">MADURAI OFFICE</div>
 
                 <h3 class="branch-title">
@@ -1164,16 +1170,14 @@ Al-Miraaj , No 7, E2, PT Rajan Rd, Zumbropuram, Narimedu, Madurai, Tamil Nadu 62
                 </div>
 
                 <a href="tel:7010855811" class="office-btn">
-                    Call Madurai Office
+                    Call Madurai
                 </a>
-
             </div>
         </div>
 
         <!-- Coimbatore -->
         <div class="col-lg-4 col-md-6">
             <div class="branch-card p-4">
-
                 <div class="office-label">BRANCH OFFICE</div>
 
                 <h3 class="branch-title">
@@ -1190,16 +1194,14 @@ Al-Miraaj , No 7, E2, PT Rajan Rd, Zumbropuram, Narimedu, Madurai, Tamil Nadu 62
                 </div>
 
                 <a href="tel:7550321535" class="office-btn">
-                    Call Coimbatore Office
+                    Call Coimbatore
                 </a>
-
             </div>
         </div>
 
         <!-- Tuticorin -->
         <div class="col-lg-4 col-md-6">
             <div class="branch-card p-4">
-
                 <div class="office-label">BRANCH OFFICE</div>
 
                 <h3 class="branch-title">
@@ -1216,39 +1218,46 @@ Al-Miraaj , No 7, E2, PT Rajan Rd, Zumbropuram, Narimedu, Madurai, Tamil Nadu 62
                 </div>
 
                 <a href="tel:9176159922" class="office-btn">
-                    Call Tuticorin Office
+                    Call Tuticorin
                 </a>
-
             </div>
         </div>
 
-        <!-- Support Centre -->
+        <!-- Support -->
         <div class="col-lg-4 col-md-6">
             <div class="branch-card p-4 text-center">
-
-                <div class="office-label">CUSTOMER SUPPORT</div>
+                <div class="office-label">24/7 SUPPORT</div>
 
                 <h3 class="branch-title">
                     UAE Attestation Assistance
                 </h3>
 
                 <div class="branch-address">
-                    Get expert support for Degree Certificates,
-                    Marriage Certificates, Birth Certificates,
-                    PCC, Commercial Documents and UAE MOFA Services.
+                    Degree Certificates<br>
+                    Marriage Certificates<br>
+                    Birth Certificates<br>
+                    PCC & Commercial Documents
                 </div>
 
                 <a href="tel:9176160055" class="office-btn">
-                    Speak With Our Team
+                    Customer Support
                 </a>
-
             </div>
         </div>
 
     </div>
 
+    <!-- Bottom Note -->
+    <div class="footer-note text-center mt-5">
+        <p class="mb-0 text-muted">
+            <strong>AL-MIRAAJ</strong> provides UAE Embassy Attestation, UAE MOFA, Apostille, Degree Certificate Attestation, Marriage Certificate Attestation and Commercial Document Legalization services across Chennai, Trichy, Madurai, Coimbatore and Tuticorin.
+        </p>
+    </div>
+
 </div>
 </section>
+
+
 
 
 
