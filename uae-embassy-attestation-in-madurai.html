@@ -297,62 +297,231 @@
 <br>
 <br>
 
+<header class="uae-hero">
 
-<!-- Corporate-Style Header with Enhanced Readability -->
-<header id="header" class="ex-header text-center py-5" style="position: relative; overflow: hidden;">
-  <div style="position: relative;">
-    <img 
-      src="https://www.almiraaj.com/images/uae-dubai-attestation-in-madurai.webp" 
-      alt="UAE Embassy Attestation - Almiraaj International" 
-      class="img-fluid w-100" 
-      style="filter: brightness(50%);" />
+    <img
+        src="https://www.almiraaj.com/images/uae-doorstep.webp"
+        alt="UAE Embassy Attestation Doorstep Pickup Madurai"
+        class="uae-hero-img">
 
-    <!-- Overlay for better text contrast -->
-    <div style="
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.4);
-      z-index: 1;
-    "></div>
+    <div class="uae-content">
 
-    <!-- Centered Text Block -->
-    <div style="
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2;
-      color: #fff;
-      padding: 1rem 2rem;
-      background: rgba(0, 0, 0, 0.5);
-      border-radius: 8px;
-      backdrop-filter: blur(4px);
-      text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
-      animation: fadeInUp 1.2s ease-out;
-    ">
-      <h1 class="display-5 fw-bold mb-2">UAE Embassy Attestation-Madurai</h1>
-      <p class="lead mb-0">Doorstep Service by <strong>Almiraaj International</strong></p>
+        <div class="uae-badge">
+            ✓ Free Doorstep Pickup & Delivery
+        </div>
+
+        <h1>UAE Embassy<br>Attestation</h1>
+
+        <h2>Doorstep Collection & Delivery Across Madurai</h2>
+
+        <div class="uae-features">
+            Degree Certificates • Birth Certificates • Marriage Certificates • Commercial Documents
+        </div>
+
+        <div class="uae-buttons">
+
+            <a href="https://wa.me/917010855811?text=Hello%20Al%20Miraaj%20International,%20I%20need%20UAE%20Embassy%20Attestation%20with%20Doorstep%20Pickup"
+               class="btn-request"
+               target="_blank"
+               rel="noopener noreferrer">
+                WhatsApp Now
+            </a>
+
+            <a href="tel:+917010855811"
+               class="btn-call">
+                Call Now
+            </a>
+
+        </div>
+
+        <div class="uae-contact">
+            📞 +917010855811 
+        </div>
+
     </div>
-  </div>
+
 </header>
 
-
 <style>
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -60%);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
-}
-</style>
 
+.uae-hero{
+    position:relative;
+    width:100%;
+    overflow:hidden;
+    background:#08254a;
+}
+
+.uae-hero-img{
+    width:100%;
+    display:block;
+    height:auto;
+}
+
+.uae-content{
+    position:absolute;
+    top:50%;
+    right:5%;
+    transform:translateY(-50%);
+    width:480px;
+    max-width:90%;
+    text-align:left;
+    z-index:5;
+}
+
+.uae-badge{
+    display:inline-block;
+    background:#16a34a;
+    color:#fff;
+    padding:9px 18px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:18px;
+    box-shadow:0 4px 15px rgba(0,0,0,.2);
+}
+
+.uae-content h1{
+    color:#ffffff;
+    font-size:58px;
+    font-weight:800;
+    line-height:1.05;
+    margin:0 0 15px;
+    text-shadow:0 3px 10px rgba(0,0,0,.35);
+}
+
+.uae-content h2{
+    color:#ffd166;
+    font-size:26px;
+    font-weight:700;
+    line-height:1.4;
+    margin-bottom:18px;
+    text-shadow:0 2px 6px rgba(0,0,0,.25);
+}
+
+.uae-features{
+    color:#ffffff;
+    font-size:15px;
+    font-weight:600;
+    margin-bottom:28px;
+    line-height:1.8;
+    text-shadow:0 2px 6px rgba(0,0,0,.25);
+}
+
+.uae-buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn-request{
+    background:#16a34a;
+    color:#fff !important;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:8px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn-request:hover{
+    background:#15803d;
+    color:#fff !important;
+}
+
+.btn-call{
+    background:#ffffff;
+    color:#002147 !important;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:8px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn-call:hover{
+    background:#f2f2f2;
+}
+
+.uae-contact{
+    color:#ffffff;
+    font-size:18px;
+    font-weight:700;
+    margin-top:20px;
+    text-shadow:0 2px 6px rgba(0,0,0,.25);
+}
+
+@media (max-width:991px){
+
+    .uae-content{
+        width:420px;
+    }
+
+    .uae-content h1{
+        font-size:42px;
+    }
+
+    .uae-content h2{
+        font-size:22px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .uae-hero{
+        background:#08254a;
+    }
+
+    .uae-hero-img{
+        width:100%;
+        height:auto;
+        display:block;
+    }
+
+    .uae-content{
+        position:relative;
+        top:auto;
+        left:auto;
+        right:auto;
+        transform:none;
+        width:100%;
+        max-width:100%;
+        padding:25px 20px;
+        text-align:center;
+        background:#08254a;
+    }
+
+    .uae-content h1{
+        font-size:32px;
+        line-height:1.2;
+    }
+
+    .uae-content h2{
+        font-size:18px;
+    }
+
+    .uae-features{
+        font-size:14px;
+        line-height:1.7;
+    }
+
+    .uae-buttons{
+        justify-content:center;
+    }
+
+    .btn-request,
+    .btn-call{
+        width:100%;
+        text-align:center;
+    }
+
+    .uae-contact{
+        font-size:16px;
+    }
+
+}
+
+</style>
 
 
 <!-- Breadcrumbs -->
