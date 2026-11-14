@@ -502,7 +502,6 @@ header,
 </header>
 
 <style>
-
 .uae-hero{
     position:relative;
     width:100%;
@@ -519,64 +518,82 @@ header,
 .uae-content{
     position:absolute;
     top:50%;
-    right:5%;
+    right:2%;
     transform:translateY(-50%);
-    width:480px;
+    width:420px;
     max-width:90%;
     text-align:left;
     z-index:5;
+
+    background:rgba(0,21,61,.45);
+    backdrop-filter:blur(4px);
+    padding:25px;
+    border-radius:15px;
 }
 
 .uae-badge{
     display:inline-block;
     background:#16a34a;
     color:#fff;
-    padding:9px 18px;
+    padding:8px 16px;
     border-radius:30px;
-    font-size:14px;
+    font-size:13px;
     font-weight:700;
-    margin-bottom:18px;
-    box-shadow:0 4px 15px rgba(0,0,0,.2);
+    margin-bottom:15px;
 }
 
 .uae-content h1{
     color:#ffffff;
-    font-size:58px;
+    font-size:42px;
     font-weight:800;
-    line-height:1.05;
-    margin:0 0 15px;
+    line-height:1.1;
+    margin:0 0 12px;
     text-shadow:0 3px 10px rgba(0,0,0,.35);
 }
 
 .uae-content h2{
     color:#ffd166;
-    font-size:26px;
+    font-size:18px;
     font-weight:700;
-    line-height:1.4;
-    margin-bottom:18px;
-    text-shadow:0 2px 6px rgba(0,0,0,.25);
+    line-height:1.5;
+    margin-bottom:15px;
+}
+
+.trust-line{
+    color:#e5e7eb;
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:15px;
+    line-height:1.5;
 }
 
 .uae-features{
     color:#ffffff;
-    font-size:15px;
+    font-size:14px;
     font-weight:600;
-    margin-bottom:28px;
-    line-height:1.8;
-    text-shadow:0 2px 6px rgba(0,0,0,.25);
+    line-height:1.7;
+    margin-bottom:15px;
+}
+
+.hero-rating{
+    color:#ffd166;
+    font-size:14px;
+    font-weight:700;
+    margin:15px 0;
 }
 
 .uae-buttons{
     display:flex;
-    gap:15px;
+    gap:12px;
     flex-wrap:wrap;
+    margin-top:15px;
 }
 
 .btn-request{
     background:#16a34a;
     color:#fff !important;
     text-decoration:none;
-    padding:14px 28px;
+    padding:12px 22px;
     border-radius:8px;
     font-weight:700;
     transition:.3s;
@@ -591,7 +608,7 @@ header,
     background:#ffffff;
     color:#002147 !important;
     text-decoration:none;
-    padding:14px 28px;
+    padding:12px 22px;
     border-radius:8px;
     font-weight:700;
     transition:.3s;
@@ -601,26 +618,60 @@ header,
     background:#f2f2f2;
 }
 
-.uae-contact{
+.apostille-contact{
     color:#ffffff;
-    font-size:18px;
+    font-size:16px;
     font-weight:700;
-    margin-top:20px;
-    text-shadow:0 2px 6px rgba(0,0,0,.25);
+    margin-top:15px;
+}
+
+.service-cities{
+    margin-top:10px;
+    color:#d1d5db;
+    font-size:12px;
+    font-weight:600;
+    line-height:1.6;
+}
+
+.hero-trust-badges{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin:15px 0;
+}
+
+.hero-trust-badges span{
+    background:rgba(255,255,255,.12);
+    color:#fff;
+    border:1px solid rgba(255,255,255,.2);
+    padding:6px 10px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.hero-highlight{
+    background:rgba(22,163,74,.18);
+    border-left:4px solid #16a34a;
+    padding:10px 14px;
+    color:#ffffff;
+    font-weight:600;
+    margin:15px 0;
+    border-radius:6px;
 }
 
 @media (max-width:991px){
 
     .uae-content{
-        width:420px;
+        width:380px;
     }
 
     .uae-content h1{
-        font-size:42px;
+        font-size:36px;
     }
 
     .uae-content h2{
-        font-size:22px;
+        font-size:17px;
     }
 
 }
@@ -633,8 +684,8 @@ header,
 
     .uae-hero-img{
         width:100%;
-        height:auto;
         display:block;
+        height:auto;
     }
 
     .uae-content{
@@ -645,23 +696,32 @@ header,
         transform:none;
         width:100%;
         max-width:100%;
-        padding:25px 20px;
-        text-align:center;
         background:#08254a;
+        padding:25px 20px;
+        border-radius:0;
+        text-align:center;
     }
 
     .uae-content h1{
-        font-size:32px;
+        font-size:30px;
         line-height:1.2;
     }
 
     .uae-content h2{
-        font-size:18px;
+        font-size:17px;
+    }
+
+    .trust-line{
+        font-size:13px;
     }
 
     .uae-features{
         font-size:14px;
         line-height:1.7;
+    }
+
+    .hero-rating{
+        font-size:14px;
     }
 
     .uae-buttons{
@@ -674,75 +734,15 @@ header,
         text-align:center;
     }
 
-    .uae-contact{
+    .apostille-contact{
         font-size:16px;
     }
 
-}
-.hero-trust-badges{
-    margin:18px 0;
-    display:flex;
-    flex-wrap:wrap;
-    gap:8px;
-}
+    .service-cities{
+        font-size:12px;
+    }
 
-.hero-trust-badges span{
-    background:rgba(255,255,255,.12);
-    color:#fff;
-    border:1px solid rgba(255,255,255,.2);
-    padding:7px 12px;
-    border-radius:25px;
-    font-size:13px;
-    font-weight:600;
 }
-
-.hero-highlight{
-    background:rgba(22,163,74,.18);
-    border-left:4px solid #16a34a;
-    padding:12px 15px;
-    color:#fff;
-    font-weight:600;
-    margin-bottom:22px;
-    border-radius:6px;
-}
-
-.service-cities{
-    margin-top:20px;
-    color:#d1d5db;
-    font-size:13px;
-    font-weight:600;
-    line-height:1.8;
-}
-
-.apostille-contact{
-    color:#ffffff;
-    font-size:18px;
-    font-weight:700;
-    margin-top:20px;
-}
-.trust-line{
-    color:#e5e7eb;
-    font-size:14px;
-    font-weight:600;
-    margin-bottom:15px;
-    line-height:1.5;
-}
-
-.hero-rating{
-    color:#ffd166;
-    font-size:15px;
-    font-weight:700;
-    margin:18px 0;
-}
-
-.service-cities{
-    margin-top:15px;
-    color:#d1d5db;
-    font-size:13px;
-    font-weight:600;
-    line-height:1.7;
-}
-
 </style>
 
 <!-- Breadcrumbs -->
