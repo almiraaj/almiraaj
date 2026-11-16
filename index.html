@@ -373,204 +373,58 @@
 
 /* =========================================
    AL-MIRAAJ HOMEPAGE CAROUSEL
+   COMPLETE RESPONSIVE CSS
+========================================= */
+
+
+/* =========================================
+   1. CAROUSEL MAIN CONTAINER
 ========================================= */
 
 .homepagecarousel,
-.homepagecarousel .carousel-item{
-    height:85vh;
-    min-height:650px;
+.homepagecarousel .carousel-item {
+    height: 85vh;
+    min-height: 650px;
 }
 
-.homepagecarousel .carousel-item{
-    position:relative;
-    overflow:hidden;
+.homepagecarousel .carousel-item {
+    position: relative;
+    overflow: hidden;
+    background: #071b32;
 }
 
-.homepagecarousel .carousel-item img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center center;
-    display:block;
-}
-
-.homepagecarousel .carousel-item::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.40);
-    z-index:1;
-}
-
-/* Caption Box */
-
-.homepagecarousel .carousel-caption{
-    position:absolute;
-    left:50%;
-    bottom:8%;
-    transform:translateX(-50%);
-    width:92%;
-    max-width:900px;
-
-    z-index:2;
-
-    padding:25px 30px;
-
-    background:rgba(0,0,0,.55);
-    backdrop-filter:blur(10px);
-    -webkit-backdrop-filter:blur(10px);
-
-    border-radius:18px;
-    border:1px solid rgba(255,255,255,.15);
-
-    box-shadow:0 8px 25px rgba(0,0,0,.3);
-}
-
-/* Heading */
-
-.homepagecarousel .carousel-caption h2{
-    color:#fff;
-    font-size:2.4rem;
-    font-weight:800;
-    line-height:1.25;
-    margin-bottom:12px;
-    text-shadow:0 3px 12px rgba(0,0,0,.8);
-}
-
-/* Trust Line */
-
-.trustline{
-    color:#7CFF7C;
-    font-size:1.1rem;
-    font-weight:700;
-    margin-bottom:10px;
-}
-
-/* Service Text */
-
-.service-text{
-    color:#fff;
-    font-size:1rem;
-    margin-bottom:18px;
-}
-
-/* Contact Section */
-
-.contact-bar{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:10px;
-    margin-bottom:20px;
-}
-
-.contact-item{
-    padding:8px 15px;
-    border-radius:30px;
-
-    background:rgba(255,255,255,.10);
-    border:1px solid rgba(255,255,255,.15);
-}
-
-.contact-item i{
-    color:#7CFF7C;
-    margin-right:6px;
-}
-
-.contact-item a{
-    color:#fff;
-    text-decoration:none;
-    font-weight:600;
-}
-
-.contact-item a:hover{
-    color:#7CFF7C;
-}
-
-/* Button */
-
-.btn-solid-lg{
-    display:inline-block;
-
-    background:#25D366;
-    color:#fff !important;
-
-    text-decoration:none;
-    font-weight:700;
-
-    padding:12px 30px;
-
-    border-radius:50px;
-
-    text-transform:uppercase;
-    letter-spacing:.5px;
-
-    transition:.3s ease;
-}
-
-.btn-solid-lg:hover{
-    background:#128C7E;
-    color:#fff !important;
-    transform:translateY(-2px);
-}
-
-/* Indicators */
-
-.carousel-indicators li{
-    width:12px;
-    height:12px;
-    border-radius:50%;
-}
-
-.carousel-indicators .active{
-    background:#25D366;
-}
-
-/* Mobile */
-
-@media(max-width:767px){
-
-    .homepagecarousel,
-    .homepagecarousel .carousel-item{
-        height:80vh;
-        min-height:560px;
-    }
-
-    .homepagecarousel .carousel-caption{
-        width:95%;
-        bottom:5%;
-        padding:18px;
-    }
-
-    .homepagecarousel .carousel-caption h2{
-        font-size:1.45rem;
-    }
-
-    .trustline{
-        font-size:.9rem;
-    }
-
-    .service-text{
-        font-size:.85rem;
-    }
-
-    .contact-bar{
-        flex-direction:column;
-    }
-
-    .contact-item{
-        text-align:center;
-    }
-
-    .carousel-control-prev,
-    .carousel-control-next{
-        display:none;
-    }
-}
 
 /* =========================================
-   AL-MIRAAJ CAROUSEL
-   BOTTOM FULL-WIDTH CAPTION PANEL
+   2. CAROUSEL IMAGES
+   SHOW COMPLETE IMAGE
+========================================= */
+
+.homepagecarousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+    display: block;
+}
+
+
+/* =========================================
+   3. IMAGE DARK OVERLAY
+========================================= */
+
+.homepagecarousel .carousel-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+/* =========================================
+   4. CAPTION PANEL
+   BOTTOM FULL-WIDTH DESIGN
 ========================================= */
 
 .homepagecarousel .carousel-caption {
@@ -588,23 +442,28 @@
 
     z-index: 2;
 
-    padding: 10px 20px;
+    padding: 12px 20px;
 
-    background: rgba(0, 22, 45, .78);
+    background: rgba(0, 22, 45, 0.78);
 
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 
-    border: 1px solid rgba(255,255,255,.22);
+    border: 1px solid rgba(255, 255, 255, 0.22);
 
     border-radius: 14px;
 
-    box-shadow: 0 5px 22px rgba(0,0,0,.3);
+    box-shadow: 0 5px 22px rgba(0, 0, 0, 0.3);
 }
 
-/* MAIN HEADING */
+
+/* =========================================
+   5. MAIN HEADING
+========================================= */
 
 .homepagecarousel .carousel-caption h2 {
+
+    color: #fff;
 
     font-size: clamp(1.2rem, 2vw, 1.65rem);
 
@@ -612,38 +471,49 @@
 
     line-height: 1.2;
 
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 
-    color: #fff;
+    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.8);
 }
 
-/* TRUST LINE */
+
+/* =========================================
+   6. TRUST LINE
+========================================= */
 
 .homepagecarousel .trustline {
 
     display: inline-block;
 
-    font-size: .95rem;
+    color: #70ff83;
+
+    font-size: 0.95rem;
+
+    font-weight: 700;
 
     margin: 0 8px 5px;
-
-    color: #70ff83;
 }
 
-/* SERVICE DESCRIPTION */
+
+/* =========================================
+   7. SERVICE DESCRIPTION
+========================================= */
 
 .homepagecarousel .service-text {
 
     display: inline-block;
 
-    font-size: .9rem;
+    color: #fff;
+
+    font-size: 0.9rem;
 
     margin: 0 8px 5px;
-
-    color: #fff;
 }
 
-/* CONTACT NUMBERS */
+
+/* =========================================
+   8. CONTACT SECTION
+========================================= */
 
 .homepagecarousel .contact-bar {
 
@@ -657,59 +527,191 @@
 
     gap: 8px;
 
-    margin-bottom: 7px;
+    margin-bottom: 10px;
 }
+
 
 .homepagecarousel .contact-item {
 
-    padding: 6px 13px;
+    padding: 7px 14px;
 
     border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-/* AVAILABILITY BUTTON */
+
+.homepagecarousel .contact-item i {
+
+    color: #7CFF7C;
+
+    margin-right: 6px;
+}
+
+
+.homepagecarousel .contact-item a {
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+.homepagecarousel .contact-item a:hover {
+
+    color: #7CFF7C;
+}
+
+
+/* =========================================
+   9. WHATSAPP / AVAILABILITY BUTTON
+========================================= */
 
 .homepagecarousel .btn-solid-lg {
 
-    padding: 8px 25px;
+    display: inline-block;
 
-    font-size: .85rem;
+    background: #25D366;
+
+    color: #fff !important;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    padding: 9px 25px;
+
+    font-size: 0.85rem;
+
+    border-radius: 50px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+    transition: all 0.3s ease;
 }
 
-/* MOBILE */
+
+.homepagecarousel .btn-solid-lg:hover {
+
+    background: #128C7E;
+
+    color: #fff !important;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   10. CAROUSEL INDICATORS
+========================================= */
+
+.homepagecarousel .carousel-indicators li {
+
+    width: 12px;
+
+    height: 12px;
+
+    border-radius: 50%;
+}
+
+
+.homepagecarousel .carousel-indicators .active {
+
+    background: #25D366;
+}
+
+
+/* =========================================
+   11. TABLET RESPONSIVE
+========================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .homepagecarousel,
+    .homepagecarousel .carousel-item {
+
+        height: 75vh;
+
+        min-height: 550px;
+    }
+
+    .homepagecarousel .carousel-caption {
+
+        padding: 12px 15px;
+    }
+
+}
+
+
+/* =========================================
+   12. MOBILE RESPONSIVE
+========================================= */
 
 @media (max-width: 767px) {
+
+    .homepagecarousel,
+    .homepagecarousel .carousel-item {
+
+        height: auto;
+
+        min-height: 0;
+    }
+
+
+    .homepagecarousel .carousel-item img {
+
+        width: 100%;
+
+        height: auto;
+
+        object-fit: contain;
+
+        object-position: center center;
+    }
+
 
     .homepagecarousel .carousel-caption {
 
         left: 3%;
+
         right: 3%;
 
         bottom: 2%;
 
         width: 94%;
 
-        padding: 13px 12px;
+        padding: 12px 10px;
 
         border-radius: 12px;
     }
+
 
     .homepagecarousel .carousel-caption h2 {
 
         font-size: 1.3rem;
 
+        line-height: 1.2;
+
         margin-bottom: 7px;
     }
+
 
     .homepagecarousel .trustline,
     .homepagecarousel .service-text {
 
         display: block;
 
-        font-size: .82rem;
+        font-size: 0.82rem;
 
         margin: 5px 0;
     }
+
 
     .homepagecarousel .contact-bar {
 
@@ -720,22 +722,57 @@
         margin: 10px 0;
     }
 
+
     .homepagecarousel .contact-item {
 
         width: 100%;
 
         text-align: center;
+
+        padding: 7px 10px;
     }
+
 
     .homepagecarousel .btn-solid-lg {
 
-        font-size: .8rem;
+        font-size: 0.8rem;
 
         padding: 9px 18px;
     }
 
+
+    .homepagecarousel .carousel-control-prev,
+    .homepagecarousel .carousel-control-next {
+
+        display: none;
+    }
+
 }
 
+
+/* =========================================
+   13. SMALL MOBILE DEVICES
+========================================= */
+
+@media (max-width: 380px) {
+
+    .homepagecarousel .carousel-caption {
+
+        padding: 9px 8px;
+    }
+
+    .homepagecarousel .carousel-caption h2 {
+
+        font-size: 1.1rem;
+    }
+
+    .homepagecarousel .trustline,
+    .homepagecarousel .service-text {
+
+        font-size: 0.75rem;
+    }
+
+}
 </style>
 <!-- ============================
      CAROUSEL START
