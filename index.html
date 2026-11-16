@@ -568,6 +568,174 @@
     }
 }
 
+/* =========================================
+   AL-MIRAAJ CAROUSEL
+   BOTTOM FULL-WIDTH CAPTION PANEL
+========================================= */
+
+.homepagecarousel .carousel-caption {
+
+    position: absolute;
+
+    left: 2.5%;
+    right: 2.5%;
+    bottom: 1%;
+
+    width: 95%;
+    max-width: none;
+
+    transform: none;
+
+    z-index: 2;
+
+    padding: 10px 20px;
+
+    background: rgba(0, 22, 45, .78);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,.22);
+
+    border-radius: 14px;
+
+    box-shadow: 0 5px 22px rgba(0,0,0,.3);
+}
+
+/* MAIN HEADING */
+
+.homepagecarousel .carousel-caption h2 {
+
+    font-size: clamp(1.2rem, 2vw, 1.65rem);
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    margin-bottom: 5px;
+
+    color: #fff;
+}
+
+/* TRUST LINE */
+
+.homepagecarousel .trustline {
+
+    display: inline-block;
+
+    font-size: .95rem;
+
+    margin: 0 8px 5px;
+
+    color: #70ff83;
+}
+
+/* SERVICE DESCRIPTION */
+
+.homepagecarousel .service-text {
+
+    display: inline-block;
+
+    font-size: .9rem;
+
+    margin: 0 8px 5px;
+
+    color: #fff;
+}
+
+/* CONTACT NUMBERS */
+
+.homepagecarousel .contact-bar {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 7px;
+}
+
+.homepagecarousel .contact-item {
+
+    padding: 6px 13px;
+
+    border-radius: 30px;
+}
+
+/* AVAILABILITY BUTTON */
+
+.homepagecarousel .btn-solid-lg {
+
+    padding: 8px 25px;
+
+    font-size: .85rem;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+
+    .homepagecarousel .carousel-caption {
+
+        left: 3%;
+        right: 3%;
+
+        bottom: 2%;
+
+        width: 94%;
+
+        padding: 13px 12px;
+
+        border-radius: 12px;
+    }
+
+    .homepagecarousel .carousel-caption h2 {
+
+        font-size: 1.3rem;
+
+        margin-bottom: 7px;
+    }
+
+    .homepagecarousel .trustline,
+    .homepagecarousel .service-text {
+
+        display: block;
+
+        font-size: .82rem;
+
+        margin: 5px 0;
+    }
+
+    .homepagecarousel .contact-bar {
+
+        flex-direction: column;
+
+        gap: 6px;
+
+        margin: 10px 0;
+    }
+
+    .homepagecarousel .contact-item {
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .homepagecarousel .btn-solid-lg {
+
+        font-size: .8rem;
+
+        padding: 9px 18px;
+    }
+
+}
+
 </style>
 <!-- ============================
      CAROUSEL START
