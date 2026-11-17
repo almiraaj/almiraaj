@@ -393,17 +393,20 @@
 
 <!-- Spacer for layout -->
  
-
-<header id="header" class="ex-header text-center" style="position: relative; overflow: hidden;">
+<header id="header" style="position:relative; overflow:hidden; margin:0; padding:0;">
 
     <!-- Background Image -->
     <img
         src="https://www.almiraaj.com/images/marriage-certificate-online-attestation.webp"
         alt="Marriage Certificate Attestation Services"
         class="img-fluid w-100"
-        style="height:auto; filter: brightness(95%) contrast(110%) saturate(110%);">
+        style="
+            display:block;
+            width:100%;
+            filter:brightness(95%) contrast(110%) saturate(110%);
+        ;">
 
-    <!-- Light Corporate Overlay -->
+    <!-- Corporate Overlay -->
     <div style="
         position:absolute;
         top:0;
@@ -411,28 +414,28 @@
         width:100%;
         height:100%;
         background:linear-gradient(
-            rgba(0,35,75,0.25),
-            rgba(0,35,75,0.25)
+            rgba(0,35,75,0.20),
+            rgba(0,35,75,0.20)
         );
-        z-index:1;
-    "></div>
+        z-index:1;">
+    </div>
 
-    <!-- Center Content -->
+    <!-- Content Box -->
     <div style="
         position:absolute;
         top:50%;
         left:50%;
-        transform:translate(-50%, -50%);
+        transform:translate(-50%,-50%);
         z-index:2;
-        background:rgba(4,25,55,0.72);
-        backdrop-filter:blur(10px);
-        -webkit-backdrop-filter:blur(10px);
-        border:1px solid rgba(255,255,255,0.15);
-        box-shadow:0 8px 30px rgba(0,0,0,0.25);
-        border-radius:15px;
-        padding:30px 40px;
-        max-width:700px;
         width:90%;
+        max-width:700px;
+        background:rgba(4,25,55,0.68);
+        backdrop-filter:blur(12px);
+        -webkit-backdrop-filter:blur(12px);
+        border:1px solid rgba(255,255,255,0.15);
+        border-radius:16px;
+        padding:30px 40px;
+        box-shadow:0 10px 30px rgba(0,0,0,0.25);
         animation:fadeInUp 1s ease-out;
     ">
 
@@ -442,30 +445,30 @@
             height:4px;
             background:#d4a017;
             margin:0 auto 20px;
-            border-radius:10px;
+            border-radius:50px;
         "></div>
 
         <h1 style="
-            color:#fff;
-            font-size:clamp(32px,4vw,58px);
+            color:#ffffff;
+            font-size:clamp(34px,4vw,58px);
             font-weight:700;
-            margin-bottom:15px;
             line-height:1.15;
+            margin-bottom:15px;
             text-shadow:0 2px 8px rgba(0,0,0,0.3);
         ">
             Marriage Certificate Attestation
         </h1>
 
         <p style="
-            color:#f5f5f5;
+            color:#ffffff;
             font-size:18px;
-            margin-bottom:8px;
+            margin-bottom:10px;
         ">
             MEA • Apostille • Embassy Attestation
         </p>
 
         <p style="
-            color:#dcdcdc;
+            color:#d9d9d9;
             font-size:16px;
             margin-bottom:0;
         ">
@@ -477,17 +480,37 @@
 </header>
 
 <style>
+#header{
+    margin:0 !important;
+    padding:0 !important;
+}
+
 @keyframes fadeInUp {
-    from {
+    from{
         opacity:0;
-        transform:translate(-50%, -45%);
+        transform:translate(-50%,-45%);
     }
-    to {
+    to{
         opacity:1;
-        transform:translate(-50%, -50%);
+        transform:translate(-50%,-50%);
     }
 }
+
+/* Mobile Optimization */
+@media (max-width:768px){
+
+    #header h1{
+        font-size:32px !important;
+    }
+
+    #header p{
+        font-size:14px !important;
+    }
+
+}
 </style>
+
+
 <!-- Breadcrumbs -->
 <div class="ex-basic-1">
   <div class="container">
