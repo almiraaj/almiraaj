@@ -451,7 +451,6 @@
 </div>
 
 </header>
-
 <style>
 
 .uae-hero{
@@ -459,6 +458,24 @@
     width:100%;
     overflow:hidden;
     background:#08254a;
+}
+
+/* DARK OVERLAY */
+
+.uae-hero::after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    width:75%;
+    height:100%;
+    background:linear-gradient(
+        90deg,
+        rgba(0,0,0,0.05) 0%,
+        rgba(0,0,0,0.45) 35%,
+        rgba(0,0,0,0.85) 100%
+    );
+    z-index:1;
 }
 
 .uae-hero-img{
@@ -469,53 +486,97 @@
 
 .uae-content{
     position:absolute;
-    top:50%;
-    right:5%;
+    top:52%;
+    right:3%;
     transform:translateY(-50%);
-    width:480px;
+    width:520px;
     max-width:90%;
-    text-align:left;
     z-index:5;
+
+    background:rgba(0,20,50,0.45);
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+
+    border-radius:18px;
+    padding:30px;
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+    0 10px 35px rgba(0,0,0,.35);
 }
+
+/* BADGE */
 
 .uae-badge{
     display:inline-block;
     background:#16a34a;
     color:#fff;
-    padding:9px 18px;
+
+    padding:10px 18px;
     border-radius:30px;
+
     font-size:14px;
     font-weight:700;
+
     margin-bottom:18px;
-    box-shadow:0 4px 15px rgba(0,0,0,.2);
+
+    box-shadow:
+    0 6px 20px rgba(22,163,74,.40);
 }
+
+/* HEADING */
 
 .uae-content h1{
     color:#ffffff;
-    font-size:58px;
-    font-weight:800;
+
+    font-size:62px;
+    font-weight:900;
     line-height:1.05;
-    margin:0 0 15px;
-    text-shadow:0 3px 10px rgba(0,0,0,.35);
+
+    margin-bottom:15px;
+
+    text-shadow:
+    0 4px 15px rgba(0,0,0,.75);
 }
+
+/* COUNTRIES */
 
 .uae-content h2{
-    color:#ffd166;
-    font-size:26px;
-    font-weight:700;
+    color:#4ade80;
+
+    font-size:28px;
+    font-weight:800;
+
     line-height:1.4;
-    margin-bottom:18px;
-    text-shadow:0 2px 6px rgba(0,0,0,.25);
+    margin-bottom:22px;
+
+    text-shadow:
+    0 2px 8px rgba(0,0,0,.60);
 }
 
+/* SERVICES BOX */
+
 .uae-features{
+    background:rgba(255,255,255,.12);
+
+    padding:14px 18px;
+
     color:#ffffff;
+
     font-size:15px;
     font-weight:600;
-    margin-bottom:28px;
-    line-height:1.8;
-    text-shadow:0 2px 6px rgba(0,0,0,.25);
+
+    line-height:1.7;
+
+    border-left:4px solid #16a34a;
+
+    border-radius:8px;
+
+    margin-bottom:25px;
 }
+
+/* BUTTONS */
 
 .uae-buttons{
     display:flex;
@@ -523,87 +584,99 @@
     flex-wrap:wrap;
 }
 
+/* WHATSAPP */
+
 .btn-request{
     background:#16a34a;
     color:#fff !important;
+
     text-decoration:none;
-    padding:14px 28px;
-    border-radius:8px;
-    font-weight:700;
+
+    padding:15px 28px;
+
+    border-radius:10px;
+
+    font-weight:800;
+
     transition:.3s;
+
+    box-shadow:
+    0 6px 18px rgba(22,163,74,.40);
 }
 
 .btn-request:hover{
     background:#15803d;
     color:#fff !important;
+    transform:translateY(-2px);
 }
+
+/* CALL */
 
 .btn-call{
     background:#ffffff;
     color:#002147 !important;
+
     text-decoration:none;
-    padding:14px 28px;
-    border-radius:8px;
-    font-weight:700;
+
+    padding:15px 28px;
+
+    border-radius:10px;
+
+    font-weight:800;
+
     transition:.3s;
+
+    box-shadow:
+    0 6px 18px rgba(0,0,0,.20);
 }
 
 .btn-call:hover{
-    background:#f2f2f2;
-}
-
-.uae-contact{
-    color:#ffffff;
-    font-size:18px;
-    font-weight:700;
-    margin-top:20px;
-    text-shadow:0 2px 6px rgba(0,0,0,.25);
+    background:#f5f5f5;
+    transform:translateY(-2px);
 }
 
 @media (max-width:991px){
 
     .uae-content{
-        width:420px;
+        width:450px;
     }
 
     .uae-content h1{
-        font-size:42px;
+        font-size:48px;
     }
 
     .uae-content h2{
-        font-size:22px;
+        font-size:24px;
     }
 
 }
 
 @media (max-width:768px){
 
-    .uae-hero{
-        background:#08254a;
-    }
-
-    .uae-hero-img{
-        width:100%;
-        height:auto;
-        display:block;
+    .uae-hero::after{
+        display:none;
     }
 
     .uae-content{
         position:relative;
         top:auto;
-        left:auto;
         right:auto;
         transform:none;
+
         width:100%;
         max-width:100%;
-        padding:25px 20px;
-        text-align:center;
+
         background:#08254a;
+
+        border-radius:0;
+
+        text-align:center;
+
+        padding:25px 20px;
     }
 
     .uae-content h1{
-        font-size:32px;
-        line-height:1.2;
+        font-size:34px;
     }
 
     .uae-content h2{
@@ -612,7 +685,6 @@
 
     .uae-features{
         font-size:14px;
-        line-height:1.7;
     }
 
     .uae-buttons{
@@ -625,14 +697,9 @@
         text-align:center;
     }
 
-    .uae-contact{
-        font-size:16px;
-    }
-
 }
 
 </style>
-  
 
 
 <!-- Breadcrumbs -->
