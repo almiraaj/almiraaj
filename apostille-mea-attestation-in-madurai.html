@@ -1168,23 +1168,48 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 <br><br>
 </div>
 
-<!-- Branch Locations Section -->
-<section class="container my-5">
-  <div class="text-center mb-5">
-    <h2 class="fw-bold text-primary display-6 position-relative d-inline-block">
-      🌍 Our Locations
-      <span class="d-block mx-auto mt-2" style="width:80px; height:4px; background:gold; border-radius:2px;"></span>
-    </h2>
-   
+<!-- Custom Styles -->
+<style>
+  .section-title {
+    font-size: 1.5rem;
+    border-left: 5px solid #28a745; /* green accent */
+    padding-left: 12px;
+  }
+  section.mb-5 {
+    border: 1px solid #e0e0e0;
+  }
+  section.mb-5 a {
+    text-decoration: none;
+  }
+  section.mb-5 a:hover {
+    text-decoration: underline;
+  }
+</style>
 
-   <!-- Grid layout for 3 cards per row -->
+
+
+
+
+<!-- Branch Locations Section -->
+<hr>
+<div class="container">
+  <h2 class="text-center" style="color: #0059b3;">📍 Our Presence Across Tamil Nadu</h2>
+  <p class="text-center text-muted mt-2" style="max-width: 750px; margin: auto; line-height:1.6;">
+    <strong>AL-MIRAAJ INTERNATIONAL</strong> stands as a trusted leader in <strong>document attestation, apostille, and embassy legalization</strong>, operating seamlessly across multiple branches in Tamil Nadu. 
+    In addition to document services, we deliver a comprehensive portfolio of <strong>travel solutions</strong>—from <strong>visa assistance, international tours, travel insurance, and hotel bookings</strong> to <strong>customized travel packages</strong>. 
+    With our <strong>corporate reliability, professional expertise, and customer-centric approach</strong>, we ensure every requirement—whether personal, educational, or business—is handled with precision, speed, and global compliance. 
+    Partner with us to experience <strong>hassle-free services and world-class travel support</strong>.
+  </p>
+
+
+  <!-- Grid layout for 3 cards per row -->
 <div class="row mt-4 g-4 justify-content-center">
 
   <!-- Egmore Chennai -->
   <div class="col-lg-4 col-md-6">
     <div class="card branch-card border-dark h-100">
       <div class="card-body d-flex flex-column text-center">
-        <h4 class="text-dark mb-3"><i class="bi bi-geo-alt"></i> Chennai , Main</h4>
+        <h4 class="text-dark mb-3"><i class="bi bi-geo-alt"></i> Chennai-Main</h4>
         <p class="small">
           <strong>AL-MIRAAJ International</strong><br>
           10/B3-Casa Major Road, Elcanso Bldg,<br>
@@ -1201,7 +1226,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
   <div class="col-lg-4 col-md-6">
     <div class="card branch-card border-primary h-100">
       <div class="card-body d-flex flex-column text-center">
-        <h4 class="text-primary mb-3"><i class="bi bi-geo-alt"></i> Chennai Broadway</h4>
+        <h4 class="text-primary mb-3"><i class="bi bi-geo-alt"></i> Chennai-Broadway</h4>
         <p class="small">
           <strong>AL-MIRAAJ International</strong><br>
           180/F3-Prakasam Salai, 2nd Flr, Broadway,<br>
@@ -1225,7 +1250,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
           Tiruchirappalli – 620017
         </p>
         <div class="mt-auto">
-          <a href="tel:+917550321535" class="btn btn-sm btn-warning w-100 text-white">📞 Call Now</a>
+          <a href="tel:+919159589163" class="btn btn-sm btn-warning w-100 text-white">📞 Call Now</a>
         </div>
       </div>
     </div>
@@ -1254,12 +1279,12 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
       <div class="card-body d-flex flex-column text-center">
         <h4 class="text-info mb-3"><i class="bi bi-geo-alt"></i> Coimbatore</h4>
         <p class="small">
-          <strong>AL-MIRAAJ</strong><br>
+          <strong>AL-MIRAAJ International</strong><br>
           100/A-Thadagam Road , Opp :Velandipalayam Bus Stop<br>
           Coimbatore – 641025
         </p>
         <div class="mt-auto">
-          <a href="tel:+917010855811" class="btn btn-sm btn-info w-100">📞 Call Now</a>
+          <a href="tel:+917550321535" class="btn btn-sm btn-info w-100">📞 Call Now</a>
         </div>
       </div>
     </div>
@@ -1285,9 +1310,24 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 </div> <!-- end row -->
 </div> <!-- end container -->
 </section>
+ 
+
 
 <!-- Hover Effect CSS -->
- <!-- Footer -->
+<style>
+.branch-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+.branch-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+</style>
+
+
+
+<!-- Footer -->
 <footer class="footer mt-5">
   <style>
     .footer {
@@ -1298,6 +1338,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
       font-size: 14px;
       line-height: 1.6;
     }
+
     .footer h5 {
       font-size: 16px;
       margin-bottom: 15px;
@@ -1305,362 +1346,191 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
       color: #c99b33;
       font-weight: 600;
     }
-    .footer ul { list-style: none; padding-left: 0; margin-bottom: 0; }
-    .footer ul li { margin-bottom: 8px; font-size: 13px; }
-    .footer a { color: #ffffff; text-decoration: none; transition: color 0.3s ease-in-out; }
-    .footer a:hover { color: #f7c04a; text-decoration: underline; }
-    .footer-contact { font-size: 13px; }
-    .footer-contact a { color: #f7c04a; font-weight: 600; }
-    .social-icons a { font-size: 18px; margin: 0 10px; color: #ffffff; transition: transform 0.3s ease; }
-    .social-icons a:hover { transform: scale(1.2); color: #f7c04a; }
-    .footer-bottom { background-color: #001f3a; padding: 20px 0; font-size: 13px; }
-    .footer-columns { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; }
-    .footer-box { flex: 1 1 18%; min-width: 180px; }
-    @media (max-width: 768px) {
-      .footer { padding: 40px 20px; }
-      .footer h5 { font-size: 15px; }
-      .footer ul li { font-size: 13px; }
-      .footer-box { flex: 1 1 100%; text-align: center; }
+
+    .footer ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
     }
-/* =========================================================
-   AL-MIRAAJ INTERNATIONAL - FOOTER POLISH
-   ========================================================= */
 
-/* Footer Service / Local SEO Line */
-.footer-service-line {
-    color: #d4af55 !important;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 1.6;
-    letter-spacing: 0.2px;
-    text-align: center;
-    margin-top: 22px;
-    margin-bottom: 12px;
-}
+    .footer ul li {
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
 
-.footer-service-line span {
-    color: #19a7ce;
-    font-size: 9px;
-    vertical-align: middle;
-    margin-right: 5px;
-}
+    .footer a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+    }
 
-
-/* Footer Social Icons */
-.footer-social {
-    margin-top: 10px;
-    margin-bottom: 0;
-}
-
-.footer-social a {
-    color: #ffffff;
-    font-size: 17px;
-    margin: 0 7px;
-    display: inline-block;
-    text-decoration: none;
-    transition: all 0.25s ease;
-}
-
-.footer-social a:hover {
-    color: #d4af55;
-    transform: translateY(-2px);
-}
-
-
-/* Footer Bottom Copyright Bar */
-.footer-bottom {
-    background: rgba(0, 0, 0, 0.18);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    padding: 15px 20px;
-    margin-top: 20px !important;
-}
-
-.footer-bottom p {
-    color: #aebdcc;
-    font-size: 11.5px;
-    line-height: 1.6;
-    margin: 0;
-}
-
-.footer-bottom .text-gold {
-    color: #d4af55;
-    font-weight: 600;
-}
-
-
-/* Footer Contact Links */
-.footer-contact a {
-    color: #d4af55;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.footer-contact a:hover {
-    color: #ffffff;
-}
-
-
-/* Footer Contact Text */
-.footer-contact p {
-    color: #aebdcc;
-    font-size: 12px;
-    line-height: 1.7;
-}
-
-.footer-contact strong {
-    color: #ffffff;
-}
-
-
-/* Footer Divider */
-.footer-contact hr {
-    border-color: rgba(255, 255, 255, 0.18);
-    opacity: 1;
-}
-
-
-/* Footer Service Column Links */
-.footer-box ul {
-    padding-left: 0;
-    list-style: none;
-}
-
-.footer-box ul li {
-    margin-bottom: 8px;
-}
-
-.footer-box ul li a {
-    color: #d5e0eb;
-    text-decoration: none;
-    font-size: 12px;
-    transition: all 0.2s ease;
-}
-
-.footer-box ul li a:hover {
-    color: #d4af55;
-    padding-left: 2px;
-}
-
-
-/* Footer Headings */
-.footer-box h5 {
-    color: #d4af55;
-    font-size: 13px;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 1.25;
-    margin-bottom: 14px;
-}
-
-
-/* Mobile Footer */
-@media (max-width: 767px) {
-
-    .footer-box {
-        margin-bottom: 25px;
+    .footer a:hover {
+      color: #f7c04a;
+      text-decoration: underline;
     }
 
     .footer-contact {
-        text-align: center;
+      font-size: 13px;
     }
 
-    .footer-contact p {
-        font-size: 11.5px;
-        line-height: 1.7;
+    .footer-contact a {
+      color: #f7c04a;
+      font-weight: 600;
     }
 
-    .footer-service-line {
-        font-size: 12px;
-        padding: 0 10px;
+    .social-icons a {
+      font-size: 18px;
+      margin: 0 10px;
+      color: #ffffff;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+      color: #f7c04a;
     }
 
     .footer-bottom {
-        padding: 13px 12px;
+      background-color: #001f3a;
+      padding: 20px 0;
+      font-size: 13px;
     }
 
-    .footer-bottom p {
-        font-size: 11px;
+    .footer-countries {
+      margin-top: 30px;
+      text-align: center;
     }
 
-    .footer-social a {
-        font-size: 16px;
-        margin: 0 6px;
+    .footer-countries span {
+      display: inline-block;
+      margin: 6px;
+      padding: 8px 16px;
+      background-color: #003366;
+      border-radius: 20px;
+      font-weight: 600;
+      color: #f7c04a;
+      font-size: 13px;
     }
-}
 
+    .footer-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
 
+    .footer-box {
+      flex: 1 1 18%;
+      min-width: 180px;
+    }
 
-  </style><div class="container">
-  <div class="footer-columns">
+    @media (max-width: 768px) {
+      .footer {
+        padding: 40px 20px;
+      }
 
-    <!-- Embassy Services -->
-    <div class="footer-box">
-      <h5>Embassy Services</h5>
-      <ul>
-        <li><a href="https://almiraaj.com/uae-embassy-attestation">UAE Embassy Attestation</a></li>
-        <li><a href="https://www.almiraaj.com/saudi-embassy-attestation">Saudi Embassy Legalization</a></li>
-        <li><a href="https://www.almiraaj.com/kuwait-embassy-attestation-in-chennai">Kuwait Embassy Attestation</a></li>
-        <li><a href="https://www.almiraaj.com/qatar-embassy-attestation">Qatar Embassy Verification</a></li>
-        <li><a href="https://www.almiraaj.com/oman-embassy-attestation">Oman Embassy Attestation</a></li>
-      </ul>
+      .footer h5 {
+        font-size: 15px;
+      }
+
+      .footer ul li {
+        font-size: 13px;
+      }
+
+      .footer-countries span {
+        display: block;
+        margin: 8px auto;
+      }
+
+      .footer-box {
+        flex: 1 1 100%;
+        text-align: center;
+      }
+    }
+  </style>
+
+  <div class="container">
+    <div class="footer-columns">
+
+      <!-- Embassy -->
+      <div class="footer-box">
+        <h5>Embassy</h5>
+        <ul>
+          <li><a href="http://almiraaj.com/uae-embassy-attestation">UAE Attestation</a></li>
+          <li><a href="https://www.almiraaj.com/saudi-embassy-attestation">Saudi Legalization</a></li>
+          <li><a href="https://www.almiraaj.com/kuwait-embassy-attestation-in-chennai">Kuwait Attestation</a></li>
+          <li><a href="https://www.almiraaj.com/qatar-embassy-attestation">Qatar Verification</a></li>
+          <li><a href="https://www.almiraaj.com/oman-embassy-attestation">Oman Attestation</a></li>
+        </ul>
+      </div>
+
+      <!-- Attestation -->
+      <div class="footer-box">
+        <h5>Attestation</h5>
+        <ul>
+          <li><a href="https://www.almiraaj.com/home-mantralaya-attestation">Mantralaya</a></li>
+          <li><a href="https://www.almiraaj.com/sdm-attestation">SDM</a></li>
+          <li><a href="https://www.almiraaj.com/mea-attestation-procedures">MEA</a></li>
+          <li><a href="https://www.almiraaj.com/coc-chamberofcommerce-attestation">COC</a></li>
+          <li><a href="https://www.almiraaj.com/embassy-attestation-in-chennai">Embassy Process</a></li>
+        </ul>
+      </div>
+
+      <!-- Documents -->
+      <div class="footer-box">
+        <h5>Documents</h5>
+        <ul>
+          <li><a href="https://www.almiraaj.com/birth-certificate-attestation">Birth Certificate</a></li>
+          <li><a href="https://www.almiraaj.com/degree-certificate-attestation-in-chennai">Degree Certificate</a></li>
+          <li><a href="https://www.almiraaj.com/marriage-certificate-attestation">Marriage Certificate</a></li>
+          <li><a href="https://www.almiraaj.com/pcc-apostille-attestation">PCC</a></li>
+          <li><a href="https://www.almiraaj.com/legal-heir-certificate-attestation">Legal Heir</a></li>
+        </ul>
+      </div>
+
+      <!-- Apostille -->
+      <div class="footer-box">
+        <h5>Apostille</h5>
+        <ul>
+          <li><a href="https://www.almiraaj.com/apostille-for-usa-in-chennai">USA</a></li>
+          <li><a href="https://www.almiraaj.com/apostille-for-uk">UK</a></li>
+          <li><a href="https://www.almiraaj.com/apostille-for-australia-in-chennai">Australia</a></li>
+          <li><a href="https://www.almiraaj.com/apostille-certificate-embassy-attestation-for-france">France</a></li>
+          <li><a href="https://www.almiraaj.com/hague-convention-apostille-countries">HCCH Countries</a></li>
+        </ul>
+      </div>
+
+      <!-- Visas -->
+      <div class="footer-box">
+        <h5>Visas</h5>
+        <ul>
+          <li><a href="https://www.almiraaj.com/china-visa-services">China</a></li>
+          <li><a href="https://www.almiraaj.com/dubai_tourist_visa_47">UAE</a></li>
+          <li><a href="https://www.almiraaj.com/singapore-visa-services">Singapore</a></li>
+          <li><a href="https://www.almiraaj.com/japan-visa-services">Japan</a></li>
+          <li><a href="https://www.almiraaj.com/bahrain-visa-services">Bahrain</a></li>
+        </ul>
+      </div>
+
     </div>
 
-    <!-- Attestation Services -->
-    <div class="footer-box">
-      <h5>Attestation Services</h5>
-      <ul>
-        <li><a href="https://www.almiraaj.com/home-mantralaya-attestation">Mantralaya Attestation</a></li>
-        <li><a href="https://www.almiraaj.com/sdm-attestation">SDM Attestation</a></li>
-        <li><a href="https://www.almiraaj.com/mea-attestation-procedures">MEA Attestation</a></li>
-        <li><a href="https://www.almiraaj.com/coc-chamberofcommerce-attestation">Chamber of Commerce</a></li>
-        <li><a href="https://www.almiraaj.com/embassy-attestation-in-chennai">Embassy Attestation</a></li>
-      </ul>
+    <!-- Contact Info -->
+    <div class="row mt-4">
+      <div class="col-12 text-center footer-contact">
+        <hr class="border-light w-100" />
+        <p>📍 <strong>Address:</strong>  Elcanso Complex, 10/B3, CASA Major Rd, Near : Don Bosco School, opp. to Fresh2day Super Market, Egmore, Chennai, Tamil Nadu 600008</p>
+        <p>
+          ☎️ <strong>Call:</strong> <a href="tel:+914442037273">+91 44 4203 7273</a> |
+          💬 <strong>WhatsApp:</strong> <a href="https://wa.me/919176160055" target="_blank" rel="noopener">+91 9176160055</a> |
+          ✉️ <strong>Email:</strong> <a href="mailto:contact@almiraaj.com">contact@almiraaj.com</a>
+        </p>
+      </div>
     </div>
 
-    <!-- Document Attestation -->
-    <div class="footer-box">
-      <h5>Document Attestation</h5>
-      <ul>
-        <li><a href="https://www.almiraaj.com/birth-certificate-attestation">Birth Certificate Attestation</a></li>
-        <li><a href="https://www.almiraaj.com/degree-certificate-attestation-in-chennai">Degree Certificate Attestation</a></li>
-        <li><a href="https://www.almiraaj.com/marriage-certificate-attestation">Marriage Certificate Attestation</a></li>
-        <li><a href="https://www.almiraaj.com/pcc-apostille-attestation">Police Clearance Certificate</a></li>
-        <li><a href="https://www.almiraaj.com/legal-heir-certificate-attestation">Legal Heir Certificate</a></li>
-      </ul>
-    </div>
-
-    <!-- Apostille Services -->
-    <div class="footer-box">
-      <h5>Apostille Services</h5>
-      <ul>
-        <li><a href="https://www.almiraaj.com/apostille-for-usa-in-chennai">USA Apostille</a></li>
-        <li><a href="https://www.almiraaj.com/apostille-for-uk">UK Apostille Services</a></li>
-        <li><a href="https://www.almiraaj.com/apostille-for-australia-in-chennai">Australia Apostille</a></li>
-        <li><a href="https://www.almiraaj.com/apostille-certificate-embassy-attestation-for-france">France Apostille</a></li>
-        <li><a href="https://www.almiraaj.com/hague-convention-apostille-countries">Hague Convention Apostille</a></li>
-      </ul>
-    </div>
-
-    <!-- Visa Services -->
-    <div class="footer-box">
-      <h5>Visa Services</h5>
-      <ul>
-        <li><a href="https://www.almiraaj.com/china-visa-services">China Visa Services</a></li>
-        <li><a href="https://www.almiraaj.com/dubai_tourist_visa_47">UAE Tourist Visa</a></li>
-        <li><a href="https://www.almiraaj.com/singapore-visa-services">Singapore Visa Services</a></li>
-        <li><a href="https://www.almiraaj.com/japan-visa-services">Japan Visa Services</a></li>
-        <li><a href="https://www.almiraaj.com/bahrain-visa-services">Bahrain Visa Services</a></li>
-      </ul>
-    </div>
-
-  </div>
-
-  <!-- Contact Information -->
-  <div class="row mt-4 footer-contact">
-
-    <hr class="border-light w-100" />
-
-    <!-- Chennai Main Office -->
-    <div class="col-md-6 mb-3">
-      <p>
-        📍 <strong>Chennai Main:</strong>
-        Elcanso Complex, 10/B3, CASA Major Rd, Near Don Bosco School,
-        Opp. Fresh2day Super Market, Egmore, Chennai – 600008
-      </p>
-
-      <p>
-        ☎️ <strong>Mobile:</strong>
-        <a href="tel:+919087559669">+91 90875 59669</a>
-        &nbsp;|&nbsp;
-
-        ☎️ <strong>Landline:</strong>
-        <a href="tel:+914442037273">+91 44 4203 7273</a>
-        &nbsp;|&nbsp;
-
-        💬 <strong>WhatsApp:</strong>
-        <a href="https://wa.me/919176159922"
-           target="_blank"
-           rel="noopener noreferrer">+91 91761 59922</a>
-        &nbsp;|&nbsp;
-
-        ✉️ <strong>Email:</strong>
-        <a href="mailto:info@almiraaj.com">info@almiraaj.com</a>
-      </p>
-    </div>
-
-    <!-- Broadway Office -->
-    <div class="col-md-6 mb-3">
-      <p>
-        📍 <strong>Broadway Office:</strong>
-        2nd Floor, Broadway, 180/2-Prakasam Salai,
-        Opp. Mannady Metro, Chennai – 600108, Tamil Nadu, India
-      </p>
-
-      <p>
-        ☎️ <strong>Mobile:</strong>
-        <a href="tel:+919087559669">+91 90875 59669</a>
-        &nbsp;|&nbsp;
-
-        ☎️ <strong>Landline:</strong>
-        <a href="tel:+914442037273">+91 44 4203 7273</a>
-        &nbsp;|&nbsp;
-
-        💬 <strong>WhatsApp:</strong>
-        <a href="https://wa.me/919176159922"
-           target="_blank"
-           rel="noopener noreferrer">+91 91761 59922</a>
-        &nbsp;|&nbsp;
-
-        ✉️ <strong>Email:</strong>
-        <a href="mailto:info@almiraaj.com">info@almiraaj.com</a>
-      </p>
-    </div>
-
-  </div>
-
-  <!-- Local SEO / Service Coverage -->
-  <p class="text-center mt-3 footer-service-line">
-    <span aria-hidden="true">●</span>
-    Serving Visa, Attestation &amp; Apostille Clients Across Chennai &amp; Tamil Nadu
-  </p>
-
-  <!-- Social Media -->
-  <div class="text-center mt-3 social-icons footer-social">
-
-    <a href="https://www.facebook.com/AttestationAndApostille/"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="footer-link"
-       aria-label="AL-MIRAAJ INTERNATIONAL on Facebook">
-      <i class="fab fa-facebook-f"></i>
-    </a>
-
-    <a href="https://instagram.com/almiraajapostille"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="footer-link"
-       aria-label="AL-MIRAAJ INTERNATIONAL on Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
-
-    <a href="https://linkedin.com/company/almiraajapostille"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="footer-link"
-       aria-label="AL-MIRAAJ INTERNATIONAL on LinkedIn">
-      <i class="fab fa-linkedin-in"></i>
-    </a>
-
-  </div>
-
-  <!-- Footer Bottom / SEO -->
-  <div class="footer-bottom text-center mt-4">
-    <p class="mb-0">
-      © 2026
-      <span class="text-gold">AL-MIRAAJ INTERNATIONAL</span>
-      – Visa, Tour, Certificate Attestation &amp; Apostille Services in
-      Chennai, Trichy, Madurai, Coimbatore &amp; Tuticorin
-    </p>
-  </div>
-
-</div>
+    <!-- Social Media -->
+    <div class="row mt-3">
+      <div class="col-12 text-center social-icons">
+        <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+            
