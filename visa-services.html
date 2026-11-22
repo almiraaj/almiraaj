@@ -1078,8 +1078,145 @@ body {
         </div>
       </div>
     </div>
-  </div> <!-- End of .row -->
-</div> <!-- End of .container -->
+
+<div class="text-center mt-5">
+    <h4 class="fw-bold text-primary">
+        Can't Find Your Destination Country?
+    </h4>
+
+    <p class="text-muted mb-3">
+        Almiraaj International provides professional visa assistance for a wide range of international destinations. If your preferred country is not listed, simply submit your travel requirements and our visa specialists will guide you through the appropriate visa category, documentation requirements, processing timelines, and application procedures.
+    </p>
+
+    <button type="button"
+        class="btn btn-lg btn-success px-4 py-2 shadow-sm"
+        data-bs-toggle="modal"
+        data-bs-target="#otherCountryModal">
+        <i class="fas fa-globe me-2"></i>Request Visa Assistance
+    </button>
+</div>
+
+</div>
+
+<div class="modal fade" id="otherCountryModal" tabindex="-1" aria-labelledby="otherCountryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title" id="otherCountryModalLabel">
+                    International Visa Assistance Request
+                </h5>
+                <button type="button" class="btn-close btn-close-white"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <form action="https://formspree.io/f/xqegnwjq" method="POST">
+
+                    <div class="row">
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Full Name *</label>
+                            <input type="text" class="form-control"
+                                name="Full Name" required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Phone Number *</label>
+                            <input type="tel" class="form-control"
+                                name="Phone Number" required>
+                        </div>
+
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control"
+                            name="Email Address">
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Destination Country *</label>
+                            <input type="text" class="form-control"
+                                name="Destination Country"
+                                placeholder="Example: UAE, Singapore, Canada, UK"
+                                required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Visa Category *</label>
+                            <select class="form-select"
+                                name="Visa Category" required>
+                                <option value="">Select Visa Type</option>
+                                <option>Tourist Visa</option>
+                                <option>Business Visa</option>
+                                <option>Employment Visa</option>
+                                <option>Student Visa</option>
+                                <option>Family Visit Visa</option>
+                                <option>Dependent Visa</option>
+                                <option>Transit Visa</option>
+                                <option>Medical Visa</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Planned Travel Date *</label>
+                            <input type="date"
+                                class="form-control"
+                                name="Planned Travel Date"
+                                required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Number of Travellers</label>
+                            <input type="number"
+                                class="form-control"
+                                name="Number of Travellers"
+                                min="1"
+                                placeholder="1">
+                        </div>
+
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">
+                            Travel Purpose / Additional Requirements
+                        </label>
+                        <textarea class="form-control"
+                            rows="4"
+                            name="Message"
+                            placeholder="Please provide details about your travel purpose, expected duration of stay, previous visa history, or any specific requirements."></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="btn btn-success w-100">
+                        Submit Visa Enquiry
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</section>
+<!-- end of button-container -->
+<!-- end of card -->
+</div>
+<!-- end of col -->
+<!-- end of container -->
+
+
 
 <!-- Centered Header -->
 <div class="container">
